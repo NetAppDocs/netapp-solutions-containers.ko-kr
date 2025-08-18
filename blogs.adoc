@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: blogs.html 
+summary: ONTAP 스토리지를 NetApp 가상화 솔루션과 통합하기 위한 실용적인 지침과 모범 사례를 제공하는 블로그를 읽어보세요. 
+keywords: netapp, solutions, blogs 
+---
+= NetApp 전문가의 컨테이너 솔루션 블로그를 읽어보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP 스토리지를 NetApp 컨테이너 솔루션과 통합하기 위한 실용적인 지침과 모범 사례를 제공하는 블로그를 읽어보세요.
+
+
+
+== OpenShift 배포 및 통합
+
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Simplifying-Trident-Installation-on-Red-Hat-OpenShift-with-the-New-Certified/ba-p/459710["새로운 인증 Trident Operator를 사용하여 Red Hat OpenShift에서 Trident 설치 간소화"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Unlock-Seamless-iSCSI-Storage-Integration-A-Guide-to-FSxN-on-ROSA-Clusters-for/ba-p/459124["원활한 iSCSI 스토리지 통합 잠금 해제: iSCSI용 ROSA 클러스터의 FSxN 가이드"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Amazon-FSx-for-NetApp-ONTAP-with-Red-Hat-OpenShift-Service-on-AWS-ROSA-using/ba-p/456167["AWS(ROSA)에서 Red Hat OpenShift Service를 사용하는 Amazon FSx for NetApp ONTAP 호스팅 제어 평면 사용"]
+* link:https://netapp.io/2021/05/21/docker-rate-limit-issue/["Red Hat OpenShift에 NetApp Trident 설치 - Docker 'toomanyrequests' 문제를 해결하는 방법!"]
+
+
+
+
+== 데이터 보호 및 백업
+
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Crash-Consistent-Backup-and-Restore-Operations-for-OpenShift-Virtualization-VMs/ba-p/459417["Trident 25.02를 사용하여 OpenShift Virtualization VM에 대한 충돌 일관성 백업 및 복원 작업"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/A-Backup-and-Restore-option-for-VM-data-protection-in-OpenShift-Virtualization/ba-p/452279["OpenShift Virtualization에서 VM 데이터 보호를 위한 백업 및 복원 옵션"]
+
+
+
+
+== 가상화 및 VM 운영
+
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Live-Migration-of-VMs-with-OpenShift-Virtualization-on-ROSA-and-Amazon-FSx-for/ba-p/456213["ROSA 및 Amazon FSx for NetApp ONTAP 에서 OpenShift Virtualization을 사용한 VM의 라이브 마이그레이션"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/ONTAP-for-OpenShift-Virtualization-VMs-non-disruptive-volume-move-operation-is/ba-p/451941["OpenShift Virtualization VM용 ONTAP : 중단 없는 볼륨 이동 작업을 계속 수행할 수 있습니다."]
+
+
+
+
+== 스토리지 통합 및 성능
+
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Using-NVMe-TCP-to-consume-ONTAP-storage-for-your-modern-containerized-apps-on/ba-p/453706["VMware에서 최신 컨테이너화된 앱에 대한 ONTAP 스토리지를 사용하기 위해 NVMe/TCP 사용"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/ONTAP-as-backend-storage-for-the-integrated-image-registry-in-OpenShift/ba-p/453142["OpenShift Container Platform의 통합 이미지 레지스트리를 위한 백엔드 스토리지로서의 ONTAP"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/NetApp-ONTAP-doubles-up-as-storage-for-logs-in-Red-Hat-OpenShift-Container/ba-p/449280["NetApp ONTAP Red Hat OpenShift Container Platform의 로그 저장소로도 사용됩니다."]
+
+
+
+
+== 쿠버네티스와 VMware 생태계
+
+* link:https://blog.netapp.com/accelerate-your-k8s-journey["ONTAP 과 함께 VMware Tanzu를 사용하여 Kubernetes 여정을 가속화하세요"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Kubernetes-on-vSphere-Part-1/ba-p/445634["vSphere에서의 Kubernetes(1부)"]
+* link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Kubernetes-on-vSphere-Part-2/ba-p/445848["vSphere에서의 Kubernetes(2부)"]
+

@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-trident-ontap-iscsi.html 
+summary:  
+keywords: Trident, Trident, ONTAP, AFF, FAS, iSCSI 
+---
+= NetApp ONTAP iSCSI 구성
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp ONTAP 스토리지 시스템과 Trident 통합을 활성화하려면 스토리지 시스템과의 통신을 지원하는 백엔드를 만들어야 합니다.
+
+. 다운로드한 설치 아카이브에는 샘플 백엔드 파일이 있습니다. `sample-input` 폴더 계층구조.  iSCSI를 제공하는 NetApp ONTAP 시스템의 경우 다음을 복사하십시오. `backend-ontap-san.json` 작업 디렉토리에 파일을 복사하고 편집하세요.
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ cp sample-input/backends-samples/ontap-san/backend-ontap-san.json ./
+[netapp-user@rhel7 trident-installer]$ vi backend-ontap-san.json
+----
+. 이 파일에서 managementLIF, dataLIF, svm, username 및 password 값을 편집합니다.
++
+[listing]
+----
+{
+  "version": 1,
+  "storageDriverName": "ontap-san",
+  "managementLIF": "172.21.224.201",
+  "dataLIF": "10.61.181.240",
+  "svm": "trident_svm",
+  "username": "admin",
+  "password": "password"
+}
+----
+. 백엔드 파일이 준비되면 다음 명령을 실행하여 첫 번째 백엔드를 만듭니다.
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ ./tridentctl -n trident create backend -f backend-ontap-san.json
++------------------------+----------------+--------------------------------------+--------+---------+
+|          NAME          | STORAGE DRIVER |                 UUID                 | STATE  | VOLUMES |
++------------------------+----------------+--------------------------------------+--------+---------+
+| ontapsan_10.61.181.241 | ontap-san      | 6788533c-7fea-4a35-b797-fb9bb3322b91 | online |       0 |
++------------------------+----------------+--------------------------------------+--------+---------+
+----
+. 백엔드를 만든 후에는 다음으로 스토리지 클래스를 만들어야 합니다.  백엔드와 마찬가지로, sample-inputs 폴더에서 해당 환경에 맞게 편집할 수 있는 샘플 스토리지 클래스 파일이 있습니다.  작업 디렉토리에 복사하고 생성된 백엔드를 반영하도록 필요한 편집을 합니다.
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ cp sample-input/storage-class-samples/storage-class-csi.yaml.templ ./storage-class-basic.yaml
+[netapp-user@rhel7 trident-installer]$ vi storage-class-basic.yaml
+----
+. 이 파일에 대해 해야 할 유일한 편집은 다음을 정의하는 것입니다. `backendType` 새로 생성된 백엔드의 스토리지 드라이버 이름에 대한 값입니다.  또한, 이후 단계에서 참조해야 하는 이름 필드 값도 기록해 둡니다.
++
+[listing]
+----
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: basic-csi
+provisioner: csi.trident.netapp.io
+parameters:
+  backendType: "ontap-san"
+----
++
+
+NOTE: 라는 선택적 필드가 있습니다. `fsType` 이 파일에 정의되어 있습니다.  iSCSI 백엔드에서 이 값은 특정 Linux 파일 시스템 유형(XFS, ext4 등)으로 설정하거나 삭제하여 OpenShift가 사용할 파일 시스템을 결정하도록 할 수 있습니다.
+
+. 실행하다 `oc` 저장 클래스를 생성하는 명령입니다.
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ oc create -f storage-class-basic.yaml
+storageclass.storage.k8s.io/basic-csi created
+----
+. 스토리지 클래스가 생성되면 첫 번째 영구 볼륨 클레임(PVC)을 생성해야 합니다.  샘플이 있습니다 `pvc-basic.yaml` 이 작업을 수행하는 데 사용할 수 있는 파일도 sample-inputs에 있습니다.
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ cp sample-input/pvc-samples/pvc-basic.yaml ./
+[netapp-user@rhel7 trident-installer]$ vi pvc-basic.yaml
+----
+. 이 파일에 대해 수행해야 하는 유일한 편집은 다음을 보장하는 것입니다. `storageClassName` 필드가 방금 만든 필드와 일치합니다.  PVC 정의는 프로비저닝할 작업 부하에 따라 추가로 사용자 정의할 수 있습니다.
++
+[listing]
+----
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: basic
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: basic-csi
+----
+. PVC를 생성하려면 다음을 실행하세요. `oc` 명령.  생성되는 백업 볼륨의 크기에 따라 생성에 시간이 걸릴 수 있으므로, 프로세스가 완료되는 모습을 지켜볼 수 있습니다.
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ oc create -f pvc-basic.yaml
+persistentvolumeclaim/basic created
+
+[netapp-user@rhel7 trident-installer]$ oc get pvc
+NAME    STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+basic   Bound    pvc-7ceac1ba-0189-43c7-8f98-094719f7956c   1Gi        RWO            basic-csi      3s
+----
+

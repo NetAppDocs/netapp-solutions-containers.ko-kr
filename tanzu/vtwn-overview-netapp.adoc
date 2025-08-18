@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: tanzu/vtwn-overview-netapp.html 
+keywords: NetApp, ONTAP, Element, Storage, Tanzu, VMware Tanzu with NetApp ONTAP 
+summary: NetApp 컨테이너화된 애플리케이션의 데이터를 프로비저닝, 보호 및 관리하고 DevOps 처리량을 정의하고 극대화하는 데 도움이 되는 Trident 및 Trident Protect 인증을 받은 여러 스토리지 플랫폼을 보유하고 있습니다. 
+---
+= NetApp 스토리지 시스템 개요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:solution_name: VMware Tanzu with NetApp
+:ontap_page_link: vtwn-netapp-ontap.html
+
+
+[role="lead"]
+NetApp 컨테이너화된 애플리케이션의 데이터를 프로비저닝, 보호 및 관리하고 DevOps 처리량을 정의하고 극대화하는 데 도움이 되는 Trident 및 Trident Protect 인증을 받은 여러 스토리지 플랫폼을 보유하고 있습니다.
+
+[role="normal"]
+NetApp 컨테이너화된 애플리케이션의 데이터를 프로비저닝, 보호 및 관리하는 데 필요한 Trident 인증을 받은 여러 스토리지 플랫폼을 보유하고 있습니다.
+
+image:redhat-openshift-043.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+
+* AFF 및 FAS 시스템은 NetApp ONTAP 실행하고 파일 기반(NFS) 및 블록 기반(iSCSI) 사용 사례에 대한 스토리지를 제공합니다.
+* Cloud Volumes ONTAP 과 ONTAP Select 각각 클라우드와 가상 공간에서 동일한 이점을 제공합니다.
+* Google Cloud NetApp Volumes (AWS/GCP)와 Azure NetApp Files 클라우드에서 파일 기반 스토리지를 제공합니다.
+
+
+
+NOTE: NetApp 포트폴리오의 각 스토리지 시스템은 온프레미스 사이트와 클라우드 간의 데이터 관리 및 이동을 용이하게 하여 데이터가 애플리케이션이 있는 곳에 있도록 합니다.
+
+다음 페이지에는 {solution_name} 솔루션에서 검증된 NetApp 스토리지 시스템에 대한 추가 정보가 있습니다.
+
+* link:vtwn-netapp-ontap.html["NetApp ONTAP"]
+

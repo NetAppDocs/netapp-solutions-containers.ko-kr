@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-deployment-prereq.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp 사용한 Red Hat OpenShift의 Kubernetes를 위한 고급 클러스터 관리 
+---
+= Kubernetes를 위한 고급 클러스터 관리 배포
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 섹션에서는 NetApp 과 함께 Red Hat OpenShift에서 Kubernetes를 위한 고급 클러스터 관리에 대해 설명합니다.
+
+
+
+== 필수 조건
+
+. 허브 클러스터용 Red Hat OpenShift 클러스터(버전 4.5 이상)
+. 관리형 클러스터를 위한 Red Hat OpenShift 클러스터(버전 4.4.3 이상)
+. Red Hat OpenShift 클러스터에 대한 클러스터 관리자 액세스
+. Kubernetes를 위한 고급 클러스터 관리를 위한 Red Hat 구독
+
+
+Advanced Cluster Management는 OpenShift 클러스터용 애드온이므로 허브와 관리형 클러스터에서 사용되는 기능에 따라 하드웨어 리소스에 대한 특정 요구 사항과 제한 사항이 있습니다.  클러스터 크기를 조정할 때 이러한 문제를 고려해야 합니다.  문서를 참조하세요 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.2/html-single/install/index#network-configuration["여기"] 자세한 내용은.
+
+선택적으로, 허브 클러스터에 인프라 구성 요소를 호스팅하기 위한 전용 노드가 있고 해당 노드에만 고급 클러스터 관리 리소스를 설치하려는 경우, 해당 노드에 허용 및 선택기를 추가해야 합니다.  자세한 내용은 설명서를 참조하세요. https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.2/html/install/installing#installing-on-infra-node["여기"] .

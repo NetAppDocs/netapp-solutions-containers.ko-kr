@@ -1,0 +1,323 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-rosa-solution-overview.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift Service on AWS, 
+summary: NetApp ONTAP 사용한 AWS의 Red Hat OpenShift 서비스 
+---
+= NetApp ONTAP 사용한 AWS의 Red Hat OpenShift 서비스
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+
+
+== 개요
+
+이 섹션에서는 ROSA에서 실행되는 애플리케이션을 위한 영구 저장소 계층으로 FSx for ONTAP 을 활용하는 방법을 보여드리겠습니다.  ROSA 클러스터에 NetApp Trident CSI 드라이버를 설치하는 방법, FSx for ONTAP 파일 시스템을 프로비저닝하는 방법, 샘플 상태 저장 애플리케이션을 배포하는 방법을 보여줍니다.  또한 애플리케이션 데이터를 백업하고 복원하는 전략도 알려드립니다.  이 통합 솔루션을 사용하면 여러 AZ에 걸쳐 손쉽게 확장 가능한 공유 스토리지 프레임워크를 구축하고 Trident CSI 드라이버를 사용하여 데이터의 확장, 보호 및 복원 프로세스를 간소화할 수 있습니다.
+
+
+
+== 필수 조건
+
+* link:https://signin.aws.amazon.com/signin?redirect_uri=https://portal.aws.amazon.com/billing/signup/resume&client_id=signup["AWS 계정"]
+* link:https://console.redhat.com/["Red Hat 계정"]
+* IAM 사용자link:https://www.rosaworkshop.io/rosa/1-account_setup/["적절한 권한이 있는 경우"] ROSA 클러스터를 생성하고 액세스하려면
+* link:https://aws.amazon.com/cli/["AWS CLI"]
+* link:https://console.redhat.com/openshift/downloads["로사 CLI"]
+* link:https://console.redhat.com/openshift/downloads["OpenShift 명령줄 인터페이스"](오케이)
+* 헬멧 3link:https://docs.aws.amazon.com/eks/latest/userguide/helm.html["선적 서류 비치"]
+* link:https://docs.openshift.com/rosa/rosa_hcp/rosa-hcp-sts-creating-a-cluster-quickly.html["HCP ROSA 클러스터"]
+* link:https://console.redhat.com/openshift/overview["Red Hat OpenShift 웹 콘솔에 액세스"]
+
+
+이 다이어그램은 여러 AZ에 배포된 ROSA 클러스터를 보여줍니다.  ROSA 클러스터의 마스터 노드, 인프라 노드는 Red Hat의 VPC에 있고, 워커 노드는 고객 계정의 VPC에 있습니다.  동일한 VPC 내에 ONTAP 파일 시스템용 FSx를 만들고 ROSA 클러스터에 Trident 드라이버를 설치하여 이 VPC의 모든 서브넷이 파일 시스템에 연결할 수 있도록 합니다.
+
+image:redhat-openshift-container-rosa-001.png["로사 건축"]
+
+
+
+== 초기 설정
+
+**1.  NetApp ONTAP 에 대한 FSx 제공 **
+
+ROSA 클러스터와 동일한 VPC에 NetApp ONTAP 용 다중 AZ FSx를 만듭니다.  이를 수행하는 방법은 여러 가지가 있습니다.  CloudFormation Stack을 사용하여 FSxN을 만드는 방법에 대한 세부 정보가 제공됩니다.
+
+**a.GitHub 저장소 복제**
+
+[source]
+----
+$ git clone https://github.com/aws-samples/rosa-fsx-netapp-ontap.git
+----
+**b. CloudFormation 스택 실행** 매개변수 값을 사용자 정의 값으로 바꿔서 아래 명령을 실행합니다.
+
+[source]
+----
+$ cd rosa-fsx-netapp-ontap/fsx
+----
+[source]
+----
+$ aws cloudformation create-stack \
+  --stack-name ROSA-FSXONTAP \
+  --template-body file://./FSxONTAP.yaml \
+  --region <region-name> \
+  --parameters \
+  ParameterKey=Subnet1ID,ParameterValue=[subnet1_ID] \
+  ParameterKey=Subnet2ID,ParameterValue=[subnet2_ID] \
+  ParameterKey=myVpc,ParameterValue=[VPC_ID] \
+ParameterKey=FSxONTAPRouteTable,ParameterValue=[routetable1_ID,routetable2_ID] \
+  ParameterKey=FileSystemName,ParameterValue=ROSA-myFSxONTAP \
+  ParameterKey=ThroughputCapacity,ParameterValue=1024 \
+  ParameterKey=FSxAllowedCIDR,ParameterValue=[your_allowed_CIDR] \
+  ParameterKey=FsxAdminPassword,ParameterValue=[Define Admin password] \
+  ParameterKey=SvmAdminPassword,ParameterValue=[Define SVM password] \
+  --capabilities CAPABILITY_NAMED_IAM
+----
+여기서: region-name: ROSA 클러스터가 배포된 지역과 동일 subnet1_ID: FSxN에 대한 기본 서브넷의 ID subnet2_ID: FSxN에 대한 대기 서브넷의 ID VPC_ID: ROSA 클러스터가 배포된 VPC의 ID routetable1_ID, routetable2_ID: 위에서 선택한 서브넷과 연관된 경로 테이블의 ID your_allowed_CIDR: FSx for ONTAP 보안 그룹에 허용되는 CIDR 범위 액세스를 제어하기 위한 수신 규칙.  0.0.0.0/0 또는 적절한 CIDR을 사용하여 모든 트래픽이 FSx for ONTAP 의 특정 포트에 액세스하도록 허용할 수 있습니다.  관리자 비밀번호 정의: FSxN에 로그인하기 위한 비밀번호입니다. SVM 비밀번호 정의: 생성될 SVM에 로그인하기 위한 비밀번호입니다.
+
+아래에 표시된 Amazon FSx 콘솔을 사용하여 파일 시스템과 스토리지 가상 머신(SVM)이 생성되었는지 확인하세요.
+
+image:redhat-openshift-container-rosa-002.png["FSxN이 생성되었습니다"]
+
+**2. ROSA 클러스터용 Trident CSI 드라이버 설치 및 구성**
+
+**b. Trident**
+
+ROSA 클러스터 워커 노드에는 스토리지 프로비저닝 및 액세스를 위해 NAS 프로토콜을 사용할 수 있는 NFS 도구가 미리 구성되어 있습니다.
+
+대신 iSCSI를 사용하려면 iSCSI에 대한 작업자 노드를 준비해야 합니다.  Trident 25.02 릴리스부터 ROSA 클러스터(또는 모든 OpenShift 클러스터)의 작업자 노드를 쉽게 준비하여 FSxN 스토리지에서 iSCSI 작업을 수행할 수 있습니다.  iSCSI를 위한 워커 노드 준비를 자동화하는 Trident 25.02(또는 이후 버전)를 설치하는 쉬운 방법은 2가지가 있습니다.  1. tridentctl 도구를 사용하여 명령줄에서 node-prep-flag를 사용합니다. 2.  운영자 허브에서 Red Hat 인증 Trident 운영자를 사용하고 사용자 정의합니다.  3. Helm 사용하기.
+
+
+NOTE: 위의 방법을 node-prep을 활성화하지 않고 사용하면 FSxN에서 스토리지 프로비저닝에 NAS 프로토콜만 사용할 수 있습니다.
+
+**방법 1: tridentctl 도구 사용**
+
+node-prep 플래그를 사용하여 표시된 대로 Trident 설치합니다.  설치 명령을 실행하기 전에 설치 프로그램 패키지를 다운로드해야 합니다. link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-tridentctl.html#step-1-download-the-trident-installer-package["여기 문서"] .
+
+[source, yaml]
+----
+#./tridentctl install trident -n trident --node-prep=iscsi
+----
+**방법 2: Red Hat 인증 Trident Operator를 사용하여 사용자 지정** OperatorHub에서 Red Hat 인증 Trident Operator를 찾아 설치합니다.
+
+image:rh-os-n-use-case-operator-001.png["운영자 허브의 운영자"]
+
+image:rh-os-n-use-case-operator-002.png["운영자 1 설치"]
+
+image:rh-os-n-use-case-operator-003.png["오퍼레이터 2 설치"]
+
+image:rh-os-n-use-case-operator-004.png["운영자 설치됨"]
+
+다음으로, Trident Orchestrator 인스턴스를 생성합니다.  YAML 뷰를 사용하여 사용자 정의 값을 설정하거나 설치 중에 iSCSI 노드 준비를 활성화합니다.
+
+image:rh-os-n-use-case-operator-005.png["오케스트레이터 생성"]
+
+image:rh-os-n-use-case-operator-006.png["NodePrep 활성화"]
+
+image:rh-os-n-use-case-operator-007.png["오케스트레이터 설치됨"]
+
+image:rh-os-n-use-case-operator-008.png["Trident 설치됨"]
+
+위의 방법 중 하나를 사용하여 Trident 설치하면 iscsid 및 multipathd 서비스를 시작하고 /etc/multipath.conf 파일에 다음을 설정하여 ROSA 클러스터 워커 노드가 iSCSI를 위해 준비됩니다.
+
+image:rh-os-n-use-case-iscsi-node-prep-001.png["iscsid 활성"]
+
+image:rh-os-n-use-case-iscsi-node-prep-002.png["다중 경로 활성"]
+
+image:rh-os-n-use-case-iscsi-node-prep-003.png["multipath.conf 파일"]
+
+**c. 모든 Trident 포드가 실행 상태인지 확인하세요.**
+
+image:redhat-openshift-container-rosa-003.png["Trident 포드가 작동 중"]
+
+**3.  ONTAP (ONTAP NAS)**에 대한 FSx를 사용하도록 Trident CSI 백엔드를 구성합니다.
+
+Trident 백엔드 구성은 Trident 스토리지 시스템(이 경우 FSx for ONTAP)과 통신하는 방법을 알려줍니다.  백엔드를 생성하려면 클러스터 관리 및 NFS 데이터 인터페이스와 함께 연결할 스토리지 가상 머신의 자격 증명을 제공합니다.  우리는 사용할 것입니다link:https://docs.netapp.com/us-en/trident/trident-use/ontap-nas.html["ontap-nas 드라이버"] FSx 파일 시스템에서 스토리지 볼륨을 프로비저닝합니다.
+
+**에이.  먼저 다음 yaml**을 사용하여 SVM 자격 증명에 대한 비밀을 만듭니다.
+
+[source]
+----
+apiVersion: v1
+kind: Secret
+metadata:
+  name: backend-fsx-ontap-nas-secret
+  namespace: trident
+type: Opaque
+stringData:
+  username: vsadmin
+  password: <value provided for Define SVM password as a parameter to the Cloud Formation Stack>
+----
+
+NOTE: 아래에 표시된 것처럼 AWS Secrets Manager에서 FSxN에 대해 생성된 SVM 비밀번호를 검색할 수도 있습니다.
+
+image:redhat-openshift-container-rosa-004.png["AWS 비밀 관리자"]
+
+image:redhat-openshift-container-rosa-005.png["비밀을 검색하다"]
+
+**b. 다음으로, 다음 명령을 사용하여 ROSA 클러스터에 SVM 자격 증명에 대한 비밀을 추가합니다.**
+
+[source]
+----
+$ oc apply -f svm_secret.yaml
+----
+다음 명령을 사용하여 비밀이 트라이던트 네임스페이스에 추가되었는지 확인할 수 있습니다.
+
+[source]
+----
+$ oc get secrets -n trident |grep backend-fsx-ontap-nas-secret
+----
+image:redhat-openshift-container-rosa-006.png["비밀 적용됨"]
+
+**기음.  다음으로 백엔드 객체를 만듭니다. 이를 위해 복제된 Git 저장소의 **fsx** 디렉토리로 이동합니다.  backend-ontap-nas.yaml 파일을 엽니다.  다음을 바꾸세요. **managementLIF**를 관리 DNS 이름으로, **dataLIF**를 Amazon FSx SVM의 NFS DNS 이름으로, **svm**을 SVM 이름으로 바꾸세요.  다음 명령을 사용하여 백엔드 객체를 생성합니다.
+
+다음 명령을 사용하여 백엔드 객체를 생성합니다.
+
+[source]
+----
+$ oc apply -f backend-ontap-nas.yaml
+----
+
+NOTE: 아래 스크린샷에 표시된 것처럼 Amazon FSx 콘솔에서 관리 DNS 이름, NFS DNS 이름 및 SVM 이름을 얻을 수 있습니다.
+
+image:redhat-openshift-container-rosa-007.png["생명을 얻다"]
+
+**디.  이제 다음 명령을 실행하여 백엔드 개체가 생성되었고 Phase가 Bound를 표시하고 Status가 Success인지 확인하세요.
+
+image:redhat-openshift-container-rosa-008.png["백엔드 생성"]
+
+**4.  스토리지 클래스 생성** 이제 Trident 백엔드가 구성되었으므로 백엔드를 사용할 Kubernetes 스토리지 클래스를 생성할 수 있습니다.  스토리지 클래스는 클러스터에서 사용할 수 있는 리소스 객체입니다.  이는 애플리케이션에 대해 요청할 수 있는 저장 유형을 설명하고 분류합니다.
+
+**에이.  fsx 폴더에서 storage-class-csi-nas.yaml 파일을 검토합니다.**
+
+[source]
+----
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: trident-csi
+provisioner: csi.trident.netapp.io
+parameters:
+  backendType: "ontap-nas"
+  fsType: "ext4"
+allowVolumeExpansion: True
+reclaimPolicy: Retain
+----
+**비.  ROSA 클러스터에 스토리지 클래스를 생성하고 trident-csi 스토리지 클래스가 생성되었는지 확인합니다.**
+
+image:redhat-openshift-container-rosa-009.png["백엔드 생성"]
+
+이것으로 Trident CSI 드라이버 설치와 FSx for ONTAP 파일 시스템에 대한 연결이 완료되었습니다.  이제 FSx for ONTAP 의 파일 볼륨을 사용하여 ROSA에 샘플 Postgresql 상태 저장 애플리케이션을 배포할 수 있습니다.
+
+**기음.  trident-csi 스토리지 클래스를 사용하여 생성된 PVC 및 PV가 없는지 확인합니다.**
+
+image:redhat-openshift-container-rosa-010.png["Trident 사용하면 PVC가 없습니다"]
+
+**디.  Trident CSI를 사용하여 애플리케이션이 PV를 생성할 수 있는지 확인합니다.**
+
+**fsx** 폴더에 제공된 pvc-trident.yaml 파일을 사용하여 PVC를 만듭니다.
+
+[source]
+----
+pvc-trident.yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: basic
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: trident-csi
+----
+ You can issue the following commands to create a pvc and verify that it has been created.
+image:redhat-openshift-container-rosa-011.png["Trident 사용하여 테스트 PVC 만들기"]
+
+
+NOTE: iSCSI를 사용하려면 이전에 보여준 것처럼 작업자 노드에서 iSCSI를 활성화해야 하며 iSCSI 백엔드와 스토리지 클래스를 생성해야 합니다.  다음은 몇 가지 YAML 파일 샘플입니다.
+
+[source, yaml]
+----
+cat tbc.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: backend-tbc-ontap-san-secret
+type: Opaque
+stringData:
+  username: fsxadmin
+  password: <password for the fsxN filesystem>
+---
+apiVersion: trident.netapp.io/v1
+kind: TridentBackendConfig
+metadata:
+  name: backend-tbc-ontap-san
+spec:
+  version: 1
+  storageDriverName: ontap-san
+  managementLIF: <management lif of fsxN filesystem>
+  backendName: backend-tbc-ontap-san
+  svm: svm_FSxNForROSAiSCSI
+  credentials:
+    name: backend-tbc-ontap-san-secret
+
+cat sc.yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: trident-csi
+provisioner: csi.trident.netapp.io
+parameters:
+  backendType: "ontap-san"
+  media: "ssd"
+  provisioningType: "thin"
+  snapshots: "true"
+allowVolumeExpansion: true
+----
+**5.  샘플 Postgresql 상태 저장 애플리케이션 배포**
+
+**에이.  helm을 사용하여 postgresql을 설치하세요.
+
+[source]
+----
+$ helm install postgresql bitnami/postgresql -n postgresql --create-namespace
+----
+image:redhat-openshift-container-rosa-012.png["포스트그레스큐엘 설치"]
+
+**비.  애플리케이션 포드가 실행 중인지, 그리고 애플리케이션에 대한 PVC와 PV가 생성되었는지 확인하세요.**
+
+image:redhat-openshift-container-rosa-013.png["postgresql 포드"]
+
+image:redhat-openshift-container-rosa-014.png["포스트그레스큐엘 PVC"]
+
+image:redhat-openshift-container-rosa-015.png["포스트그레스큐엘 PV"]
+
+**기음.  Postgresql 클라이언트 배포**
+
+**설치된 postgresql 서버의 비밀번호를 얻으려면 다음 명령을 사용하세요.**
+
+[source]
+----
+$ export POSTGRES_PASSWORD=$(kubectl get secret --namespace postgresql postgresql -o jsoata.postgres-password}" | base64 -d)
+----
+**다음 명령을 사용하여 postgresql 클라이언트를 실행하고 비밀번호를 사용하여 서버에 연결합니다.**
+
+[source]
+----
+$ kubectl run postgresql-client --rm --tty -i --restart='Never' --namespace postgresql --image docker.io/bitnami/postgresql:16.2.0-debian-11-r1 --env="PGPASSWORD=$POSTGRES_PASSWORD" \
+> --command -- psql --host postgresql -U postgres -d postgres -p 5432
+----
+image:redhat-openshift-container-rosa-016.png["postgresql 클라이언트"]
+
+**디.  데이터베이스와 테이블을 만듭니다.  테이블에 대한 스키마를 만들고 테이블에 2행의 데이터를 삽입합니다.**
+
+image:redhat-openshift-container-rosa-017.png["postgresql 테이블, 스키마, 행"]
+
+image:redhat-openshift-container-rosa-018.png["포스트그레스큐엘 행1"]
+
+image:redhat-openshift-container-rosa-019.png["포스트그레스큐엘 행2"]

@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-load-balancers.html 
+keywords: Advanced Configuration, Load Balancers, F5, BigIP, SeeSaw 
+summary: 이 섹션에서는 NetApp 배포를 사용하여 Anthos를 사용자 지정하려는 사용자를 위한 로드 밸런서 옵션을 살펴보겠습니다. 
+---
+= 로드 밸런서 옵션 탐색
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Anthos에 배포된 애플리케이션은 Anthos 온프레미스 환경에 배포된 로드 밸런서가 제공하는 서비스를 통해 전 세계에 노출됩니다.
+
+다음 페이지에는 NetApp 솔루션이 포함된 Anthos에서 검증된 로드 밸런서 옵션에 대한 추가 정보가 있습니다.
+
+* link:anthos-f5bigip-lb.html["F5 BIG-IP 로드 밸런서 설치"]
+* link:anthos-metallb.html["MetalLB 로드 밸런서 설치"]
+* link:anthos-seesaw-lb.html["SeeSaw 로드 밸런서 설치"]
+

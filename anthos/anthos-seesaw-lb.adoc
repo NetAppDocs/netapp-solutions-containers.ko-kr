@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-seesaw-lb.html 
+summary: 이 페이지에서는 SeeSaw 로드 밸런서의 설치 및 구성 지침을 자세히 설명합니다. 
+keywords: Anthos, GKE, Kubernetes, SeeSaw, LoadBalancer 
+---
+= SeeSaw 로드 밸런서 설치
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 페이지에서는 SeeSaw 관리형 로드 밸런서에 대한 설치 및 구성 지침을 나열합니다.
+
+Seesaw는 Anthos Clusters on VMware 환경(버전 1.6~1.10)에 설치된 기본 관리형 네트워크 로드 밸런서입니다.
+
+
+
+== SeeSaw 로드 밸런서 설치
+
+SeeSaw 로드 밸런서는 VMware의 Anthos 클러스터와 완벽하게 통합되어 있으며 관리자 및 사용자 클러스터 설정의 일부로 자동 배포가 수행됩니다.  텍스트 블록이 있습니다 `cluster.yaml` 로드 밸런서 정보를 제공하기 위해 수정해야 하는 구성 파일이 있고, 클러스터 배포 전에 내장된 기능을 사용하여 로드 밸런서를 배포하기 위한 추가 단계가 있습니다. `gkectl` 도구.
+
+
+NOTE: SeeSaw 로드 밸런서는 HA 또는 비 HA 모드로 배포할 수 있습니다.  이러한 검증을 위해 SeeSaw 부하 분산 장치는 기본 설정인 비 HA 모드로 배포되었습니다.  프로덕션 목적으로 NetApp 장애 허용성과 안정성을 위해 HA 구성으로 SeeSaw를 배포할 것을 권장합니다.
+
+
+
+== Anthos와의 통합
+
+각 구성 파일에는 각각 관리자 클러스터용 섹션과 배포하기로 선택한 각 사용자 클러스터용 섹션이 있으며, 이를 통해 로드 밸런서가 Anthos On-Prem에서 관리되도록 구성할 수 있습니다.
+
+다음 텍스트는 GKE-Admin 클러스터의 파티션 구성 샘플입니다.  주석 처리를 제거하고 수정해야 하는 값은 아래에 굵은 텍스트로 표시되어 있습니다.
+
+[listing, subs="+quotes,+verbatim"]
+----
+*loadBalancer:*
+  # (Required) The VIPs to use for load balancing
+  *vips:*
+    # Used to connect to the Kubernetes API
+    *controlPlaneVIP: "10.61.181.230"*
+    # # (Optional) Used for admin cluster addons (needed for multi cluster features). Must
+    # # be the same across clusters
+    # # addonsVIP: ""
+  # (Required) Which load balancer to use "F5BigIP" "Seesaw" or "ManualLB". Uncomment
+  # the corresponding field below to provide the detailed spec
+  *kind: Seesaw*
+  # # (Required when using "ManualLB" kind) Specify pre-defined nodeports
+  # manualLB:
+  #   # NodePort for ingress service's http (only needed for user cluster)
+  #   ingressHTTPNodePort: 0
+  #   # NodePort for ingress service's https (only needed for user cluster)
+  #   ingressHTTPSNodePort: 0
+  #   # NodePort for control plane service
+  #   controlPlaneNodePort: 30968
+  #   # NodePort for addon service (only needed for admin cluster)
+  #   addonsNodePort: 31405
+  # # (Required when using "F5BigIP" kind) Specify the already-existing partition and
+  # # credentials
+  # f5BigIP:
+  #   address:
+  #   credentials:
+  #     username:
+  #     password:
+  #   partition:
+  #   # # (Optional) Specify a pool name if using SNAT
+  #   # snatPoolName: ""
+  # (Required when using "Seesaw" kind) Specify the Seesaw configs
+  *seesaw:*
+  # (Required) The absolute or relative path to the yaml file to use for IP allocation
+  #  for LB VMs. Must contain one or two IPs.
+  *ipBlockFilePath: "admin-seesaw-block.yaml"*
+  #   (Required) The Virtual Router IDentifier of VRRP for the Seesaw group. Must
+  #   be between 1-255 and unique in a VLAN.
+    *vrid: 100*
+  #   (Required) The IP announced by the master of Seesaw group
+    *masterIP: "10.61.181.236"*
+  #   (Required) The number CPUs per machine
+    *cpus: 1*
+  #   (Required) Memory size in MB per machine
+    *memoryMB: 2048*
+  #   (Optional) Network that the LB interface of Seesaw runs in (default: cluster
+  #   network)
+    *vCenter:*
+  #   vSphere network name
+      *networkName: VM_Network*
+  #   (Optional) Run two LB VMs to achieve high availability (default: false)
+    *enableHA: false*
+----
+SeeSaw 로드 밸런서에는 별도의 정적도 있습니다. `seesaw-block.yaml` 각 클러스터 배포에 제공해야 하는 파일입니다.  이 파일은 상대 디렉토리와 동일한 디렉토리에 있어야 합니다. `cluster.yaml` 배포 파일 또는 전체 경로를 위 섹션에 지정해야 합니다.
+
+샘플 `admin-seesaw-block.yaml` 파일은 다음 스크립트와 같습니다.
+
+[listing, subs="+quotes,+verbatim"]
+----
+blocks:
+  - netmask: "255.255.255.0"
+    gateway: "10.63.172.1"
+    ips:
+    - ip: "10.63.172.152"
+      hostname: "admin-seesaw-vm"
+----
+
+NOTE: 이 파일은 로드 밸런서가 기본 클러스터에 제공하는 네트워크에 대한 게이트웨이와 넷마스크는 물론, 로드 밸런서를 실행하기 위해 배포된 가상 머신에 대한 관리 IP와 호스트 이름을 제공합니다.

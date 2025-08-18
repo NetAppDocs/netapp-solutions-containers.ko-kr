@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-app-lcm.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp 사용한 Red Hat OpenShift의 Kubernetes를 위한 고급 클러스터 관리 
+---
+= 애플리케이션 수명 주기 관리
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터 집합에서 애플리케이션을 생성하고 관리하려면
+
+. 사이드바에서 애플리케이션 관리로 이동하여 애플리케이션 만들기를 클릭합니다.  만들고 싶은 애플리케이션의 세부 정보를 입력하고 '저장'을 클릭하세요.
++
+image:redhat-openshift-078.png["신청서 만들기"]
+
+. 애플리케이션 구성 요소가 설치되면 해당 애플리케이션이 목록에 나타납니다.
++
+image:redhat-openshift-079.png["응용 프로그램 목록"]
+
+. 이제 콘솔에서 애플리케이션을 모니터링하고 관리할 수 있습니다.
+

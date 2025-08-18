@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-multitenancy-config-prereq.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, Multitenancy, Multi-tenancy 
+summary: NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시 구성 
+---
+= 구성
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시를 구성하기 위한 전제 조건은 다음과 같습니다.
+
+
+
+== 필수 조건
+
+* NetApp ONTAP 클러스터
+* Red Hat OpenShift 클러스터
+* 클러스터에 Trident 설치
+* tridentctl 및 oc 도구가 설치되고 $PATH에 추가된 관리 워크스테이션
+* ONTAP 에 대한 관리자 액세스
+* OpenShift 클러스터에 대한 클러스터 관리자 액세스
+* 클러스터는 Identity Provider와 통합되어 있습니다.
+* ID 공급자는 서로 다른 팀의 사용자를 효율적으로 구별하도록 구성됩니다.
+

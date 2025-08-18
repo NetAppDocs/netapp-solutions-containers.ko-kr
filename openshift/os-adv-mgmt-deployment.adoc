@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-deployment.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp 과 함께 Red Hat OpenShift를 기반으로 하는 Kubernetes를 위한 고급 클러스터 관리. 
+---
+= Kubernetes를 위한 고급 클러스터 관리 배포
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+OpenShift 클러스터에 Kubernetes용 Advanced Cluster Management를 설치하려면 다음 단계를 완료하세요.
+
+. 허브 클러스터로 OpenShift 클러스터를 선택하고 클러스터 관리자 권한으로 로그인합니다.
+. 운영자 > 운영자 허브로 이동하여 Kubernetes용 고급 클러스터 관리를 검색합니다.
++
+image:redhat-openshift-066.png["ACM 타일"]
+
+. Kubernetes용 고급 클러스터 관리를 선택하고 설치를 클릭합니다.
++
+image:redhat-openshift-067.png["ACM 타일 세부 정보"]
+
+. 설치 운영자 화면에서 필요한 세부 정보를 제공하고(NetApp 기본 매개변수를 유지할 것을 권장합니다) 설치를 클릭합니다.
++
+image:redhat-openshift-068.png["ACM Operator 타일 설치"]
+
+. 운영자 설치가 완료될 때까지 기다리세요.
++
+image:redhat-openshift-069.png["ACM 운영자 설치 진행 중"]
+
+. 운영자가 설치된 후 MultiClusterHub 만들기를 클릭합니다.
++
+image:redhat-openshift-070.png["ACM 운영자 Multiclusterhub"]
+
+. MultiClusterHub 생성 화면에서 세부 정보를 입력한 후 생성을 클릭합니다.  이렇게 하면 멀티 클러스터 허브 설치가 시작됩니다.
++
+image:redhat-openshift-071.png["멀티클러스터 허브 화면 생성"]
+
+. 모든 포드가 open-cluster-management 네임스페이스에서 Running 상태로 이동하고 운영자가 Succeeded 상태로 이동하면 Kubernetes용 Advanced Cluster Management가 설치됩니다.
++
+image:redhat-openshift-072.png["ACM 운영자 설치됨"]
+
+. 허브 설치를 완료하는 데는 시간이 다소 걸리며, 설치가 완료되면 MultiCluster 허브가 실행 상태로 전환됩니다.
++
+image:redhat-openshift-073.png["멀티클러스터 허브 준비 완료"]
+
+. 이는 open-cluster-management 네임스페이스에 경로를 생성합니다.  경로의 URL에 연결하여 고급 클러스터 관리 콘솔에 액세스합니다.
++
+image:redhat-openshift-074.png["ACM 콘솔 경로"]
+
+

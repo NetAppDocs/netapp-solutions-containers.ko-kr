@@ -1,0 +1,209 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-multitenancy-validation.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, Multitenancy, Multi-tenancy 
+summary: NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시 구성 
+---
+= 확인
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이전 단계에서 구성된 멀티테넌트 아키텍처를 검증하려면 다음 단계를 완료하세요.
+
+
+
+== 할당된 프로젝트에서 PVC 또는 Pod를 생성하기 위한 액세스 권한 확인
+
+. ocp-project-1-user, project-1의 개발자로 로그인합니다.
+. 새로운 프로젝트를 생성하려면 액세스를 확인하세요.
++
+[source, console]
+----
+oc create ns sub-project-1
+----
+. project-1에 할당된 스토리지 클래스를 사용하여 project-1에 PVC를 생성합니다.
++
+[source, console]
+----
+cat << EOF | oc create -f -
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: test-pvc-project-1
+  namespace: project-1
+  annotations:
+    trident.netapp.io/reclaimPolicy: Retain
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: project-1-sc
+EOF
+----
+. PVC와 연관된 PV를 확인하세요.
++
+[source, console]
+----
+oc get pv
+----
+. PV와 해당 볼륨이 NetApp ONTAP 의 project-1 전용 SVM에 생성되었는지 확인합니다.
++
+[source, console]
+----
+volume show -vserver project-1-svm
+----
+. project-1에 포드를 생성하고 이전 단계에서 생성한 PVC를 마운트합니다.
++
+[source, console]
+----
+cat << EOF | oc create -f -
+kind: Pod
+apiVersion: v1
+metadata:
+  name: test-pvc-pod
+  namespace: project-1
+spec:
+  volumes:
+    - name: test-pvc-project-1
+      persistentVolumeClaim:
+       claimName: test-pvc-project-1
+  containers:
+    - name: test-container
+      image: nginx
+      ports:
+        - containerPort: 80
+          name: "http-server"
+      volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: test-pvc-project-1
+EOF
+----
+. 포드가 실행 중인지, 볼륨을 마운트했는지 확인하세요.
++
+[source, console]
+----
+oc describe pods test-pvc-pod -n project-1
+----
+
+
+
+
+== 다른 프로젝트에서 PVC 또는 포드를 생성하거나 다른 프로젝트에 전용된 리소스를 사용할 수 있는 액세스 권한을 검증합니다.
+
+. ocp-project-1-user, project-1의 개발자로 로그인합니다.
+. 프로젝트-2에 할당된 스토리지 클래스를 사용하여 프로젝트-1에 PVC를 생성합니다.
++
+[source, console]
+----
+cat << EOF | oc create -f -
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: test-pvc-project-1-sc-2
+  namespace: project-1
+  annotations:
+    trident.netapp.io/reclaimPolicy: Retain
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: project-2-sc
+EOF
+----
+. 프로젝트-2에서 PVC를 만듭니다.
++
+[source, console]
+----
+cat << EOF | oc create -f -
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: test-pvc-project-2-sc-1
+  namespace: project-2
+  annotations:
+    trident.netapp.io/reclaimPolicy: Retain
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: project-1-sc
+EOF
+----
+. PVC를 확인하세요 `test-pvc-project-1-sc-2` 그리고 `test-pvc-project-2-sc-1` 생성되지 않았습니다.
++
+[source, console]
+----
+oc get pvc -n project-1
+oc get pvc -n project-2
+----
+. project-2에 포드를 만듭니다.
++
+[source, console]
+----
+cat << EOF | oc create -f -
+kind: Pod
+apiVersion: v1
+metadata:
+  name: test-pvc-pod
+  namespace: project-1
+spec:
+  containers:
+    - name: test-container
+      image: nginx
+      ports:
+        - containerPort: 80
+          name: "http-server"
+EOF
+----
+
+
+
+
+== 프로젝트, 리소스 할당량 및 스토리지 클래스를 보고 편집할 수 있는 액세스 권한을 확인합니다.
+
+. ocp-project-1-user, project-1의 개발자로 로그인합니다.
+. 새로운 프로젝트를 생성하려면 액세스를 확인하세요.
++
+[source, console]
+----
+oc create ns sub-project-1
+----
+. 프로젝트 보기에 대한 액세스를 검증합니다.
++
+[source, console]
+----
+oc get ns
+----
+. 사용자가 project-1에서 ResourceQuotas를 볼 수 있거나 편집할 수 있는지 확인하세요.
++
+[source, console]
+----
+oc get resourcequotas -n project-1
+oc edit resourcequotas project-1-sc-rq -n project-1
+----
+. 사용자가 스토리지 클래스를 볼 수 있는 권한이 있는지 확인합니다.
++
+[source, console]
+----
+oc get sc
+----
+. 스토리지 클래스를 설명하려면 액세스를 확인하세요.
+. 사용자가 스토리지 클래스를 편집할 수 있는 권한을 검증합니다.
++
+[source, console]
+----
+oc edit sc project-1-sc
+----
+

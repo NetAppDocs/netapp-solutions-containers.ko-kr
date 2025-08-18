@@ -1,0 +1,39 @@
+---
+section: tanzu
+title: NetApp 사용한 VMware Tanzu
+pdf-filename: NetApp 사용한 VMware Tanzu
+entries:
+- title: 솔루션 개요
+  url: "/tanzu/vtwn-solution-overview.html"
+- title: VMware Tanzu 제품 포트폴리오
+  entries:
+  - title: VMware Tanzu 소개
+    url: "/tanzu/vtwn-overview-vmware-tanzu.html"
+  - title: VMware Tanzu Kubernetes Grid
+    url: "/tanzu/vtwn-overview-tkg.html"
+  - title: Tanzu Kubernetes Grid 서비스
+    url: "/tanzu/vtwn-overview-tkgs.html"
+  - title: Tanzu Kubernetes Grid 통합 에디션
+    url: "/tanzu/vtwn-overview-tkgi.html"
+  - title: Tanzu를 사용한 VMware vSphere
+    url: "/tanzu/vtwn-overview-vst.html"
+- title: NetApp 스토리지 시스템
+  entries:
+  - title: NetApp 스토리지 시스템 개요
+    url: "/tanzu/vtwn-overview-netapp.html"
+  - title: NetApp ONTAP
+    url: "/tanzu/vtwn-netapp-ontap.html"
+- title: NetApp 스토리지 통합
+  entries:
+  - title: NetApp 스토리지 통합 개요
+    url: "/tanzu/vtwn-overview-storint.html"
+- title: NetApp Trident
+  entries:
+  - title: Trident 개요
+    url: "/tanzu/vtwn-overview-trident.html"
+  - title: NetApp ONTAP NFS
+    url: "/tanzu/vtwn-trident-ontap-nfs.html"
+  - title: NetApp ONTAP iSCSI
+    url: "/tanzu/vtwn-trident-ontap-iscsi.html"
+- title: 추가 정보
+  url: "/tanzu/vtwn-additional-information.html"

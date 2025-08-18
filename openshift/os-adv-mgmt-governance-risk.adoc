@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-governance-risk.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp 사용한 Red Hat OpenShift의 Kubernetes를 위한 고급 클러스터 관리 
+---
+= 거버넌스와 위험
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 기능을 사용하면 다양한 클러스터에 대한 규정 준수 정책을 정의하고 클러스터가 해당 정책을 준수하는지 확인할 수 있습니다.  규칙을 위반하거나 벗어난 사항을 알리거나 수정하기 위해 정책을 구성할 수 있습니다.
+
+. 사이드바에서 거버넌스 및 위험으로 이동합니다.
+. 규정 준수 정책을 만들려면 정책 만들기를 클릭하고 정책 표준의 세부 정보를 입력한 다음 이 정책을 준수해야 하는 클러스터를 선택합니다.  이 정책 위반 사항을 자동으로 수정하려면 지원되는 경우 적용 확인란을 선택하고 만들기를 클릭합니다.
++
+image:redhat-openshift-080.png["규정 준수 정책 만들기"]
+
+. 모든 필수 정책이 구성된 후에는 Advanced Cluster Management에서 모든 정책 또는 클러스터 위반 사항을 모니터링하고 해결할 수 있습니다.
++
+image:redhat-openshift-081.png["정책 모니터링"]
+
+

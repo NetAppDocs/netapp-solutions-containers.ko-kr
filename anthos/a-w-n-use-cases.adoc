@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: anthos/a-w-n-use-cases.html 
+keywords: validation, use-cases, application, multitenancy, virtualization, 
+summary: 이 페이지에 제공된 예는 NetApp 과 함께 사용하는 Anthos에 대한 솔루션 검증 및 사용 사례입니다. 
+---
+= 솔루션 검증 및 사용 사례
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 페이지에 제공된 예는 NetApp 과 함께 사용하는 Anthos에 대한 솔루션 검증 및 사용 사례입니다.
+
+link:anthos-deploy-app-cloud-console.html["Google Cloud Console을 사용하여 애플리케이션 설치"]

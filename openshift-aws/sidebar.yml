@@ -1,0 +1,9 @@
+---
+section: openshift-aws
+title: FSxN을 사용한 AWS의 Red Hat OpenShift 서비스
+pdf-filename: FSxN을 사용한 AWS의 Red Hat OpenShift 서비스
+entries:
+- title: 솔루션 개요
+  url: "/openshift/os-rosa-solution-overview.html"
+- title: AWS에서 OpenShift 서비스를 위한 워크플로
+  url: "/openshift/os-rosa-app-workflows.html"

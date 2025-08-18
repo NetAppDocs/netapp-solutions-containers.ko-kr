@@ -1,0 +1,47 @@
+---
+section: anthos
+title: NetApp 사용한 Anthos
+pdf-filename: NetApp 사용한 Anthos
+entries:
+- title: 솔루션 개요
+  url: "/anthos/anthos-solution-overview.html"
+- title: Anthos에 대해 알아보세요
+  entries:
+  - title: Anthos 개요
+    url: "/anthos/anthos-overview.html"
+  - title: VMware의 Anthos 클러스터
+    url: "/anthos/anthos-vmw.html"
+  - title: 베어메탈의 Anthos
+    url: "/anthos/anthos-bm.html"
+- title: NetApp 스토리지 시스템
+  entries:
+  - title: NetApp 스토리지 시스템 개요
+    url: "/anthos/anthos-netapp-overview.html"
+  - title: NetApp ONTAP
+    url: "/anthos/anthos-netapp-ontap.html"
+- title: NetApp 스토리지 통합
+  entries:
+  - title: NetApp 스토리지 통합 개요
+    url: "/anthos/anthos-storint-overview.html"
+  - title: NetApp Trident 개요
+    url: "/anthos/anthos-trident-overview.html"
+- title: 고급 구성 옵션
+  entries:
+  - title: 고급 구성 옵션에 관하여
+    url: "/anthos/anthos-advanced-overview.html"
+  - title: 로드 밸런서 옵션 살펴보기
+    entries:
+    - title: 로드 밸런서 옵션에 관하여
+      url: "/anthos/anthos-load-balancers.html"
+    - title: F5 BIG-IP 로드 밸런서 설치
+      url: "/anthos/anthos-f5bigip-lb.html"
+    - title: MetalLB 로드 밸런서 설치
+      url: "/anthos/anthos-metallb.html"
+    - title: SeeSaw 로드 밸런서 설치
+      url: "/anthos/anthos-seesaw-lb.html"
+- title: 솔루션 검증 및 사용 사례
+  entries:
+  - title: Anthos 클러스터에 앱 배포
+    url: "/anthos/anthos-deploy-app-cloud-console.html"
+- title: 추가 정보
+  url: "/anthos/anthos-additional-information.html"

@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-multitenancy-configuration.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, Multitenancy, Multi-tenancy 
+summary: NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시 구성 
+---
+= 구성
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+모든 멀티테넌트 솔루션의 경우 사용자는 필요 이상으로 클러스터 리소스에 액세스할 수 없습니다.  따라서 멀티테넌시 구성의 일부로 구성될 리소스 전체 세트는 각 프로젝트에서 작업하는 클러스터 관리자, 스토리지 관리자 및 개발자 간에 나뉩니다.
+
+다음 표는 다양한 사용자가 수행해야 하는 다양한 작업을 간략하게 설명합니다.
+
+|===
+| 역할 | 작업 
+
+
+.4+| *클러스터 관리자* | 다양한 애플리케이션이나 워크로드에 대한 프로젝트를 만듭니다. 
+
+
+| storage-admin에 대한 ClusterRoles 및 RoleBindings를 생성합니다. 
+
+
+| 특정 프로젝트에 대한 액세스를 할당하는 개발자를 위한 역할 및 역할 바인딩을 만듭니다. 
+
+
+| [선택 사항] 특정 노드에서 Pod를 예약하도록 프로젝트 구성 
+
+
+.4+| *저장소 관리자* | NetApp ONTAP 에서 SVM 만들기 
+
+
+| Trident 백엔드 만들기 
+
+
+| 스토리지 클래스 생성 
+
+
+| 저장소 ResourceQuotas 생성 
+
+
+.3+| *개발자* | 할당된 프로젝트에서 PVC 또는 Pod를 생성하거나 패치할 수 있는 액세스 권한을 검증합니다. 
+
+
+| 다른 프로젝트에서 PVC 또는 Pod를 생성하거나 패치할 수 있는 액세스 권한 확인 
+
+
+| 프로젝트, 리소스 할당량 및 스토리지 클래스를 보거나 편집할 수 있는 액세스 권한 확인 
+|===

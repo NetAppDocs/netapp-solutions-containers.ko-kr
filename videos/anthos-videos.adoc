@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: videos/anthos-videos.html 
+keywords: video, demonstration, deployment 
+summary: 이 문서에 기록된 기능 중 일부를 보여줍니다. 
+---
+= NetApp 사용하여 Anthos에 대한 비디오 시청
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+엄선된 비디오와 데모를 통해 Google Anthos에서 NetApp 의 주요 기능과 배포 시나리오를 살펴보세요.  이러한 리소스는 모범 사례, 통합 단계 및 실제 사용 사례를 보여줍니다.
+
+
+
+== 베어 메탈에 Anthos 배포 및 설정
+
+.베어 메탈에 Anthos 배포 - NetApp 사용한 Anthos
+video::a9e5fd88-6bdc-4d23-a4b5-b01200effc06[panopto,width=360]
+
+
+== Anthos에 Trident 배포 및 설정
+
+.Anthos 1.14 클러스터에 Trident 배포
+video::8ea4c03a-85e9-4d90-bf3c-afb6011b051c[panopto,width=360]

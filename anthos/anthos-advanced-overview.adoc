@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-advanced-overview.html 
+keywords: Advanced Configuration, Load Balancers 
+summary: '이 섹션에서는 실제 사용자가 이 솔루션을 프로덕션에 배포할 때 수행해야 할 가능성이 높은 사용자 지정(예: 사용자 지정 로드 밸런서 인스턴스 배포)에 대해 설명합니다.' 
+---
+= 고급 구성 옵션
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+일반적으로 배포하기 가장 쉬운 솔루션이 가장 좋지만, 어떤 경우에는 특정 애플리케이션이나 솔루션이 배포되는 환경의 요구 사항이나 사양을 충족하기 위해 고급 사용자 정의가 필요합니다.  이러한 목적을 위해 NetApp 솔루션이 포함된 Red Hat OpenShift는 이러한 요구 사항을 충족하기 위해 다음과 같은 사용자 정의를 허용합니다.
+
+
+NOTE: 이 섹션에서는 타사 로드 밸런서를 사용하거나 사용자 지정 컨테이너 이미지를 호스팅하기 위한 개인 레지스트리를 만드는 것과 같은 몇 가지 고급 구성 옵션에 대해 설명했습니다. 이 두 가지 모두 NetApp Trident Protect를 설치하는 데 필요한 전제 조건입니다.
+
+다음 페이지에는 NetApp 솔루션이 포함된 Red Hat OpenShift에서 검증된 고급 구성 옵션에 대한 추가 정보가 있습니다.

@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-bm.html 
+keywords: Anthos, bare metal, linux 
+summary: Anthos on bare metal의 하드웨어 독립적인 기능을 통해 개인화된 사용 사례에 최적화된 컴퓨팅 플랫폼을 선택할 수 있으며, 또한 많은 추가 이점도 제공합니다. 
+---
+= 베어메탈의 Anthos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Anthos on bare metal의 하드웨어 독립적인 기능을 통해 개인화된 사용 사례에 최적화된 컴퓨팅 플랫폼을 선택할 수 있으며, 또한 많은 추가 이점도 제공합니다.
+
+
+
+== 이익
+
+Anthos on bare metal의 하드웨어 독립적인 기능을 통해 개인화된 사용 사례에 최적화된 컴퓨팅 플랫폼을 선택할 수 있으며, 또한 많은 추가 이점도 제공합니다.
+
+다음은 그 예입니다.
+
+* *서버는 직접 가져오세요.*  기존 인프라에 맞는 서버를 사용하면 자본 지출과 관리 비용을 줄일 수 있습니다.
+* *Linux OS를 직접 가져오세요.*  Anthos-on-bare-metal 환경을 배포할 Linux OS를 선택하면 Anthos 환경이 기존 인프라 및 관리 방식에 딱 맞는지 확인할 수 있습니다.
+* *성능 향상 및 비용 절감.*  하이퍼바이저가 필요하지 않기 때문에 Anthos-on-bare-metal 클러스터는 GPU와 같은 성능 최적화된 하드웨어 장치를 포함한 서버 하드웨어 리소스에 직접 액세스할 수 있어야 합니다.
+* *네트워크 성능이 향상되고 지연 시간이 단축되었습니다.*  Anthos-on-bare-metal 서버 노드는 가상화된 추상화 계층 없이 네트워크에 직접 연결되므로 낮은 지연 시간과 성능을 위해 최적화할 수 있습니다.
+
+
+
+
+== 하드웨어 요구 사항
+
+
+
+=== 컴퓨팅
+
+Google Cloud는 Anthos Ready 플랫폼 파트너 프로그램을 통해 Anthos의 새로운 릴리스에 대한 파트너 서버 플랫폼의 업데이트된 유효성 검사를 주기적으로 요청합니다.  현재 검증된 서버 플랫폼과 지원되는 Anthos 버전 목록을 찾을 수 있습니다. https://cloud.google.com/anthos/docs/resources/partner-platforms["여기"^] .
+
+다음 표에는 NetApp 및 NetApp 파트너 엔지니어가 베어 메탈 배포에서 Anthos의 유효성을 검사하기 위해 테스트한 서버 플랫폼이 포함되어 있습니다.
+
+|===
+
+
+| 제조업체 | 만들다 | 모델 
+
+
+| Cisco | 유씨에스 | B200 M5 
+
+
+| HPE | 프로라이언트 | DL360 
+|===
+
+
+=== 운영 체제
+
+Anthos-on-bare-metal 노드는 고객이 선택한 여러 가지 Linux 배포판으로 구성하여 현재 데이터 센터 인프라와 일치시킬 수 있습니다.
+
+다음 표에는 NetApp 과 파트너사가 솔루션을 검증하는 데 사용한 Linux 운영 체제 목록이 포함되어 있습니다.
+
+|===
+| 운영 체제 | 풀어 주다 | Anthos 버전 
+
+
+| 센트OS | 8.4.2105 | 1.14 
+
+
+| 레드햇 엔터프라이즈 리눅스 | 8.4 | 1.14 
+
+
+| 우분투 | 18.04.5 LTS(커널 5.4.0-81-generic 포함) | 1.14 
+
+
+| 우분투 | 20.04.2 장기 업데이트 | 1.14 
+|===
+
+
+=== 추가 하드웨어
+
+완전히 검증된 솔루션으로 Anthos on bare metal의 배포를 완료하기 위해 NetApp 과 파트너 엔지니어가 네트워킹 및 스토리지를 위한 추가 데이터 센터 구성 요소를 테스트했습니다.
+
+다음 표에는 이러한 추가 인프라 구성 요소에 대한 정보가 포함되어 있습니다.
+
+|===
+| 제조업체 | 하드웨어 이름 | 모델 
+
+
+| Cisco | 넥서스 | C9336C-FX2 
+
+
+| NetApp | AFF | A250, A220 
+|===
+
+
+=== 추가 소프트웨어
+
+다음 표에는 검증 환경에 배포된 추가 소프트웨어 버전 목록이 포함되어 있습니다.
+
+|===
+| 제조업체 | 소프트웨어 이름 | 버전 
+
+
+| Cisco | 엔엑스오스 | 9.3(5) 
+
+
+| NetApp | ONTAP | 9.11.1P4 
+
+
+| NetApp | Trident | 23.01.0 
+|===
+NetApp 과 파트너사인 World Wide Technology(WWT)가 수행한 Anthos Ready 플랫폼 검증 과정에서 다음 다이어그램을 기반으로 랩 환경을 구축했습니다. 이를 통해 솔루션에 배포된 각 서버 유형, 운영 체제, 네트워크 장치 및 스토리지 시스템의 기능을 테스트할 수 있었습니다.
+
+image:a-w-n-anthos-baremetal-validation.png["Anthos BareMetal 물리적 하드웨어 다이어그램"]
+
+image:a-w-n-anthos-baremetal-logical-topology.png["Anthos BareMetal 논리 네트워크 다이어그램"]
+
+
+NOTE: 이 다중 OS 환경은 Anthos-on-bare-metal 솔루션에 지원되는 OS 버전과의 상호 운용성을 보여줍니다.  고객들은 배포를 위해 하나 또는 여러 운영 체제를 표준화할 것으로 예상합니다.
+
+
+
+=== 인프라 지원 리소스
+
+Anthos on bare metal을 배포하기 전에 다음 인프라가 마련되어 있어야 합니다.
+
+* 관리 네트워크에서 접근 가능한 전체 호스트 이름 확인을 제공하는 하나 이상의 DNS 서버.
+* 관리 네트워크에서 접근할 수 있는 NTP 서버가 하나 이상 있어야 합니다.
+* (선택 사항) 인밴드 관리 네트워크 모두에 대한 아웃바운드 인터넷 연결.
+
+
+
+NOTE: 이 문서의 비디오 및 데모 섹션에는 베어메탈 기반 Anthos 배포에 대한 데모 비디오가 있습니다.

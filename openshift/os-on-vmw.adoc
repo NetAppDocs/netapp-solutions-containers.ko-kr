@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-on-vmw.html 
+keywords: OpenShift, VMware vSphere, ESXi 
+summary: VMware vSphere는 ESXi 하이퍼바이저에서 실행되는 수많은 가상화된 서버와 네트워크를 중앙에서 관리하기 위한 가상화 플랫폼입니다. 
+---
+= VMware vSphere에서의 OpenShift
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere는 ESXi 하이퍼바이저에서 실행되는 수많은 가상화된 서버와 네트워크를 중앙에서 관리하기 위한 가상화 플랫폼입니다.
+
+VMware vSphere에 대한 자세한 내용은 다음을 참조하세요.link:https://www.vmware.com/products/vsphere.html["VMware vSphere 웹사이트"^] .
+
+VMware vSphere는 다음과 같은 기능을 제공합니다.
+
+* *VMware vCenter Server* VMware vCenter Server는 단일 콘솔에서 모든 호스트와 VM을 통합적으로 관리하고 클러스터, 호스트 및 VM의 성능 모니터링을 집계합니다.
+* *VMware vSphere vMotion* VMware vCenter를 사용하면 중단 없이 요청에 따라 클러스터의 노드 간에 VM을 핫 마이그레이션할 수 있습니다.
+* *vSphere 고가용성* 호스트 장애 발생 시 중단을 방지하기 위해 VMware vSphere를 사용하면 호스트를 클러스터링하고 고가용성을 위해 구성할 수 있습니다.  호스트 장애로 인해 중단된 VM은 클러스터의 다른 호스트에서 잠시 재부팅되어 서비스를 복구합니다.
+* *분산 리소스 스케줄러(DRS)* VMware vSphere 클러스터는 호스팅하는 VM의 리소스 요구 사항을 부하 분산하도록 구성할 수 있습니다.  리소스 경합이 발생하는 VM은 클러스터의 다른 노드로 핫 마이그레이션하여 충분한 리소스를 사용할 수 있는지 확인할 수 있습니다.
+
+
+image:redhat-openshift-033.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+
+
+
+== 네트워크 디자인
+
+NetApp 솔루션의 Red Hat OpenShift는 두 개의 데이터 스위치를 사용하여 25Gbps의 기본 데이터 연결을 제공합니다.  또한 스토리지 노드의 대역 내 관리와 IPMI 기능의 대역 외 관리를 위해 1Gbps의 연결을 제공하는 두 개의 추가 관리 스위치를 사용합니다.  OCP는 클러스터 관리를 위해 VMware vSphere의 VM 논리 네트워크를 사용합니다.  이 섹션에서는 솔루션에 사용된 각 가상 네트워크 세그먼트의 구성과 목적을 설명하고 솔루션 배포에 필요한 전제 조건을 간략하게 설명합니다.
+
+
+
+=== VLAN 요구 사항
+
+VMware vSphere 기반 Red Hat OpenShift는 가상 LAN(Local Area Network)을 사용하여 다양한 목적에 맞는 네트워크 트래픽을 논리적으로 분리하도록 설계되었습니다.  이러한 구성은 고객 요구에 맞게 확장하거나 특정 네트워크 서비스에 대한 추가적인 격리를 제공하도록 확장할 수 있습니다.  다음 표는 NetApp 에서 솔루션을 검증하는 동안 솔루션을 구현하는 데 필요한 VLAN을 나열합니다.
+
+[cols="40%, 40%, 20%"]
+|===
+| VLAN | 목적 | VLAN ID 
+
+
+| 대역 외 관리 네트워크 | 물리적 노드 및 IPMI 관리 | 16 
+
+
+| VM 네트워크 | 가상 게스트 네트워크 액세스 | 181 
+
+
+| 저장 네트워크 | ONTAP NFS용 스토리지 네트워크 | 184 
+
+
+| 저장 네트워크 | ONTAP iSCSI용 스토리지 네트워크 | 185 
+
+
+| 인밴드 관리 네트워크 | ESXi 노드, VCenter Server, ONTAP Select 관리 | 3480 
+
+
+| 저장 네트워크 | NetApp Element iSCSI용 스토리지 네트워크 | 3481 
+
+
+| 이주 네트워크 | 가상 게스트 마이그레이션을 위한 네트워크 | 3482 
+|===
+
+
+=== 네트워크 인프라 지원 리소스
+
+OpenShift 컨테이너 플랫폼을 배포하기 전에 다음 인프라가 마련되어 있어야 합니다.
+
+* 인밴드 관리 네트워크와 VM 네트워크에서 접근 가능한 전체 호스트 이름 확인을 제공하는 하나 이상의 DNS 서버.
+* 인밴드 관리 네트워크와 VM 네트워크에서 접근할 수 있는 NTP 서버가 하나 이상 있어야 합니다.
+* (선택 사항) 인밴드 관리 네트워크와 VM 네트워크 모두를 위한 아웃바운드 인터넷 연결.
+
+
+
+
+== 프로덕션 배포를 위한 모범 사례
+
+이 섹션에서는 조직이 이 솔루션을 프로덕션에 배포하기 전에 고려해야 할 몇 가지 모범 사례를 나열합니다.
+
+
+
+=== 최소 3개 노드의 ESXi 클러스터에 OpenShift 배포
+
+이 문서에 설명된 검증된 아키텍처는 두 개의 ESXi 하이퍼바이저 노드를 배포하고 VMware vSphere HA 및 VMware vMotion을 활성화하여 장애 허용 구성을 보장함으로써 HA 작업에 적합한 최소 하드웨어 배포를 제시합니다.  이 구성을 사용하면 배포된 VM이 두 하이퍼바이저 간에 마이그레이션되고, 한 호스트를 사용할 수 없게 되면 재부팅할 수 있습니다.
+
+Red Hat OpenShift는 처음에 3개의 마스터 노드로 배포되므로, 2노드 구성에서 최소 2개의 마스터가 특정 상황에서 동일한 노드를 점유할 수 있으며, 이로 인해 해당 노드를 사용할 수 없게 되면 OpenShift가 중단될 수 있습니다.  따라서 OpenShift 마스터를 균등하게 분산할 수 있도록 최소 3개의 ESXi 하이퍼바이저 노드를 배포하는 것이 Red Hat 모범 사례이며, 이를 통해 추가적인 수준의 내결함성을 제공합니다.
+
+
+
+=== 가상 머신 및 호스트 친화성 구성
+
+VM 및 호스트 친화성을 활성화하면 OpenShift 마스터가 여러 하이퍼바이저 노드에 분산되도록 할 수 있습니다.
+
+친화성 또는 반친화성은 VM 및/또는 호스트 집합에 대한 규칙을 정의하는 방법으로, VM이 그룹 내의 동일한 호스트 또는 호스트에서 함께 실행되는지 아니면 서로 다른 호스트에서 실행되는지 결정합니다.  동일한 매개변수와 조건 집합을 갖는 VM 및/또는 호스트로 구성된 친화성 그룹을 생성하여 VM에 적용됩니다.  친화성 그룹의 VM이 그룹 내의 동일한 호스트에서 실행되는지, 아니면 다른 호스트에서 별도로 실행되는지에 따라 친화성 그룹의 매개변수는 긍정적 친화성이나 부정적 친화성을 정의할 수 있습니다.
+
+친화성 그룹을 구성하려면 다음을 참조하세요.link:https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 6.7 설명서: DRS 선호도 규칙 사용"^] .
+
+
+
+=== OpenShift 배포를 위해 사용자 정의 설치 파일을 사용하세요
+
+IPI는 이 문서의 앞부분에서 설명한 대화형 마법사를 통해 OpenShift 클러스터의 배포를 쉽게 만듭니다.  하지만 클러스터 배포의 일부로 일부 기본값을 변경해야 할 수도 있습니다.
+
+이런 경우 클러스터를 즉시 배포하지 않고도 마법사를 실행하고 작업을 지정할 수 있지만, 대신 마법사는 나중에 클러스터를 배포할 수 있는 구성 파일을 만듭니다.  이 기능은 IPI 기본값을 변경해야 하는 경우나 멀티테넌시와 같은 다른 용도로 환경에 여러 개의 동일한 클러스터를 배포하려는 경우에 매우 유용합니다.  OpenShift에 대한 사용자 정의 설치 구성을 만드는 방법에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html["Red Hat OpenShift 사용자 지정을 사용하여 vSphere에 클러스터 설치"^] .

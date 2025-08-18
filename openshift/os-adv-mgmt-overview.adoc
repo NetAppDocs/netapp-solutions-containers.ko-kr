@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-overview.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp 사용한 Red Hat OpenShift의 Kubernetes를 위한 고급 클러스터 관리 
+---
+= Kubernetes를 위한 고급 클러스터 관리: NetApp 사용한 Red Hat OpenShift - 개요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+컨테이너화된 애플리케이션이 개발 단계에서 운영 단계로 전환됨에 따라 많은 조직에서는 해당 애플리케이션의 테스트와 배포를 지원하기 위해 여러 개의 Red Hat OpenShift 클러스터가 필요합니다.  이와 관련하여 조직은 일반적으로 OpenShift 클러스터에서 여러 애플리케이션이나 워크로드를 호스팅합니다.  따라서 각 조직은 일련의 클러스터를 관리하게 되고, OpenShift 관리자는 여러 온프레미스 데이터 센터와 퍼블릭 클라우드에 걸쳐 있는 다양한 환경에서 여러 클러스터를 관리하고 유지 관리해야 하는 추가적인 과제에 직면하게 됩니다.  이러한 과제를 해결하기 위해 Red Hat은 Kubernetes를 위한 고급 클러스터 관리를 도입했습니다.
+
+Kubernetes용 Red Hat Advanced Cluster Management를 사용하면 다음 작업을 수행할 수 있습니다.
+
+. 데이터 센터와 퍼블릭 클라우드에서 여러 클러스터를 생성, 가져오기 및 관리합니다.
+. 단일 콘솔에서 여러 클러스터에 애플리케이션이나 워크로드를 배포하고 관리합니다.
+. 다양한 클러스터 리소스의 상태 및 상태를 모니터링하고 분석합니다.
+. 여러 클러스터에서 보안 규정 준수를 모니터링하고 시행합니다.
+
+
+Kubernetes용 Red Hat Advanced Cluster Management는 Red Hat OpenShift 클러스터에 추가 기능으로 설치되며, 이 클러스터를 모든 작업의 중앙 컨트롤러로 사용합니다.  이 클러스터는 허브 클러스터로 알려져 있으며, 사용자가 Advanced Cluster Management에 연결할 수 있는 관리 평면을 제공합니다.  고급 클러스터 관리 콘솔을 통해 가져오거나 생성된 다른 모든 OpenShift 클러스터는 허브 클러스터에서 관리되며 관리형 클러스터라고 합니다.  클러스터 수명 주기 관리, 애플리케이션 수명 주기 관리, 관찰 가능성, 보안 규정 준수와 관련된 다양한 활동에 대한 요청을 처리하기 위해 관리되는 클러스터에 Klusterlet이라는 에이전트를 설치합니다.
+
+image:redhat-openshift-065.png["ACM 아키텍처"]
+
+자세한 내용은 설명서를 참조하세요. https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.2/["여기"] .
