@@ -40,22 +40,12 @@ indexpage:
       url: "/openshift/os-storint-overview.html"
     - title: 사용 사례
       url: "/openshift/os-use-cases.html"
-  - title: NetApp 사용한 VMware Tanzu
-    links:
-    - title: 솔루션 개요
-      url: "/tanzu/vtwn-solution-overview.html"
-    - title: VMware Tanzu 소개
-      url: "/tanzu/vtwn-overview-vmware-tanzu.html"
-    - title: NetApp 스토리지 통합
-      url: "/tanzu/vtwn-overview-storint.html"
   - title: 파트너 솔루션
     links:
     - title: Anthos 웹사이트
       url: https://cloud.google.com/anthos
     - title: Red Hat OpenShift 웹사이트
       url: https://www.redhat.com/en/technologies/cloud-computing/openshift
-    - title: VMware Tanzu 웹사이트
-      url: https://tanzu.vmware.com/
   - title: 솔루션 요청 및 피드백
     links:
     - title: 요청 자동화

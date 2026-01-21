@@ -98,7 +98,7 @@ VM 및 호스트 친화성을 활성화하면 OpenShift 마스터가 여러 하�
 
 친화성 또는 반친화성은 VM 및/또는 호스트 집합에 대한 규칙을 정의하는 방법으로, VM이 그룹 내의 동일한 호스트 또는 호스트에서 함께 실행되는지 아니면 서로 다른 호스트에서 실행되는지 결정합니다.  동일한 매개변수와 조건 집합을 갖는 VM 및/또는 호스트로 구성된 친화성 그룹을 생성하여 VM에 적용됩니다.  친화성 그룹의 VM이 그룹 내의 동일한 호스트에서 실행되는지, 아니면 다른 호스트에서 별도로 실행되는지에 따라 친화성 그룹의 매개변수는 긍정적 친화성이나 부정적 친화성을 정의할 수 있습니다.
 
-친화성 그룹을 구성하려면 다음을 참조하세요.link:https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 6.7 설명서: DRS 선호도 규칙 사용"^] .
+친화성 그룹을 구성하려면 다음을 참조하십시오. link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 9.0 설명서: DRS 선호도 규칙 사용"^].
 
 
 

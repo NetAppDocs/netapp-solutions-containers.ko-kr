@@ -2,8 +2,8 @@
 indexpage:
   title: NetApp 사용한 컨테이너에 대한 비디오와 데모를 시청하세요
   summary: NetApp의 다양한 컨테이너 솔루션의 기능을 논의하는 일련의 비디오 및 데모
-  lead: Anthos, OpenShift, VMware Tanzu 플랫폼 전반의 컨테이너 솔루션을 보여주는 NetApp의 포괄적인 비디오 라이브러리를
-    확인해보세요.  각 컬렉션은 특정 사용 사례와 통합 시나리오에 초점을 맞춥니다.
+  lead: NetApp의 Anthos 및 OpenShift 플랫폼 전반에 걸친 컨테이너 솔루션을 소개하는 종합 비디오 라이브러리를 살펴보세요.
+    각 컬렉션은 특정 사용 사례 및 통합 시나리오에 중점을 둡니다.
   tiles:
   - title: NetApp 사용한 Anthos
     links:
@@ -23,9 +23,3 @@ indexpage:
       url: openshift-videos.html#automation-and-integration
     - title: 클라우드 및 하이브리드 통합
       url: openshift-videos.html#cloud-and-hybrid-integrations
-  - title: NetApp 사용한 VMware Tanzu
-    links:
-    - title: 지속적인 스토리지 프로비저닝
-      url: tanzu-videos.html#persistent-storage-provisioning
-    - title: 애플리케이션 복제 및 데이터 보호
-      url: tanzu-videos.html#application-cloning-and-data-protection
