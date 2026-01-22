@@ -1661,8 +1661,9 @@
   <block id="5e21330fc0890f55a17acc561df2e1f0" category="sidebar">AWS에서 OpenShift 서비스를 위한 워크플로</block>
   <block id="ff98a347124fc4408f955fa479a08047" category="paragraph">선호도 그룹을 구성하려면 사용 중인 VMware vSphere 버전에 맞는 아래 링크를 참조하십시오.</block>
   <block id="70dec797486e96f0b66f5b6f6232e97e" category="inline-link">vSphere 9.0 설명서: DRS 선호도 규칙 사용</block>
-  <block id="28f3c4952f8984dbba3cb64144d23c55" category="paragraph"><block ref="013ce530ab8ab67ba2512060eb3ef551" category="inline-link-rx"></block>. hhttps://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html[vSphere 7.0 문서: DRS 선호도 규칙 사용^].</block>
   <block id="75aced0054edcf64f0ce28e9417b9ecc" category="paragraph">이러한 경우, 클러스터를 즉시 배포하지 않고 마법사를 실행하여 작업을 지정할 수 있습니다. 대신 마법사는 나중에 클러스터를 배포할 수 있는 구성 파일을 생성합니다. 이는 IPI 기본 설정을 변경해야 하거나 멀티테넌시와 같은 다른 용도로 환경에 여러 개의 동일한 클러스터를 배포하려는 경우에 매우 유용합니다. OpenShift용 사용자 지정 설치 구성을 만드는 방법에 대한 자세한 내용은 다음을 참조하세요. <block ref="d119246d08531f99b62e09f0007159a5" category="inline-link-macro-rx"></block>.</block>
   <block id="7eec9c349f16a2215195b8598e8dea11" category="paragraph">친화성 그룹을 구성하려면 다음을 참조하십시오. <block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block>.</block>
   <block id="b9aaad555d183234dc95454f14ebcc62" category="sidebar">NetApp의 Anthos 및 OpenShift 플랫폼 전반에 걸친 컨테이너 솔루션을 소개하는 종합 비디오 라이브러리를 살펴보세요. 각 컬렉션은 특정 사용 사례 및 통합 시나리오에 중점을 둡니다.</block>
+  <block id="bfe724d354657c9ac5cef22bd231f66f" category="inline-link">vSphere 7.0 설명서: DRS 선호도 규칙 사용</block>
+  <block id="d80a6b3e953318b803d17ce91d32d237" category="paragraph"><block ref="013ce530ab8ab67ba2512060eb3ef551" category="inline-link-rx"></block>. <block ref="42f6b9383c33f02a9b6a80dc074607f9" category="inline-link-rx"></block>.</block>
 </blocks>
