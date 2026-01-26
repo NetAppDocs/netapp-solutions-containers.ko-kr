@@ -152,7 +152,9 @@ VM 및 호스트 친화성을 활성화하면 Anthos 클러스터 노드를 여�
 
 선호도 그룹을 구성하려면 사용 중인 VMware vSphere 버전에 맞는 아래 링크를 참조하십시오.
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 9.0 설명서: DRS 선호도 규칙 사용"^]. https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 7.0 설명서: DRS 선호도 규칙 사용"^].
+* link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 9.0 설명서: DRS 선호도 규칙 사용"^]
+* link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 7.0 설명서: DRS 선호도 규칙 사용"^]
+
 
 
 NOTE: Anthos에는 각 개별 구성 옵션이 있습니다. `cluster.yaml` ESXi 호스트의 환경 내 수에 따라 활성화하거나 비활성화할 수 있는 노드 선호도 규칙을 자동으로 생성하는 파일입니다.
