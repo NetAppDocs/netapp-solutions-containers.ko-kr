@@ -4,7 +4,7 @@ permalink: openshift/os-trident-protect.html
 keywords: data protection, DP, Trident Protect 
 summary:  
 ---
-= Trident Protect를 사용한 컨테이너 앱 및 VM에 대한 데이터 보호
+= Trident Protect를 사용한 컨테이너 앱 및 가상 머신 데이터 보호
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
