@@ -20,6 +20,7 @@ MetalLB는 OpenShift 클러스터에 설치되는 셀프 호스팅 네트워크 
 
 
 
+[[metallb-configuration-options]]
 == MetalLB 구성 옵션
 
 MetalLB가 OpenShift 클러스터 외부의 LoadBalancer 서비스에 할당된 IP 주소를 알리는 방식에 따라 두 가지 모드로 작동합니다.
@@ -33,6 +34,7 @@ NOTE: 이 문서에서는 MetalLB를 2계층 모드로 구성합니다.
 
 
 
+[[installing-the-metallb-load-balancer]]
 == MetalLB 로드 밸런서 설치
 
 . MetalLB 리소스를 다운로드하세요.

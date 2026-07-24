@@ -18,6 +18,7 @@ ONTAP 스토리지를 NetApp 컨테이너 솔루션과 통합하기 위한 실�
 
 
 
+[[openshift-deployment-and-integration]]
 == OpenShift 배포 및 통합
 
 * link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Simplifying-Trident-Installation-on-Red-Hat-OpenShift-with-the-New-Certified/ba-p/459710["새로운 인증 Trident Operator를 사용하여 Red Hat OpenShift에서 Trident 설치 간소화"]
@@ -28,6 +29,7 @@ ONTAP 스토리지를 NetApp 컨테이너 솔루션과 통합하기 위한 실�
 
 
 
+[[data-protection-and-backup]]
 == 데이터 보호 및 백업
 
 * link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Crash-Consistent-Backup-and-Restore-Operations-for-OpenShift-Virtualization-VMs/ba-p/459417["Trident 25.02를 사용하여 OpenShift Virtualization VM에 대한 충돌 일관성 백업 및 복원 작업"]
@@ -36,6 +38,7 @@ ONTAP 스토리지를 NetApp 컨테이너 솔루션과 통합하기 위한 실�
 
 
 
+[[virtualization-and-vm-operations]]
 == 가상화 및 VM 운영
 
 * link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Live-Migration-of-VMs-with-OpenShift-Virtualization-on-ROSA-and-Amazon-FSx-for/ba-p/456213["ROSA 및 Amazon FSx for NetApp ONTAP 에서 OpenShift Virtualization을 사용한 VM의 라이브 마이그레이션"]
@@ -44,6 +47,7 @@ ONTAP 스토리지를 NetApp 컨테이너 솔루션과 통합하기 위한 실�
 
 
 
+[[storage-integration-and-performance]]
 == 스토리지 통합 및 성능
 
 * link:https://community.netapp.com/t5/Tech-ONTAP-Blogs/Using-NVMe-TCP-to-consume-ONTAP-storage-for-your-modern-containerized-apps-on/ba-p/453706["VMware에서 최신 컨테이너화된 앱에 대한 ONTAP 스토리지를 사용하기 위해 NVMe/TCP 사용"]
@@ -53,6 +57,7 @@ ONTAP 스토리지를 NetApp 컨테이너 솔루션과 통합하기 위한 실�
 
 
 
+[[kubernetes-and-vmware-ecosystem]]
 == 쿠버네티스와 VMware 생태계
 
 * link:https://blog.netapp.com/accelerate-your-k8s-journey["ONTAP 과 함께 VMware Tanzu를 사용하여 Kubernetes 여정을 가속화하세요"]

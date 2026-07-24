@@ -32,30 +32,35 @@ Trident 설치 세부 사항은 다음을 참조하세요. https://docs.netapp.c
 
 
 
+[[create-a-storage-system-backend]]
 == 스토리지 시스템 백엔드 생성
 
 Trident Operator 설치를 완료한 후에는 사용 중인 특정 NetApp 스토리지 플랫폼에 대한 백엔드를 구성해야 합니다.  Trident 의 설정 및 구성을 계속하려면 아래 링크를 따르세요.link:https://docs.netapp.com/us-en/trident/trident-use/backends.html["백엔드를 만듭니다."]
 
 
 
+[[create-a-storage-class]]
 == 스토리지 클래스 생성
 
 백엔드를 만든 후에는 Kubernetes 사용자가 볼륨이 필요할 때 지정할 수 있는 스토리지 클래스를 만들어야 합니다.  Kubernetes 사용자는 이름으로 스토리지 클래스를 지정하는 영구 볼륨 클레임(PVC)을 사용하여 볼륨을 프로비저닝합니다.  아래 링크를 따라 스토리지 클래스를 생성하세요.link:https://docs.netapp.com/us-en/trident/trident-use/create-stor-class.html["스토리지 클래스 생성"]
 
 
 
+[[dynamically-provision-a-volume]]
 == 동적으로 볼륨 프로비저닝
 
 볼륨을 동적으로 프로비저닝하려면 스토리지 클래스를 사용하여 Kubernetes 영구 볼륨 클레임(PVC) 객체를 만들어야 합니다.  아래 링크를 따라 PVC 객체를 만들어 보세요.link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html["PVC 생성"]
 
 
 
+[[use-the-volume]]
 == 볼륨을 사용하세요
 
 위 단계에서 프로비저닝된 볼륨은 Pod에 볼륨을 마운트하여 애플리케이션에서 사용할 수 있습니다. 아래 링크에서 예를 보여줍니다.link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html#sample-manifests["볼륨을 포드에 마운트합니다."]
 
 
 
+[[sample-provisioning]]
 == 샘플 프로비저닝
 
 link:anthos-trident-ontap-iscsi.html["iSCSI 프로토콜에 대한 샘플 매니페스트, window=_blank"]

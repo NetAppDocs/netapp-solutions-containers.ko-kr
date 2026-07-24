@@ -18,6 +18,7 @@ summary: Google Cloud Console을 사용하여 Anthos GKE 클러스터 온프레�
 
 
 
+[[prerequisites]]
 == 필수 조건
 
 * 온프레미스에 배포되고 Google Cloud Console에 등록된 Anthos 클러스터
@@ -28,6 +29,7 @@ summary: Google Cloud Console을 사용하여 Anthos GKE 클러스터 온프레�
 
 
 
+[[deploying-an-application]]
 == 애플리케이션 배포
 
 이 사용 사례에서는 Google Cloud Console을 사용하여 Anthos 클러스터 중 하나에 간단한 WordPress 애플리케이션을 배포합니다.  배포에는 NetApp ONTAP 이 제공하는 사전 정의된 스토리지 클래스의 영구 스토리지가 사용됩니다.  그런 다음 MetalLB 부하 분산 장치가 애플리케이션 기본 서비스에 IP 주소를 제공하고 이를 전 세계에 공개하도록 수정하는 두 가지 방법을 보여줍니다.
@@ -78,12 +80,14 @@ image:a-w-n-use-case-deploy-app-003.png["응용 프로그램 실행 중"]
 
 
 
+[[exposing-the-application]]
 == 애플리케이션 노출
 
 애플리케이션이 배포된 후에는 두 가지 방법을 통해 전 세계에서 접근 가능한 IP를 할당할 수 있습니다.
 
 
 
+[[using-the-google-cloud-console]]
 === Google Cloud Console 사용
 
 Google Cloud Console을 사용하고 브라우저에서 서비스의 YAML 출력을 편집하여 공개적으로 접근 가능한 IP를 설정하여 애플리케이션을 노출할 수 있습니다.  그렇게 하려면 다음 단계를 수행하세요.
@@ -111,6 +115,7 @@ image:a-w-n-use-case-deploy-app-015.png["서비스 세부 정보 최종"]
 
 
 
+[[patching-the-service-with-kubectl]]
 === Kubectl을 사용하여 서비스 패치
 
 CLI를 사용하여 애플리케이션을 노출할 수 있습니다. `kubectl patch` 배포를 수정하고 공개적으로 접근 가능한 IP를 설정하는 명령입니다. 그러려면 다음 단계를 완료하세요.
@@ -135,6 +140,7 @@ image:a-w-n-use-case-deploy-app-001.png["LoadBalancer 유형으로 서비스 패
 
 
 
+[[visit-the-application-at-the-exposed-external-ip]]
 == 노출된 외부 IP에서 애플리케이션을 방문하세요
 
 이제 공개적으로 접근 가능한 IP 주소로 애플리케이션을 노출했으므로 브라우저를 사용하여 WordPress 인스턴스를 방문할 수 있습니다.

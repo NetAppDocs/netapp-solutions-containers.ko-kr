@@ -18,6 +18,7 @@ summary: 이 섹션에서는 Jenkins를 사용하여 솔루션 운영을 검증�
 
 
 
+[[create-the-resources-required-for-jenkins-deployment]]
 == Jenkins 배포에 필요한 리소스를 생성합니다.
 
 Jenkins 애플리케이션을 배포하는 데 필요한 리소스를 생성하려면 다음 단계를 완료하세요.
@@ -33,6 +34,7 @@ image:redhat-openshift-016.png["입력/출력 대화 상자 또는 서면 내용
 
 
 
+[[deploy-jenkins-with-persistent-storage]]
 == 영구 저장소를 사용하여 Jenkins 배포
 
 영구 저장소로 Jenkins를 배포하려면 다음 단계를 완료하세요.

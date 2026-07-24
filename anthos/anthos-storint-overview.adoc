@@ -18,6 +18,7 @@ NetApp Anthos와 같은 컨테이너 기반 환경에서 영구 데이터를 조
 
 
 
+[[anthos-ready-storage-partner-program]]
 == Anthos Ready 스토리지 파트너 프로그램.
 
 Google Cloud에서는 Anthos Ready 스토리지 파트너 프로그램을 통해 Anthos의 새로운 릴리스와 파트너 스토리지 통합에 대한 업데이트된 유효성 검사를 주기적으로 요청합니다.  현재 검증된 스토리지 솔루션, CSI 드라이버, 사용 가능한 기능 및 지원되는 Anthos 버전 목록을 찾을 수 있습니다. https://cloud.google.com/anthos/docs/resources/partner-storage["여기"^] .
@@ -72,6 +73,7 @@ NetApp Anthos 버전을 사용하여 Trident CSI 호환 스토리지 오케스�
 |===
 
 
+[[netapp-storage-integrations]]
 == NetApp 스토리지 통합
 
 NetApp Anthos와 같은 컨테이너 기반 환경에서 영구 데이터를 조정하고 관리하는 데 도움이 되는 다양한 제품을 제공합니다.

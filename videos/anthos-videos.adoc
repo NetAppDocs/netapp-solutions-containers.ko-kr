@@ -18,12 +18,14 @@ summary: 이 문서에 기록된 기능 중 일부를 보여줍니다.
 
 
 
+[[anthos-deployment-and-setup-on-bare-metal]]
 == 베어 메탈에 Anthos 배포 및 설정
 
 .베어 메탈에 Anthos 배포 - NetApp 사용한 Anthos
 video::a9e5fd88-6bdc-4d23-a4b5-b01200effc06[panopto,width=360]
 
 
+[[trident-deployment-and-setup-on-anthos]]
 == Anthos에 Trident 배포 및 설정
 
 .Anthos 1.14 클러스터에 Trident 배포

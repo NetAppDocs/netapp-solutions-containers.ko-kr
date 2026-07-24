@@ -28,6 +28,7 @@ Trident 는 개발 주기가 빠르며, Kubernetes와 마찬가지로 1년에 4�
 
 
 
+[[download-trident]]
 == Trident 다운로드
 
 배포된 사용자 클러스터에 Trident 설치하고 영구 볼륨을 프로비저닝하려면 다음 단계를 완료하세요.
@@ -45,6 +46,7 @@ Trident 는 개발 주기가 빠르며, Kubernetes와 마찬가지로 1년에 4�
 
 
 
+[[install-the-trident-operator-with-helm]]
 == Helm과 함께 Trident Operator 설치
 
 . 먼저 사용자 클러스터의 위치를 설정하세요. `kubeconfig` Trident 에는 이 파일을 전달하는 옵션이 없으므로, 이 파일을 참조할 필요가 없도록 환경 변수로 파일을 지정합니다.
@@ -106,6 +108,7 @@ NOTE: 어떤 경우에는 고객 환경에 따라 Trident 배포를 사용자 �
 
 
 
+[[manually-install-the-trident-operator]]
 == Trident Operator를 수동으로 설치하세요
 
 . 먼저 사용자 클러스터의 위치를 설정합니다. `kubeconfig` Trident 에는 이 파일을 전달하는 옵션이 없으므로, 이 파일을 참조할 필요가 없도록 환경 변수로 파일을 지정합니다.
@@ -260,10 +263,12 @@ trident-operator-66f48895cc-lzczk   1/1     Running   0          2m39s
 
 
 
+[[prepare-worker-nodes-for-storage]]
 == 저장을 위한 작업자 노드 준비
 
 
 
+[[nfs]]
 === NFS
 
 대부분의 Kubernetes 배포판에는 Red Hat OpenShift를 포함하여 기본적으로 설치된 NFS 백엔드를 마운트하기 위한 패키지와 유틸리티가 함께 제공됩니다.
@@ -309,6 +314,7 @@ worker   rendered-worker-de321b36eeba62df41feb7bc   True      False      False
 
 
 
+[[iscsi]]
 === iSCSI
 
 iSCSI 프로토콜을 통해 블록 스토리지 볼륨을 매핑할 수 있도록 작업자 노드를 준비하려면 해당 기능을 지원하는 데 필요한 패키지를 설치해야 합니다.
@@ -418,6 +424,7 @@ NOTE: MachineConfig가 성공적으로 적용되었고 서비스가 예상대로
 
 
 
+[[create-storage-system-backends]]
 == 스토리지 시스템 백엔드 생성
 
 Trident Operator 설치를 완료한 후에는 사용 중인 특정 NetApp 스토리지 플랫폼에 대한 백엔드를 구성해야 합니다.  Trident 의 설정 및 구성을 계속하려면 아래 링크를 따르세요.

@@ -24,6 +24,7 @@ OSP에 대한 자세한 내용은 다음을 참조하세요.link:https://www.red
 
 
 
+[[openstack-services]]
 == 오픈스택 서비스
 
 OpenStack Platform 서비스는 컨테이너로 배포되므로 서비스를 서로 분리하고 쉽게 업그레이드할 수 있습니다.  OpenStack 플랫폼은 Kolla로 구축되고 관리되는 컨테이너 세트를 사용합니다.  서비스 배포는 Red Hat Custom Portal에서 컨테이너 이미지를 가져와서 수행됩니다.  이러한 서비스 컨테이너는 Podman 명령을 사용하여 관리되며 Red Hat OpenStack Director를 통해 배포, 구성 및 유지 관리됩니다.
@@ -63,6 +64,7 @@ image:redhat-openshift-034.png["입력/출력 대화 상자 또는 서면 내용
 |===
 
 
+[[network-design]]
 == 네트워크 디자인
 
 NetApp 솔루션이 포함된 Red Hat OpenShift는 두 개의 데이터 스위치를 사용하여 25Gbps의 기본 데이터 연결을 제공합니다.  또한 스토리지 노드의 대역 내 관리와 IPMI 기능의 대역 외 관리를 위해 1Gbps의 연결을 제공하는 두 개의 추가 관리 스위치를 사용합니다.
@@ -71,6 +73,7 @@ Red Hat OpenStack Director는 Ironic 베어 메탈 프로비저닝 서비스를 
 
 
 
+[[vlan-requirements]]
 === VLAN 요구 사항
 
 NetApp 탑재된 Red Hat OpenShift는 가상 LAN(VLAN)을 사용하여 다양한 목적에 맞는 네트워크 트래픽을 논리적으로 분리하도록 설계되었습니다.  이러한 구성은 고객 요구에 맞게 확장하거나 특정 네트워크 서비스에 대한 추가적인 격리를 제공하도록 확장할 수 있습니다.  다음 표는 NetApp 에서 솔루션을 검증하는 동안 솔루션을 구현하는 데 필요한 VLAN을 나열합니다.
@@ -108,6 +111,7 @@ NetApp 탑재된 Red Hat OpenShift는 가상 LAN(VLAN)을 사용하여 다양한
 |===
 
 
+[[network-infrastructure-support-resources]]
 === 네트워크 인프라 지원 리소스
 
 OpenShift 컨테이너 플랫폼을 배포하기 전에 다음 인프라가 마련되어 있어야 합니다.
@@ -119,12 +123,14 @@ OpenShift 컨테이너 플랫폼을 배포하기 전에 다음 인프라가 마�
 
 
 
+[[best-practices-for-production-deployments]]
 == 프로덕션 배포를 위한 모범 사례
 
 이 섹션에서는 조직이 이 솔루션을 프로덕션에 배포하기 전에 고려해야 할 몇 가지 모범 사례를 나열합니다.
 
 
 
+[[deploy-openshift-to-an-osp-private-cloud-with-at-least-three-compute-nodes]]
 === 최소 3개의 컴퓨팅 노드가 있는 OSP 프라이빗 클라우드에 OpenShift를 배포합니다.
 
 이 문서에 설명된 검증된 아키텍처는 3개의 OSP 컨트롤러 노드와 2개의 OSP 컴퓨트 노드를 배포하여 HA 작업에 적합한 최소 하드웨어 배포를 제시합니다.  이 아키텍처는 두 컴퓨팅 노드 모두 가상 인스턴스를 시작하고 배포된 VM이 두 하이퍼바이저 간에 마이그레이션할 수 있는 장애 허용 구성을 보장합니다.
@@ -133,6 +139,7 @@ Red Hat OpenShift는 처음에 3개의 마스터 노드로 배포되므로 2노�
 
 
 
+[[configure-virtual-machinehost-affinity]]
 === 가상 머신/호스트 친화성 구성
 
 OpenShift 마스터를 여러 하이퍼바이저 노드에 분산하려면 VM/호스트 친화성을 활성화하면 됩니다.
@@ -148,6 +155,7 @@ NOTE: OSP 서버 그룹에는 특정한 하드 친화성/반친화성 제한이 
 
 
 
+[[use-a-custom-install-file-for-openshift-deployment]]
 === OpenShift 배포를 위해 사용자 정의 설치 파일을 사용하세요
 
 IPI는 이 문서의 앞부분에서 설명한 대화형 마법사를 통해 OpenShift 클러스터의 배포를 쉽게 만듭니다.  하지만 클러스터 배포의 일부로 일부 기본값을 변경해야 할 수도 있습니다.

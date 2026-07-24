@@ -20,6 +20,7 @@ Seesaw는 Anthos Clusters on VMware 환경(버전 1.6~1.10)에 설치된 기본 
 
 
 
+[[installing-the-seesaw-load-balancer]]
 == SeeSaw 로드 밸런서 설치
 
 SeeSaw 로드 밸런서는 VMware의 Anthos 클러스터와 완벽하게 통합되어 있으며 관리자 및 사용자 클러스터 설정의 일부로 자동 배포가 수행됩니다.  텍스트 블록이 있습니다 `cluster.yaml` 로드 밸런서 정보를 제공하기 위해 수정해야 하는 구성 파일이 있고, 클러스터 배포 전에 내장된 기능을 사용하여 로드 밸런서를 배포하기 위한 추가 단계가 있습니다. `gkectl` 도구.
@@ -29,6 +30,7 @@ NOTE: SeeSaw 로드 밸런서는 HA 또는 비 HA 모드로 배포할 수 있습
 
 
 
+[[integration-with-anthos]]
 == Anthos와의 통합
 
 각 구성 파일에는 각각 관리자 클러스터용 섹션과 배포하기로 선택한 각 사용자 클러스터용 섹션이 있으며, 이를 통해 로드 밸런서가 Anthos On-Prem에서 관리되도록 구성할 수 있습니다.

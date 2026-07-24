@@ -18,6 +18,7 @@ NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시를 구성하기 위�
 
 
 
+[[prerequisites]]
 == 필수 조건
 
 * NetApp ONTAP 클러스터

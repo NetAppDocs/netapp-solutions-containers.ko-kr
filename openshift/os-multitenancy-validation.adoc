@@ -18,6 +18,7 @@ summary: NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시 구성
 
 
 
+[[validate-access-to-create-pvcs-or-pods-in-assigned-project]]
 == 할당된 프로젝트에서 PVC 또는 Pod를 생성하기 위한 액세스 권한 확인
 
 . ocp-project-1-user, project-1의 개발자로 로그인합니다.
@@ -96,6 +97,7 @@ oc describe pods test-pvc-pod -n project-1
 
 
 
+[[validate-access-to-create-pvcs-or-pods-in-another-project-or-use-resources-dedicated-to-another-project]]
 == 다른 프로젝트에서 PVC 또는 포드를 생성하거나 다른 프로젝트에 전용된 리소스를 사용할 수 있는 액세스 권한을 검증합니다.
 
 . ocp-project-1-user, project-1의 개발자로 로그인합니다.
@@ -171,6 +173,7 @@ EOF
 
 
 
+[[validate-access-to-view-and-edit-projects-resourcequotas-and-storageclasses]]
 == 프로젝트, 리소스 할당량 및 스토리지 클래스를 보고 편집할 수 있는 액세스 권한을 확인합니다.
 
 . ocp-project-1-user, project-1의 개발자로 로그인합니다.

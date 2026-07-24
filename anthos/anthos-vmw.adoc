@@ -29,6 +29,7 @@ image:a-w-n-anthos-controlplanev2-vm-architecture.png["입력/출력 대화 상�
 
 
 
+[[benefits]]
 == 이익
 
 VMware의 Anthos 클러스터는 다음과 같은 이점을 제공합니다.
@@ -41,6 +42,7 @@ VMware의 Anthos 클러스터는 다음과 같은 이점을 제공합니다.
 
 
 
+[[vmware-vsphere]]
 == VMware vSphere
 
 VMware vSphere는 ESXi 하이퍼바이저에서 실행되는 수많은 가상화된 서버와 네트워크를 중앙에서 관리하기 위한 가상화 플랫폼입니다.
@@ -57,16 +59,19 @@ VMware vSphere는 다음과 같은 기능을 제공합니다.
 
 
 
+[[hardware-requirements]]
 == 하드웨어 요구 사항
 
 
 
+[[compute]]
 === 컴퓨팅
 
 Google Cloud는 Anthos Ready 플랫폼 파트너 프로그램을 통해 Anthos의 새로운 릴리스에 대한 파트너 서버 플랫폼의 업데이트된 유효성 검사를 주기적으로 요청합니다.  현재 검증된 서버 플랫폼과 지원되는 Anthos 버전 목록을 찾을 수 있습니다. https://cloud.google.com/anthos/docs/resources/partner-platforms["여기"^] .
 
 
 
+[[operating-system]]
 === 운영 체제
 
 VMware의 Anthos 클러스터는 고객이 선택한 vSphere 7 및 8 환경 모두에 배포할 수 있으므로 현재 데이터 센터 인프라와 일치하도록 지원할 수 있습니다.
@@ -81,6 +86,7 @@ VMware의 Anthos 클러스터는 고객이 선택한 vSphere 7 및 8 환경 모�
 |===
 
 
+[[additional-hardware]]
 === 추가 하드웨어
 
 NetApp 과 Anthos를 완벽하게 검증된 솔루션으로 배포하기 위해 NetApp 과 파트너 엔지니어가 네트워킹 및 스토리지를 위한 추가 데이터 센터 구성 요소를 테스트했습니다.
@@ -101,6 +107,7 @@ NetApp 과 Anthos를 완벽하게 검증된 솔루션으로 배포하기 위해 
 |===
 
 
+[[additional-software]]
 === 추가 소프트웨어
 
 다음 표에는 검증 환경에 배포된 소프트웨어 버전 목록이 포함되어 있습니다.
@@ -120,6 +127,7 @@ image:a-w-n-anthos-128-vsphere8-validation.png["입력/출력 대화 상자 또�
 
 
 
+[[network-infrastructure-support-resources]]
 === 네트워크 인프라 지원 리소스
 
 Anthos를 배포하기 전에 다음 인프라가 마련되어 있어야 합니다.
@@ -132,18 +140,21 @@ Anthos를 배포하기 전에 다음 인프라가 마련되어 있어야 합니�
 
 
 
+[[best-practices-for-production-deployments]]
 == 프로덕션 배포를 위한 모범 사례
 
 이 섹션에서는 조직이 이 솔루션을 프로덕션에 배포하기 전에 고려해야 할 몇 가지 모범 사례를 나열합니다.
 
 
 
+[[deploy-anthos-to-an-esxi-cluster-of-at-least-three-nodes]]
 === 최소 3개 노드의 ESXi 클러스터에 Anthos 배포
 
 데모 또는 평가 목적으로 3개 노드 미만의 vSphere 클러스터에 Anthos를 설치하는 것은 가능하지만, 프로덕션 워크로드에는 권장되지 않습니다.  두 개의 노드가 기본 HA 및 장애 허용을 허용하지만, 기본 호스트 친화성을 비활성화하려면 Anthos 클러스터 구성을 수정해야 하며, 이 배포 방법은 Google Cloud에서 지원되지 않습니다.
 
 
 
+[[configure-virtual-machine-and-host-affinity]]
 === 가상 머신 및 호스트 친화성 구성
 
 VM 및 호스트 친화성을 활성화하면 Anthos 클러스터 노드를 여러 하이퍼바이저 노드에 분산할 수 있습니다.

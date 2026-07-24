@@ -18,6 +18,7 @@ summary: NetApp 사용한 Red Hat OpenShift의 Kubernetes를 위한 고급 클�
 
 
 
+[[prerequisites]]
 == 필수 조건
 
 . 허브 클러스터용 Red Hat OpenShift 클러스터(버전 4.5 이상)

@@ -23,6 +23,7 @@ NOTE: Trident Protect에는 Astra 컨테이너에 필요한 이미지를 호스�
 
 
 
+[[creating-a-private-image-registry]]
 == 개인 이미지 레지스트리 만들기
 
 . 현재 기본 저장소 클래스에서 기본 주석을 제거하고 Trident 지원 저장소 클래스를 OpenShift 클러스터의 기본값으로 주석 처리합니다.
