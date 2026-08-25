@@ -23,14 +23,16 @@ summary: NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시 구성
 
 . ocp-project-1-user, project-1의 개발자로 로그인합니다.
 . 새로운 프로젝트를 생성하려면 액세스를 확인하세요.
-+
-[source, console]
+
+
+[listing]
 ----
 oc create ns sub-project-1
 ----
 . project-1에 할당된 스토리지 클래스를 사용하여 project-1에 PVC를 생성합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: PersistentVolumeClaim
@@ -50,20 +52,23 @@ spec:
 EOF
 ----
 . PVC와 연관된 PV를 확인하세요.
-+
-[source, console]
+
+
+[listing]
 ----
 oc get pv
 ----
 . PV와 해당 볼륨이 NetApp ONTAP 의 project-1 전용 SVM에 생성되었는지 확인합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 volume show -vserver project-1-svm
 ----
 . project-1에 포드를 생성하고 이전 단계에서 생성한 PVC를 마운트합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: Pod
@@ -88,13 +93,12 @@ spec:
 EOF
 ----
 . 포드가 실행 중인지, 볼륨을 마운트했는지 확인하세요.
-+
-[source, console]
+
+
+[listing]
 ----
 oc describe pods test-pvc-pod -n project-1
 ----
-
-
 
 
 [[validate-access-to-create-pvcs-or-pods-in-another-project-or-use-resources-dedicated-to-another-project]]
@@ -102,8 +106,9 @@ oc describe pods test-pvc-pod -n project-1
 
 . ocp-project-1-user, project-1의 개발자로 로그인합니다.
 . 프로젝트-2에 할당된 스토리지 클래스를 사용하여 프로젝트-1에 PVC를 생성합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: PersistentVolumeClaim
@@ -123,8 +128,9 @@ spec:
 EOF
 ----
 . 프로젝트-2에서 PVC를 만듭니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: PersistentVolumeClaim
@@ -144,15 +150,17 @@ spec:
 EOF
 ----
 . PVC를 확인하세요 `test-pvc-project-1-sc-2` 그리고 `test-pvc-project-2-sc-1` 생성되지 않았습니다.
-+
-[source, console]
+
+
+[listing]
 ----
 oc get pvc -n project-1
 oc get pvc -n project-2
 ----
 . project-2에 포드를 만듭니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: Pod
@@ -171,42 +179,44 @@ EOF
 ----
 
 
-
-
 [[validate-access-to-view-and-edit-projects-resourcequotas-and-storageclasses]]
 == 프로젝트, 리소스 할당량 및 스토리지 클래스를 보고 편집할 수 있는 액세스 권한을 확인합니다.
 
 . ocp-project-1-user, project-1의 개발자로 로그인합니다.
 . 새로운 프로젝트를 생성하려면 액세스를 확인하세요.
-+
-[source, console]
+
+
+[listing]
 ----
 oc create ns sub-project-1
 ----
 . 프로젝트 보기에 대한 액세스를 검증합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 oc get ns
 ----
 . 사용자가 project-1에서 ResourceQuotas를 볼 수 있거나 편집할 수 있는지 확인하세요.
-+
-[source, console]
+
+
+[listing]
 ----
 oc get resourcequotas -n project-1
 oc edit resourcequotas project-1-sc-rq -n project-1
 ----
 . 사용자가 스토리지 클래스를 볼 수 있는 권한이 있는지 확인합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 oc get sc
 ----
 . 스토리지 클래스를 설명하려면 액세스를 확인하세요.
 . 사용자가 스토리지 클래스를 편집할 수 있는 권한을 검증합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 oc edit sc project-1-sc
 ----
-

@@ -46,9 +46,9 @@ OpenShift 베어 메탈 IPI 배포의 경우 프로비저너 노드를 만들어
 
 다음 이미지는 IPI 배포 중과 배포가 완료된 후의 환경을 보여줍니다.
 
-image:redhat-openshift-036.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+image::redhat-openshift-036.png[입력/출력 대화 상자 또는 서면 내용을 나타내는 그림]
 
-image:redhat-openshift-037.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+image::redhat-openshift-037.png[입력/출력 대화 상자 또는 서면 내용을 나타내는 그림]
 
 
 

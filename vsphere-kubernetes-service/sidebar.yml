@@ -1,0 +1,19 @@
+---
+section: vsphere-kubernetes-service
+title: vSphere Kubernetes Service with NetApp 스토리지
+pdf-filename: vSphere Kubernetes Service with NetApp 스토리지
+entries:
+- title: 개요
+  pdf-filename: vSphere Kubernetes Service with NetApp 스토리지 개요
+  url: "/vsphere-kubernetes-service/vks-overview.html"
+- title: 스토리지 및 vSphere Kubernetes 서비스 시작하기
+  pdf-filename: 스토리지 및 vSphere Kubernetes 서비스 시작하기
+  entries:
+  - title: vSphere Kubernetes 서비스 배포
+    url: "/vsphere-kubernetes-service/deploy-vks.html"
+  - title: NetApp 스토리지가 vSphere Kubernetes Service 워크로드에 제공하는 이점
+    url: "/vsphere-kubernetes-service/netapp-storage-vks.html"
+  - title: NetApp VKS 워크로드를 위한 NetApp 스토리지 프로비저닝
+    url: "/vsphere-kubernetes-service/install-trident.html"
+  - title: NetApp 스토리지를 사용하여 VKS 워크로드 배포
+    url: "/vsphere-kubernetes-service/deploy-vks-workloads.html"

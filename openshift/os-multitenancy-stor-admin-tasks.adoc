@@ -20,12 +20,13 @@ summary: NetApp 사용하여 Red Hat OpenShift에서 멀티테넌시 구성
 . 저장소 > 저장소 VM으로 이동하여 추가를 클릭합니다.  필요한 세부 정보를 제공하여 프로젝트 1과 프로젝트 2에 대한 두 개의 SVM을 만듭니다.  또한 SVM과 해당 리소스를 관리하기 위해 vsadmin 계정을 만듭니다.
 
 
-image:redhat-openshift-041.png["ONTAP 에서 SVM 생성"]
+image::redhat-openshift-041.png[ONTAP 에서 SVM 생성]
 
 . 스토리지 관리자로 Red Hat OpenShift 클러스터에 로그인합니다.
 . 프로젝트-1에 대한 백엔드를 만들고 이를 해당 프로젝트에 전용된 SVM에 매핑합니다.  NetApp ONTAP 클러스터 관리자를 사용하는 대신 SVM의 vsadmin 계정을 사용하여 백엔드를 SVM에 연결할 것을 권장합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | tridentctl -n trident create backend -f
 {
@@ -41,8 +42,6 @@ cat << EOF | tridentctl -n trident create backend -f
 EOF
 ----
 
-
-
 NOTE: 이 예제에서는 ontap-nas 드라이버를 사용하고 있습니다.  사용 사례에 따라 백엔드를 생성할 때 적절한 드라이버를 사용하세요.
 
 
@@ -50,8 +49,9 @@ NOTE: 트라이던트 프로젝트에는 Trident 설치되어 있다고 가정�
 
 . 마찬가지로 프로젝트 2에 대한 Trident 백엔드를 만들고 프로젝트 2에 전용된 SVM에 매핑합니다.
 . 다음으로, 저장 클래스를 생성합니다.  project-1에 대한 스토리지 클래스를 만들고 storagePools 매개변수를 설정하여 project-1에 전용된 백엔드의 스토리지 풀을 사용하도록 구성합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 apiVersion: storage.k8s.io/v1
@@ -66,8 +66,9 @@ EOF
 ----
 . 마찬가지로, project-2에 대한 스토리지 클래스를 만들고 project-2에 전용된 백엔드의 스토리지 풀을 사용하도록 구성합니다.
 . 다른 프로젝트에 전용된 스토리지 클래스에서 스토리지를 요청하는 project-1의 리소스를 제한하기 위해 ResourceQuota를 생성합니다.
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: ResourceQuota

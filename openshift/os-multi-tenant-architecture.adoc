@@ -20,7 +20,7 @@ NetApp ONTAP 이 지원하는 Red Hat OpenShift와 Trident 기본적으로 워�
 
 다음 그림은 NetApp ONTAP 이 지원하는 Trident 탑재한 Red Hat OpenShift 클러스터의 멀티테넌트 솔루션을 보여줍니다.
 
-image:redhat-openshift-040.png["NetApp ONTAP 이 지원하는 Trident 를 사용한 Red Hat OpenShift 클러스터의 멀티 테넌시"]
+image::redhat-openshift-040.png[NetApp ONTAP 이 지원하는 Trident 를 사용한 Red Hat OpenShift 클러스터의 멀티 테넌시]
 
 
 
@@ -39,7 +39,7 @@ image:redhat-openshift-040.png["NetApp ONTAP 이 지원하는 Trident 를 사용
 
 Red Hat OpenShift 클러스터 관점에서 볼 때 시작할 최상위 리소스는 프로젝트입니다.  OpenShift 프로젝트는 전체 OpenShift 클러스터를 여러 개의 가상 클러스터로 나누는 클러스터 리소스로 볼 수 있습니다.  따라서 프로젝트 수준의 격리는 멀티테넌시를 구성하기 위한 기반을 제공합니다.
 
-다음으로는 클러스터에서 RBAC를 구성하는 것입니다.  가장 좋은 방법은 단일 프로젝트나 워크로드를 작업하는 모든 개발자를 ID 공급자(IdP)의 단일 사용자 그룹으로 구성하는 것입니다.  Red Hat OpenShift는 IdP 통합과 사용자 그룹 동기화를 허용하므로 IdP의 사용자와 그룹을 클러스터로 가져올 수 있습니다.  이를 통해 클러스터 관리자는 프로젝트에 전용된 클러스터 리소스에 대한 액세스를 해당 프로젝트에서 작업하는 사용자 그룹으로 분리하여 클러스터 리소스에 대한 무단 액세스를 제한할 수 있습니다.  Red Hat OpenShift와 IdP 통합에 대해 자세히 알아보려면 설명서를 참조하세요. https://docs.openshift.com/container-platform/4.7/authentication/understanding-identity-provider.html["여기"^] .
+다음으로 클러스터에서 RBAC를 구성해야 합니다. 가장 좋은 방법은 단일 프로젝트 또는 워크로드에서 작업하는 모든 개발자를 ID 공급자(IdP)의 단일 사용자 그룹으로 구성하는 것입니다. Red Hat OpenShift는 IdP 통합 및 사용자 그룹 동기화를 지원하므로 IdP의 사용자 및 그룹을 클러스터로 가져올 수 있습니다. 이를 통해 클러스터 관리자는 특정 프로젝트에 할당된 클러스터 리소스에 대한 액세스를 해당 프로젝트에서 작업하는 사용자 그룹으로 분리하여 클러스터 리소스에 대한 무단 액세스를 제한할 수 있습니다. Red Hat OpenShift와 IdP 통합에 대한 자세한 내용은 link:https://docs.openshift.com/container-platform/4.7/authentication/understanding-identity-provider.html["ID 제공업체 이해하기"^]을 참조하십시오.
 
 
 
@@ -53,15 +53,15 @@ Red Hat OpenShift 클러스터 관점에서 볼 때 시작할 최상위 리소�
 [[trident]]
 == Trident
 
-NetApp ONTAP 에서 다양한 프로젝트에 대해 서로 다른 SVM을 생성한 후에는 각 SVM을 다른 Trident 백엔드에 매핑해야 합니다.  Trident 의 백엔드 구성은 OpenShift 클러스터 리소스에 영구 저장소를 할당하며, 이를 위해서는 SVM의 세부 정보를 매핑해야 합니다.  이는 최소한 백엔드의 프로토콜 드라이버여야 합니다.  선택적으로, 볼륨이 저장소에 프로비저닝되는 방식을 정의하고 볼륨 크기나 집계 사용 등에 대한 제한을 설정할 수 있습니다.  Trident 백엔드 정의에 대한 세부 사항은 다음에서 찾을 수 있습니다. https://docs.netapp.com/us-en/trident/trident-use/backends.html["여기"^] .
+서로 다른 프로젝트에 대해 NetApp ONTAP에 서로 다른 SVM을 생성한 후에는 각 SVM을 서로 다른 Trident 백엔드에 매핑해야 합니다. Trident의 백엔드 구성은 OpenShift 클러스터 리소스에 영구 스토리지를 할당하는 방식을 결정하며, 매핑할 SVM에 대한 세부 정보가 필요합니다. 최소한 백엔드의 프로토콜 드라이버를 정의해야 합니다. 선택적으로 스토리지에 볼륨을 프로비저닝하는 방법을 정의하고 볼륨 크기 또는 애그리게이트 사용량 등에 대한 제한을 설정할 수 있습니다. Trident 백엔드 정의에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/trident/trident-use/backends.html["백엔드 구성"^]을 참조하십시오.
 
 
 
 [[red-hat-openshift-storage-resources]]
 == Red Hat OpenShift – 스토리지 리소스
 
-Trident 백엔드를 구성한 후 다음 단계는 StorageClass를 구성하는 것입니다.  백엔드 수만큼 스토리지 클래스를 구성하여 각 스토리지 클래스가 하나의 백엔드에서만 볼륨을 스핀업할 수 있도록 합니다.  스토리지 클래스를 정의하는 동안 storagePools 매개변수를 사용하여 StorageClass를 특정 Trident 백엔드에 매핑할 수 있습니다.  저장 클래스를 정의하는 세부 사항은 다음에서 찾을 수 있습니다. https://docs.netapp.com/us-en/trident/trident-use/manage-stor-class.html["여기"^] .  따라서 StorageClass에서 Trident 백엔드로의 일대일 매핑이 이루어져 하나의 SVM을 가리킵니다.  이를 통해 해당 프로젝트에 할당된 StorageClass를 통한 모든 스토리지 클레임이 해당 프로젝트에만 전담된 SVM을 통해 처리됩니다.
+Trident 백엔드를 구성한 후 다음 단계는 StorageClasses를 구성하는 것입니다. 백엔드 수만큼 스토리지 클래스를 구성하여 각 스토리지 클래스가 하나의 백엔드에서만 볼륨을 구동할 수 있도록 액세스를 제공합니다. 스토리지 클래스를 정의하는 동안 storagePools 매개변수를 사용하여 StorageClass를 특정 Trident 백엔드에 매핑할 수 있습니다. 스토리지 클래스를 정의하는 자세한 방법은 link:https://docs.netapp.com/us-en/trident/trident-use/create-stor-class.html["스토리지 클래스 생성"^]에서 확인할 수 있습니다. 따라서 StorageClass에서 하나의 SVM을 가리키는 Trident 백엔드로의 일대일 매핑이 존재합니다. 이를 통해 해당 프로젝트에 할당된 StorageClass를 통한 모든 스토리지 클레임이 해당 프로젝트 전용 SVM에 의해서만 서비스되도록 보장합니다.
 
-저장소 클래스는 네임스페이스 리소스가 아니므로 다른 네임스페이스 또는 프로젝트에 있는 포드가 한 프로젝트의 저장소 클래스에 대한 저장소 클레임을 거부하도록 하려면 어떻게 해야 할까요?  정답은 ResourceQuotas를 사용하는 것입니다.  ResourceQuotas는 프로젝트당 리소스의 총 사용량을 제어하는 객체입니다.  이를 통해 프로젝트 내 객체가 소비할 수 있는 리소스의 수와 총량을 제한할 수 있습니다.  ResourceQuotas를 사용하면 프로젝트의 거의 모든 리소스를 제한할 수 있으며, 이를 효율적으로 사용하면 조직에서 리소스의 과도한 프로비저닝이나 과소비로 인한 비용과 중단을 줄이는 데 도움이 될 수 있습니다.  문서를 참조하세요 https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html["여기"^] 자세한 내용은.
+스토리지 클래스는 네임스페이스 리소스가 아니기 때문에, 다른 네임스페이스 또는 프로젝트에 있는 파드가 한 프로젝트의 스토리지 클래스에 대한 스토리지 클레임을 요청하는 것을 어떻게 거부할 수 있을까요? 해답은 ResourceQuotas를 사용하는 것입니다. ResourceQuotas는 프로젝트별 리소스 총 사용량을 제어하는 오브젝트입니다. 프로젝트 내 오브젝트가 사용할 수 있는 리소스의 개수와 총량을 제한할 수 있습니다. 프로젝트의 거의 모든 리소스를 ResourceQuotas를 사용하여 제한할 수 있으며, 이를 효율적으로 활용하면 리소스 과잉 프로비저닝 또는 과잉 소비로 인한 비용과 서비스 중단을 줄이는 데 도움이 됩니다. 자세한 내용은 link:https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html["프로젝트별 리소스 할당량 설정"^]을 참조하십시오.
 
 이 사용 사례의 경우 특정 프로젝트의 포드가 해당 프로젝트에 전용되지 않은 스토리지 클래스의 스토리지를 청구하지 못하도록 제한해야 합니다.  이를 위해서는 다른 스토리지 클래스에 대한 영구 볼륨 클레임을 제한해야 합니다. `<storage-class-name>.storageclass.storage.k8s.io/persistentvolumeclaims` 0으로.  또한, 클러스터 관리자는 프로젝트의 개발자가 ResourceQuotas를 수정할 수 있는 액세스 권한이 없도록 해야 합니다.

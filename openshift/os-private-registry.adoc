@@ -14,7 +14,7 @@ summary: 이 섹션에서는 Trident 가 제공하는 영구 저장소를 기반
 
 
 [role="lead"]
-Red Hat OpenShift의 대부분 배포의 경우 다음과 같은 공개 레지스트리를 사용합니다. https://quay.io["Quay.io"] 또는 https://hub.docker.com["도커허브"] 대부분의 고객 요구 사항을 충족합니다.  하지만 고객이 자신만의 비공개 이미지나 맞춤형 이미지를 호스팅하고 싶어하는 경우도 있습니다.
+대부분의 Red Hat OpenShift 배포에서는 link:https://quay.io["Quay.io"^] 또는 link:https://hub.docker.com["도커허브"^]와 같은 공용 레지스트리를 사용하는 것으로 대부분의 고객 요구 사항을 충족할 수 있습니다. 하지만 고객이 자체적인 비공개 또는 사용자 지정 이미지를 호스팅하려는 경우도 있습니다.
 
 이 절차에서는 Trident 와 NetApp ONTAP 에서 제공하는 영구 볼륨으로 지원되는 개인 이미지 레지스트리를 만드는 방법을 설명합니다.
 

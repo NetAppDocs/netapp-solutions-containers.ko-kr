@@ -16,9 +16,9 @@ summary: NetApp Element 소프트웨어는 모듈식 확장 가능 성능을 제
 [role="lead"]
 NetApp Element 소프트웨어는 모듈식 확장 가능 성능을 제공하며, 각 스토리지 노드는 환경에 보장된 용량과 처리량을 제공합니다.  NetApp Element 시스템은 단일 클러스터에서 4개에서 100개까지 노드를 확장할 수 있으며 다양한 고급 스토리지 관리 기능을 제공합니다.
 
-image:redhat-openshift-064.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+image::redhat-openshift-064.png[입력/출력 대화 상자 또는 서면 내용을 나타내는 그림]
 
-NetApp Element 스토리지 시스템에 대한 자세한 내용은 다음을 방문하세요. https://www.netapp.com/data-storage/solidfire/["NetApp Solidfire 웹사이트"^] .
+NetApp Element 스토리지 시스템에 대한 자세한 내용은 link:https://www.netapp.com/data-storage/solidfire/["NetApp Solidfire 웹사이트"^]을 참조하십시오.
 
 
 

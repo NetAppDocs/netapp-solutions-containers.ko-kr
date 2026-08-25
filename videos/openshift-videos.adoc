@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: videos/openshift-videos.html 
 keywords: video, demonstration, deployment 
-summary:  
+summary: 이 문서에 기록된 기능 중 일부를 보여줍니다. 
 ---
 = NetApp 사용한 Red Hat OpenShift에 대한 비디오 시청
 :hardbreaks:

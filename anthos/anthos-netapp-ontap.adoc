@@ -58,7 +58,7 @@ NetApp 저지연 성능, 통합 데이터 보호, 다중 프로토콜 지원을 
 
 두 시스템 모두 NetApp ONTAP 데이터 관리 소프트웨어로 구동됩니다. 이 소프트웨어는 업계에서 가장 진보된 데이터 관리 소프트웨어로, 가용성이 높고 클라우드 통합이 가능하며 간소화된 스토리지 관리를 통해 데이터 패브릭에 필요한 엔터프라이즈급 속도, 효율성 및 보안을 제공합니다.
 
-NETAPP AFF 및 FAS 플랫폼에 대한 자세한 내용을 보려면 클릭하세요. https://docs.netapp.com/platstor/index.jsp["여기"] .
+NetApp AFF 및 FAS 플랫폼에 대한 자세한 내용은 link:https://docs.netapp.com/platstor/index.jsp["NetApp 하드웨어 플랫폼 설명서"^]을 참조하십시오.
 
 
 
@@ -67,7 +67,7 @@ NETAPP AFF 및 FAS 플랫폼에 대한 자세한 내용을 보려면 클릭하�
 
 ONTAP Select 사용자 환경의 하이퍼바이저에 배포할 수 있는 NetApp ONTAP 의 소프트웨어 정의 배포입니다.  VMware vSphere 또는 KVM에 설치할 수 있으며 하드웨어 기반 ONTAP 시스템의 모든 기능과 경험을 제공합니다.
 
-ONTAP Select 에 대한 자세한 내용을 보려면 클릭하세요. https://docs.netapp.com/us-en/ontap-select/["여기"] .
+ONTAP Select에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/ontap-select/["ONTAP Select 문서"^]을 참조하십시오.
 
 
 
@@ -76,4 +76,4 @@ ONTAP Select 에 대한 자세한 내용을 보려면 클릭하세요. https://d
 
 NetApp Cloud Volumes ONTAP Amazon AWS, Microsoft Azure, Google Cloud를 포함한 다양한 퍼블릭 클라우드에 배포할 수 있는 NetApp ONTAP 의 클라우드 배포 버전입니다.
 
-Cloud Volumes ONTAP 에 대한 자세한 내용을 보려면 클릭하세요. https://docs.netapp.com/us-en/occm/#discover-whats-new["여기"] .
+Cloud Volumes ONTAP에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/occm/#discover-whats-new["Cloud Volumes ONTAP 설명서"^]을 참조하십시오.

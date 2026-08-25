@@ -11,9 +11,7 @@
   <block id="71d00a17a6d603b0b4ebb168354950db" category="list-text">작업 부하 수요에 따라 인프라를 독립적으로 확장할 수 있는 기능</block>
   <block id="2b8932b35916e8cecb6216546111322e" category="paragraph">Red Hat OpenShift Container Platform은 완벽하게 지원되는 엔터프라이즈 Kubernetes 플랫폼입니다.  Red Hat은 컨테이너화된 애플리케이션을 빌드, 배포 및 관리하기 위한 모든 구성 요소가 완벽하게 통합된 애플리케이션 플랫폼을 제공하기 위해 오픈 소스 Kubernetes에 여러 가지 개선 사항을 적용했습니다.</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">여기</block>
-  <block id="73677e8d319e77c91f647e668e868ecb" category="paragraph">자세한 내용은 OpenShift 웹사이트를 방문하세요.<block ref="35d5a627a33ce17e4bd125258d59fbc4" category="inline-link-rx"></block> .</block>
   <block id="660d073f0987fac312dc40bd5dc868bd" category="paragraph">NetApp 기업 데이터 센터와 하이브리드 클라우드 구축에 적합한 여러 가지 스토리지 시스템을 보유하고 있습니다.  NetApp 포트폴리오에는 NetApp ONTAP, NetApp Element, NetApp e-Series 스토리지 시스템이 포함되어 있으며, 이 모든 시스템은 컨테이너화된 애플리케이션에 대한 영구 스토리지를 제공할 수 있습니다.</block>
-  <block id="f582083d849d313b57029bcb7e14f0b5" category="paragraph">자세한 내용은 NetApp 웹사이트를 방문하세요.<block ref="95da63d781dead5af723667a3f69096a" category="inline-link-rx"></block> .</block>
   <block id="52793fa37eb7686ddfd1adbb418ea88b" category="paragraph">Trident {k8s_distribution_name}과 같은 컨테이너 및 Kubernetes 배포판을 위한 오픈 소스이자 완벽하게 지원되는 스토리지 오케스트레이터입니다.</block>
   <block id="674132e161f2169b0ec0b4ccbd09312c" category="paragraph">자세한 내용은 Trident 웹사이트를 방문하세요.<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block> .</block>
   <block id="367ed9b12ca74138f4b935c22d3372f4" category="paragraph">NetApp 컨테이너화된 애플리케이션의 데이터를 프로비저닝, 보호 및 관리하는 데 필요한 Trident 인증을 받은 여러 스토리지 플랫폼을 보유하고 있습니다.</block>
@@ -52,16 +50,12 @@
   <block id="5a69e0f8303b40f9f4d56038d3d260c9" category="section-title">NetApp AFF/ FAS</block>
   <block id="f4fc33973424c12639f93790b1c6f370" category="paragraph">NetApp 저지연 성능, 통합 데이터 보호, 다중 프로토콜 지원을 기반으로 맞춤 제작된 강력한 올플래시(AFF) 및 확장형 하이브리드(FAS) 스토리지 플랫폼을 제공합니다.</block>
   <block id="1c17e6d2341ed81f40ea6b64de41e6d7" category="paragraph">두 시스템 모두 NetApp ONTAP 데이터 관리 소프트웨어로 구동됩니다. 이 소프트웨어는 업계에서 가장 진보된 데이터 관리 소프트웨어로, 간소화되고 가용성이 높은 클라우드 통합 스토리지 관리를 통해 데이터 패브릭 요구 사항에 맞는 엔터프라이즈급 속도, 효율성 및 보안을 제공합니다.</block>
-  <block id="992c24be8f66e4259b38ce763c115251" category="paragraph">NETAPP AFF/ FAS 플랫폼에 대한 자세한 내용을 보려면 클릭하세요.<block ref="629508ef5a91b5835f70894f34eed424" category="inline-link-rx"></block> .</block>
   <block id="3a3a5cd068731551120f43f37950768b" category="section-title">ONTAP Select</block>
   <block id="158de41b0c768154e1c26d384097971b" category="paragraph">ONTAP Select 사용자 환경의 하이퍼바이저에 배포할 수 있는 NetApp ONTAP 의 소프트웨어 정의 배포입니다.  VMware vSphere나 KVM에 설치할 수 있으며, 하드웨어 기반 ONTAP 시스템의 모든 기능과 경험을 제공합니다.</block>
-  <block id="3f0bbee5abf3eed060d4147cb0d060b9" category="paragraph">ONTAP Select 에 대한 자세한 내용을 보려면 클릭하세요.<block ref="7c1424ed7be035c303f12b0763e38ece" category="inline-link-rx"></block> .</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="section-title">Cloud Volumes ONTAP</block>
   <block id="9c38b2d834f16a22a033cc493828d911" category="paragraph">NetApp Cloud Volumes ONTAP Amazon AWS, Microsoft Azure, Google Cloud를 포함한 다양한 퍼블릭 클라우드에 배포할 수 있는 NetApp ONTAP 의 클라우드 배포 버전입니다.</block>
-  <block id="c7fa0d52c3955385f084d0e67c59f963" category="paragraph">Cloud Volumes ONTAP 에 대한 자세한 내용을 보려면 클릭하세요.<block ref="75c9b0075008bbe40ac851ad7f6dda6a" category="inline-link-rx"></block> .</block>
   <block id="87517df6852cb879fffc1e5811e773eb" category="paragraph">NetApp 상태 저장 컨테이너 애플리케이션과 해당 데이터를 조율, 관리, 보호 및 마이그레이션하는 데 도움이 되는 다양한 제품을 제공합니다.</block>
   <block id="d8c97b16fc0393403d454727d6719db4" category="paragraph"><block ref="d8c97b16fc0393403d454727d6719db4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4d3fb24019e0cc5250fe07af0c12fa7b" category="paragraph">NetApp Trident {k8s_distribution_name}과 같은 컨테이너 및 Kubernetes 배포판을 위한 오픈 소스이자 완벽하게 지원되는 스토리지 오케스트레이터입니다.  자세한 내용은 Trident 웹사이트를 방문하세요.<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block> .</block>
   <block id="ccbb3765ebd50818c2e13a7aba362360" category="paragraph">다음 페이지에는 {solution_name} 솔루션의 애플리케이션 및 영구 스토리지 관리에 대해 검증된 NetApp 제품에 대한 추가 정보가 있습니다.</block>
   <block id="e71e852dc96d4d0e2da95de923a6f8ff" category="inline-link-macro">NetApp Trident</block>
   <block id="25b90e1180939c55a6c004f0caece01e" category="list-text"><block ref="25b90e1180939c55a6c004f0caece01e" category="inline-link-macro-rx"></block></block>
@@ -69,7 +63,6 @@
   <block id="a4957cf974ce20219897bbbf5b131cb8" category="paragraph">관리자는 프로젝트 요구 사항과 압축, 특정 디스크 유형 또는 특정 수준의 성능을 보장하는 QoS 수준 등의 고급 스토리지 기능을 활성화하는 스토리지 시스템 모델을 기반으로 여러 스토리지 백엔드를 구성할 수 있습니다.  백엔드가 정의되면 개발자는 프로젝트에서 이러한 백엔드를 사용하여 영구 볼륨 클레임(PVC)을 생성하고 필요에 따라 영구 저장소를 컨테이너에 연결할 수 있습니다.</block>
   <block id="c1169b92d2702ce17fd2fd00ee52298d" category="paragraph"><block ref="c1169b92d2702ce17fd2fd00ee52298d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1a87a98cf239ab6c40a301d699d36ce" category="paragraph">Trident 는 개발 주기가 빠르며 Kubernetes와 마찬가지로 1년에 4번 출시됩니다.</block>
-  <block id="2e0b4ead344201a59336e8b95c4c575f" category="paragraph">Trident 의 최신 버전은 2022년 4월에 출시된 22.04입니다.  어떤 Kubernetes 배포판에서 어떤 버전의 Trident 테스트되었는지에 대한 지원 매트릭스를 찾을 수 있습니다.<block ref="34562000b9988739736848a0014e5230" category="inline-link-rx"></block> .</block>
   <block id="ed42e52f359216f47260ed1d21ef331c" category="paragraph">20.04 릴리스부터 Trident 설정은 Trident 운영자가 수행합니다.  운영자는 대규모 배포를 보다 쉽게 만들고 Trident 설치의 일부로 배포되는 포드에 대한 자체 복구를 포함한 추가 지원을 제공합니다.</block>
   <block id="4a85fdd5a26454abc330a5ec2a46a326" category="paragraph">21.01 릴리스에서는 Trident Operator 설치를 용이하게 해주는 Helm 차트가 제공되었습니다.</block>
   <block id="c0018d5f0e0d9decd39a8059cc2bc473" category="summary">이 페이지에 제공된 예는 NetApp 과 함께 사용하는 Anthos에 대한 솔루션 검증 및 사용 사례입니다.</block>
@@ -240,7 +233,6 @@
   <block id="cb9f661ea2c5b0b25cb936398de81286" category="admonition">F5 BIG-IP는 독립형 모드 또는 클러스터 모드로 구축할 수 있습니다.  이러한 검증을 위해 F5 BIG-IP는 독립 실행형 모드로 배포되었습니다.  그러나 프로덕션 목적으로 NetApp 단일 장애 지점을 방지하기 위해 BIG-IP 인스턴스 클러스터를 만드는 것을 권장합니다.</block>
   <block id="0d3e8be481c0c23fd0a68da9a9340ef7" category="admonition">F5 BIG-IP 시스템은 전용 하드웨어, 클라우드 또는 온프레미스 가상 어플라이언스로 배포하여 F5 CIS와 통합할 수 있도록 12.x 이상 버전을 사용할 수 있습니다.  이 문서의 목적상 F5 BIG-IP 시스템은 BIG-IP VE 에디션 등을 사용하여 가상 어플라이언스로 검증되었습니다.</block>
   <block id="39bc153685f2a0c6d56db4227295a3b0" category="section-title">검증된 릴리스</block>
-  <block id="b662a8c121a377d9111fe64265c8d819" category="paragraph">이 솔루션은 VMware vSphere에 배포된 가상 어플라이언스를 활용합니다.  F5 Big-IP 가상 어플라이언스의 네트워킹은 네트워크 환경에 따라 2암 또는 3암 구성으로 구성할 수 있습니다.  이 문서에서의 배포는 2개 팔 구성을 기반으로 합니다.  Anthos와 함께 사용할 가상 어플라이언스 구성에 대한 추가 세부 정보는 다음을 참조하세요.<block ref="f18a28d0c935319437c4d1b1e33e5728" category="inline-link-rx"></block> .</block>
   <block id="9c62eb7c12e4e6a75fc74fffecb2db09" category="paragraph">NetApp 의 솔루션 엔지니어링 팀은 Anthos On-Prem 배포 작업을 위해 랩에서 다음 표의 릴리스를 검증했습니다.</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
   <block id="37f438df6a6d5ba4c17ef8ca58562f00" category="cell">F5</block>
@@ -249,7 +241,6 @@
   <block id="c2c889e06ea18c0e72996bc4b43c8115" category="cell">16.1.0-0.0.19</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">설치</block>
   <block id="674751c31a2db2596bf7788e2953b80f" category="paragraph">F5 BIG-IP를 설치하려면 다음 단계를 완료하세요.</block>
-  <block id="ee5cd6f83412e93266bf30ff048db6ff" category="list-text">F5에서 가상 애플리케이션 Open Virtual Appliance(OVA) 파일을 다운로드하세요.<block ref="cafae381bde5e2381c6df42a3aa937c6" category="inline-link-rx"></block> .</block>
   <block id="fff9995f30a825c5d3e5709e7b78117a" category="admonition">기기를 다운로드하려면 사용자는 F5에 등록해야 합니다.  그들은 Big-IP Virtual Edition Load Balancer에 대한 30일 데모 라이선스를 제공합니다.  NetApp 어플라이언스의 프로덕션 배포에 대해 영구 10Gbps 라이선스를 권장합니다.</block>
   <block id="1a104d04970b6b80d8cf31f554404f4d" category="list-text">인프라 리소스 풀을 마우스 오른쪽 버튼으로 클릭하고 OVF 템플릿 배포를 선택합니다.  1단계에서 다운로드한 OVA 파일을 선택할 수 있는 마법사가 시작됩니다.  다음을 클릭하세요.</block>
   <block id="fdf7304b13d736c791bc745a330e7309" category="inline-image-macro">Big-IP 어플라이언스 배포</block>
@@ -332,7 +323,6 @@
   <block id="05c10047ab7b3613fff3f97b9c177de4" category="paragraph"><block ref="05c10047ab7b3613fff3f97b9c177de4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="678cbe37bb872d145128736b4650ef68" category="paragraph">NetApp 저지연 성능, 통합 데이터 보호, 다중 프로토콜 지원을 기반으로 맞춤 제작된 강력한 올플래시(AFF) 및 확장형 하이브리드(FAS) 스토리지 플랫폼을 제공합니다.</block>
   <block id="b321b5ab2c84403c3a4dd82bce8757ab" category="paragraph">두 시스템 모두 NetApp ONTAP 데이터 관리 소프트웨어로 구동됩니다. 이 소프트웨어는 업계에서 가장 진보된 데이터 관리 소프트웨어로, 가용성이 높고 클라우드 통합이 가능하며 간소화된 스토리지 관리를 통해 데이터 패브릭에 필요한 엔터프라이즈급 속도, 효율성 및 보안을 제공합니다.</block>
-  <block id="a9b90f3200d3b94ea47e85db3a435816" category="paragraph">NETAPP AFF 및 FAS 플랫폼에 대한 자세한 내용을 보려면 클릭하세요.<block ref="629508ef5a91b5835f70894f34eed424" category="inline-link-rx"></block> .</block>
   <block id="b008e805d13d953ddb5cbb220d8ef9b6" category="paragraph">ONTAP Select 사용자 환경의 하이퍼바이저에 배포할 수 있는 NetApp ONTAP 의 소프트웨어 정의 배포입니다.  VMware vSphere 또는 KVM에 설치할 수 있으며 하드웨어 기반 ONTAP 시스템의 모든 기능과 경험을 제공합니다.</block>
   <block id="f0f4b6de2040d7dc57e7f4f6baee7ec3" category="paragraph">NetApp Cloud Volumes ONTAP Amazon AWS, Microsoft Azure, Google Cloud를 포함한 다양한 퍼블릭 클라우드에 배포할 수 있는 NetApp ONTAP 의 클라우드 배포 버전입니다.</block>
   <block id="957478b81604fc0a340d863f3b89a2da" category="summary">NetApp Anthos에 배포된 애플리케이션에 스토리지를 프로비저닝하기 위해 Trident Storage Orchestrator에 적합한 여러 스토리지 플랫폼을 보유하고 있습니다.</block>
@@ -390,12 +380,10 @@
   <block id="385c65f480dfcbc7cb530a2c6c807ae9" category="paragraph">Anthos On Prem은 VMware vSphere 하이퍼바이저 또는 선택한 베어 메탈 인프라에 배포할 수 있는 완벽하게 지원되는 엔터프라이즈 Kubernetes 플랫폼입니다.</block>
   <block id="81f74b2a02db97d708bd7cbf08d2463a" category="section-title">NetApp 스토리지 시스템</block>
   <block id="5534dc7dafa6f321e51a117c53baff02" category="paragraph">NetApp 기업 데이터 센터와 하이브리드 클라우드 구축에 적합한 여러 가지 스토리지 시스템을 보유하고 있습니다.  NetApp 포트폴리오에는 NetApp ONTAP, Cloud Volumes ONTAP, Google Cloud NetApp Volumes, Azure NetApp Files , NetApp ONTAP 스토리지 시스템용 FSx ONTAP 포함되어 있으며, 이 모든 솔루션은 컨테이너화된 애플리케이션에 영구 스토리지를 제공할 수 있습니다.</block>
-  <block id="aa4193984de53d2a6d8fcc2d77c09bda" category="paragraph">자세한 내용은 NetApp 웹사이트를 방문하세요.<block ref="95da63d781dead5af723667a3f69096a" category="inline-link-rx"></block> .</block>
   <block id="069b087e8e1e69cc928f18a85f683523" category="section-title">NetApp 스토리지 통합</block>
   <block id="0d9d3475cd793588b3ac71ca4ce9696f" category="paragraph">Trident Anthos를 포함한 컨테이너와 Kubernetes 배포판을 위한 오픈 소스이자 완벽하게 지원되는 스토리지 오케스트레이터입니다.</block>
   <block id="aa44798f04a58b33c3699abd02a59c57" category="paragraph">이 섹션에서는 전용 개인 이미지 레지스트리를 만들거나 사용자 정의 로드 밸런서 인스턴스를 배포하는 등 실제 사용자가 이 솔루션을 프로덕션에 배포할 때 수행해야 할 가능성이 높은 사용자 정의에 대해 설명합니다.</block>
   <block id="382742bb5fff6a719c144a0a01cd17e3" category="section-title">검증된 릴리스에 대한 현재 지원 매트릭스</block>
-  <block id="57f64c5c85667657a2c67b472c545e5a" category="paragraph">보다<block ref="0c665fc00d0d39d9ca9d157ca926b271" category="inline-link-rx"></block> 검증된 릴리스에 대한 지원 매트릭스의 경우</block>
   <block id="21e8ffc6f822b183559b39b43061c1d2" category="summary">NetApp Anthos와 같은 컨테이너 기반 환경에서 영구 데이터를 조정하고 관리하는 데 도움이 되는 다양한 제품을 제공합니다.</block>
   <block id="2515fbef39d57544723402c683215c64" category="doc">NetApp 스토리지 통합 개요</block>
   <block id="5b9abd64aa4865a31820ebec932e54f2" category="section-title">Anthos Ready 스토리지 파트너 프로그램.</block>
@@ -431,7 +419,6 @@
   <block id="2abfff2974f589f7a217325f304e0ec5" category="cell">ONTAP 9.8</block>
   <block id="955ddf0f7e289ee80cdea4b5324b620d" category="cell">22.01</block>
   <block id="84aafd4e962655f32c5bdea750278fba" category="paragraph">NetApp Anthos와 같은 컨테이너 기반 환경에서 영구 데이터를 조정하고 관리하는 데 도움이 되는 다양한 제품을 제공합니다.</block>
-  <block id="822a22bf8b93f7025f7320ca5a771bd4" category="paragraph">NetApp Trident Anthos를 포함한 컨테이너와 Kubernetes 배포판을 위한 오픈 소스의 완벽하게 지원되는 스토리지 오케스트레이터입니다.  자세한 내용은 Trident 웹사이트를 방문하세요.<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block> .</block>
   <block id="ea3f2894c4df21a157c45dcbcf989bda" category="paragraph">다음 페이지에는 Anthos with NetApp 솔루션에서 애플리케이션 및 영구 스토리지 관리를 위해 검증된 NetApp 제품에 대한 추가 정보가 있습니다.</block>
   <block id="8e0bd613649f232fe1f718134898ea21" category="summary">NetApp ONTAP 스토리지 시스템과 Trident 통합을 활성화하려면 스토리지 시스템과의 통신을 지원하는 백엔드를 만들어야 합니다.</block>
   <block id="60423d24e49c8db4836be0abd09fb78d" category="doc">NetApp ONTAP iSCSI 구성</block>
@@ -450,31 +437,19 @@
   <block id="87f6ff6bf74013e1dfe6df49a1cf1986" category="list-text">이 파일에서 backendName, managementLIF, dataLIF, svm, username 및 password 값을 편집합니다.</block>
   <block id="f897eefba2c59919d6493db4825e2db2" category="admonition">쉽게 식별할 수 있도록 NFS를 제공하는 storageDriverName과 dataLIF의 조합으로 사용자 지정 backendName 값을 정의하는 것이 가장 좋습니다.</block>
   <block id="00d6947fd6a153943286b857dcd0f339" category="admonition">라는 선택적 필드가 있습니다.<block ref="7cfbb6f07899c8071ff38e69dca190e2" prefix=" " category="inline-code"></block> 이 파일에 정의되어 있습니다.  이 줄은 NFS 백엔드에서 삭제할 수 있습니다.</block>
-  <block id="38371fce1a5a5624906f4174135ca977" category="summary">Trident Anthos를 포함한 컨테이너 및 Kubernetes 배포판을 위한 완벽하게 지원되는 오픈 소스 스토리지 오케스트레이터입니다.</block>
   <block id="1fdd8c73a319eed7bf9c10862e3ccde5" category="doc">Trident 개요</block>
   <block id="b01daa55b9d9959fd631c89839b1cd32" category="paragraph">Trident Anthos를 포함한 컨테이너와 Kubernetes 배포판을 위한 완벽하게 지원되는 오픈 소스 스토리지 오케스트레이터입니다.  Trident NetApp ONTAP 포함한 전체 NetApp 스토리지 포트폴리오와 호환되며 NFS 및 iSCSI 연결도 지원합니다.  Trident 최종 사용자가 스토리지 관리자의 개입 없이 NetApp 스토리지 시스템에서 스토리지를 프로비저닝하고 관리할 수 있도록 하여 DevOps 워크플로를 가속화합니다.</block>
   <block id="e16f8b7c3b79f3d80b3d5b5862b4481a" category="paragraph">관리자는 프로젝트 요구 사항과 압축, 특정 디스크 유형, 특정 수준의 성능을 보장하는 QoS 수준 등의 고급 스토리지 기능을 활성화하는 스토리지 시스템 모델을 기반으로 여러 스토리지 백엔드를 구성할 수 있습니다.  백엔드가 정의되면 개발자는 프로젝트에서 이러한 백엔드를 사용하여 영구 볼륨 클레임(PVC)을 생성하고 필요에 따라 영구 저장소를 컨테이너에 연결할 수 있습니다.</block>
   <block id="cacc5da01514f9fa700d86e18966b3ef" category="paragraph"><block ref="cacc5da01514f9fa700d86e18966b3ef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="783c5d4bcd70f34a1ac53de76b17e00d" category="paragraph">Trident 최신 버전에 대한 설명서를 찾을 수 있습니다.<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block> .  어떤 Kubernetes 배포판에서 어떤 버전의 Trident 테스트되었는지에 대한 지원 매트릭스를 찾을 수 있습니다.<block ref="34562000b9988739736848a0014e5230" category="inline-link-rx"></block> .</block>
   <block id="b62bb4786ef52ad76706950add6991dd" category="paragraph">20.04 릴리스부터 Trident 설정은 Trident 운영자가 수행합니다.  운영자는 대규모 배포를 보다 쉽게 만들고 Trident 설치의 일부로 배포되는 포드에 대한 자체 복구를 포함한 추가 지원을 제공합니다.</block>
   <block id="1efa4d2f8950cdd5154a6c130953c9f2" category="paragraph">22.04 릴리스에서는 Trident Operator 설치를 용이하게 해주는 Helm 차트가 제공되었습니다.</block>
-  <block id="d5ceedf0fbe688f1315aeef68b4bd00d" category="paragraph">Trident 설치 세부 사항은 다음을 참조하세요.<block ref="df28848dc0c60e349970187bfd75a0df" category="inline-link-rx"></block> .</block>
   <block id="6cfca408e9e3b476e6440302dbe3a550" category="section-title">스토리지 시스템 백엔드 생성</block>
-  <block id="6d82ca16bfbce249e1f9ea541bff13ff" category="inline-link-macro">백엔드를 만듭니다.</block>
-  <block id="0ce840bddfd38211a3fa14afcf54b563" category="paragraph">Trident Operator 설치를 완료한 후에는 사용 중인 특정 NetApp 스토리지 플랫폼에 대한 백엔드를 구성해야 합니다.  Trident 의 설정 및 구성을 계속하려면 아래 링크를 따르세요.<block ref="6afa050ddd54f270f14f9071966035ab" category="inline-link-macro-rx"></block></block>
   <block id="14f4c7abe09c4481722f1fa6563f2604" category="section-title">스토리지 클래스 생성</block>
-  <block id="f1e3764062d0208c91b1cbb929dbe6c4" category="paragraph">백엔드를 만든 후에는 Kubernetes 사용자가 볼륨이 필요할 때 지정할 수 있는 스토리지 클래스를 만들어야 합니다.  Kubernetes 사용자는 이름으로 스토리지 클래스를 지정하는 영구 볼륨 클레임(PVC)을 사용하여 볼륨을 프로비저닝합니다.  아래 링크를 따라 스토리지 클래스를 생성하세요.<block ref="d71f4f7b9c3f7c9426171d42e12723d2" category="inline-link-macro-rx"></block></block>
   <block id="50cbd0d28725f746b370915ee052232c" category="section-title">동적으로 볼륨 프로비저닝</block>
   <block id="72407fd74e9ce26b706ed85bc90bd124" category="inline-link-macro">PVC 생성</block>
-  <block id="54fc27fa939861851f69424ace384dc2" category="paragraph">볼륨을 동적으로 프로비저닝하려면 스토리지 클래스를 사용하여 Kubernetes 영구 볼륨 클레임(PVC) 객체를 만들어야 합니다.  아래 링크를 따라 PVC 객체를 만들어 보세요.<block ref="c60059241533eaa052b5302a867dee16" category="inline-link-macro-rx"></block></block>
   <block id="279865aaa331ec925a99c3272eb45478" category="section-title">볼륨을 사용하세요</block>
   <block id="fed9c63a200801110024280f08877e16" category="inline-link-macro">볼륨을 포드에 마운트합니다.</block>
-  <block id="1e2f7a8dd5d4ae913a1fd565f75f47f6" category="paragraph">위 단계에서 프로비저닝된 볼륨은 Pod에 볼륨을 마운트하여 애플리케이션에서 사용할 수 있습니다. 아래 링크에서 예를 보여줍니다.<block ref="089227f27218a48e27ca586faba48d0e" category="inline-link-macro-rx"></block></block>
   <block id="70e2a62f68d21714178b04c1c938d7ea" category="section-title">샘플 프로비저닝</block>
-  <block id="5f81609404aa3c8258fda936db387e50" category="inline-link-macro">iSCSI 프로토콜에 대한 샘플 매니페스트, window=_blank</block>
-  <block id="0e0e30c744337b798d795bb0f72b0366" category="paragraph"><block ref="0e0e30c744337b798d795bb0f72b0366" category="inline-link-macro-rx"></block></block>
-  <block id="d51bcf02e4ee8592abc3f54657dde8dd" category="inline-link-macro">nfs 프로토콜에 대한 샘플 매니페스트, window=_blank</block>
-  <block id="dbeac2a6da996e718ff03ec5e51a5cc4" category="paragraph"><block ref="dbeac2a6da996e718ff03ec5e51a5cc4" category="inline-link-macro-rx"></block></block>
   <block id="122aacda8785e42ca8fd7bd6ebce84f8" category="summary">VMware vSphere는 ESXi 하이퍼바이저에서 실행되는 수많은 가상화된 서버와 네트워크를 중앙에서 관리하기 위한 가상화 플랫폼입니다.</block>
   <block id="87f76f310cf20e85a098d49fa77367e5" category="doc">VMware의 Anthos 클러스터</block>
   <block id="305e6830d9a37648b6048edc110fb7e4" category="paragraph">VMware의 Anthos 클러스터는 최종 사용자의 개인 데이터 센터에 배포되는 Google Kubernetes Engine의 확장 프로그램입니다.  조직은 Google Cloud의 컨테이너에서 실행되도록 설계된 동일한 애플리케이션을 온프레미스의 Kubernetes 클러스터에 배포할 수 있습니다.  VMware의 Anthos 클러스터는 데이터 센터의 기존 VMware vSphere 환경에 배포할 수 있으므로 자본 비용을 절감하고 보다 빠른 배포 및 확장 작업이 가능합니다.</block>
@@ -597,10 +572,8 @@
   <block id="fa19c463235a810b3a93333d6ee51d6c" category="paragraph">클러스터 집합에서 애플리케이션을 생성하고 관리하려면</block>
   <block id="920db239cf01c8ded4b7f364194ab540" category="list-text">사이드바에서 애플리케이션 관리로 이동하여 애플리케이션 만들기를 클릭합니다.  만들고 싶은 애플리케이션의 세부 정보를 입력하고 '저장'을 클릭하세요.</block>
   <block id="6b41f909eb299f214abfb15580583456" category="inline-image-macro">신청서 만들기</block>
-  <block id="3f824abd348b35a7218b63150bd10f90" category="paragraph"><block ref="3f824abd348b35a7218b63150bd10f90" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bcb3e5b76f189a87ea350550f86de83f" category="list-text">애플리케이션 구성 요소가 설치되면 해당 애플리케이션이 목록에 나타납니다.</block>
   <block id="d70fc022d09a33f4044c81cd670a71b6" category="inline-image-macro">응용 프로그램 목록</block>
-  <block id="10f2eb03b2a15c6897518c6b163e441e" category="paragraph"><block ref="10f2eb03b2a15c6897518c6b163e441e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="672d326704c3be4bebf6c816a48495e7" category="list-text">이제 콘솔에서 애플리케이션을 모니터링하고 관리할 수 있습니다.</block>
   <block id="d10b633b8bd8d022c66a52d93e0ed6ce" category="doc">클러스터 수명 주기 관리</block>
   <block id="8b9449bdfc859a900fc4da7c79420145" category="paragraph">다양한 OpenShift 클러스터를 관리하려면 Advanced Cluster Management에서 클러스터를 만들거나 가져올 수 있습니다.</block>
@@ -608,83 +581,62 @@
   <block id="0becde0fcfda03aec9c722d042326324" category="list-text">새로운 OpenShift 클러스터를 생성하려면 다음 단계를 완료하세요.</block>
   <block id="e056bb6efa17796fc810edad8410280d" category="list-text">공급자 연결 만들기: 공급자 연결로 이동하여 연결 추가를 클릭하고 선택한 공급자 유형에 해당하는 모든 세부 정보를 제공하고 추가를 클릭합니다.</block>
   <block id="50dfc508091b37338da8357e63e6a405" category="inline-image-macro">공급자 연결 추가</block>
-  <block id="6950e4aa9f589c469d0be8f75780b994" category="paragraph"><block ref="6950e4aa9f589c469d0be8f75780b994" category="inline-image-macro-rx" type="image"></block></block>
   <block id="401b252566122602a82ff66bc7ed3e6c" category="list-text">새 클러스터를 만들려면 클러스터로 이동하여 클러스터 추가 &gt; 클러스터 만들기를 클릭합니다.  클러스터와 해당 공급자에 대한 세부 정보를 제공하고 만들기를 클릭합니다.</block>
   <block id="2984cab36bd51d5446963e671e808f5d" category="inline-image-macro">클러스터 추가</block>
-  <block id="23b8ad964837a66064ae1029abbbe9f0" category="paragraph"><block ref="23b8ad964837a66064ae1029abbbe9f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2da6eeb34cf16de43ab8fa2f939d81c7" category="list-text">클러스터가 생성되면 클러스터 목록에 준비 상태로 나타납니다.</block>
   <block id="e6d9a6b38dd36fd9870260249ba5fc1f" category="list-text">기존 클러스터를 가져오려면 다음 단계를 완료하세요.</block>
   <block id="f52ae06380cfd00cae7839562f550e87" category="list-text">클러스터로 이동하여 클러스터 추가 &gt; 기존 클러스터 가져오기를 클릭합니다.</block>
   <block id="63b7276dd1b569babc28304e786e2041" category="list-text">클러스터 이름을 입력하고 저장, 가져오기 및 코드 생성을 클릭합니다.  기존 클러스터를 추가하는 명령이 표시됩니다.</block>
   <block id="be87809a27ab2944f89ccaebd89b7596" category="list-text">명령 복사를 클릭하고 허브 클러스터에 추가할 클러스터에서 명령을 실행합니다.  이렇게 하면 클러스터에 필요한 에이전트가 설치되고, 이 프로세스가 완료되면 클러스터가 준비 상태로 클러스터 목록에 나타납니다.</block>
   <block id="9a618414b83afe67c19abcf935be6dbd" category="inline-image-macro">기존 클러스터 가져오기</block>
-  <block id="153d72343e42e12e3684942e2cdee878" category="paragraph"><block ref="153d72343e42e12e3684942e2cdee878" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c812d1382d834648706b3bf1e6848135" category="list-text">여러 클러스터를 만들고 가져온 후에는 단일 콘솔에서 클러스터를 모니터링하고 관리할 수 있습니다.</block>
   <block id="86c2cc4630e619e2c08c32f54e844297" category="doc">여러 클러스터에 리소스 생성</block>
   <block id="bc2397695676d1a63e489d4c80c8cd91" category="paragraph">Kubernetes용 고급 클러스터 관리를 사용하면 사용자가 콘솔에서 하나 이상의 관리형 클러스터에 동시에 리소스를 생성할 수 있습니다.  예를 들어, 서로 다른 NetApp ONTAP 클러스터로 지원되는 여러 사이트에 OpenShift 클러스터가 있고 두 사이트 모두에 PVC를 프로비저닝하려면 상단 표시줄에 있는 (+) 기호를 클릭하면 됩니다.  그런 다음 PVC를 만들려는 클러스터를 선택하고 리소스 YAML을 붙여넣은 다음 만들기를 클릭합니다.</block>
   <block id="24800112d59462f8ea9ff03f5dd456a7" category="inline-image-macro">리소스 생성</block>
-  <block id="7e9a9cb44c804889afaca956d868ee57" category="paragraph"><block ref="7e9a9cb44c804889afaca956d868ee57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1630dbfdd4887ce201ea82c71cde3d11" category="doc">Kubernetes를 위한 고급 클러스터 관리 배포</block>
   <block id="fad73d4839dc21dc3d330b3940ed763f" category="paragraph">이 섹션에서는 NetApp 과 함께 Red Hat OpenShift에서 Kubernetes를 위한 고급 클러스터 관리에 대해 설명합니다.</block>
   <block id="39d08ecbb9add7bd87659df206457a73" category="list-text">허브 클러스터용 Red Hat OpenShift 클러스터(버전 4.5 이상)</block>
   <block id="f41043c73a62a435944d8abfb45094cb" category="list-text">관리형 클러스터를 위한 Red Hat OpenShift 클러스터(버전 4.4.3 이상)</block>
   <block id="d60c66eb778a488709534045787b6a26" category="list-text">Red Hat OpenShift 클러스터에 대한 클러스터 관리자 액세스</block>
   <block id="374185e020d06ceed3f020af518a1c14" category="list-text">Kubernetes를 위한 고급 클러스터 관리를 위한 Red Hat 구독</block>
-  <block id="9afcd045ce0197d71ba631e3fbe43095" category="paragraph">Advanced Cluster Management는 OpenShift 클러스터용 애드온이므로 허브와 관리형 클러스터에서 사용되는 기능에 따라 하드웨어 리소스에 대한 특정 요구 사항과 제한 사항이 있습니다.  클러스터 크기를 조정할 때 이러한 문제를 고려해야 합니다.  문서를 참조하세요<block ref="a5d2b81b971715f092f7296621743e22" category="inline-link-rx"></block> 자세한 내용은.</block>
-  <block id="65a62318377ddbc5fe3f73548dc3d677" category="paragraph">선택적으로, 허브 클러스터에 인프라 구성 요소를 호스팅하기 위한 전용 노드가 있고 해당 노드에만 고급 클러스터 관리 리소스를 설치하려는 경우, 해당 노드에 허용 및 선택기를 추가해야 합니다.  자세한 내용은 설명서를 참조하세요.<block ref="df4d7b25534e8f26e8ab3acc1c646101" category="inline-link-rx"></block> .</block>
   <block id="7c613b296892d4712b9041d3081282f8" category="summary">NetApp 과 함께 Red Hat OpenShift를 기반으로 하는 Kubernetes를 위한 고급 클러스터 관리.</block>
   <block id="78e1aefe2bbb2518f1156636e761e479" category="paragraph">OpenShift 클러스터에 Kubernetes용 Advanced Cluster Management를 설치하려면 다음 단계를 완료하세요.</block>
   <block id="b17056cdbd9ec695d4348e1ad799ace4" category="list-text">허브 클러스터로 OpenShift 클러스터를 선택하고 클러스터 관리자 권한으로 로그인합니다.</block>
   <block id="bc2ab7a7550cebeb52a08cf830b5ecf6" category="list-text">운영자 &gt; 운영자 허브로 이동하여 Kubernetes용 고급 클러스터 관리를 검색합니다.</block>
   <block id="2e5d3941e033e96d5317cc2bbd1da914" category="inline-image-macro">ACM 타일</block>
-  <block id="9cba2871ff28eb39207a2645fc9d6f1f" category="paragraph"><block ref="9cba2871ff28eb39207a2645fc9d6f1f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4ab802b80978ba1c5de3922d546bdb7" category="list-text">Kubernetes용 고급 클러스터 관리를 선택하고 설치를 클릭합니다.</block>
   <block id="cc5a9dd5971b8369354db684e5dbfe2b" category="inline-image-macro">ACM 타일 세부 정보</block>
-  <block id="550443e3be425fc14c0daef2e72e9df5" category="paragraph"><block ref="550443e3be425fc14c0daef2e72e9df5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c972585d6241c4f2ed2604bcc8706358" category="list-text">설치 운영자 화면에서 필요한 세부 정보를 제공하고(NetApp 기본 매개변수를 유지할 것을 권장합니다) 설치를 클릭합니다.</block>
   <block id="72b342ddabad6a9ec11df82389c40b88" category="inline-image-macro">ACM Operator 타일 설치</block>
-  <block id="deb0049462c815b6822399ba0a1deddf" category="paragraph"><block ref="deb0049462c815b6822399ba0a1deddf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11458c333e4903e54ca46f822ba6a3b6" category="list-text">운영자 설치가 완료될 때까지 기다리세요.</block>
   <block id="64524f91c2fdfcd54b4bbcab35392908" category="inline-image-macro">ACM 운영자 설치 진행 중</block>
-  <block id="96c387ac3caa3d3c2803b0d990480051" category="paragraph"><block ref="96c387ac3caa3d3c2803b0d990480051" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7bf3d0678c48be5730f20005e6f88aa1" category="list-text">운영자가 설치된 후 MultiClusterHub 만들기를 클릭합니다.</block>
   <block id="e0d84ec6a5b8f92909a7a3bef11455c1" category="inline-image-macro">ACM 운영자 Multiclusterhub</block>
-  <block id="efe77302287c455d079da45b8902e93f" category="paragraph"><block ref="efe77302287c455d079da45b8902e93f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="95f29f27e373a9759cf065e1fde23e28" category="list-text">MultiClusterHub 생성 화면에서 세부 정보를 입력한 후 생성을 클릭합니다.  이렇게 하면 멀티 클러스터 허브 설치가 시작됩니다.</block>
   <block id="344f0cb43d1b2e7a719bea808fe7c5bf" category="inline-image-macro">멀티클러스터 허브 화면 생성</block>
-  <block id="a3546564dfb5145dcb91fdeefa484d89" category="paragraph"><block ref="a3546564dfb5145dcb91fdeefa484d89" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a50aa5e8249109d6f4902945e968ad7d" category="list-text">모든 포드가 open-cluster-management 네임스페이스에서 Running 상태로 이동하고 운영자가 Succeeded 상태로 이동하면 Kubernetes용 Advanced Cluster Management가 설치됩니다.</block>
   <block id="851548d1ad843a23609f325e8b54e72d" category="inline-image-macro">ACM 운영자 설치됨</block>
-  <block id="bbf8732a6e771744f256e15b7d613a80" category="paragraph"><block ref="bbf8732a6e771744f256e15b7d613a80" category="inline-image-macro-rx" type="image"></block></block>
   <block id="391dd52c88201d377f1572062e22c43e" category="list-text">허브 설치를 완료하는 데는 시간이 다소 걸리며, 설치가 완료되면 MultiCluster 허브가 실행 상태로 전환됩니다.</block>
   <block id="c7aa79f0c31ac15d728ee47c7e6eaee2" category="inline-image-macro">멀티클러스터 허브 준비 완료</block>
-  <block id="e3f0a1732a09065231e9bf0a4fa10e6e" category="paragraph"><block ref="e3f0a1732a09065231e9bf0a4fa10e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eef36825efd5d2d40e4f833635cd19da" category="list-text">이는 open-cluster-management 네임스페이스에 경로를 생성합니다.  경로의 URL에 연결하여 고급 클러스터 관리 콘솔에 액세스합니다.</block>
   <block id="f761fad3f1c25e94d5f46ebd9e23a901" category="inline-image-macro">ACM 콘솔 경로</block>
-  <block id="8be16232c92dad9e0dfd70e175da411a" category="paragraph"><block ref="8be16232c92dad9e0dfd70e175da411a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fc5f6755312b7edeef9542bd55ef639" category="doc">거버넌스와 위험</block>
   <block id="9d7264067197bc9ff368288f98750fd6" category="paragraph">이 기능을 사용하면 다양한 클러스터에 대한 규정 준수 정책을 정의하고 클러스터가 해당 정책을 준수하는지 확인할 수 있습니다.  규칙을 위반하거나 벗어난 사항을 알리거나 수정하기 위해 정책을 구성할 수 있습니다.</block>
   <block id="87f4e127e0ecf99187b35830ca7e78aa" category="list-text">사이드바에서 거버넌스 및 위험으로 이동합니다.</block>
   <block id="0ecc505d3375f8bb3bd959aaaf7e710a" category="list-text">규정 준수 정책을 만들려면 정책 만들기를 클릭하고 정책 표준의 세부 정보를 입력한 다음 이 정책을 준수해야 하는 클러스터를 선택합니다.  이 정책 위반 사항을 자동으로 수정하려면 지원되는 경우 적용 확인란을 선택하고 만들기를 클릭합니다.</block>
   <block id="f6262e5369e2b989638aaa9d4f333d91" category="inline-image-macro">규정 준수 정책 만들기</block>
-  <block id="563c01ec25937c5d155725b44cb310f8" category="paragraph"><block ref="563c01ec25937c5d155725b44cb310f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0a1575621f2b12d5216e6d1c95eed2e6" category="list-text">모든 필수 정책이 구성된 후에는 Advanced Cluster Management에서 모든 정책 또는 클러스터 위반 사항을 모니터링하고 해결할 수 있습니다.</block>
   <block id="38c080ff2128a92954fb61942ea497c0" category="inline-image-macro">정책 모니터링</block>
-  <block id="e3b35cae2cfe8ce9766339e742dd43de" category="paragraph"><block ref="e3b35cae2cfe8ce9766339e742dd43de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="31fd0c2c8d388a4cd2c6459234743476" category="doc">관찰 가능성</block>
   <block id="e98511d60f9850de86f096614f447322" category="paragraph">Kubernetes를 위한 고급 클러스터 관리 기능은 모든 클러스터에서 노드, 포드, 애플리케이션 및 워크로드를 모니터링하는 방법을 제공합니다.</block>
   <block id="36aff44ed429ca86d182dc7ee3dfdbb1" category="list-text">환경 관찰 &gt; 개요로 이동합니다.</block>
   <block id="7a6ccefec75a946583cffdd0a8a47e09" category="inline-image-macro">관찰 가능성 홈페이지</block>
-  <block id="e5e0184c6e68858f80111d781d6db759" category="paragraph"><block ref="e5e0184c6e68858f80111d781d6db759" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9904a9276a489fc238c999d2ddd633f" category="list-text">모든 클러스터의 모든 포드와 워크로드는 다양한 필터를 기준으로 모니터링되고 정렬됩니다.  해당 데이터를 보려면 Pod를 클릭하세요.</block>
   <block id="4a973ae1a908770e354f949d3c0592f8" category="inline-image-macro">포드 관찰</block>
-  <block id="42a8f7ef0e3387f7c0f76f365a7736fa" category="paragraph"><block ref="42a8f7ef0e3387f7c0f76f365a7736fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cd1c61051d3647bc47d839e0efee222" category="list-text">다양한 데이터 포인트를 기반으로 클러스터 전반의 모든 노드를 모니터링하고 분석합니다.  노드를 클릭하면 해당 세부 정보에 대한 자세한 정보를 얻을 수 있습니다.</block>
   <block id="8a373f777de729c082b5be2d80b7eca6" category="inline-image-macro">노드 관찰</block>
-  <block id="de2d0b768057392661b178ea76e594d7" category="paragraph"><block ref="de2d0b768057392661b178ea76e594d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e7f54a0ebc5cd69209a17181d477e4c" category="list-text">모든 클러스터는 다양한 클러스터 리소스와 매개변수를 기반으로 모니터링되고 구성됩니다.  클러스터 세부 정보를 보려면 클러스터를 클릭하세요.</block>
   <block id="2ececa2c251a851a85e976daae558c81" category="inline-image-macro">클러스터 관찰</block>
-  <block id="acb848430f87ae9ce699ef9e3e380d53" category="paragraph"><block ref="acb848430f87ae9ce699ef9e3e380d53" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb5a90af80107b22fd8d5c8ebe2ed939" category="doc">Kubernetes를 위한 고급 클러스터 관리: NetApp 사용한 Red Hat OpenShift - 개요</block>
   <block id="30c15b5a84f4fb26cd25b38dc787b22d" category="paragraph">컨테이너화된 애플리케이션이 개발 단계에서 운영 단계로 전환됨에 따라 많은 조직에서는 해당 애플리케이션의 테스트와 배포를 지원하기 위해 여러 개의 Red Hat OpenShift 클러스터가 필요합니다.  이와 관련하여 조직은 일반적으로 OpenShift 클러스터에서 여러 애플리케이션이나 워크로드를 호스팅합니다.  따라서 각 조직은 일련의 클러스터를 관리하게 되고, OpenShift 관리자는 여러 온프레미스 데이터 센터와 퍼블릭 클라우드에 걸쳐 있는 다양한 환경에서 여러 클러스터를 관리하고 유지 관리해야 하는 추가적인 과제에 직면하게 됩니다.  이러한 과제를 해결하기 위해 Red Hat은 Kubernetes를 위한 고급 클러스터 관리를 도입했습니다.</block>
   <block id="1cf7b9db4d7fe091bd1bbb685e5beea8" category="paragraph">Kubernetes용 Red Hat Advanced Cluster Management를 사용하면 다음 작업을 수행할 수 있습니다.</block>
@@ -694,8 +646,6 @@
   <block id="fed6fdd49a1e6adda0ea12a93e74ea2d" category="list-text">여러 클러스터에서 보안 규정 준수를 모니터링하고 시행합니다.</block>
   <block id="a7516c278242a08b85090e24cbf67218" category="paragraph">Kubernetes용 Red Hat Advanced Cluster Management는 Red Hat OpenShift 클러스터에 추가 기능으로 설치되며, 이 클러스터를 모든 작업의 중앙 컨트롤러로 사용합니다.  이 클러스터는 허브 클러스터로 알려져 있으며, 사용자가 Advanced Cluster Management에 연결할 수 있는 관리 평면을 제공합니다.  고급 클러스터 관리 콘솔을 통해 가져오거나 생성된 다른 모든 OpenShift 클러스터는 허브 클러스터에서 관리되며 관리형 클러스터라고 합니다.  클러스터 수명 주기 관리, 애플리케이션 수명 주기 관리, 관찰 가능성, 보안 규정 준수와 관련된 다양한 활동에 대한 요청을 처리하기 위해 관리되는 클러스터에 Klusterlet이라는 에이전트를 설치합니다.</block>
   <block id="b1000f23e43dfac19b53c74d7ebe66c8" category="inline-image-macro">ACM 아키텍처</block>
-  <block id="06b9b6e6c32b6f413afbdcf2bedf9701" category="paragraph"><block ref="06b9b6e6c32b6f413afbdcf2bedf9701" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a376445fd812a7fa27714e6b11bc6163" category="paragraph">자세한 내용은 설명서를 참조하세요.<block ref="50c0dc50e188cf3a7847d9a813fd829e" category="inline-link-rx"></block> .</block>
   <block id="a003986254b5a6c136733113505348da" category="doc">F5 BIG-IP 로드 밸런서 설치</block>
   <block id="048600e045fd4c5afe58ec9d65aa4b19" category="paragraph">F5 BIG-IP는 L4-L7 부하 분산, SSL/TLS 오프로드, DNS, 방화벽 등을 비롯한 광범위한 고급 프로덕션 등급 트래픽 관리 및 보안 서비스를 제공하는 애플리케이션 전송 컨트롤러(ADC)입니다.  이러한 서비스는 애플리케이션의 가용성, 보안 및 성능을 크게 향상시킵니다.</block>
   <block id="5c47e8322efb7f77c0aa515fec29477e" category="paragraph">F5 BIG-IP는 전용 하드웨어, 클라우드 또는 온프레미스 가상 어플라이언스로 다양한 방식으로 배포 및 사용할 수 있습니다.  요구 사항에 따라 F5 BIG-IP를 탐색하고 배포하려면 여기의 설명서를 참조하세요.</block>
@@ -716,20 +666,15 @@
   <block id="088afeececf092d5a406e0f5022a9638" category="cell">F5 AS3</block>
   <block id="425b0ca2d1d9d5c75555116fcd1614bf" category="cell">3.30.0</block>
   <block id="b9a4064fa117596b59fb18df84df74df" category="inline-link">F5 AS3 GitHub 저장소</block>
-  <block id="6463cf716c052865ec9f4716ff0b5d3f" category="list-text">F5 Application Services 3 확장을 설치하면 BIG-IP 시스템이 명령형 명령 대신 JSON으로 구성을 허용할 수 있습니다.  로 가다<block ref="0d4e47593b830323684cdec40cb60c71" category="inline-link-rx"></block> , 최신 RPM 파일을 다운로드하세요.</block>
   <block id="4c0802ebd79a8c6e5ea4aed829f023c9" category="list-text">F5 BIG-IP 시스템에 로그인하고 iApps &gt; 패키지 관리 LX로 이동한 후 가져오기를 클릭합니다.</block>
   <block id="3536ed517a711f49cfe64071db031cf5" category="list-text">파일 선택을 클릭하고 다운로드한 AS3 RPM 파일을 선택한 후 확인을 클릭하고 업로드를 클릭합니다.</block>
   <block id="2a90f793207a5a0c028d8ccc45e943fd" category="inline-image-macro">iApps 업로드</block>
-  <block id="a946929c181ae9c31d48220aee8272e1" category="paragraph"><block ref="a946929c181ae9c31d48220aee8272e1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="caedd771b59d267eda8f88d329e8784f" category="list-text">AS3 확장 프로그램이 성공적으로 설치되었는지 확인하세요.</block>
   <block id="c434efeb83b6dc500ea7893f1ad4236b" category="inline-image-macro">AS3 설치 검증</block>
-  <block id="27251de43d24b764fa00a0531d1b9a13" category="paragraph"><block ref="27251de43d24b764fa00a0531d1b9a13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97e9e05bfde432cfa7291b1e55a52ba7" category="list-text">다음으로 OpenShift와 BIG-IP 시스템 간 통신에 필요한 리소스를 구성합니다.  먼저 OpenShift SDN을 위한 BIG-IP 시스템에 VXLAN 터널 인터페이스를 생성하여 OpenShift와 BIG-IP 서버 간에 터널을 생성합니다.  네트워크 &gt; 터널 &gt; 프로필로 이동한 후 만들기를 클릭하고 부모 프로필을 vxlan으로, 플러딩 유형을 멀티캐스트로 설정합니다.  프로필 이름을 입력하고 '완료'를 클릭합니다.</block>
   <block id="faaca798da0468a250bf3c3bffc26681" category="inline-image-macro">VXLAN 프로필 생성</block>
-  <block id="155a411b699416d0bc09a5b6ec1570ff" category="paragraph"><block ref="155a411b699416d0bc09a5b6ec1570ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="45ae0c96657fdc5a20e83839c2386c1e" category="list-text">네트워크 &gt; 터널 &gt; 터널 목록으로 이동하여 만들기를 클릭하고 터널의 이름과 로컬 IP 주소를 입력합니다.  이전 단계에서 만든 터널 프로필을 선택하고 '마침'을 클릭합니다.</block>
   <block id="1497a4f92d416d6c80392ec3467ff140" category="inline-image-macro">VXLAN 터널 생성</block>
-  <block id="762ab9036c7e149843e77e617cc2a3cd" category="paragraph"><block ref="762ab9036c7e149843e77e617cc2a3cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cc5e5bc480b39177b8cb8c9c3a2266ae" category="list-text">클러스터 관리자 권한으로 Red Hat OpenShift 클러스터에 로그인합니다.</block>
   <block id="986e63a308b4bebd3f531e38fa5a06c7" category="list-text">OpenShift에서 F5 BIG-IP 서버용 호스트 서브넷을 생성하여 OpenShift 클러스터의 서브넷을 F5 BIG-IP 서버로 확장합니다.  호스트 서브넷 YAML 정의를 다운로드합니다.</block>
   <block id="fd4475e12938f5f51ba3f312b42cdd39" category="list-text">호스트 서브넷 파일을 편집하고 OpenShift SDN에 대한 BIG-IP VTEP(VXLAN 터널) IP를 추가합니다.</block>
@@ -738,34 +683,26 @@
   <block id="7a46b2d02d466dda0cc67b215cb80bff" category="list-text">F5 BIG-IP 서버에 대해 생성된 호스트 서브넷에 대한 클러스터 IP 서브넷 범위를 가져옵니다.</block>
   <block id="cba83e8459cc1d6774061a2e425ad8bd" category="list-text">F5 BIG-IP 서버에 해당하는 OpenShift의 호스트 서브넷 범위에 있는 IP로 OpenShift VXLAN에 자체 IP를 생성합니다.  F5 BIG-IP 시스템에 로그인하고 네트워크 &gt; 자체 IP로 이동한 다음 생성을 클릭합니다.  F5 BIG-IP 호스트 서브넷에 대해 생성된 클러스터 IP 서브넷의 IP를 입력하고, VXLAN 터널을 선택한 후, 다른 세부 정보를 입력합니다.  그런 다음 완료를 클릭합니다.</block>
   <block id="5c241806c0dd5ebb7030904151cb78ef" category="inline-image-macro">VXLAN에 대한 자체 IP 생성</block>
-  <block id="dc9039d125092b54ecbd649e9e830bd8" category="paragraph"><block ref="dc9039d125092b54ecbd649e9e830bd8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d094b7d82871afb601d2f30d416ba8d" category="list-text">CIS와 함께 구성하고 사용할 F5 BIG-IP 시스템에 파티션을 만듭니다.  시스템 &gt; 사용자 &gt; 파티션 목록으로 이동하여 만들기를 클릭하고 세부 정보를 입력합니다.  그런 다음 완료를 클릭합니다.</block>
   <block id="4d81871723233ec21ed69ab80e638779" category="inline-image-macro">BIG-IP 파티션 생성</block>
-  <block id="8f0e9105b8c57961e36f922c2ac3a061" category="paragraph"><block ref="8f0e9105b8c57961e36f922c2ac3a061" category="inline-image-macro-rx" type="image"></block></block>
   <block id="37397397fa66431e2fa681b97126c399" category="admonition">F5는 CIS가 관리하는 파티션에 수동 구성을 수행하지 않을 것을 권장합니다.</block>
   <block id="81e4a49e9dbe0b55256fe5abf1b94fa4" category="list-text">OperatorHub의 운영자를 사용하여 F5 BIG-IP CIS를 설치합니다.  클러스터 관리자 권한으로 Red Hat OpenShift 클러스터에 로그인하고 운영자의 전제 조건인 F5 BIG-IP 시스템 로그인 자격 증명으로 비밀을 생성합니다.</block>
   <block id="5de4ac005898cabf55523098c40c549b" category="list-text">F5 CIS CRD를 설치합니다.</block>
   <block id="0eddace1b16ed738fe1be181481c71b6" category="list-text">Operators &gt; OperatorHub로 이동하여 키워드 F5를 검색하고 F5 Container Ingress Service 타일을 클릭합니다.</block>
   <block id="07543409cb05595e273df71050b9a9c0" category="inline-image-macro">OperatorHub의 F5 CIS</block>
-  <block id="ccc06b019f840a5718a8d6bf9cb7f748" category="paragraph"><block ref="ccc06b019f840a5718a8d6bf9cb7f748" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c25b2a3d320d6d02584fde4190d05d91" category="list-text">운영자 정보를 읽고 설치를 클릭하세요.</block>
   <block id="60d3353ed1910ad5c7bd352d0c1bea85" category="inline-image-macro">OperatorHub의 F5 CIS 정보 타일</block>
-  <block id="e36eb2a64284b730ddd267d710d01cac" category="paragraph"><block ref="e36eb2a64284b730ddd267d710d01cac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="637a1bc658defc200d903b27828aa8fb" category="list-text">설치 운영자 화면에서 모든 기본 매개변수를 그대로 두고 설치를 클릭합니다.</block>
   <block id="ccf254d7c8b666c9c127ec12fe14804b" category="inline-image-macro">F5 CIS 운영자 설치</block>
-  <block id="cd055069228b323bd015d08bdd31e478" category="paragraph"><block ref="cd055069228b323bd015d08bdd31e478" category="inline-image-macro-rx" type="image"></block></block>
   <block id="636d8318702bc67a1613ceadf7ce9d00" category="list-text">운영자를 설치하는 데 시간이 걸립니다.</block>
   <block id="dffa3077bcff43536afd75bd61b11c0c" category="inline-image-macro">F5 CIS Operator 설치 진행 상황</block>
-  <block id="3319e4fbd94793c3bf10b04526e47f34" category="paragraph"><block ref="3319e4fbd94793c3bf10b04526e47f34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="197a0a4cc4a45ec9a62fe2b7335d8dfc" category="list-text">운영자가 설치되면 설치 성공 메시지가 표시됩니다.</block>
   <block id="5bf83e99bfa132430d0b690181334933" category="list-text">운영자 &gt; 설치된 운영자로 이동한 후 F5 컨테이너 수신 서비스를 클릭하고 F5BigIpCtlr 타일 아래에서 인스턴스 만들기를 클릭합니다.</block>
   <block id="a5f584f06c59c2cf4a4a4e8b42d495a2" category="inline-image-macro">F5BigIpCtlr 생성</block>
-  <block id="42d66aa33e3f7ac13ce059611a6ef0a0" category="paragraph"><block ref="42d66aa33e3f7ac13ce059611a6ef0a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5ce9a4ef68c16a3ab5d0dd555305872" category="list-text">YAML 보기를 클릭하고 필요한 매개변수를 업데이트한 후 다음 내용을 붙여넣습니다.</block>
   <block id="2e2beb899f89156ed06287fe6f78e6cf" category="admonition">매개변수 업데이트<block ref="9117e80b6a6843f23b631387abeed925" prefix=" " category="inline-code"></block> , ` openshift_sdn_name`,<block ref="957c32cdfcd5fb9c99f7a4e3311e7768" prefix=" " category="inline-code"></block> 그리고<block ref="1155b6812ea5125b3144173aaaad6205" prefix=" " category="inline-code"></block> 아래는 콘텐츠를 복사하기 전에 설정에 필요한 값을 반영하기 위한 것입니다.</block>
   <block id="50a17348dc3f981a95001edcc80a428f" category="list-text">이 콘텐츠를 붙여넣은 후 만들기를 클릭합니다.  이렇게 하면 kube-system 네임스페이스에 CIS 포드가 설치됩니다.</block>
   <block id="72003ce6faa67d172e943ddd74fab63b" category="inline-image-macro">F5 CIS 포드 검증</block>
-  <block id="566eb0684a6ee134ab0c9a8ac1d77cfd" category="paragraph"><block ref="566eb0684a6ee134ab0c9a8ac1d77cfd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fc8632c05e82ccafb395157ccae4f5c3" category="admonition">Red Hat OpenShift는 기본적으로 L7 부하 분산을 위한 경로를 통해 서비스를 노출하는 방법을 제공합니다.  내장된 OpenShift 라우터는 이러한 경로에 대한 광고와 트래픽 처리를 담당합니다.  하지만 외부 F5 BIG-IP 시스템을 통해 경로를 지원하도록 F5 CIS를 구성할 수도 있습니다. 이 시스템은 보조 라우터로 실행되거나 자체 호스팅 OpenShift 라우터를 대체하는 장치로 실행될 수 있습니다.  CIS는 OpenShift 경로에 대한 라우터 역할을 하는 가상 서버를 BIG-IP 시스템에 생성하고, BIG-IP는 광고 및 트래픽 라우팅을 처리합니다.  이 기능을 활성화하기 위한 매개변수에 대한 자세한 내용은 여기의 설명서를 참조하세요.  이러한 매개변수는 apps/v1 API의 OpenShift 배포 리소스에 대해 정의되어 있습니다.  따라서 이를 F5BigIpCtlr 리소스 cis.f5.com/v1 API와 함께 사용할 때 매개변수 이름의 하이픈(-)을 밑줄(_)로 바꾸세요.</block>
   <block id="a6e55fc1fe932b26a294a0f2880478aa" category="list-text">CIS 리소스 생성에 전달되는 인수에는 다음이 포함됩니다.<block ref="49dcf57b3a065d02c9969c595e32ea50" prefix=" " category="inline-code"></block> 그리고<block ref="5d0d2663dc7f08b0183abaddf17f8307" prefix=" " category="inline-code"></block> .  이러한 매개변수는 CIS와 IPAM 컨트롤러의 통합을 활성화하는 데 필요합니다.  F5 IPAM 리소스를 생성하여 CIS가 IPAM 통합을 활성화했는지 확인합니다.</block>
   <block id="84ac0b78989fa6595723d5541b8ec470" category="list-text">F5 IPAM 컨트롤러에 필요한 서비스 계정, 역할 및 역할 바인딩을 생성합니다.  YAML 파일을 만들고 다음 내용을 붙여넣습니다.</block>
@@ -783,14 +720,11 @@
   <block id="5f905cb56a4d1b364cab7fc57f4de4e5" category="list-text">포드가 실행 중인지 확인하세요.</block>
   <block id="51b4d723f0434284233dab97982b185d" category="list-text">OpenShift의 LoadBalancer 유형 서비스에 대해 BIG-IP 시스템에 해당 가상 서버가 생성되었는지 확인하세요.  로컬 트래픽 &gt; 가상 서버 &gt; 가상 서버 목록으로 이동합니다.</block>
   <block id="91193cea3335c4666b7dc31ca767030c" category="inline-image-macro">LoadBalancer 서비스 유형에 대한 BIG-IP 가상 서버 생성을 검증합니다.</block>
-  <block id="4d008c8f3e509bf0a00ad422757c0ea3" category="paragraph"><block ref="4d008c8f3e509bf0a00ad422757c0ea3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="79a2d2fa50d2b47d02c0e9dbdfadc07f" category="doc">MetalLB 로드 밸런서 설치: NetApp 사용한 Red Hat OpenShift</block>
   <block id="0b2da9b5fe81e13e88c9a05981a95a9e" category="paragraph">이 페이지에서는 MetalLB 로드 밸런서의 설치 및 구성 지침을 나열합니다.</block>
   <block id="d719c733d0cd8753c048c8c3a025fd51" category="paragraph">MetalLB는 OpenShift 클러스터에 설치되는 셀프 호스팅 네트워크 로드 밸런서로, 클라우드 공급자에서 실행되지 않는 클러스터에서 로드 밸런서 유형의 OpenShift 서비스를 생성할 수 있도록 해줍니다.  LoadBalancer 서비스를 지원하기 위해 함께 작동하는 MetalLB의 두 가지 주요 기능은 주소 할당과 외부 알림입니다.</block>
   <block id="28a4ce0a0514d0f6a6596fc7a9c5e725" category="section-title">MetalLB 구성 옵션</block>
   <block id="04c22d763ca95631f9c8789eb2c6e68f" category="paragraph">MetalLB가 OpenShift 클러스터 외부의 LoadBalancer 서비스에 할당된 IP 주소를 알리는 방식에 따라 두 가지 모드로 작동합니다.</block>
-  <block id="92f98c10e5e0c86bcae2e9cb58b700e3" category="list-text">*레이어 2 모드.*  이 모드에서는 OpenShift 클러스터의 한 노드가 서비스 소유권을 취득하고 해당 IP에 대한 ARP 요청에 응답하여 OpenShift 클러스터 외부에서도 접근 가능하도록 합니다.  노드만이 IP를 광고하므로 대역폭 병목 현상이 발생하고 장애 조치에 제한이 있습니다.  자세한 내용은 설명서를 참조하세요.<block ref="4a1d14cac7ed68a2326a050e0f1fed80" category="inline-link-macro-rx"></block> .</block>
-  <block id="13f78a1c753a58b3786e5664e7b01344" category="list-text">*BGP 모드.*  이 모드에서는 OpenShift 클러스터의 모든 노드가 라우터와 BGP 피어링 세션을 설정하고 서비스 IP로 트래픽을 전달하는 경로를 광고합니다.  이를 위해서는 MetalLB를 해당 네트워크의 라우터와 통합해야 합니다.  BGP의 해싱 메커니즘으로 인해 서비스의 IP-노드 매핑이 변경될 때 특정 제한이 발생합니다.  자세한 내용은 설명서를 참조하세요.<block ref="fed7545a9b4a70bb7835cc8b07492cba" category="inline-link-macro-rx"></block> .</block>
   <block id="5fe238de20fea7c5ec86dde0a98c5841" category="admonition">이 문서에서는 MetalLB를 2계층 모드로 구성합니다.</block>
   <block id="70bd399edc6825961c98dc29c2a49299" category="list-text">MetalLB 리소스를 다운로드하세요.</block>
   <block id="d95ae9e4bae10f240e5577110ccbd7e6" category="list-text">파일 편집<block ref="130d214581bb0aa3e8759729c9fbc133" prefix=" " category="inline-code"></block> 그리고 제거하다<block ref="635a57f17cd40dc65b36973c9e14f9d1" prefix=" " category="inline-code"></block> 컨트롤러 배포와 스피커 DaemonSet에서.</block>
@@ -800,7 +734,6 @@
   <block id="f87be5542b64a7f94a807699fd549479" category="list-text">MetalLB 스피커를 구성하기 전에 스피커 DaemonSet에 높은 권한을 부여하여 로드 밸런서가 작동하는 데 필요한 네트워킹 구성을 수행할 수 있도록 합니다.</block>
   <block id="53747915d8e79873876b08edb1ce3671" category="list-text">MetalLB를 구성하려면 다음을 생성하세요.<block ref="a941f8adb5ae079ebc739cb59407fd30" prefix=" " category="inline-code"></block> 에서<block ref="48f2018beab0b13a2087fae3aff05306" prefix=" " category="inline-code"></block> 네임스페이스.</block>
   <block id="2b1e829362de1a86eeb131cdc4619908" category="list-text">이제 로드 밸런서 서비스가 생성되면 MetalLB는 서비스에 외부 IP를 할당하고 ARP 요청에 응답하여 IP 주소를 알립니다.</block>
-  <block id="234ce2b9b198f2acf2193cbd06120ff2" category="admonition">BGP 모드에서 MetalLB를 구성하려면 위의 6단계를 건너뛰고 MetalLB 설명서의 절차를 따르세요.<block ref="fed7545a9b4a70bb7835cc8b07492cba" category="inline-link-macro-rx"></block> .</block>
   <block id="8b14fb34f5313442bf2fdc4d80edc389" category="summary">이 섹션에서는 NetApp 배포를 사용하여 Red Hat OpenShift를 사용자 지정하려는 사용자를 위한 로드 밸런서 옵션을 살펴보겠습니다.</block>
   <block id="87beaa6eff6159cd7270b2a4e71c10a4" category="doc">로드 밸런서 옵션 살펴보기: NetApp 사용한 Red Hat OpenShift</block>
   <block id="a802e9436bb9bcbfa2b88bb549e28503" category="paragraph">대부분의 경우, Red Hat OpenShift는 경로를 통해 애플리케이션을 외부 세계에 제공합니다.  서비스는 외부에서 접근 가능한 호스트 이름을 제공하여 노출됩니다.  정의된 경로와 해당 서비스에서 식별된 엔드포인트는 OpenShift 라우터에서 사용되어 외부 클라이언트에 지정된 연결을 제공할 수 있습니다.</block>
@@ -816,18 +749,13 @@
   <block id="730d963d9c66f4a5bdd4979297e1b636" category="paragraph">어떤 조직이 두 개의 프로젝트의 일환으로 두 개의 워크로드를 Red Hat OpenShift 클러스터에서 실행하고 있다고 가정해 보겠습니다. 두 개의 프로젝트는 서로 다른 두 팀이 작업하고 있습니다.  이러한 작업 부하에 대한 데이터는 NetApp ONTAP NAS 백엔드에서 Trident 동적으로 프로비저닝하는 PVC에 저장됩니다.  조직에서는 이 두 가지 작업 부하에 대한 멀티테넌트 솔루션을 설계하고 이러한 프로젝트에 사용되는 리소스를 분리하여 보안과 성능이 유지되도록 해야 하며, 주로 해당 애플리케이션에 서비스를 제공하는 데이터에 중점을 두어야 합니다.</block>
   <block id="0def896190af33e76b378083e4ded97b" category="paragraph">다음 그림은 NetApp ONTAP 이 지원하는 Trident 탑재한 Red Hat OpenShift 클러스터의 멀티테넌트 솔루션을 보여줍니다.</block>
   <block id="743a88dbd6def144e417adba2c0cddbb" category="inline-image-macro">NetApp ONTAP 이 지원하는 Trident 를 사용한 Red Hat OpenShift 클러스터의 멀티 테넌시</block>
-  <block id="1ae79d7066f79d8c3637683058374e9a" category="paragraph"><block ref="1ae79d7066f79d8c3637683058374e9a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c438be737391744e2fed6f73c418638" category="section-title">기술 요구 사항</block>
   <block id="ff94444190436ee7694d15be2dde0f29" category="list-text">NetApp ONTAP 스토리지 클러스터</block>
   <block id="b645e117fe786bf56128cde2dec3971a" category="list-text">Red Hat OpenShift 클러스터</block>
   <block id="0d46ef98dfe52c8d01c0c5ace93d8165" category="section-title">Red Hat OpenShift – 클러스터 리소스</block>
   <block id="72710b926f57dad99b29203c63f4e3fd" category="paragraph">Red Hat OpenShift 클러스터 관점에서 볼 때 시작할 최상위 리소스는 프로젝트입니다.  OpenShift 프로젝트는 전체 OpenShift 클러스터를 여러 개의 가상 클러스터로 나누는 클러스터 리소스로 볼 수 있습니다.  따라서 프로젝트 수준의 격리는 멀티테넌시를 구성하기 위한 기반을 제공합니다.</block>
-  <block id="20e1834bb9396599a6dcf7d743aa1b36" category="paragraph">다음으로는 클러스터에서 RBAC를 구성하는 것입니다.  가장 좋은 방법은 단일 프로젝트나 워크로드를 작업하는 모든 개발자를 ID 공급자(IdP)의 단일 사용자 그룹으로 구성하는 것입니다.  Red Hat OpenShift는 IdP 통합과 사용자 그룹 동기화를 허용하므로 IdP의 사용자와 그룹을 클러스터로 가져올 수 있습니다.  이를 통해 클러스터 관리자는 프로젝트에 전용된 클러스터 리소스에 대한 액세스를 해당 프로젝트에서 작업하는 사용자 그룹으로 분리하여 클러스터 리소스에 대한 무단 액세스를 제한할 수 있습니다.  Red Hat OpenShift와 IdP 통합에 대해 자세히 알아보려면 설명서를 참조하세요.<block ref="213cff8958909b80a9514e0c8321d8ef" category="inline-link-rx"></block> .</block>
   <block id="6d4e96186b1f4267def393ec42bf2d9e" category="paragraph">각 프로젝트의 스토리지에 생성된 볼륨이 별도의 스토리지에 생성된 것처럼 호스트에 나타나도록 하려면 Red Hat OpenShift 클러스터의 영구 스토리지 공급자 역할을 하는 공유 스토리지를 격리하는 것이 중요합니다.  이렇게 하려면 NetApp ONTAP 에 프로젝트나 워크로드만큼 많은 SVM(스토리지 가상 머신)을 만들고 각 SVM을 워크로드에 전용으로 지정합니다.</block>
-  <block id="0611f127a7e1e7ef5bbd782030c2e34a" category="paragraph">NetApp ONTAP 에서 다양한 프로젝트에 대해 서로 다른 SVM을 생성한 후에는 각 SVM을 다른 Trident 백엔드에 매핑해야 합니다.  Trident 의 백엔드 구성은 OpenShift 클러스터 리소스에 영구 저장소를 할당하며, 이를 위해서는 SVM의 세부 정보를 매핑해야 합니다.  이는 최소한 백엔드의 프로토콜 드라이버여야 합니다.  선택적으로, 볼륨이 저장소에 프로비저닝되는 방식을 정의하고 볼륨 크기나 집계 사용 등에 대한 제한을 설정할 수 있습니다.  Trident 백엔드 정의에 대한 세부 사항은 다음에서 찾을 수 있습니다.<block ref="47a77763732c6cebe093a4a4d61aaa5b" category="inline-link-rx"></block> .</block>
   <block id="c4ff2177ae2f8ed9c3e5353068cf2195" category="section-title">Red Hat OpenShift – 스토리지 리소스</block>
-  <block id="891c9b8b0ce367c5e377a1ec23199619" category="paragraph">Trident 백엔드를 구성한 후 다음 단계는 StorageClass를 구성하는 것입니다.  백엔드 수만큼 스토리지 클래스를 구성하여 각 스토리지 클래스가 하나의 백엔드에서만 볼륨을 스핀업할 수 있도록 합니다.  스토리지 클래스를 정의하는 동안 storagePools 매개변수를 사용하여 StorageClass를 특정 Trident 백엔드에 매핑할 수 있습니다.  저장 클래스를 정의하는 세부 사항은 다음에서 찾을 수 있습니다.<block ref="1266deb20a7d7c4814b1225e5e572606" category="inline-link-rx"></block> .  따라서 StorageClass에서 Trident 백엔드로의 일대일 매핑이 이루어져 하나의 SVM을 가리킵니다.  이를 통해 해당 프로젝트에 할당된 StorageClass를 통한 모든 스토리지 클레임이 해당 프로젝트에만 전담된 SVM을 통해 처리됩니다.</block>
-  <block id="76245f392269db8492c3610e325b1963" category="paragraph">저장소 클래스는 네임스페이스 리소스가 아니므로 다른 네임스페이스 또는 프로젝트에 있는 포드가 한 프로젝트의 저장소 클래스에 대한 저장소 클레임을 거부하도록 하려면 어떻게 해야 할까요?  정답은 ResourceQuotas를 사용하는 것입니다.  ResourceQuotas는 프로젝트당 리소스의 총 사용량을 제어하는 객체입니다.  이를 통해 프로젝트 내 객체가 소비할 수 있는 리소스의 수와 총량을 제한할 수 있습니다.  ResourceQuotas를 사용하면 프로젝트의 거의 모든 리소스를 제한할 수 있으며, 이를 효율적으로 사용하면 조직에서 리소스의 과도한 프로비저닝이나 과소비로 인한 비용과 중단을 줄이는 데 도움이 될 수 있습니다.  문서를 참조하세요<block ref="9b2bb9683c8f6144876bed616f252527" category="inline-link-rx"></block> 자세한 내용은.</block>
   <block id="5402bb91006fe391aea122e11c3607db" category="paragraph">이 사용 사례의 경우 특정 프로젝트의 포드가 해당 프로젝트에 전용되지 않은 스토리지 클래스의 스토리지를 청구하지 못하도록 제한해야 합니다.  이를 위해서는 다른 스토리지 클래스에 대한 영구 볼륨 클레임을 제한해야 합니다.<block ref="a21be23447e555ea751318f1aded4a38" prefix=" " category="inline-code"></block> 0으로.  또한, 클러스터 관리자는 프로젝트의 개발자가 ResourceQuotas를 수정할 수 있는 액세스 권한이 없도록 해야 합니다.</block>
   <block id="ad8905a47eb465223ebe7acf569732b1" category="doc">구성: 클러스터 관리 작업</block>
   <block id="552eab1d1ea09d0d1733b97dee6609a1" category="paragraph">다음 작업은 Red Hat OpenShift 클러스터 관리자가 수행합니다.</block>
@@ -885,7 +813,6 @@
   <block id="c8acb1fa89b1ec9d78799a2dd4aa8b59" category="list-text">스토리지 관리자로 NetApp ONTAP 클러스터에 로그인합니다.</block>
   <block id="d0ed0d7b81278233c852e4a0d8aa123b" category="list-text">로 이동<block ref="ba7ff8660fabd8daa8e7fbd0c74dd990" prefix=" " category="inline-code"></block> 그리고 클릭하세요<block ref="ec211f7c20af43e742bf2570c3cb84f9" prefix=" " category="inline-code"></block> .  프로젝트 3에 전념하는 새로운 SVM을 만듭니다.  또한 SVM과 해당 리소스를 관리하기 위해 vsadmin 계정을 만듭니다.</block>
   <block id="5790e2b8b367726e78500054d959d6f7" category="inline-image-macro">확장을 위한 SVM 생성</block>
-  <block id="b3f681e948324bfca6c339bd9660347c" category="paragraph"><block ref="b3f681e948324bfca6c339bd9660347c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0c67e9a89c7ece3169ab5849bb0e411" category="list-text">클러스터 관리자로 Red Hat OpenShift 클러스터에 로그인합니다.</block>
   <block id="c9e86337c7483c8d45e5e535829d2163" category="list-text">새로운 프로젝트를 만듭니다.</block>
   <block id="1c01b62cc887329b006a88e9f959b5d4" category="list-text">project-3의 사용자 그룹이 IdP에 생성되었고 OpenShift 클러스터와 동기화되었는지 확인하세요.</block>
@@ -904,7 +831,6 @@
   <block id="64244866ddff81ded5e6aaa49055c6aa" category="list-text">NetApp ONTAP 클러스터에 관리자로 로그인합니다.</block>
   <block id="85ca996063b5ec233e56a20ba93c5f44" category="list-text">저장소 &gt; 저장소 VM으로 이동하여 추가를 클릭합니다.  필요한 세부 정보를 제공하여 프로젝트 1과 프로젝트 2에 대한 두 개의 SVM을 만듭니다.  또한 SVM과 해당 리소스를 관리하기 위해 vsadmin 계정을 만듭니다.</block>
   <block id="3f8bc17bf8dd138aa2915235f0a9c0d3" category="inline-image-macro">ONTAP 에서 SVM 생성</block>
-  <block id="0b6bdd5822abd876e9985611641304dc" category="paragraph"><block ref="0b6bdd5822abd876e9985611641304dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b436e7799d01413277e05983e509574a" category="list-text">스토리지 관리자로 Red Hat OpenShift 클러스터에 로그인합니다.</block>
   <block id="c9bd46366e9fb78552566f1e7a13633a" category="list-text">프로젝트-1에 대한 백엔드를 만들고 이를 해당 프로젝트에 전용된 SVM에 매핑합니다.  NetApp ONTAP 클러스터 관리자를 사용하는 대신 SVM의 vsadmin 계정을 사용하여 백엔드를 SVM에 연결할 것을 권장합니다.</block>
   <block id="f934b433773b966e5ebe0c7172decda4" category="admonition">이 예제에서는 ontap-nas 드라이버를 사용하고 있습니다.  사용 사례에 따라 백엔드를 생성할 때 적절한 드라이버를 사용하세요.</block>
@@ -938,9 +864,7 @@
   <block id="8921c6e9843ba7487c77f4dce1467111" category="summary">NetApp Element 소프트웨어는 모듈식 확장 가능 성능을 제공하며, 각 스토리지 노드는 환경에 보장된 용량과 처리량을 제공합니다.  NetApp Element 시스템은 단일 클러스터에서 4개에서 100개까지 노드를 확장할 수 있으며, 다양한 고급 스토리지 관리 기능을 제공합니다.</block>
   <block id="5d77fe4a6bb4c5e88c5c18510b3c4749" category="doc">NetApp Element: NetApp 포함된 Red Hat OpenShift</block>
   <block id="53c583e55a36ad49234df678a2dbcf45" category="paragraph">NetApp Element 소프트웨어는 모듈식 확장 가능 성능을 제공하며, 각 스토리지 노드는 환경에 보장된 용량과 처리량을 제공합니다.  NetApp Element 시스템은 단일 클러스터에서 4개에서 100개까지 노드를 확장할 수 있으며 다양한 고급 스토리지 관리 기능을 제공합니다.</block>
-  <block id="19c6fa5394ba7047e26a53d94179ebf9" category="paragraph"><block ref="19c6fa5394ba7047e26a53d94179ebf9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27765508a97a89684590658c3465fb70" category="inline-link">NetApp Solidfire 웹사이트</block>
-  <block id="d37eaafbb6dfb29673d63ff988ff4f41" category="paragraph">NetApp Element 스토리지 시스템에 대한 자세한 내용은 다음을 방문하세요.<block ref="0d1d77e6774527457304fa15f73899a1" category="inline-link-rx"></block> .</block>
   <block id="bd4ffcaabbe4a4f83fbfaaa2e34dc8a3" category="section-title">iSCSI 로그인 리디렉션 및 자체 복구 기능</block>
   <block id="dbafa7c074ef7efc3c778b69c0ad31b5" category="paragraph">NetApp Element 소프트웨어는 기존 TCP/IP 네트워크에서 SCSI 명령을 캡슐화하는 표준 방식인 iSCSI 스토리지 프로토콜을 활용합니다.  SCSI 표준이 변경되거나 이더넷 네트워크의 성능이 향상되면 iSCSI 스토리지 프로토콜은 아무런 변경 없이도 이점을 얻습니다.</block>
   <block id="23e6b910b28346537f5696478fffe779" category="paragraph">모든 스토리지 노드에는 관리 IP와 스토리지 IP가 있지만 NetApp Element 소프트웨어는 클러스터의 모든 스토리지 트래픽에 대해 단일 스토리지 가상 IP 주소(SVIP 주소)를 알립니다.  iSCSI 로그인 프로세스의 일부로 스토리지는 대상 볼륨이 다른 주소로 이동되었으므로 협상 프로세스를 진행할 수 없다고 응답할 수 있습니다.  그런 다음 호스트는 호스트 측 재구성이 필요 없는 프로세스로 새 주소에 대한 로그인 요청을 다시 발행합니다.  이 프로세스를 iSCSI 로그인 리디렉션이라고 합니다.</block>
@@ -968,11 +892,8 @@
   <block id="da9c9b2b4164632e569069fe1e7c53ee" category="admonition">Element는 자동화를 위해 설계되었습니다.  모든 저장 기능은 API를 통해 사용할 수 있습니다.  이러한 API는 UI가 시스템을 제어하는 데 사용하는 유일한 방법입니다.</block>
   <block id="e4762763c905a271ba1e63609f0e0da0" category="paragraph">두 시스템 모두 NetApp ONTAP 데이터 관리 소프트웨어로 구동됩니다. 이 소프트웨어는 업계에서 가장 진보된 데이터 관리 소프트웨어로, 가용성이 높고 클라우드 통합이 가능하며 간소화된 스토리지 관리를 통해 데이터 패브릭에 필요한 엔터프라이즈급 속도, 효율성 및 보안을 제공합니다.</block>
   <block id="35f7c29efc923e8a7920a0b331095d71" category="section-title">Amazon FSx ONTAP</block>
-  <block id="d744ebba12219aac3b1e9ca744e22939" category="paragraph">Amazon FSx ONTAP ONTAP 의 인기 있는 데이터 액세스 및 관리 기능을 갖춘 AWS 클라우드에서 완전 관리형 공유 스토리지를 제공합니다.  Amazon FSx ONTAP 에 대한 자세한 내용을 보려면 클릭하세요.<block ref="7573663d3852e00b0e56a5dac3594a6a" category="inline-link-rx"></block> .</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="section-title">Azure NetApp Files</block>
-  <block id="b2ed084fcecb6db65b12c65588a0a926" category="paragraph">Azure NetApp Files 는 Azure 기반의 자체 개발 엔터프라이즈급 고성능 파일 스토리지 서비스입니다.  NetApp 계정, 용량 풀, 볼륨을 생성할 수 있는 Volumes as a Service를 제공합니다.  서비스 및 성능 수준을 선택하고 데이터 보호를 관리할 수도 있습니다.  온프레미스에서 익숙하고 의존하는 것과 동일한 프로토콜과 도구를 사용하여 고성능, 고가용성, 확장 가능한 파일 공유를 만들고 관리할 수 있습니다.  Azure NetApp Files 에 대한 자세한 내용을 보려면 클릭하세요.<block ref="fc5eaf030008b3907c3925b272228bba" category="inline-link-rx"></block> .</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="section-title">Google Cloud NetApp Volumes</block>
-  <block id="6a529e89f36a18cfaf22ebfd0be19ce9" category="paragraph">Google Cloud NetApp Volumes 고급 데이터 관리 기능과 확장성이 뛰어난 성능을 제공하는 완전 관리형 클라우드 기반 데이터 스토리지 서비스입니다.  파일 기반 애플리케이션을 Google Cloud로 옮길 수 있습니다.  네트워크 파일 시스템(NFSv3 및 NFSv4.1)과 서버 메시지 블록(SMB) 프로토콜을 기본적으로 지원하므로 애플리케이션을 다시 설계할 필요가 없고 애플리케이션에 대한 영구 저장소를 계속 확보할 수 있습니다.  Google Cloud NetApp VolumesP에 대한 자세한 내용을 보려면 클릭하세요.<block ref="9ef49dd5917f54781359b5df82c18923" category="inline-link-rx"></block> .</block>
   <block id="0d1d64b47559f0c28c883e7e790b8363" category="summary">이 섹션에서는 전용 이미지 레지스트리를 만들거나 사용자 정의 로드 밸런서 인스턴스를 배포하는 등 실제 사용자가 이 솔루션을 프로덕션에 배포할 때 수행해야 할 가능성이 높은 사용자 정의에 대해 설명합니다.</block>
   <block id="becc5334b7f3d2f4f57fc42cd287fd54" category="inline-link-macro">로드 밸런서 옵션 탐색</block>
   <block id="03915c22e7d8c9b4408637a36d6cf531" category="list-text"><block ref="03915c22e7d8c9b4408637a36d6cf531" category="inline-link-macro-rx"></block></block>
@@ -983,7 +904,6 @@
   <block id="766d8f4095b175049f35406578d94edd" category="paragraph">AWS의 Red Hat OpenShift Service(ROSA)는 AWS에서 Red Hat OpenShift 엔터프라이즈 Kubernetes 플랫폼을 사용하여 컨테이너화된 애플리케이션을 빌드, 확장 및 배포하는 데 사용할 수 있는 관리형 서비스입니다.  ROSA는 온프레미스 Red Hat OpenShift 워크로드를 AWS로 이전하는 과정을 간소화하고, 다른 AWS 서비스와의 긴밀한 통합을 제공합니다.</block>
   <block id="d483e01f45d71ca0669987bbcc52540e" category="inline-link-macro">AWS의 Red Hat OpenShift 서비스(AWS 문서)</block>
   <block id="bbb05e22e5510003079ee7cd19c0c6d2" category="inline-link-macro">AWS의 Red Hat OpenShift 서비스(Red Hat 문서)</block>
-  <block id="5ea6f8c087350d475e8efbd9a881ed93" category="paragraph">ROSA에 대한 자세한 내용은 여기의 설명서를 참조하세요.<block ref="c87c8cdbb7e33ff8fe1cc4ee73c952c9" category="inline-link-macro-rx"></block> . <block ref="bcb0e22b6c58858701d793bcb18b8c4b" category="inline-link-macro-rx"></block> .</block>
   <block id="aa9095c5ba77e3549672e5c4fae1fedc" category="doc">베어 메탈의 OpenShift</block>
   <block id="a62e902f0d244d960eddf2f14d3afa6f" category="paragraph">Bare Metal의 OpenShift는 상용 서버에 OpenShift 컨테이너 플랫폼을 자동으로 배포합니다.</block>
   <block id="0e05c6235b67ae8e5b743c9ca77358fa" category="paragraph">Bare Metal의 OpenShift는 OpenShift의 가상 배포와 유사하며, 컨테이너화할 준비가 되지 않은 애플리케이션에 대한 가상화된 워크로드를 지원하는 동시에 OpenShift 클러스터의 배포 용이성, 빠른 프로비저닝 및 확장을 제공합니다.  베어 메탈에 배포하면 OpenShift 환경 외에 호스트 하이퍼바이저 환경을 관리하는 데 필요한 추가 오버헤드가 필요하지 않습니다.  베어 메탈 서버에 직접 배포하면 호스트와 OpenShift 환경 간에 리소스를 공유해야 하는 물리적 오버헤드 제한도 줄일 수 있습니다.</block>
@@ -999,8 +919,6 @@
   <block id="e6eb5af4aff65961a7f350b2222a4119" category="list-text">*베어메탈 네트워크* 이 네트워크는 클러스터가 배포된 후 대중과 소통하는 데 사용됩니다.</block>
   <block id="7633522f66aaba6bc4bb2c25d299d287" category="paragraph">프로비저너 노드를 설정하기 위해 고객은 트래픽이 노드 자체와 배포 목적으로 프로비저닝된 Bootstrap VM에서 적절하게 라우팅될 수 있도록 하는 브리지 인터페이스를 만듭니다.  클러스터가 배포된 후 API와 수신 VIP 주소가 부트스트랩 노드에서 새로 배포된 클러스터로 마이그레이션됩니다.</block>
   <block id="963d7d04e1f1692a7fc49ae899123dbd" category="paragraph">다음 이미지는 IPI 배포 중과 배포가 완료된 후의 환경을 보여줍니다.</block>
-  <block id="df03861ebb174b56c9b0df19a6687ad4" category="paragraph"><block ref="df03861ebb174b56c9b0df19a6687ad4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7ac6c6948754bef1f31b658d9ec4e16a" category="paragraph"><block ref="7ac6c6948754bef1f31b658d9ec4e16a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1744781b12c15ad3b748bea44d9582b" category="section-title">VLAN 요구 사항</block>
   <block id="c5a0639a1bbc3695e0ebaf4c3affe363" category="paragraph">NetApp 솔루션이 포함된 Red Hat OpenShift는 가상 LAN(VLAN)을 사용하여 다양한 목적에 맞는 네트워크 트래픽을 논리적으로 분리하도록 설계되었습니다.</block>
   <block id="87495e311a3944910e3cc0c7bee3d754" category="cell">VLAN</block>
@@ -1026,7 +944,6 @@
   <block id="588d940c602fa8b127eead0a7b20f748" category="paragraph">OSP에 대한 자세한 내용은 다음을 참조하세요.<block ref="52023575482d8580431ebeb833211aae" category="inline-link-macro-rx"></block> .</block>
   <block id="e2ab8aafc6151adfa655ffd5d2425e7d" category="section-title">오픈스택 서비스</block>
   <block id="ffd7a6889e6ea6965969472250235082" category="paragraph">OpenStack Platform 서비스는 컨테이너로 배포되므로 서비스를 서로 분리하고 쉽게 업그레이드할 수 있습니다.  OpenStack 플랫폼은 Kolla로 구축되고 관리되는 컨테이너 세트를 사용합니다.  서비스 배포는 Red Hat Custom Portal에서 컨테이너 이미지를 가져와서 수행됩니다.  이러한 서비스 컨테이너는 Podman 명령을 사용하여 관리되며 Red Hat OpenStack Director를 통해 배포, 구성 및 유지 관리됩니다.</block>
-  <block id="cd9222eaa638072680ee36bdc3fda64c" category="paragraph"><block ref="cd9222eaa638072680ee36bdc3fda64c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">서비스</block>
   <block id="7adea0d9c77aabccd8bb67ae0a832d59" category="cell">프로젝트 이름</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">설명</block>
@@ -1111,7 +1028,6 @@
   <block id="78f6af1e137635a3cea4ef964e21c7c6" category="list-text">*고가용성* 호스트 장애 발생 시 중단을 방지하기 위해 RHV에서는 VM을 고가용성으로 구성할 수 있습니다.  고가용성 VM은 복원력 정책을 사용하여 클러스터 수준에서 제어됩니다.</block>
   <block id="dc4a50395fea041f4ee918e8c015755e" category="list-text">*높은 확장성* 단일 RHV 클러스터는 최대 200개의 하이퍼바이저 호스트를 가질 수 있으므로 리소스를 많이 필요로 하는 엔터프라이즈급 워크로드를 호스팅하는 대규모 VM의 요구 사항을 지원할 수 있습니다.</block>
   <block id="3fe956f564bcb16eb1d25ab6afdf9bf7" category="list-text">*강화된 보안* RHV에서 상속받은 보안 가상화(sVirt) 및 보안 강화 Linux(SELinux) 기술은 RHV에서 호스트와 VM의 보안을 강화하고 강화하기 위해 사용됩니다.  이러한 기능의 주요 장점은 VM과 관련 리소스를 논리적으로 분리한다는 것입니다.</block>
-  <block id="c0a0160ce03d8575db0f84da4706c89b" category="paragraph"><block ref="c0a0160ce03d8575db0f84da4706c89b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd4c83df745cf56330120fb3ac308da2" category="paragraph">NetApp 솔루션의 Red Hat OpenShift는 두 개의 데이터 스위치를 사용하여 25Gbps의 기본 데이터 연결을 제공합니다.  또한 스토리지 노드의 대역 내 관리와 IPMI 기능의 대역 외 관리를 위해 1Gbps의 연결을 제공하는 두 개의 추가 관리 스위치를 사용합니다.  OCP는 클러스터 관리를 위해 RHV의 가상 머신 논리 네트워크를 사용합니다.  이 섹션에서는 솔루션에 사용된 각 가상 네트워크 세그먼트의 구성과 목적을 설명하고 솔루션을 배포하기 위한 전제 조건을 간략하게 설명합니다.</block>
   <block id="2d7e48e226974692ed3f522a2baef6db" category="paragraph">RHV의 Red Hat OpenShift는 가상 LAN(VLAN)을 사용하여 다양한 목적에 맞는 네트워크 트래픽을 논리적으로 분리하도록 설계되었습니다.  이러한 구성은 고객 요구에 맞게 확장하거나 특정 네트워크 서비스에 대한 추가적인 격리를 제공하도록 확장할 수 있습니다.  다음 표는 NetApp 에서 솔루션을 검증하는 동안 솔루션을 구현하는 데 필요한 VLAN을 나열합니다.</block>
   <block id="3c8c5d8387f173924ffeb2bf88084dba" category="cell">물리적 노드 및 IPMI 관리</block>
@@ -1143,7 +1059,6 @@
   <block id="b5833c22ec8627273b0415df731c3ce7" category="list-text">*VMware vSphere vMotion* VMware vCenter를 사용하면 중단 없이 요청에 따라 클러스터의 노드 간에 VM을 핫 마이그레이션할 수 있습니다.</block>
   <block id="634e669a6bf01bf0ef2b676eae7beb33" category="list-text">*vSphere 고가용성* 호스트 장애 발생 시 중단을 방지하기 위해 VMware vSphere를 사용하면 호스트를 클러스터링하고 고가용성을 위해 구성할 수 있습니다.  호스트 장애로 인해 중단된 VM은 클러스터의 다른 호스트에서 잠시 재부팅되어 서비스를 복구합니다.</block>
   <block id="435136c715673552d02d1fd739606dfc" category="list-text">*분산 리소스 스케줄러(DRS)* VMware vSphere 클러스터는 호스팅하는 VM의 리소스 요구 사항을 부하 분산하도록 구성할 수 있습니다.  리소스 경합이 발생하는 VM은 클러스터의 다른 노드로 핫 마이그레이션하여 충분한 리소스를 사용할 수 있는지 확인할 수 있습니다.</block>
-  <block id="a1c41e824fefb9fbdee9f72a9f61643f" category="paragraph"><block ref="a1c41e824fefb9fbdee9f72a9f61643f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5c6371faa8d72dee8337811921707a4b" category="paragraph">NetApp 솔루션의 Red Hat OpenShift는 두 개의 데이터 스위치를 사용하여 25Gbps의 기본 데이터 연결을 제공합니다.  또한 스토리지 노드의 대역 내 관리와 IPMI 기능의 대역 외 관리를 위해 1Gbps의 연결을 제공하는 두 개의 추가 관리 스위치를 사용합니다.  OCP는 클러스터 관리를 위해 VMware vSphere의 VM 논리 네트워크를 사용합니다.  이 섹션에서는 솔루션에 사용된 각 가상 네트워크 세그먼트의 구성과 목적을 설명하고 솔루션 배포에 필요한 전제 조건을 간략하게 설명합니다.</block>
   <block id="e75b582a8823d532f6022b43ac209538" category="paragraph">VMware vSphere 기반 Red Hat OpenShift는 가상 LAN(Local Area Network)을 사용하여 다양한 목적에 맞는 네트워크 트래픽을 논리적으로 분리하도록 설계되었습니다.  이러한 구성은 고객 요구에 맞게 확장하거나 특정 네트워크 서비스에 대한 추가적인 격리를 제공하도록 확장할 수 있습니다.  다음 표는 NetApp 에서 솔루션을 검증하는 동안 솔루션을 구현하는 데 필요한 VLAN을 나열합니다.</block>
   <block id="c846a1f843522d592b784a66368abed3" category="cell">ONTAP NFS용 스토리지 네트워크</block>
@@ -1175,7 +1090,6 @@
   <block id="3324921ce520b5c2abe0d2521e8b040e" category="list-text">*구성 관리* 구성 및 민감한 데이터 관리 기능이 플랫폼에 내장되어 있어 애플리케이션을 구축하는 데 사용된 기술이나 배포 환경에 관계없이 일관되고 환경에 독립적인 애플리케이션 구성이 애플리케이션에 제공됩니다.</block>
   <block id="2d11325a996ec8e35070707ab180ca6c" category="list-text">*애플리케이션 로그 및 메트릭.*  빠른 피드백은 애플리케이션 개발에 있어서 중요한 측면입니다.  OpenShift의 통합 모니터링 및 로그 관리 기능은 개발자에게 즉각적인 측정 항목을 제공하여 개발자가 애플리케이션이 변경 사항에 따라 어떻게 동작하는지 연구하고 애플리케이션 수명 주기에서 가능한 한 빨리 문제를 해결할 수 있도록 지원합니다.</block>
   <block id="93507554a1bd5b356e1ecf2a5fb0bd55" category="list-text">*보안 및 컨테이너 카탈로그* OpenShift는 다중 테넌시를 제공하고 SELinux(Security-Enhanced Linux), CGroups, seccomp(Secure Computing Mode)를 사용하여 컨테이너를 격리하고 보호함으로써 사용자를 유해한 코드 실행으로부터 보호합니다.  또한 다양한 하위 시스템에 대한 TLS 인증서를 통한 암호화를 제공하고, 특히 보안에 중점을 두고 스캔 및 등급이 매겨진 Red Hat 인증 컨테이너(access.redhat.com/containers)에 대한 액세스를 제공하여 최종 사용자에게 인증되고 신뢰할 수 있으며 안전한 애플리케이션 컨테이너를 제공합니다.</block>
-  <block id="ed30b5cf2bd807c1a940ff2564402dec" category="paragraph"><block ref="ed30b5cf2bd807c1a940ff2564402dec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe8c2f8039053e077a0ca678496b72aa" category="section-title">Red Hat OpenShift 배포 방법</block>
   <block id="9c2dd02f13d452b4422ac6c864933f01" category="paragraph">Red Hat OpenShift 4부터 OpenShift 배포 방법에는 고도로 사용자 정의된 배포를 위한 사용자 프로비저닝 인프라(UPI)를 사용한 수동 배포나 설치 프로그램 프로비저닝 인프라(IPI)를 사용한 완전 자동화된 배포가 포함됩니다.</block>
   <block id="6e45cce163df251494c8f01f0567f19c" category="paragraph">대부분의 경우 IPI 설치 방법이 선호되는 방법입니다. 이 방법을 사용하면 개발, 테스트, 프로덕션 환경에 OpenShift 클러스터를 빠르게 배포할 수 있습니다.</block>
@@ -1184,11 +1098,8 @@
   <block id="d1befa03c79ca0b84ecc488dea96bc68" category="inline-link-macro">웹사이트</block>
   <block id="e2fb3873f5444b3e2992591c137a7885" category="list-text">Red Hat OpenShift를 방문하세요<block ref="07d9e126d73368020dd109a73fa50f95" category="inline-link-macro-rx"></block> SSO 자격 증명을 사용하여 로그인하세요.</block>
   <block id="66f8ff89bd2c9146cb3273d416c60fd2" category="list-text">Red Hat OpenShift를 배포할 환경을 선택하세요.</block>
-  <block id="16c98b3a2a53266c0fdbf68850eadfbc" category="paragraph"><block ref="16c98b3a2a53266c0fdbf68850eadfbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5806bcee67fc8f13f0255068a186e42" category="list-text">다음 화면에서 설치 프로그램, 고유한 풀 시크릿, 관리용 CLI 도구를 다운로드하세요.</block>
-  <block id="1d761031264b6e6deafa834577fad17c" category="paragraph"><block ref="1d761031264b6e6deafa834577fad17c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7586dbf5f3ac1a66383f6c201a17a341" category="inline-link-macro">설치 지침</block>
-  <block id="c7daf823271052cb8912656769e85130" category="list-text">를 따르세요<block ref="031f6892cefd9bd35a861ba4dda1d58c" category="inline-link-macro-rx"></block> Red Hat에서 제공하여 원하는 환경에 배포할 수 있습니다.</block>
   <block id="220887aee59c37fa79fc366cba7dad4e" category="section-title">NetApp OpenShift 배포를 검증했습니다.</block>
   <block id="d711fd24836980dd490f3c01dd3ee8de" category="paragraph">NetApp 다음의 각 데이터 센터 환경에서 IPI(Installer Provisioned Infrastructure) 배포 방법을 사용하여 실험실에서 Red Hat OpenShift 배포를 테스트하고 검증했습니다.</block>
   <block id="5e6f3eb001d2c545db70619fea0a2136" category="list-text"><block ref="5e6f3eb001d2c545db70619fea0a2136" category="inline-link-macro-rx"></block></block>
@@ -1199,7 +1110,6 @@
   <block id="8252479af4b1df9b77ceaf67fa8cd07d" category="doc">개인 이미지 레지스트리 생성</block>
   <block id="9c864113b9e4202e111b818a53d4f506" category="inline-link">Quay.io</block>
   <block id="4b4141875f954447d204e6f73d93e2a0" category="inline-link">도커허브</block>
-  <block id="508888fd9f92f35e5edd97bd8083e289" category="paragraph">Red Hat OpenShift의 대부분 배포의 경우 다음과 같은 공개 레지스트리를 사용합니다.<block ref="b9eeebbe4a68a648d570ea2173e5ef99" category="inline-link-rx"></block> 또는<block ref="0252a6b70cc5017fa1445a78532155b6" category="inline-link-rx"></block> 대부분의 고객 요구 사항을 충족합니다.  하지만 고객이 자신만의 비공개 이미지나 맞춤형 이미지를 호스팅하고 싶어하는 경우도 있습니다.</block>
   <block id="2bfd28946c23d8294bff3401d6004efd" category="paragraph">이 절차에서는 Trident 와 NetApp ONTAP 에서 제공하는 영구 볼륨으로 지원되는 개인 이미지 레지스트리를 만드는 방법을 설명합니다.</block>
   <block id="5c6f1bdf00eb6d50d411c8fb4ed03e60" category="admonition">Trident Protect에는 Astra 컨테이너에 필요한 이미지를 호스팅하는 레지스트리가 필요합니다.  다음 섹션에서는 Red Hat OpenShift 클러스터에 개인 레지스트리를 설정하고 Trident Protect 설치를 지원하는 데 필요한 이미지를 푸시하는 단계를 설명합니다.</block>
   <block id="3434f6853d017037506e47f83a18c3eb" category="section-title">개인 이미지 레지스트리 만들기</block>
@@ -1237,66 +1147,45 @@
   <block id="09be04d446e70cfb6ff2df63024654b6" category="paragraph">**에이.  VolumeSnapshotClass를 만듭니다. 다음 매니페스트를 volume-snapshot-class.yaml이라는 파일에 저장합니다.</block>
   <block id="55594c435fa9e8bb616b0be43befd745" category="paragraph">위의 매니페스트를 사용하여 스냅샷을 만듭니다.</block>
   <block id="1557cdba542c2fa13ddbfe40a0b129fd" category="inline-image-macro">스냅샷 클래스</block>
-  <block id="0ead74279ea2f2f5dc61018f9a9188fa" category="paragraph"><block ref="0ead74279ea2f2f5dc61018f9a9188fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7f6a196914d4ab31fea78ac5a85e4d19" category="paragraph">**비.  다음으로 스냅샷을 만듭니다. VolumeSnapshot을 만들어 Postgresql 데이터의 특정 시점 복사본을 만들어 기존 PVC의 스냅샷을 만듭니다.  이렇게 하면 파일 시스템 백엔드에서 공간을 거의 차지하지 않는 FSx 스냅샷이 생성됩니다.  다음 매니페스트를 volume-snapshot.yaml이라는 파일에 저장합니다.</block>
   <block id="a8491dba42c82c44a171bc46f5404dc8" category="paragraph">**기음.  볼륨 스냅샷을 생성하고 생성되었는지 확인합니다.**</block>
   <block id="826181e7b216ae6bdc80ce324330edf8" category="paragraph">데이터 손실을 시뮬레이션하기 위해 데이터베이스를 삭제합니다(데이터 손실은 다양한 이유로 발생할 수 있지만 여기서는 데이터베이스를 삭제하여 시뮬레이션합니다)</block>
   <block id="b5eaaa5f694a7f8ec5e907af460647fe" category="inline-image-macro">볼륨 스냅샷</block>
-  <block id="8beba7afed22a52e156ea89f2d825761" category="paragraph"><block ref="8beba7afed22a52e156ea89f2d825761" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e765a5eeba2d96abf46cf9d172acc2da" category="paragraph">**디.  데이터 손실을 시뮬레이션하기 위해 데이터베이스를 삭제합니다(데이터 손실은 다양한 이유로 발생할 수 있지만 여기서는 데이터베이스를 삭제하여 시뮬레이션합니다)**</block>
   <block id="648f1fe4e83eb8d1e10ceddd054a16af" category="inline-image-macro">데이터베이스 연결</block>
-  <block id="a945297f31767f9fdc7a00038ce5621e" category="paragraph"><block ref="a945297f31767f9fdc7a00038ce5621e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="06f050f984168d39dc83dd0579b1c89c" category="inline-image-macro">데이터베이스 삭제</block>
-  <block id="1f21dc6ff624760074d792823a39fa0a" category="paragraph"><block ref="1f21dc6ff624760074d792823a39fa0a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be9e1a30da76a525e62fbb18bdd4178e" category="section-title">볼륨 스냅샷에서 복원</block>
   <block id="5c0cf9db5c3b84c42974da72d0a24a5f" category="paragraph">**1.  스냅샷에서 복원** 이 섹션에서는 앱 볼륨의 트라이던트 스냅샷에서 애플리케이션을 복원하는 방법을 보여드립니다.</block>
   <block id="348acf9f787e4f52c23fe741030e7288" category="paragraph">**에이.  스냅샷에서 볼륨 복제본을 만듭니다.**</block>
   <block id="1330e5f73c84b286e0473e750b920f10" category="paragraph">볼륨을 이전 상태로 복원하려면 스냅샷의 데이터를 기반으로 새 PVC를 만들어야 합니다.  이렇게 하려면 다음 매니페스트를 pvc-clone.yaml이라는 파일에 저장하세요.</block>
   <block id="5e69cd248a9e8f98cc6d8afbb30d08e6" category="paragraph">위의 매니페스트를 사용하여 스냅샷을 소스로 사용하여 PVC를 생성하여 볼륨의 복제본을 만듭니다.  매니페스트를 적용하고 복제본이 생성되었는지 확인하세요.</block>
   <block id="2c188e0477897d45f212584dfc7fdae0" category="inline-image-macro">스냅샷에서 postgresql 복제</block>
-  <block id="f605c1e028d7877829279ce8d10c6898" category="paragraph"><block ref="f605c1e028d7877829279ce8d10c6898" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90350dfdb6c3d9487986fa9f99f95e09" category="paragraph">**비.  원래 postgresql 설치를 삭제합니다.</block>
   <block id="cda89a46d8022e9609d4859cc871eb53" category="inline-image-macro">postgresql 앱 삭제</block>
-  <block id="4e65b97155c35d13bb6eec9d4b8dfdca" category="paragraph"><block ref="4e65b97155c35d13bb6eec9d4b8dfdca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e1124bbe05812664f1bb53318f98adc" category="paragraph">**기음.  새로운 복제 PVC를 사용하여 새 postgresql 애플리케이션을 만듭니다.</block>
   <block id="124776275b10a0ba40e3bd6274be7c83" category="inline-image-macro">postgresql 새로 설치</block>
-  <block id="f1cbbcfb76d9b0649939d47dc6ac2cf3" category="paragraph"><block ref="f1cbbcfb76d9b0649939d47dc6ac2cf3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4a08c488f3333f3a820df54221df8a6" category="paragraph">**디.  애플리케이션 포드가 실행 상태인지 확인하세요.</block>
-  <block id="85973890993d0900631b8b22fa1cf8b5" category="paragraph"><block ref="85973890993d0900631b8b22fa1cf8b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="474252dd1c23c5b69905d58ce770745b" category="paragraph">**이자형.  포드가 복제본을 PVC로 사용하는지 확인하세요.</block>
   <block id="dfc862a6a8f1caa11721f754efafe529" category="inline-image-macro">postgresql 새로 설치 설명</block>
-  <block id="2a404262de3cef6d06024820d286dc72" category="paragraph"><block ref="2a404262de3cef6d06024820d286dc72" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1e80ae72b073cfe7fd0d0405c745398" category="inline-image-macro">새로운 PVC가 클론이에요</block>
-  <block id="37a7b20081bfaed9cdfab54835aded85" category="paragraph"><block ref="37a7b20081bfaed9cdfab54835aded85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43d7503c85f74702bc734d9d432fb0e1" category="paragraph">f) 데이터베이스가 예상대로 복구되었는지 확인하려면 컨테이너 콘솔로 돌아가서 기존 데이터베이스를 표시합니다.</block>
   <block id="2f73f0311fa1d86b40de0c1c739f7abd" category="inline-image-macro">데이터베이스가 복구되었습니다</block>
-  <block id="bb1d7cda904f317bdcfd71af4bac0957" category="paragraph"><block ref="bb1d7cda904f317bdcfd71af4bac0957" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5ad64d595144c185c9cf2065162dec3" category="section-title">데모 비디오</block>
   <block id="26f71a935ef27829e35a6323d94b8bad" category="video-title">AWS에서 호스팅 제어 평면을 사용하여 Red Hat OpenShift 서비스를 갖춘 Amazon FSx for NetApp ONTAP</block>
   <block id="5098c5ca08edf447dfba921ac6c41a25" category="paragraph">Red Hat OpenShift 및 OpenShift 솔루션에 대한 추가 비디오를 찾을 수 있습니다.<block ref="7006d3b77ce0dcb153b683809f4deece" category="inline-link-macro-rx"></block> .</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">개요</block>
   <block id="4311d08133833f9e97125dcef97c9fdc" category="paragraph">이 섹션에서는 ROSA에서 실행되는 애플리케이션을 위한 영구 저장소 계층으로 FSx for ONTAP 을 활용하는 방법을 보여드리겠습니다.  ROSA 클러스터에 NetApp Trident CSI 드라이버를 설치하는 방법, FSx for ONTAP 파일 시스템을 프로비저닝하는 방법, 샘플 상태 저장 애플리케이션을 배포하는 방법을 보여줍니다.  또한 애플리케이션 데이터를 백업하고 복원하는 전략도 알려드립니다.  이 통합 솔루션을 사용하면 여러 AZ에 걸쳐 손쉽게 확장 가능한 공유 스토리지 프레임워크를 구축하고 Trident CSI 드라이버를 사용하여 데이터의 확장, 보호 및 복원 프로세스를 간소화할 수 있습니다.</block>
   <block id="c6368ae044df0f7bb26ed60afda5c591" category="inline-link-macro">AWS 계정</block>
-  <block id="3a2b88b991502efccf922110610f9582" category="list-text"><block ref="27fc574b8ea5cd6312c40c8aa826b8e2" category="inline-link-macro-rx"></block></block>
   <block id="4d5fc243e74307805026926c423823b4" category="inline-link-macro">Red Hat 계정</block>
-  <block id="ead0695440dd103ed925a9fde225faf7" category="list-text"><block ref="ead0695440dd103ed925a9fde225faf7" category="inline-link-macro-rx"></block></block>
   <block id="5909d6a8cb5fdba182746c8c82b7f87b" category="inline-link-macro">적절한 권한이 있는 경우</block>
-  <block id="82d51bb9563654dafcbc94464af7ffa1" category="list-text">IAM 사용자<block ref="6a9168d69dda19b401934afd113ebc28" category="inline-link-macro-rx"></block> ROSA 클러스터를 생성하고 액세스하려면</block>
   <block id="7820fdb5d8b3ebe0c69c86cf8bd2d0cf" category="inline-link-macro">AWS CLI</block>
-  <block id="98301d59c6cad91a32be2e4205f6bb39" category="list-text"><block ref="98301d59c6cad91a32be2e4205f6bb39" category="inline-link-macro-rx"></block></block>
   <block id="a419a367cad390ff246057d1781b2530" category="inline-link-macro">로사 CLI</block>
-  <block id="e08f074ff23721e4a104f551d21fa4c3" category="list-text"><block ref="e08f074ff23721e4a104f551d21fa4c3" category="inline-link-macro-rx"></block></block>
   <block id="3df52b454b23400395f3356b8e39f05d" category="inline-link-macro">OpenShift 명령줄 인터페이스</block>
-  <block id="ade19ee4fd758bf4bf5ead653037461e" category="list-text"><block ref="f63ae7e9726ce546709ed5687d99d6e3" category="inline-link-macro-rx"></block>(오케이)</block>
   <block id="55876228853abf632dec9346a4f372ec" category="inline-link-macro">선적 서류 비치</block>
-  <block id="6169772de4c1376699dd5519ef849a1d" category="list-text">헬멧 3<block ref="7422955daa7906b55a49c2790d5040a0" category="inline-link-macro-rx"></block></block>
   <block id="ac0bdc2a13da98cd87cc9846732afede" category="inline-link-macro">HCP ROSA 클러스터</block>
-  <block id="5b29dcfe92cc64cc5df9701a1011b09d" category="list-text"><block ref="5b29dcfe92cc64cc5df9701a1011b09d" category="inline-link-macro-rx"></block></block>
   <block id="6cfc44b2c2ec15fe190acbc4646b6c22" category="inline-link-macro">Red Hat OpenShift 웹 콘솔에 액세스</block>
-  <block id="336243bc7fb89cbfadf1a2d16a596a78" category="list-text"><block ref="336243bc7fb89cbfadf1a2d16a596a78" category="inline-link-macro-rx"></block></block>
   <block id="ee0c1dfaba7c469f23fd557ebb77995c" category="paragraph">이 다이어그램은 여러 AZ에 배포된 ROSA 클러스터를 보여줍니다.  ROSA 클러스터의 마스터 노드, 인프라 노드는 Red Hat의 VPC에 있고, 워커 노드는 고객 계정의 VPC에 있습니다.  동일한 VPC 내에 ONTAP 파일 시스템용 FSx를 만들고 ROSA 클러스터에 Trident 드라이버를 설치하여 이 VPC의 모든 서브넷이 파일 시스템에 연결할 수 있도록 합니다.</block>
   <block id="132ff3554e6f87fc7ae3dce747a6a1d9" category="inline-image-macro">로사 건축</block>
-  <block id="71d3bb805217b02e81f223639e55e358" category="paragraph"><block ref="71d3bb805217b02e81f223639e55e358" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6641666d7bc2748bab0ac80cdec3a2a3" category="section-title">초기 설정</block>
   <block id="c5af70bdc5c6efbd8cd10d6598b895ab" category="paragraph">**1.  NetApp ONTAP 에 대한 FSx 제공 **</block>
   <block id="b85c584b61dc3b605081a708aa8705be" category="paragraph">ROSA 클러스터와 동일한 VPC에 NetApp ONTAP 용 다중 AZ FSx를 만듭니다.  이를 수행하는 방법은 여러 가지가 있습니다.  CloudFormation Stack을 사용하여 FSxN을 만드는 방법에 대한 세부 정보가 제공됩니다.</block>
@@ -1305,100 +1194,67 @@
   <block id="3a9672194e38cf7334b7055576422bcc" category="paragraph">여기서: region-name: ROSA 클러스터가 배포된 지역과 동일 subnet1_ID: FSxN에 대한 기본 서브넷의 ID subnet2_ID: FSxN에 대한 대기 서브넷의 ID VPC_ID: ROSA 클러스터가 배포된 VPC의 ID routetable1_ID, routetable2_ID: 위에서 선택한 서브넷과 연관된 경로 테이블의 ID your_allowed_CIDR: FSx for ONTAP 보안 그룹에 허용되는 CIDR 범위 액세스를 제어하기 위한 수신 규칙.  0.0.0.0/0 또는 적절한 CIDR을 사용하여 모든 트래픽이 FSx for ONTAP 의 특정 포트에 액세스하도록 허용할 수 있습니다.  관리자 비밀번호 정의: FSxN에 로그인하기 위한 비밀번호입니다. SVM 비밀번호 정의: 생성될 SVM에 로그인하기 위한 비밀번호입니다.</block>
   <block id="a6ae7f0ee55faf7b97b2cbc5872a93d0" category="paragraph">아래에 표시된 Amazon FSx 콘솔을 사용하여 파일 시스템과 스토리지 가상 머신(SVM)이 생성되었는지 확인하세요.</block>
   <block id="543716f57f2bf1a62603c1429f89e44c" category="inline-image-macro">FSxN이 생성되었습니다</block>
-  <block id="073b640bb67b9059fbe0d2145d478aa6" category="paragraph"><block ref="073b640bb67b9059fbe0d2145d478aa6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eec1855fb68e23f0287d8f59d5edf663" category="paragraph">**2. ROSA 클러스터용 Trident CSI 드라이버 설치 및 구성**</block>
   <block id="94da387dbf8e17919540911ea6205752" category="paragraph">**b. Trident**</block>
   <block id="5eb1ead7ec87a4346203b9b8cb12ab3c" category="paragraph">ROSA 클러스터 워커 노드에는 스토리지 프로비저닝 및 액세스를 위해 NAS 프로토콜을 사용할 수 있는 NFS 도구가 미리 구성되어 있습니다.</block>
   <block id="f04d046e9cad09d82c9be581d1ae1fe9" category="paragraph">대신 iSCSI를 사용하려면 iSCSI에 대한 작업자 노드를 준비해야 합니다.  Trident 25.02 릴리스부터 ROSA 클러스터(또는 모든 OpenShift 클러스터)의 작업자 노드를 쉽게 준비하여 FSxN 스토리지에서 iSCSI 작업을 수행할 수 있습니다.  iSCSI를 위한 워커 노드 준비를 자동화하는 Trident 25.02(또는 이후 버전)를 설치하는 쉬운 방법은 2가지가 있습니다.  1. tridentctl 도구를 사용하여 명령줄에서 node-prep-flag를 사용합니다. 2.  운영자 허브에서 Red Hat 인증 Trident 운영자를 사용하고 사용자 정의합니다.  3. Helm 사용하기.</block>
   <block id="3b061feeaf044b14f22fd4354d79afa7" category="admonition">위의 방법을 node-prep을 활성화하지 않고 사용하면 FSxN에서 스토리지 프로비저닝에 NAS 프로토콜만 사용할 수 있습니다.</block>
   <block id="07fbf7b1273a602b2229671f818216fa" category="paragraph">**방법 1: tridentctl 도구 사용**</block>
-  <block id="6d1fdd4584e069726e5ebeb241b77d14" category="inline-link-macro">여기 문서</block>
-  <block id="69e1842b48b70d86890f9f50dcce7d91" category="paragraph">node-prep 플래그를 사용하여 표시된 대로 Trident 설치합니다.  설치 명령을 실행하기 전에 설치 프로그램 패키지를 다운로드해야 합니다. <block ref="5695630188d786784930a38ef71042a1" category="inline-link-macro-rx"></block> .</block>
   <block id="f3689db8513ce18a4c66c5b31f16e49b" category="paragraph">**방법 2: Red Hat 인증 Trident Operator를 사용하여 사용자 지정** OperatorHub에서 Red Hat 인증 Trident Operator를 찾아 설치합니다.</block>
   <block id="003f48c28a3b357b801ea863343fda51" category="inline-image-macro">운영자 허브의 운영자</block>
-  <block id="ac2f9d714248337ab7171f93e7865389" category="paragraph"><block ref="ac2f9d714248337ab7171f93e7865389" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7579c43cc636c72f9a519ec8568803b6" category="inline-image-macro">운영자 1 설치</block>
-  <block id="3fda7053514ef7da788808811c3ff983" category="paragraph"><block ref="3fda7053514ef7da788808811c3ff983" category="inline-image-macro-rx" type="image"></block></block>
   <block id="01d3e74f8acafd86528e465b4e5d2b1f" category="inline-image-macro">오퍼레이터 2 설치</block>
-  <block id="492d2082d92d5cd0c3e9e645838ecbc0" category="paragraph"><block ref="492d2082d92d5cd0c3e9e645838ecbc0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff79bc23e404a5a22df45a02dcebd11e" category="inline-image-macro">운영자 설치됨</block>
-  <block id="af60b006d2159121472e259b5116d152" category="paragraph"><block ref="af60b006d2159121472e259b5116d152" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1fd12f7b251af1d44feb3dd418d94820" category="paragraph">다음으로, Trident Orchestrator 인스턴스를 생성합니다.  YAML 뷰를 사용하여 사용자 정의 값을 설정하거나 설치 중에 iSCSI 노드 준비를 활성화합니다.</block>
   <block id="03a1abdc6d3af346b2afeca49ea90eaa" category="inline-image-macro">오케스트레이터 생성</block>
-  <block id="1f862bd9a62f6cf05c4007f3a09539ee" category="paragraph"><block ref="1f862bd9a62f6cf05c4007f3a09539ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8978eef87dc8f7572eedff6e2bd5c2a9" category="inline-image-macro">NodePrep 활성화</block>
-  <block id="beaafa13a78bb1454ce9d121a69c597e" category="paragraph"><block ref="beaafa13a78bb1454ce9d121a69c597e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1b18286ecd267568f0113dbef9b4d16" category="inline-image-macro">오케스트레이터 설치됨</block>
-  <block id="fa7da0402cd81afbc44e492864f343d3" category="paragraph"><block ref="fa7da0402cd81afbc44e492864f343d3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="06188d1b14559c7901e64b986bb75929" category="inline-image-macro">Trident 설치됨</block>
-  <block id="6d06278c3da710e307cd0f161f4c0594" category="paragraph"><block ref="6d06278c3da710e307cd0f161f4c0594" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1a41ba24dc9429264e7db57e757ee55" category="paragraph">위의 방법 중 하나를 사용하여 Trident 설치하면 iscsid 및 multipathd 서비스를 시작하고 /etc/multipath.conf 파일에 다음을 설정하여 ROSA 클러스터 워커 노드가 iSCSI를 위해 준비됩니다.</block>
   <block id="fc90c887c8728c69121e5e2436cd9f6a" category="inline-image-macro">iscsid 활성</block>
-  <block id="03fdb4612a8d8373e4dabda87c00d9dc" category="paragraph"><block ref="03fdb4612a8d8373e4dabda87c00d9dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc0ff41f6ffa4ed9b929c0cb67ae52c3" category="inline-image-macro">다중 경로 활성</block>
-  <block id="54ee16e07ddfba545d8643a9b28744b5" category="paragraph"><block ref="54ee16e07ddfba545d8643a9b28744b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7552381be5e7f0e3a0f82d85e0140723" category="inline-image-macro">multipath.conf 파일</block>
-  <block id="c9706f66eb14af9dd9a7225c9fc62e9a" category="paragraph"><block ref="c9706f66eb14af9dd9a7225c9fc62e9a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b6645d37e9de7750f4279b2867540007" category="paragraph">**c. 모든 Trident 포드가 실행 상태인지 확인하세요.**</block>
   <block id="79ef2187f1254031122a8446b04ab77f" category="inline-image-macro">Trident 포드가 작동 중</block>
-  <block id="ad93df3ea6ac808e784ae10b0e0a1a81" category="paragraph"><block ref="ad93df3ea6ac808e784ae10b0e0a1a81" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4070068ca9257738c0c1590dd5659b7" category="paragraph">**3.  ONTAP (ONTAP NAS)**에 대한 FSx를 사용하도록 Trident CSI 백엔드를 구성합니다.</block>
   <block id="412b252fa44d1a73e3e7bf22113f99a2" category="inline-link-macro">ontap-nas 드라이버</block>
-  <block id="5cda38c877ffa8a612ce7b7763e4390d" category="paragraph">Trident 백엔드 구성은 Trident 스토리지 시스템(이 경우 FSx for ONTAP)과 통신하는 방법을 알려줍니다.  백엔드를 생성하려면 클러스터 관리 및 NFS 데이터 인터페이스와 함께 연결할 스토리지 가상 머신의 자격 증명을 제공합니다.  우리는 사용할 것입니다<block ref="14edcd5c25c37eab7c332a6849f58247" category="inline-link-macro-rx"></block> FSx 파일 시스템에서 스토리지 볼륨을 프로비저닝합니다.</block>
   <block id="a06d8ea13f77dede2e54121fcba24d5f" category="paragraph">**에이.  먼저 다음 yaml**을 사용하여 SVM 자격 증명에 대한 비밀을 만듭니다.</block>
   <block id="368bea625fb1d17f4fb605b1adf6c105" category="admonition">아래에 표시된 것처럼 AWS Secrets Manager에서 FSxN에 대해 생성된 SVM 비밀번호를 검색할 수도 있습니다.</block>
   <block id="56ac301906b14ab3a1d90e48d5bf0099" category="inline-image-macro">AWS 비밀 관리자</block>
-  <block id="840f406bc33ccaf7112de6db8d42639b" category="paragraph"><block ref="840f406bc33ccaf7112de6db8d42639b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e0201b97b95896114d8c8a530cd34324" category="inline-image-macro">비밀을 검색하다</block>
-  <block id="13624b37c15993f43833f52bf3949e3c" category="paragraph"><block ref="13624b37c15993f43833f52bf3949e3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c77dd8a86a3aa1229d7fb226ed698ff" category="paragraph">**b. 다음으로, 다음 명령을 사용하여 ROSA 클러스터에 SVM 자격 증명에 대한 비밀을 추가합니다.**</block>
   <block id="f342ed808a344dca8cd316645b28a269" category="paragraph">다음 명령을 사용하여 비밀이 트라이던트 네임스페이스에 추가되었는지 확인할 수 있습니다.</block>
   <block id="c49bda1320107c50590e5da2e8bcc6b0" category="inline-image-macro">비밀 적용됨</block>
-  <block id="fe7736e2b80c8a5e7921962d7e45e9cd" category="paragraph"><block ref="fe7736e2b80c8a5e7921962d7e45e9cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="de0e33591485aa9503121693ac6d187d" category="paragraph">**기음.  다음으로 백엔드 객체를 만듭니다. 이를 위해 복제된 Git 저장소의 **fsx** 디렉토리로 이동합니다.  backend-ontap-nas.yaml 파일을 엽니다.  다음을 바꾸세요. **managementLIF**를 관리 DNS 이름으로, **dataLIF**를 Amazon FSx SVM의 NFS DNS 이름으로, **svm**을 SVM 이름으로 바꾸세요.  다음 명령을 사용하여 백엔드 객체를 생성합니다.</block>
   <block id="35919ebc3f38de293f75964141c70d38" category="paragraph">다음 명령을 사용하여 백엔드 객체를 생성합니다.</block>
   <block id="3061d849e31cb07387a1d37666690092" category="admonition">아래 스크린샷에 표시된 것처럼 Amazon FSx 콘솔에서 관리 DNS 이름, NFS DNS 이름 및 SVM 이름을 얻을 수 있습니다.</block>
   <block id="918673e8fb38fdb35a598c5edcc41c6b" category="inline-image-macro">생명을 얻다</block>
-  <block id="d3fbd0f4e568d661e7d0bf11c5dd77d5" category="paragraph"><block ref="d3fbd0f4e568d661e7d0bf11c5dd77d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="617dd2f4c60a9008ec760eb0fddb8e95" category="paragraph">**디.  이제 다음 명령을 실행하여 백엔드 개체가 생성되었고 Phase가 Bound를 표시하고 Status가 Success인지 확인하세요.</block>
   <block id="2a88ee6aa0aa6aec1e1996086289d857" category="inline-image-macro">백엔드 생성</block>
-  <block id="e68d001e824ad78e342f3582683814fc" category="paragraph"><block ref="e68d001e824ad78e342f3582683814fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4979a948fa2170accb8d9438300b96a" category="paragraph">**4.  스토리지 클래스 생성** 이제 Trident 백엔드가 구성되었으므로 백엔드를 사용할 Kubernetes 스토리지 클래스를 생성할 수 있습니다.  스토리지 클래스는 클러스터에서 사용할 수 있는 리소스 객체입니다.  이는 애플리케이션에 대해 요청할 수 있는 저장 유형을 설명하고 분류합니다.</block>
   <block id="1f18852d1e76226d0d4e171d80141cce" category="paragraph">**에이.  fsx 폴더에서 storage-class-csi-nas.yaml 파일을 검토합니다.**</block>
   <block id="84952793b5afdcea8ab63448535d6b8e" category="paragraph">**비.  ROSA 클러스터에 스토리지 클래스를 생성하고 trident-csi 스토리지 클래스가 생성되었는지 확인합니다.**</block>
-  <block id="40d2fe88b435e73e3dbc83b404ff1b0b" category="paragraph"><block ref="40d2fe88b435e73e3dbc83b404ff1b0b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1b3d4a374bc6e11af0ea040aa8a1a80" category="paragraph">이것으로 Trident CSI 드라이버 설치와 FSx for ONTAP 파일 시스템에 대한 연결이 완료되었습니다.  이제 FSx for ONTAP 의 파일 볼륨을 사용하여 ROSA에 샘플 Postgresql 상태 저장 애플리케이션을 배포할 수 있습니다.</block>
   <block id="0636e7d1057cc2a3e8d988583c421785" category="paragraph">**기음.  trident-csi 스토리지 클래스를 사용하여 생성된 PVC 및 PV가 없는지 확인합니다.**</block>
   <block id="3e54fdb1a47731eff210cfcc69714e5c" category="inline-image-macro">Trident 사용하면 PVC가 없습니다</block>
-  <block id="0a84b167c70df61cbeed6faf35196bb5" category="paragraph"><block ref="0a84b167c70df61cbeed6faf35196bb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="391518b1a16f4dd644fc4579501565e0" category="paragraph">**디.  Trident CSI를 사용하여 애플리케이션이 PV를 생성할 수 있는지 확인합니다.**</block>
   <block id="830972d7ddeb03c795b08a148225a2d6" category="paragraph">**fsx** 폴더에 제공된 pvc-trident.yaml 파일을 사용하여 PVC를 만듭니다.</block>
   <block id="d970fd0b3c991f4bbe44a6587210066b" category="inline-image-macro">Trident 사용하여 테스트 PVC 만들기</block>
-  <block id="57e19d8c3fd1957ddaad3a86b16d7064" category="paragraph"><block ref="57e19d8c3fd1957ddaad3a86b16d7064" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41852c6999cb66fc6ee8adc857d41154" category="admonition">iSCSI를 사용하려면 이전에 보여준 것처럼 작업자 노드에서 iSCSI를 활성화해야 하며 iSCSI 백엔드와 스토리지 클래스를 생성해야 합니다.  다음은 몇 가지 YAML 파일 샘플입니다.</block>
   <block id="7a581ed3c7639c1ada55033248414f22" category="paragraph">**5.  샘플 Postgresql 상태 저장 애플리케이션 배포**</block>
   <block id="6f8eddbdd9b105751799f66a50875bc6" category="paragraph">**에이.  helm을 사용하여 postgresql을 설치하세요.</block>
   <block id="259fd35b5f9a43731297f8a140d1b21b" category="inline-image-macro">포스트그레스큐엘 설치</block>
-  <block id="fe93ad99824686a419fd89ad88b85621" category="paragraph"><block ref="fe93ad99824686a419fd89ad88b85621" category="inline-image-macro-rx" type="image"></block></block>
   <block id="31cfab33a14cc72e5a344d295f4549ef" category="paragraph">**비.  애플리케이션 포드가 실행 중인지, 그리고 애플리케이션에 대한 PVC와 PV가 생성되었는지 확인하세요.**</block>
   <block id="39403b6f7280bb5cec1e975702a82cf5" category="inline-image-macro">postgresql 포드</block>
-  <block id="1856ebdd54733bcfbf1943dec099798b" category="paragraph"><block ref="1856ebdd54733bcfbf1943dec099798b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f198211ed231d5aa514aba22cafd2f7d" category="inline-image-macro">포스트그레스큐엘 PVC</block>
-  <block id="20018dc0db2c6cceb0a271c957fbf7ed" category="paragraph"><block ref="20018dc0db2c6cceb0a271c957fbf7ed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d86849da5990d2b606eb41488c7eab5" category="inline-image-macro">포스트그레스큐엘 PV</block>
-  <block id="763e3ab25b2c9db0017f2081965387ae" category="paragraph"><block ref="763e3ab25b2c9db0017f2081965387ae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6930e0118fbec85d7f8d0e9d6fcfac15" category="paragraph">**기음.  Postgresql 클라이언트 배포**</block>
   <block id="0dad5f08af561e853cc9dd8bde3951b9" category="paragraph">**설치된 postgresql 서버의 비밀번호를 얻으려면 다음 명령을 사용하세요.**</block>
   <block id="37916fdf1075b74251bed74535d3a080" category="paragraph">**다음 명령을 사용하여 postgresql 클라이언트를 실행하고 비밀번호를 사용하여 서버에 연결합니다.**</block>
   <block id="5804396b7d4ecfdaae8ec2641975adf0" category="inline-image-macro">postgresql 클라이언트</block>
-  <block id="334413543e8d842918cab1c6dd0f3fbf" category="paragraph"><block ref="334413543e8d842918cab1c6dd0f3fbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f465c438a10c54cb4a533ec5ddad8184" category="paragraph">**디.  데이터베이스와 테이블을 만듭니다.  테이블에 대한 스키마를 만들고 테이블에 2행의 데이터를 삽입합니다.**</block>
-  <block id="0a91e6d1ca35b9e277506ee61a3d5b02" category="inline-image-macro">postgresql 테이블, 스키마, 행</block>
-  <block id="4f8a864f9eba2322e44b9cc26e1f92a7" category="paragraph"><block ref="4f8a864f9eba2322e44b9cc26e1f92a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b888e639b3fe90bebf5a60ad61a3222" category="inline-image-macro">포스트그레스큐엘 행1</block>
-  <block id="92e86bdf8f47fdbbd9a9e904209087f8" category="paragraph"><block ref="92e86bdf8f47fdbbd9a9e904209087f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0a4b08f3c42a0e5f1dffde08d089781" category="inline-image-macro">포스트그레스큐엘 행2</block>
-  <block id="745a9c8442f96e8a1041caac1b56044b" category="paragraph"><block ref="745a9c8442f96e8a1041caac1b56044b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b6eb32efa1f9b0356b2aaa4f3387649" category="summary">이 참조 문서는 NetApp 에서 검증한 대로 여러 다른 데이터 센터 환경에서 Installer Provisioned Infrastructure(IPI)를 통해 배포된 Red Hat OpenShift 솔루션의 배포 검증을 제공합니다.  또한, Trident 스토리지 오케스트레이터를 사용하여 영구 스토리지를 관리함으로써 NetApp 스토리지 시스템과의 스토리지 통합에 대해서도 자세히 설명합니다.  마지막으로, 여러 솔루션 검증과 실제 사용 사례를 탐색하고 문서화합니다.</block>
   <block id="a0e01d06503f271c1de7acc0acd01733" category="doc">NVA-1160: NetApp 사용한 Red Hat OpenShift</block>
   <block id="3f4b17e041e63192875c654812122484" category="paragraph">Alan Cowles와 Nikhil M Kulkarni, NetApp</block>
@@ -1411,7 +1267,6 @@
   <block id="42c487483a8feee3cc0365881a4cc265" category="paragraph">NetApp 이 탑재된 Red Hat OpenShift는 이러한 과제를 인식하고 고객이 선택한 데이터 센터 환경에서 RedHat OpenShift IPI의 완전 자동화된 배포를 구현하여 각 문제를 해결하는 솔루션을 제시합니다.</block>
   <block id="d3d8eb53a347d6ffc9fb157d9ac8398b" category="paragraph">NetApp 솔루션이 포함된 Red Hat OpenShift는 다음과 같은 주요 구성 요소로 구성됩니다.</block>
   <block id="fd89bb4228981d3b22187eb451421cd6" category="section-title">Red Hat OpenShift 컨테이너 플랫폼</block>
-  <block id="70240bc0debcb080aa08dbd9e7b9a525" category="paragraph">자세한 내용은 OpenShift 웹사이트를 방문하세요.<block ref="35d5a627a33ce17e4bd125258d59fbc4" category="inline-link-rx"></block> .</block>
   <block id="02af9749588c0e25a52f0551041473b1" category="paragraph">Trident Red Hat OpenShift를 포함한 컨테이너와 Kubernetes 배포판을 위한 오픈 소스이자 완벽하게 지원되는 스토리지 오케스트레이터입니다.</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="cell">스토리지</block>
   <block id="8b2b7bab9251640fb5c8caa0b8a8ff98" category="cell">9.8, 9.9.1, 9.12.1</block>
@@ -1424,9 +1279,7 @@
   <block id="38890f5544003fcf40576b9458f3e3ce" category="cell">7.0, 8.0.2</block>
   <block id="472d13eb415cd6107aeef3a1ae6cd705" category="summary">NetApp Red Hat OpenShift와 같이 컨테이너 기반 환경에서 영구 데이터를 조율하고 관리하는 데 도움이 되는 다양한 제품을 제공합니다.</block>
   <block id="dd99886a26d3b0bfc6c607830f9e7019" category="doc">Red Hat OpenShift와 NetApp Trident 통합에 대해 알아보세요</block>
-  <block id="900bda04002ffdec7966ea3d7d98194b" category="paragraph"><block ref="900bda04002ffdec7966ea3d7d98194b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd351007d4a671a321b6881f730d0dc3" category="paragraph">다음 페이지에는 NetApp 솔루션이 포함된 Red Hat OpenShift에서 애플리케이션 및 영구 스토리지 관리를 위해 검증된 NetApp 제품에 대한 추가 정보가 있습니다.</block>
-  <block id="38a66e64d72c4bab859830a3603ac8eb" category="list-text"><block ref="38a66e64d72c4bab859830a3603ac8eb" category="inline-link-macro-rx"></block></block>
   <block id="e38be1dc20a2b358b917b60fe2677b39" category="doc">NetApp Element iSCSI 구성</block>
   <block id="dc5fa659e0452a77d6006f5b72f8b334" category="paragraph">NetApp Element 스토리지 시스템과 Trident 통합을 활성화하려면 iSCSI 프로토콜을 사용하여 스토리지 시스템과 통신할 수 있는 백엔드를 만들어야 합니다.</block>
   <block id="05ca7295321cb9b417a251e75557c6c5" category="list-text">다운로드한 설치 아카이브에는 샘플 백엔드 파일이 있습니다.<block ref="75e4a0ceb294a9d74374c938e4e8ddc8" prefix=" " category="inline-code"></block> 폴더 계층구조.  iSCSI를 제공하는 NetApp Element 시스템의 경우 다음을 복사하세요.<block ref="7989420add0b5baae954e866987ef264" prefix=" " category="inline-code"></block> 작업 디렉토리에 파일을 복사하고 편집하세요.</block>
@@ -1440,12 +1293,9 @@
   <block id="92637d8d513510f7c1f5bfac6e1cce9b" category="summary">NetApp ONTAP 스토리지 시스템과 Trident 통합을 활성화하려면 스토리지 시스템과 통신을 지원하는 백엔드를 만들어야 합니다.</block>
   <block id="81736240a8dded7baeec2c203b1eb6d5" category="paragraph">Trident Red Hat OpenShift를 포함한 컨테이너와 Kubernetes 배포판을 위한 오픈 소스이자 완벽하게 지원되는 스토리지 오케스트레이터입니다.  Trident NetApp ONTAP 및 Element 스토리지 시스템을 포함한 전체 NetApp 스토리지 포트폴리오와 호환되며 NFS 및 iSCSI 연결도 지원합니다.  Trident 최종 사용자가 스토리지 관리자의 개입 없이 NetApp 스토리지 시스템에서 스토리지를 프로비저닝하고 관리할 수 있도록 하여 DevOps 워크플로를 가속화합니다.</block>
   <block id="60f45090e62b24e31c59f9c7dc58c655" category="paragraph">Trident 는 개발 주기가 빠르며, Kubernetes와 마찬가지로 1년에 4번 출시됩니다.</block>
-  <block id="b2169686f146425f673c85dda25027f8" category="paragraph">어떤 Kubernetes 배포판에서 어떤 버전의 Trident 테스트되었는지에 대한 지원 매트릭스를 찾을 수 있습니다.<block ref="34562000b9988739736848a0014e5230" category="inline-link-rx"></block> .</block>
   <block id="38461cd3f4ed507e77fed6009d4cca3e" category="inline-link-macro">Trident 제품 설명서</block>
-  <block id="8becdc5dafaea9a42a00541b5232c9ec" category="paragraph">참고해주세요<block ref="c9828f1cebf8b202dc4a588c02a65aac" category="inline-link-macro-rx"></block> 설치 및 구성 세부 정보</block>
   <block id="e1c8e443ef4456b5817cd51fd4b2ee21" category="section-title">Trident 다운로드</block>
   <block id="f95d0437e813349fa018b7f0e68e9a7d" category="paragraph">배포된 사용자 클러스터에 Trident 설치하고 영구 볼륨을 프로비저닝하려면 다음 단계를 완료하세요.</block>
-  <block id="5e2edd55fd0252c36cb87a4ce11d6e74" category="list-text">설치 아카이브를 관리자 워크스테이션에 다운로드하고 내용을 추출합니다.  Trident 의 현재 버전을 다운로드할 수 있습니다.<block ref="3ee34cf4d0ca59ba61404ff20cc8cec4" category="inline-link-rx"></block> .</block>
   <block id="422269f9bb560b76869cbd586b8370d5" category="list-text">다운로드한 번들에서 Trident 설치를 추출합니다.</block>
   <block id="52d012c119e8e080d08f6a1592f8f9ec" category="section-title">Helm과 함께 Trident Operator 설치</block>
   <block id="645e283a7a985805ce0d9bb25f595243" category="list-text">먼저 사용자 클러스터의 위치를 설정하세요.<block ref="deabc6332aa53495b56c51d2e3eca54f" prefix=" " category="inline-code"></block> Trident 에는 이 파일을 전달하는 옵션이 없으므로, 이 파일을 참조할 필요가 없도록 환경 변수로 파일을 지정합니다.</block>
@@ -1472,7 +1322,6 @@
   <block id="cccb85b5e6a9a19187087f71254d1fb2" category="paragraph">Red Hat OpenShift에서는 배포 후 클러스터에 MCO(Machine Config Operator)를 적용하여 이를 처리합니다.</block>
   <block id="068d2023b916134a0573aaad841124e4" category="paragraph">iSCSI 서비스를 실행하도록 작업자 노드를 구성하려면 다음 단계를 완료하세요.</block>
   <block id="c25282bfd8c140d1f79c25362637f744" category="paragraph">멀티패스를 사용하지 않을 때:</block>
-  <block id="541c76e8762c84e3e0488f91c8062e08" category="paragraph">멀티패스를 사용하는 경우:</block>
   <block id="d9f036d3b9f84b626f8a777480066cab" category="list-text">구성이 생성된 후, 워커 노드에 구성을 적용하고 다시 로드하는 데 약 20~30분이 걸립니다.  다음을 사용하여 머신 구성이 적용되는지 확인하세요.<block ref="1b2628e311828c98f0307b49309b67ee" prefix=" " category="inline-code"></block> 그리고 작업자의 머신 구성 풀이 업데이트되었는지 확인하세요.  또한 작업자 노드에 로그인하여 iscsid 서비스가 실행 중인지 확인할 수 있습니다(멀티패스를 사용하는 경우 multipathd 서비스도 실행 중인지 확인할 수 있습니다).</block>
   <block id="6e16409ed6038c106c7fa1dfbfb9da0f" category="admonition">MachineConfig가 성공적으로 적용되었고 서비스가 예상대로 시작되었는지 확인하려면 다음을 실행하세요.<block ref="5c237bbde25a8cf47cdca465191a6c1d" prefix=" " category="inline-code"></block> 적절한 플래그를 사용하여 명령을 실행합니다.</block>
   <block id="b09d268106fd9cbfffd1dc848382a150" category="section-title">스토리지 시스템 백엔드 생성</block>
@@ -1492,37 +1341,22 @@
   <block id="9eb8af4dd2c3557a24b914601b6ae465" category="section-title">Jenkins 배포에 필요한 리소스를 생성합니다.</block>
   <block id="93b3852e5c67975dd33b1769b24a4a85" category="paragraph">Jenkins 애플리케이션을 배포하는 데 필요한 리소스를 생성하려면 다음 단계를 완료하세요.</block>
   <block id="9fd493573e73cb0e5e55e97306249596" category="list-text">Jenkins라는 이름의 새로운 프로젝트를 만듭니다.</block>
-  <block id="8007dd5ea548a9597a6fd0d0837cf904" category="paragraph"><block ref="8007dd5ea548a9597a6fd0d0837cf904" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8d256abce3dbdfed83e337956e42f60f" category="list-text">이 예에서는 영구 저장소를 사용하여 Jenkins를 배포했습니다.  Jenkins 빌드를 지원하려면 PVC를 만듭니다.  저장소 &gt; 영구 볼륨 클레임으로 이동하여 영구 볼륨 클레임 만들기를 클릭합니다.  생성된 스토리지 클래스를 선택하고, 영구 볼륨 클레임 이름이 jenkins인지 확인하고, 적절한 크기와 액세스 모드를 선택한 다음, 생성을 클릭합니다.</block>
-  <block id="e5d5518aa4ae9a3e5207fe245d35147b" category="paragraph"><block ref="e5d5518aa4ae9a3e5207fe245d35147b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9272f40a21ca3dad814c4e3886b40776" category="section-title">영구 저장소를 사용하여 Jenkins 배포</block>
   <block id="939a7b51bfb262627185af768c3c1024" category="paragraph">영구 저장소로 Jenkins를 배포하려면 다음 단계를 완료하세요.</block>
   <block id="d31d340fd6b135cac2cfac7b04a34c10" category="list-text">왼쪽 상단에서 역할을 관리자에서 개발자로 변경합니다.  +추가를 클릭하고 카탈로그에서를 선택합니다.  키워드로 필터링에서 jenkins를 검색하세요.  영구 저장소가 있는 Jenkins 서비스를 선택하세요.</block>
-  <block id="a1a1bd76420a8c683be6dccdb404f07e" category="paragraph"><block ref="a1a1bd76420a8c683be6dccdb404f07e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6baa4bd25992de2d17278ade0d3090ad" category="list-text">딸깍 하는 소리<block ref="42dcbbaa226af66223d0680206ea8547" prefix=" " category="inline-code"></block> .</block>
-  <block id="fe6fbabc1e025fca5155c581760a956c" category="paragraph"><block ref="fe6fbabc1e025fca5155c581760a956c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7b4a6da6ab2733552de61d67b38a39e" category="list-text">기본적으로 Jenkins 애플리케이션의 세부 정보가 채워집니다.  요구 사항에 따라 매개변수를 수정하고 만들기를 클릭합니다.  이 프로세스는 OpenShift에서 Jenkins를 지원하는 데 필요한 모든 리소스를 생성합니다.</block>
-  <block id="cfd19feb2a18d2cf0379c59a1d59ee6c" category="paragraph"><block ref="cfd19feb2a18d2cf0379c59a1d59ee6c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb86f2dea9912af1bb1677c9cf33e619" category="list-text">Jenkins 포드가 준비 상태에 진입하는 데 약 10~12분이 걸립니다.</block>
-  <block id="aca4c194891259971d42b8e40824c60f" category="paragraph"><block ref="aca4c194891259971d42b8e40824c60f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="da33835bff86a0b0c8be6c67dcf677bb" category="list-text">포드가 인스턴스화된 후 네트워킹 &gt; 경로로 이동합니다.  Jenkins 웹페이지를 열려면 jenkins 경로에 제공된 URL을 클릭하세요.</block>
-  <block id="8bf5ffa50f8001acbf2c5c8de7fb1a38" category="paragraph"><block ref="8bf5ffa50f8001acbf2c5c8de7fb1a38" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d59d1324dea050a2c0ffc376de411aa0" category="list-text">Jenkins 앱을 생성하는 동안 OpenShift OAuth가 사용되었으므로 OpenShift로 로그인을 클릭합니다.</block>
-  <block id="2136aeeb0aeb36fefd84f6ba7b527ed7" category="paragraph"><block ref="2136aeeb0aeb36fefd84f6ba7b527ed7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="70a742210f3e3599821b3a11b682144c" category="list-text">Jenkins 서비스 계정에 OpenShift 사용자에 대한 액세스를 승인합니다.</block>
-  <block id="5bb584ba03a4447f210abaaa6fc3421d" category="paragraph"><block ref="5bb584ba03a4447f210abaaa6fc3421d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b07934b6023389a7e3e183b45e3b7448" category="list-text">Jenkins 환영 페이지가 표시됩니다.  Maven 빌드를 사용하고 있으므로 먼저 Maven 설치를 완료하세요.  Jenkins 관리 &gt; 글로벌 도구 구성으로 이동한 다음 Maven 하위 제목에서 Maven 추가를 클릭합니다.  원하는 이름을 입력하고 자동 설치 옵션이 선택되어 있는지 확인하세요. Save를 클릭합니다.</block>
-  <block id="ba97815cd1398364c5d732df404570f4" category="paragraph"><block ref="ba97815cd1398364c5d732df404570f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fd32305bf380bf893ef2407eae75f5d" category="list-text">이제 CI/CD 워크플로를 보여주는 파이프라인을 만들 수 있습니다.  홈페이지에서 왼쪽 메뉴에서 '새 작업 만들기' 또는 '새 항목 만들기'를 클릭합니다.</block>
-  <block id="5ec90d2545035ac497202eb7ae3434fc" category="paragraph"><block ref="5ec90d2545035ac497202eb7ae3434fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b6fc174a3fad5c396413febe1d4ba50" category="list-text">항목 만들기 페이지에서 원하는 이름을 입력하고 파이프라인을 선택한 후 확인을 클릭합니다.</block>
-  <block id="c4dec2852d55117421867d65e456a7ad" category="paragraph"><block ref="c4dec2852d55117421867d65e456a7ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd55d787cacfb25983e0a24b58ba6d48" category="list-text">파이프라인 탭을 선택합니다.  샘플 파이프라인 시도 드롭다운 메뉴에서 Github + Maven을 선택합니다.  코드는 자동으로 채워집니다. Save를 클릭합니다.</block>
-  <block id="86ec92271960dd23f1614721c07bc989" category="paragraph"><block ref="86ec92271960dd23f1614721c07bc989" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0191ad3b841f8db403ec4749d571eb4b" category="list-text">'지금 빌드'를 클릭하면 준비, 빌드, 테스트 단계의 개발을 시작할 수 있습니다.  전체 빌드 프로세스를 완료하고 빌드 결과를 표시하는 데 몇 분이 걸릴 수 있습니다.</block>
-  <block id="d469f4aef2bd2d92449c1ae5dd63a196" category="paragraph"><block ref="d469f4aef2bd2d92449c1ae5dd63a196" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b04b355d9fc6a2e23965649ebdd0aa31" category="list-text">코드가 변경될 때마다 파이프라인을 다시 빌드하여 새로운 버전의 소프트웨어를 패치하여 지속적인 통합과 지속적인 배포가 가능해집니다.  이전 버전의 변경 사항을 추적하려면 최근 변경 사항을 클릭하세요.</block>
-  <block id="440d5f7885e3509845c5c7594e97c253" category="paragraph"><block ref="440d5f7885e3509845c5c7594e97c253" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eeaa3ef2816f113fd1978b036eefc4a4" category="doc">솔루션 검증 및 사용 사례: NetApp 사용한 Red Hat OpenShift</block>
   <block id="9e766e668731b912ea84be747f0d6b4b" category="paragraph">이 페이지에 제공된 예는 NetApp 과 함께 사용되는 Red Hat OpenShift에 대한 솔루션 검증 및 사용 사례입니다.</block>
   <block id="6f60a8e202d6d4f297230695ffa9c1a6" category="inline-link-macro">영구 저장소를 사용하여 Jenkins CI/CD 파이프라인 배포</block>
@@ -1662,9 +1496,330 @@
   <block id="fce579e2b8eca0cf6765e4d77b07475d" category="paragraph">NetApp Trident Protect에 대해 알아보세요. 이 솔루션은 OpenShift Virtualization 솔루션의 애플리케이션 및 영구 스토리지 관리를 위해 검증되었습니다.</block>
   <block id="a261c77868f49e84578faa359f5e9e40" category="paragraph">Trident는 NetApp에서 유지 관리하는 오픈 소스 스토리지 프로비저너 및 오케스트레이터로, 추가 기능인 NetApp Trident Protect와 함께 Red Hat OpenShift와 같은 컨테이너 기반 환경에서 영구 데이터를 오케스트레이션하고 관리하기 위한 강력한 솔루션을 제공합니다.</block>
   <block id="5ec3b68db6f1825ef893a3df02e8cb74" category="inline-link-macro">Trident Protect 문서</block>
-  <block id="3a984bfb64105d2cab0a81dc1af80642" category="list-text"><block ref="3a984bfb64105d2cab0a81dc1af80642" category="inline-link-macro-rx"></block></block>
   <block id="ea885ab6ce71c5c4088d6a223de747a4" category="doc">Trident Protect를 사용한 컨테이너 앱 및 가상 머신 데이터 보호</block>
   <block id="5fe555334f56eb4ea308eebe2c87feb9" category="video-title">Trident Protect를 사용한 가상 머신 재해 복구</block>
   <block id="92b72e1a477bb22316b8809fbb5782d9" category="video-title">Trident Protect를 사용하여 VM 보호하기</block>
   <block id="ddb215f758bdd80460164fabb25da416" category="sidebar">Trident Protect를 사용한 데이터 보호</block>
+  <block id="71abf7e2c641ea38d39b7a20772eba8e" category="paragraph">자세한 내용은 <block ref="2b515b03bf6ebbb1eeaa3feb4fe01f8a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="39d3d7c78b9cf3ffaf01456c45fdc5c5" category="inline-link-macro">NetApp 웹사이트</block>
+  <block id="b968fde9db3bb31593953cb035ae2417" category="paragraph">자세한 내용은 <block ref="ed97061021c3e7a6d3fb5341335b7354" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="a15633cf742c52a051a1a5a71db716bb" category="inline-link-macro">NetApp 하드웨어 플랫폼 설명서</block>
+  <block id="a8e39649e56df62720df4c97c2777cf7" category="paragraph">NetApp AFF/FAS 플랫폼에 대한 자세한 내용은 <block ref="ad9eb91328a96de4d75328eeb32f72b4" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="7436b418bed093768e360d32105591d2" category="inline-link-macro">ONTAP Select 문서</block>
+  <block id="0cc251eacd6e7f8207b7e976124e613b" category="paragraph">ONTAP Select에 대한 자세한 내용은 <block ref="de720e24be25cff2bb4a7c5edb7b6f7e" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="1a523ba4ece9125275b92ebb41e3cf23" category="inline-link-macro">Cloud Volumes ONTAP 설명서</block>
+  <block id="a9208dfb6721ab54c37024df46948722" category="paragraph">Cloud Volumes ONTAP에 대한 자세한 내용은 <block ref="4c5aeceb206f7522b9fe41b2612d4ff3" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="40ef3fb23e015d9b4b46a16fa50f10d3" category="inline-link-macro">Trident 문서</block>
+  <block id="7e93d6c2814d39ecc312a7cb8f50157b" category="paragraph">NetApp Trident는 {k8s_distribution_name} 등의 컨테이너 및 Kubernetes 배포판을 위한 오픈 소스이며 완벽하게 지원되는 스토리지 오케스트레이터입니다. 자세한 내용은 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="c777be7f669397b0a376fe32ca5cd9c3" category="inline-link-macro">지원되는 프런트엔드(오케스트레이터)</block>
+  <block id="a82ce4a624ca117f0d4adb906d250a9d" category="paragraph">어떤 버전의 Trident가 어떤 Kubernetes 배포판과 함께 테스트되었는지에 대한 지원 매트릭스는 <block ref="f9d862f4c575cafd99214033fc736cc3" category="inline-link-macro-rx"></block>에서 확인할 수 있습니다.</block>
+  <block id="b392bb5c2cb134c898d5c299a952c125" category="inline-link-macro">GKE 온프레미스용 F5 BIG-IP ADC 설치 가이드</block>
+  <block id="eb8f5a0d1caa65f55d6d97486bfccf82" category="paragraph">이 솔루션은 VMware vSphere에 배포된 가상 어플라이언스를 사용합니다. F5 Big-IP 가상 어플라이언스의 네트워킹은 네트워크 환경에 따라 2-암 또는 3-암 구성으로 설정할 수 있습니다. 이 문서의 배포는 2-암 구성을 기반으로 합니다. Anthos와 함께 사용할 가상 어플라이언스 구성에 대한 자세한 내용은 <block ref="efa9d286390d662f3b080281b8032176" category="inline-link-macro-rx"></block>에서 확인할 수 있습니다.</block>
+  <block id="821f07c2f64ed1364c7b57afe91aa5f6" category="inline-link-macro">F5 다운로드 포털</block>
+  <block id="1c752050e212da79c1a69d2d8b674e39" category="list-text">Open Virtual Appliance(OVA) 파일을 <block ref="2c2f88b9dfb4b0d57dd838074c411097" category="inline-link-macro-rx"></block>에서 다운로드합니다.</block>
+  <block id="bf539c910f3f93afe9436f51cee5e12e" category="paragraph">NetApp AFF 및 FAS 플랫폼에 대한 자세한 내용은 <block ref="ad9eb91328a96de4d75328eeb32f72b4" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="f64322fb972a31f0c1b5ba1fb0ea5c57" category="paragraph">자세한 내용은 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="a9dfec93685eae191be30de8d240abb2" category="inline-link-macro">Anthos 스토리지 파트너 지원 매트릭스</block>
+  <block id="d8c404f27b989b800e82e1d8b19cb4f2" category="paragraph">검증된 릴리스는 <block ref="f9ecf86011bd398d9201d696f2458261" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="200a1c85618c42cd4ea29d4c04649068" category="paragraph">NetApp Trident는 Anthos를 포함한 컨테이너 및 Kubernetes 배포판을 위한 오픈 소스의 완전 지원 스토리지 오케스트레이터입니다. 자세한 내용은 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e03c4a97cbca1020804f3fdb594ca7f4" category="summary">Trident는 Anthos를 포함한 컨테이너 및 Kubernetes 배포판을 위한 완벽하게 지원되는 오픈 소스 스토리지 오케스트레이터입니다.</block>
+  <block id="06a74ec92a4f9aa73abdeb25fb77f912" category="paragraph">최신 버전 정보는 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block>을 참조하십시오. Kubernetes 배포판과 Trident 버전 호환성에 대한 지원 매트릭스는 <block ref="f9d862f4c575cafd99214033fc736cc3" category="inline-link-macro-rx"></block>에서 확인할 수 있습니다.</block>
+  <block id="bbc7e244676ab729a0c73c34dd3b219d" category="inline-link-macro">Trident 설치 세부 정보</block>
+  <block id="6523fbd303031f5695e8fa1f84177ff6" category="paragraph">자세한 내용은 <block ref="4afff34e2178e9a103c01e8d90cc73b5" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="aeeb03235358f0f4bf3be628bed08721" category="inline-link-macro">백엔드 생성</block>
+  <block id="9f303a64b5d74c7cd615ed16ba429a22" category="paragraph">Trident Operator 설치를 완료한 후에는 사용 중인 특정 NetApp 스토리지 플랫폼에 맞게 백엔드를 구성해야 합니다. Trident의 설정 및 구성을 계속하려면 아래 링크를 따르십시오. <block ref="75414e243cfcdfc10305a48deb424d70" category="inline-link-macro-rx"></block></block>
+  <block id="8e67694e9f98815862d0e14986595aa5" category="paragraph">백엔드를 생성한 후에는 Kubernetes 사용자가 볼륨을 사용할 때 지정할 스토리지 클래스를 생성해야 합니다. Kubernetes 사용자는 스토리지 클래스 이름을 지정하는 영구 볼륨 클레임(PVC)을 사용하여 볼륨을 프로비저닝합니다. 아래 링크를 따라 스토리지 클래스를 생성하십시오. <block ref="68a56d94afff00ddd947a7245ac1daa5" category="inline-link-macro-rx"></block></block>
+  <block id="2311d84d26296a70b498e90c57fe7913" category="paragraph">볼륨을 동적으로 프로비저닝하려면 스토리지 클래스를 사용하여 Kubernetes 영구 볼륨 클레임(PVC) 오브젝트를 생성해야 합니다. 아래 링크를 따라 PVC 오브젝트를 생성하십시오. <block ref="407688e8bfe1f30b6cf9cd8c18baf221" category="inline-link-macro-rx"></block></block>
+  <block id="e40342711a4929f58e9e26c5b9e4808c" category="paragraph">위 단계에서 프로비저닝된 볼륨은 Pod에 마운트하여 애플리케이션에서 사용할 수 있습니다. 아래 링크에서 예시를 확인할 수 있습니다.<block ref="3716e358fda09280c3de68ae7d3c324c" category="inline-link-macro-rx"></block></block>
+  <block id="dc11b3a16dedb42e47a2cd4a856a7af0" category="inline-link-macro">iSCSI 프로토콜용 샘플 매니페스트</block>
+  <block id="08135fde220557f89dd87ae307c05bcd" category="paragraph"><block ref="08135fde220557f89dd87ae307c05bcd" category="inline-link-macro-rx"></block></block>
+  <block id="15371ea3f43f4642296547d07beb9744" category="inline-link-macro">NFS 프로토콜용 샘플 매니페스트</block>
+  <block id="a41ac90556cabf9d5a79b2a8f0fcbc1e" category="paragraph"><block ref="a41ac90556cabf9d5a79b2a8f0fcbc1e" category="inline-link-macro-rx"></block></block>
+  <block id="51a585cc52e2081d43085bd3eadb5b1e" category="inline-link-macro">네트워크 구성 요구 사항</block>
+  <block id="856d0b65cca71a22a6ef58dba88cfb0b" category="paragraph">Advanced Cluster Management는 OpenShift 클러스터용 추가 기능이므로 허브 클러스터와 관리형 클러스터에서 사용되는 기능에 따라 하드웨어 리소스에 대한 특정 요구 사항 및 제한 사항이 있습니다. 클러스터 크기를 결정할 때 이러한 사항을 고려해야 합니다. 자세한 내용은 <block ref="4994a110a96f042c4ee5a15d554afdec" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="86dee54bf59f0cad7dd8041494a76697" category="inline-link-macro">인프라 노드에 설치</block>
+  <block id="df7fac800bff7324e551914d6c017272" category="paragraph">선택적으로, 허브 클러스터에 인프라 구성 요소를 호스팅하기 위한 전용 노드가 있고 해당 노드에만 Advanced Cluster Management 리소스를 설치하려는 경우, 해당 노드에 허용 조건 및 선택기를 적절히 추가해야 합니다. 자세한 내용은 <block ref="3d40b94750002beeff6484650dcf898c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="aba2ab05028a0f9f9f134c25255f6894" category="inline-link-macro">Red Hat Advanced Cluster Management 문서</block>
+  <block id="e2f11f127ba38da2f884f51544f23306" category="paragraph">자세한 내용은 <block ref="729b3ec44f7585d5a412735c536f17de" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="397408eda4939c3af46e6cb49c9e3baf" category="list-text">BIG-IP 시스템에서 명령형 명령어 대신 JSON 형식의 구성을 사용할 수 있도록 F5 Application Services 3 확장 프로그램을 설치하십시오. <block ref="da504fe052901b2c0931afe65f808943" category="inline-link-macro-rx"></block>로 이동하여 최신 RPM 파일을 다운로드하십시오.</block>
+  <block id="6253fff2c01e377aa7f28361db49f178" category="inline-link-macro">MetalLB 레이어 2 모드 문서</block>
+  <block id="43a7d9e6fea8347c40b0a2b9ca2b3d56" category="list-text">*레이어 2 모드.* 이 모드에서는 OpenShift 클러스터의 한 노드가 서비스 소유권을 갖고 해당 IP에 대한 ARP 요청에 응답하여 OpenShift 클러스터 외부에서 서비스에 액세스할 수 있도록 합니다. IP를 알리는 노드가 하나뿐이므로 대역폭 병목 현상과 느린 장애 조치 제한이 있습니다. 자세한 내용은 <block ref="7c750de31f80b347d27528ee41083553" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="a7591335ebcc3954bd03577b5907a8ff" category="inline-link-macro">MetalLB BGP 모드 설명서</block>
+  <block id="830b6ef2003ede9c94fc352c1770980d" category="list-text">*BGP 모드.* 이 모드에서는 OpenShift 클러스터의 모든 노드가 라우터와 BGP 피어링 세션을 설정하고 서비스 IP로 트래픽을 전달하는 경로를 광고합니다. 이를 위해서는 해당 네트워크의 라우터에 MetalLB를 통합해야 합니다. BGP의 해싱 메커니즘으로 인해 서비스의 IP-노드 매핑이 변경될 경우 특정 제약 사항이 발생합니다. 자세한 내용은 <block ref="08f550e3c204bc8b77a5b3df74fbf37f" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="4fa07379d1e2bf2956c5195e0f9602b9" category="admonition">MetalLB를 BGP 모드로 구성하려면 위의 6단계를 건너뛰고 <block ref="08f550e3c204bc8b77a5b3df74fbf37f" category="inline-link-macro-rx"></block>의 절차를 따르십시오.</block>
+  <block id="0bf83d779a041ff1ad7b40d72f72ccec" category="inline-link-macro">ID 제공업체 이해하기</block>
+  <block id="2c8a14f5089889f4d0c4bec0930e4f49" category="paragraph">다음으로 클러스터에서 RBAC를 구성해야 합니다. 가장 좋은 방법은 단일 프로젝트 또는 워크로드에서 작업하는 모든 개발자를 ID 공급자(IdP)의 단일 사용자 그룹으로 구성하는 것입니다. Red Hat OpenShift는 IdP 통합 및 사용자 그룹 동기화를 지원하므로 IdP의 사용자 및 그룹을 클러스터로 가져올 수 있습니다. 이를 통해 클러스터 관리자는 특정 프로젝트에 할당된 클러스터 리소스에 대한 액세스를 해당 프로젝트에서 작업하는 사용자 그룹으로 분리하여 클러스터 리소스에 대한 무단 액세스를 제한할 수 있습니다. Red Hat OpenShift와 IdP 통합에 대한 자세한 내용은 <block ref="d7db4c17c89911008f96df931366fc93" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="87dc0337d3ded2211d9b01c32e22d90d" category="inline-link-macro">백엔드 구성</block>
+  <block id="f3b2ec02c3c2451cccfddf2562b42ee8" category="paragraph">서로 다른 프로젝트에 대해 NetApp ONTAP에 서로 다른 SVM을 생성한 후에는 각 SVM을 서로 다른 Trident 백엔드에 매핑해야 합니다. Trident의 백엔드 구성은 OpenShift 클러스터 리소스에 영구 스토리지를 할당하는 방식을 결정하며, 매핑할 SVM에 대한 세부 정보가 필요합니다. 최소한 백엔드의 프로토콜 드라이버를 정의해야 합니다. 선택적으로 스토리지에 볼륨을 프로비저닝하는 방법을 정의하고 볼륨 크기 또는 애그리게이트 사용량 등에 대한 제한을 설정할 수 있습니다. Trident 백엔드 정의에 대한 자세한 내용은 <block ref="087dc930e8869b468854b402ca453b03" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="247640c7ef87d8f7eb46ded23363947f" category="paragraph">Trident 백엔드를 구성한 후 다음 단계는 StorageClasses를 구성하는 것입니다. 백엔드 수만큼 스토리지 클래스를 구성하여 각 스토리지 클래스가 하나의 백엔드에서만 볼륨을 구동할 수 있도록 액세스를 제공합니다. 스토리지 클래스를 정의하는 동안 storagePools 매개변수를 사용하여 StorageClass를 특정 Trident 백엔드에 매핑할 수 있습니다. 스토리지 클래스를 정의하는 자세한 방법은 <block ref="68a56d94afff00ddd947a7245ac1daa5" category="inline-link-macro-rx"></block>에서 확인할 수 있습니다. 따라서 StorageClass에서 하나의 SVM을 가리키는 Trident 백엔드로의 일대일 매핑이 존재합니다. 이를 통해 해당 프로젝트에 할당된 StorageClass를 통한 모든 스토리지 클레임이 해당 프로젝트 전용 SVM에 의해서만 서비스되도록 보장합니다.</block>
+  <block id="4d4612f778c20842e8e3a46905107235" category="inline-link-macro">프로젝트별 리소스 할당량 설정</block>
+  <block id="19dd27c6b4705083185f8f29ea28d8a2" category="paragraph">스토리지 클래스는 네임스페이스 리소스가 아니기 때문에, 다른 네임스페이스 또는 프로젝트에 있는 파드가 한 프로젝트의 스토리지 클래스에 대한 스토리지 클레임을 요청하는 것을 어떻게 거부할 수 있을까요? 해답은 ResourceQuotas를 사용하는 것입니다. ResourceQuotas는 프로젝트별 리소스 총 사용량을 제어하는 오브젝트입니다. 프로젝트 내 오브젝트가 사용할 수 있는 리소스의 개수와 총량을 제한할 수 있습니다. 프로젝트의 거의 모든 리소스를 ResourceQuotas를 사용하여 제한할 수 있으며, 이를 효율적으로 활용하면 리소스 과잉 프로비저닝 또는 과잉 소비로 인한 비용과 서비스 중단을 줄이는 데 도움이 됩니다. 자세한 내용은 <block ref="1d44314c4f4ecbe41d8a4c1f4c2366dd" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="c3c7322774e449ffe96ed96316d6d61a" category="paragraph">NetApp Element 스토리지 시스템에 대한 자세한 내용은 <block ref="4d1a8967351a103edce25fab2fa816d9" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="8da0c7685a8df971e3b02eb5f360c872" category="paragraph">NetApp ONTAP 스토리지 시스템에 대한 자세한 내용은 <block ref="166022d27680b5a55300301747182c1e" category="inline-link-macro-rx"></block>을 방문하십시오.</block>
+  <block id="295e022a21f83c925dc9c6536568bb8f" category="paragraph">ONTAP에 대한 자세한 내용은 <block ref="ce7a5b355b31f8ee0c1b6b8b399a329a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link-macro">Amazon FSx for NetApp ONTAP 설명서</block>
+  <block id="f43cf2791ec374e2098c74ca36719036" category="paragraph">Amazon FSx ONTAP는 ONTAP의 널리 사용되는 데이터 액세스 및 관리 기능을 갖춘 AWS 클라우드의 완전 관리형 공유 스토리지를 제공합니다. Amazon FSx for NetApp ONTAP에 대한 자세한 내용은 <block ref="c0dfd8f3ce59191ea4655faf40f9256a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="6c32a3d0f1a665987b98dde5a0f96d7d" category="inline-link-macro">Azure NetApp Files 설명서</block>
+  <block id="8d563436a94bd56d6d9efdf22dc9f62f" category="paragraph">Azure NetApp Files는 Azure 네이티브 퍼스트 파티 엔터프라이즈급 고성능 파일 스토리지 서비스입니다. NetApp 계정, 용량 풀, 볼륨을 생성할 수 있는 볼륨 서비스를 제공합니다. 서비스 및 성능 수준을 선택하고 데이터 보호를 관리할 수도 있습니다. 온프레미스 환경에서 익숙하게 사용하고 있는 동일한 프로토콜과 툴을 사용하여 고성능, 고가용성, 확장 가능한 파일 공유를 생성하고 관리할 수 있습니다. Azure NetApp Files에 대한 자세한 내용은 <block ref="2758bae4999bf82fcc07d83de116577d" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="471bdb0aa2d84f6d114789368ffc1cc1" category="inline-link-macro">Google Cloud NetApp Volumes 설명서</block>
+  <block id="a1a381ed028e3c5fe1cffdfeefc371b1" category="paragraph">Google Cloud NetApp Volumes는 고급 데이터 관리 기능과 뛰어난 확장성을 제공하는 완전 관리형 클라우드 기반 데이터 스토리지 서비스입니다. 이를 통해 파일 기반 애플리케이션을 Google Cloud로 이전할 수 있습니다. 네트워크 파일 시스템(NFSv3 및 NFSv4.1)과 서버 메시지 블록(SMB) 프로토콜을 기본적으로 지원하므로 애플리케이션 아키텍처를 재구성할 필요 없이 애플리케이션에 영구 스토리지를 계속 사용할 수 있습니다. Google Cloud NetApp Volumes에 대한 자세한 내용은 <block ref="f563b714e9b75920cd3f0ed80e45c3bd" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="f6b511c0d4089ef164916143d9c700eb" category="paragraph">ROSA에 대한 자세한 내용은 다음 문서를 참조하십시오: <block ref="fd309551a55076cea2541388a5cae604" category="inline-link-macro-rx"></block>. <block ref="2293f3ecacebbbfe06188b0c815da547" category="inline-link-macro-rx"></block>.</block>
+  <block id="60e1a8a4c4d7c6cf35167a47d56dbf48" category="list-text">Red Hat에서 제공하는 <block ref="8a6bf2df743c86904f93bc9d3df72410" category="inline-link-macro-rx"></block> 지침에 따라 원하는 환경에 배포하십시오.</block>
+  <block id="c7e379852094725f83ee9fa85c310088" category="paragraph">대부분의 Red Hat OpenShift 배포에서는 <block ref="77e9d93c41444fa9729e114342cfd1c0" category="inline-link-macro-rx"></block> 또는 <block ref="8589f47af4adf070d727d33c650f55b3" category="inline-link-macro-rx"></block>와 같은 공용 레지스트리를 사용하는 것으로 대부분의 고객 요구 사항을 충족할 수 있습니다. 하지만 고객이 자체적인 비공개 또는 사용자 지정 이미지를 호스팅하려는 경우도 있습니다.</block>
+  <block id="62c9708f1f2b15010c54038f15202352" category="list-text"><block ref="62c9708f1f2b15010c54038f15202352" category="inline-link-macro-rx"></block></block>
+  <block id="b79d9b1f8e1f4b17d9478a34f7937b25" category="list-text"><block ref="b79d9b1f8e1f4b17d9478a34f7937b25" category="inline-link-macro-rx"></block></block>
+  <block id="080395bf185e1748f069669e55208ff7" category="list-text">IAM 사용자 <block ref="f6224c6650c8e8ac3c9e6f6909fc86a4" category="inline-link-macro-rx"></block> ROSA 클러스터 생성 및 액세스</block>
+  <block id="2a185242aa5decd731e2ab217f071da6" category="list-text"><block ref="2a185242aa5decd731e2ab217f071da6" category="inline-link-macro-rx"></block></block>
+  <block id="a886bb20aa9decc05ec8398ee47aef8e" category="list-text"><block ref="a886bb20aa9decc05ec8398ee47aef8e" category="inline-link-macro-rx"></block></block>
+  <block id="c0de46ea9d276f5c02c30f6ad7f6e92b" category="list-text"><block ref="cd2619fec4f2d43952d8cf01494ebaa4" category="inline-link-macro-rx"></block> (oc)</block>
+  <block id="3538545d445579bf24544913b87f837b" category="list-text">Helm 3 <block ref="01608db4203dbcc6233b8d95e01dd573" category="inline-link-macro-rx"></block></block>
+  <block id="176183928632ed112ca71bf2caccfaf8" category="list-text"><block ref="176183928632ed112ca71bf2caccfaf8" category="inline-link-macro-rx"></block></block>
+  <block id="87488de49f2569f55bf81970bc1da7d6" category="list-text"><block ref="87488de49f2569f55bf81970bc1da7d6" category="inline-link-macro-rx"></block></block>
+  <block id="b3dc88ff9246a994ccb2a892f1ad7486" category="inline-link-macro">Trident 설치 패키지를 다운로드합니다.</block>
+  <block id="6bd050fdb232c9e538d0327448f443b4" category="paragraph">`node-prep` 플래그를 사용하여 표시된 대로 Trident를 설치하십시오. 설치 명령을 실행하기 전에 설치 패키지를 다운로드해야 합니다. <block ref="4cd099ba60dbb3616b29989df24b7e4b" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="84dd0c4b446cbc3722e4b2a43cc377e7" category="paragraph">Trident 백엔드 구성은 Trident가 스토리지 시스템(이 경우 FSx for ONTAP)과 통신하는 방법을 알려줍니다. 백엔드를 생성하기 위해 연결할 스토리지 가상 머신의 자격 증명과 클러스터 관리 및 NFS 데이터 인터페이스를 제공합니다. <block ref="7be6aa6ef9046841b2f0e4fbf0d4fb0b" category="inline-link-macro-rx"></block>을 사용하여 FSx 파일 시스템에 스토리지 볼륨을 프로비저닝합니다.</block>
+  <block id="cb82fc7c1ad4498aab5347da3abbcc7f" category="paragraph">다음 명령어를 실행하여 PVC를 생성하고 생성 여부를 확인할 수 있습니다.</block>
+  <block id="ea6d90324d33842994bb98d348853746" category="image-alt">PostgreSQL 테이블, 스키마, 행</block>
+  <block id="c28af781bc5a08e287cd4dfee6490e18" category="list-text"><block ref="c28af781bc5a08e287cd4dfee6490e18" category="inline-link-macro-rx"></block></block>
+  <block id="bd5ea2eeefa13ea433a457bb3bcaeba5" category="list-text"><block ref="bd5ea2eeefa13ea433a457bb3bcaeba5" category="inline-link-macro-rx"></block></block>
+  <block id="6dddc943b353d9d57c463a2ae535bf35" category="paragraph">설치 및 구성 세부 정보는 <block ref="ba1fa1b87f6d6819c888872704c73d8f" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="83a3e81038e61b27912d39e2f0f115d8" category="inline-link-macro">Trident 릴리스 페이지(GitHub)</block>
+  <block id="a29dd75d2984ae8b5c28038d47fe9864" category="list-text">설치 아카이브를 관리자 워크스테이션으로 다운로드하고 압축을 해제하십시오. Trident의 현재 버전은 <block ref="2fa72e16d1f9d079fbe329f425323bee" category="inline-link-macro-rx"></block>에서 다운로드할 수 있습니다.</block>
+  <block id="8c684d392aef10a8c99774cb2657f7bb" category="paragraph">+ 멀티패싱을 사용할 때:</block>
+  <block id="8e52b4769088302a4f326e22c74511a1" category="doc">vSphere Kubernetes Service with NetApp에 대한 동영상 보기</block>
+  <block id="251c1a6e87a770b25350464f2db19c02" category="paragraph">vSphere Kubernetes Service와 NetApp의 통합을 주요 기능을 보여주는 일련의 비디오를 통해 살펴보세요.</block>
+  <block id="6033eea54b83c4616c246ac18a46eaaf" category="section-title">NetApp 스토리지를 사용하여 vSphere Kubernetes Service 클러스터 배포</block>
+  <block id="b80d9389df8e2bb398ad10bc68ff359b" category="section-title">Trident를 사용하여 ONTAP 영구 스토리지로 워크로드 배포</block>
+  <block id="6e4176de3fe21b3bc58f9932376014f9" category="summary">NetApp ONTAP 영구 스토리지와 NAS 또는 SAN 프로토콜을 사용하여 VKS 클러스터에 컨테이너화된 애플리케이션을 배포합니다.</block>
+  <block id="6036729abb74cd9c50bb08033e8c7f27" category="doc">NetApp 영구 스토리지를 사용하여 컨테이너 애플리케이션 배포</block>
+  <block id="2169ef59d3a2c480a4648b241b290603" category="paragraph">vSphere Kubernetes Service 클러스터에서 NetApp ONTAP 영구 스토리지를 사용하여 컨테이너화된 애플리케이션을 배포합니다. 다음 예제는 NAS(ontap-nas) 또는 SAN iSCSI(ontap-san) 스토리지를 사용하여 PostgreSQL 데이터베이스를 배포하는 방법을 보여줍니다.</block>
+  <block id="384a5d2278bad5c1778e39d463bad9a3" category="paragraph">다음 YAML 구성은 매니페스트에 POSTGRES_USER/POSTGRES_PASSWORD를 직접 설정합니다. 프로덕션 환경에서는 데이터베이스 자격 증명과 같은 민감한 정보를 관리하기 위해 Kubernetes Secrets를 사용하는 것이 좋습니다.</block>
+  <block id="59f39c40f8c543053e4d480432da0a8e" category="open-title">NAS 스토리지를 사용하여 PostgreSQL 배포(ontap-nas 드라이버)</block>
+  <block id="90d82abbca4a24a91204152629616300" category="paragraph">ontap-nas 드라이버를 사용하여 프로비저닝된 NFS 영구 볼륨을 기반으로 PostgreSQL 컨테이너 애플리케이션을 배포할 수 있습니다. 다음 예제는 PostgreSQL용 PersistentVolumeClaim(PVC) 및 Deployment를 생성하는 방법을 보여줍니다.</block>
+  <block id="7cef86e4c9cb0524a0e888e789d831a3" category="open-title">SAN 스토리지를 사용하여 PostgreSQL 배포(ontap-san iSCSI 드라이버)</block>
+  <block id="ff2a9b5917908a105d3b5c03111fba50" category="paragraph">다음 YAML을 사용하여 ontap-san 드라이버로 프로비저닝된 iSCSI 영구 볼륨을 기반으로 하는 PostgreSQL 컨테이너 애플리케이션을 배포합니다. 이 <block ref="d5fec5bdb76feb0f725fad5402478fed" prefix=" " category="inline-code"></block>배포 전략은 새 Pod가 시작되기 전에 기존 Pod가 완전히 종료되도록 보장하며, 이는 ReadWriteOnce iSCSI 볼륨에 필수적이며 Pod 재시작 시 데이터 손상을 방지합니다. 이 구성은 Pod 삭제 및 재생성 시에도 데이터 지속성을 지원하며, Trident 볼륨 스냅샷 및 백업과 복원 작업과 호환됩니다.</block>
+  <block id="60e9a0ec51eec1a76523f392e88a6ced" category="section-title">데이터베이스 배포 검증</block>
+  <block id="a63f0b5784802d6a148a6f71607690f2" category="paragraph">애플리케이션을 배포한 후, 파드가 실행 중인 상태이고 데이터베이스가 정상적으로 작동하는지 확인하십시오. 다음 명령어를 사용하여 파드, PVC 및 서비스의 상태를 확인하십시오. 파드가 실행 중이고 PVC가 적절한 볼륨에 바인딩되었는지 확인하십시오.</block>
+  <block id="88132e09701c01d6f5bf27a89ca1974d" category="image-alt">영구 스토리지로 배포된 워크로드</block>
+  <block id="5470b6d1024c0e1c22a2988ddd039285" category="paragraph">사용하는 프로토콜에 따라 백엔드 스토리지는 볼륨, qtree 또는 LUN입니다. ONTAP 시스템에 프로비저닝된 스토리지는 PersistentVolume(PV)을 설명하여 내부 볼륨 이름을 가져온 다음 ONTAP CLI 명령에서 해당 이름을 사용하여 스토리지 세부 정보를 확인함으로써 검증할 수 있습니다. 다음 명령을 사용하여 PV를 설명하고 내부 볼륨 이름을 가져옵니다.</block>
+  <block id="92ac5fc0212c94ee50e6dc85913caeec" category="image-title">예시 보기</block>
+  <block id="f50743488924b58ad0c79074f8ae5bd5" category="image-alt">NAS 볼륨의 내부 볼륨 이름</block>
+  <block id="9195322cb50a42f18dbd1aad879addfd" category="image-alt">SAN LUN의 내부 볼륨 이름</block>
+  <block id="4f02e8dc3219f821d9e4d5b5b2dbe1d9" category="paragraph">출력에서 내부 볼륨 이름을 복사하고 다음 명령을 실행하여 ONTAP CLI에서 스토리지 세부 정보를 가져오십시오.</block>
+  <block id="06c2e5e29efd9ecab14915e4b35c8689" category="paragraph">NAS 볼륨의 경우:</block>
+  <block id="241b6b9396b874096ee6fbd32d89a61f" category="image-alt">NAS 볼륨에 대한 ONTAP CLI 출력</block>
+  <block id="a20a1466bfa6411741b2fbc24141dbb4" category="paragraph">SAN LUN의 경우, ONTAP CLI에서 다음 명령을 실행하여 LUN 세부 정보를 가져오십시오.</block>
+  <block id="650e65e105aeceb9559f252c85c96299" category="image-alt">ONTAP CLI의 SAN LUN 출력</block>
+  <block id="0d872c8c5e1b422f4f02b92c05bbb10f" category="paragraph">NAS 또는 NAS Economy 스토리지 클래스에서<block ref="bb0fc0de24da5f7976510a315e4b7120" prefix=" " category="inline-code"></block> 마운트 옵션을 사용한 경우, 워커 노드에서 스토리지 서버로의 활성 TCP 연결 수를 확인할 수 있습니다.</block>
+  <block id="ea15840ecc25f112cd8b0ee7dfe34f19" category="paragraph">먼저 Trident 백엔드 구성을 나열하여 백엔드 이름을 찾은 다음, 해당 이름을 설명하여 vserver 이름과 데이터 LIF를 가져옵니다.</block>
+  <block id="9b90d5d5b8d50c5c37401aff415362b8" category="paragraph">그런 다음 ONTAP 클러스터에 로그인하고 위 출력의 데이터 LIF를 대체하여 다음 명령을 실행하십시오.</block>
+  <block id="2ba3e8f94b32af88ad1ae2ee26ac55de" category="image-alt">활성 연결에 대한 ONTAP CLI 출력</block>
+  <block id="cde912fd988023e09d31e387d412f198" category="paragraph">Pod가 실행 상태가 되면 데이터베이스에 연결하여 데이터 작업이 제대로 수행되는지 확인합니다.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
+  <block id="4890017e23b2165e908a4a9cf4baa355" category="list-text">PostgreSQL 서비스 포트를 로컬 시스템으로 포워딩합니다.</block>
+  <block id="9ea3a0e3ac211a59a38aaf7282a2c0eb" category="list-text">다른 터미널에서 psql을 사용하여 데이터베이스에 연결합니다.</block>
+  <block id="a9a2601429366960638f21cae6471089" category="list-text">데이터베이스와 테이블을 생성한 다음, 테이블에 데이터를 입력합니다.</block>
+  <block id="7b6772f9e7651cff3cd39897f2167dc4" category="paragraph">새 데이터베이스로 전환합니다(psql 메타 명령):</block>
+  <block id="024023ea17b867362aa4045c54f0edab" category="paragraph">테이블을 생성하고, 행을 삽입하고, 결과를 조회합니다.</block>
+  <block id="7ff787f5ff2b584a4721b56195e91926" category="section-title">비디오 데모</block>
+  <block id="e3bd4f9746da42a8efc4c8250c507cdd" category="paragraph">다음 비디오는 vSphere Kubernetes 클러스터에 Trident를 설치하고 Trident를 사용하여 영구 스토리지로 PostgreSQL 데이터베이스를 배포하는 방법을 보여 줍니다.</block>
+  <block id="f94de63913176f650a9ae29073c62663" category="summary">적절한 워커 노드 구성으로 VCF 환경에 vSphere Kubernetes Service 클러스터를 설치합니다.</block>
+  <block id="63f6a4d19a399977a3d9d88ae41c18e8" category="doc">vSphere Kubernetes Service 클러스터를 설치합니다.</block>
+  <block id="ef6a24f737da56ea9beda5ca40fef06a" category="paragraph">VCF 9.1 환경에 vSphere Kubernetes Service(VKS) 클러스터를 설치하고 워크로드에 적합한 스토리지 유틸리티를 사용하여 워커 노드를 구성하십시오.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업 정보</block>
+  <block id="e22eeec449ca587caba4c7d1c6d9b865" category="paragraph">NFS 유틸리티는 클러스터를 생성할 때 워커 노드에 자동으로 설치됩니다. iSCSI 또는 NVMe 유틸리티가 설치된 워커 노드를 생성하려면 사용자 지정 OVA 이미지를 생성하고 해당 이미지를 워커 노드에 사용해야 합니다. 사용자 지정 이미지는 Docker를 사용하여 생성할 수 있으며, <block ref="184744767c2457c4889b493b2f9f4bee" prefix=" " category="inline-code"></block> 명령줄 툴을 사용하여 이 이미지에서 OVA 파일을 생성할 수 있습니다. 이 OVA 파일은 vSphere의 콘텐츠 라이브러리에 업로드할 수 있습니다. VKS 클러스터를 생성할 때 콘텐츠 라이브러리에서 이 이미지를 노드 풀에 선택할 수 있습니다.</block>
+  <block id="46318c8058013272bd6188630794b553" category="list-text">VKS 클러스터를 생성합니다.</block>
+  <block id="2d5ee3f27f071c9a66c016948828e729" category="paragraph">기본 워커 노드 이미지 또는 사용자가 직접 생성한 사용자 지정 이미지를 사용하여 VKS 클러스터를 생성할 수 있습니다. 기본 워커 노드 이미지에는 NFS 유틸리티가 사전 설치되어 있으며, 사용자 지정 이미지에는 iSCSI 및 NVMe 유틸리티를 포함할 수 있습니다. 다음 옵션을 사용할 수 있습니다:</block>
+  <block id="44d1625dadb7cb46c4eb7bea6d30e8ca" category="list-text">*NAS 전용(기본값):* NFS 유틸리티가 사전 설치된 기본 워커 노드 이미지를 사용하여 VKS 클러스터를 생성합니다.</block>
+  <block id="87064b9036fec3cf6350227d0b792c45" category="list-text">*SAN 활성화(사용자 지정 이미지):* iSCSI 및 NVMe 유틸리티가 포함된 사용자 지정 Docker 이미지를 생성하고, <block ref="184744767c2457c4889b493b2f9f4bee" prefix=" " category="inline-code"></block> 명령줄 툴을 사용하여 OVA 파일을 생성하고, OVA를 vSphere 콘텐츠 라이브러리에 업로드한 다음, 노드 풀에 대해 해당 사용자 지정 이미지를 선택하여 VKS 클러스터를 생성합니다.</block>
+  <block id="b414b96d0d70a8e58cddedfce84f0965" category="example-title">기본 워커 노드 이미지를 사용하여 NAS 전용 vSphere Kubernetes Service 클러스터를 생성하는 지침 표시</block>
+  <block id="919a1e7f3911283c5840b43ca928a745" category="paragraph">기본 워커 노드 이미지를 사용하여 VKS 클러스터를 생성합니다. 안내에 따라 클러스터 이름, 노드 풀 구성 및 기타 설정을 지정합니다.</block>
+  <block id="7c5b32f76d21703e7b90378ca5c6a621" category="paragraph">vSphere Client에서 vSphere Kubernetes 클러스터를 생성할 네임스페이스로 이동합니다. 해당 네임스페이스의 *리소스* 탭에서 Kubernetes 섹션의 *클러스터 생성*을 클릭하거나, *서비스로 이동*을 클릭한 다음 *클러스터 생성*을 클릭합니다.</block>
+  <block id="ba0472053fbaf45270cbd4b1e03d945a" category="paragraph">클러스터 세부 정보를 양식에 입력합니다.</block>
+  <block id="e63b9bea0d2359afb84ecaba05a25c3a" category="list-text">섹션 1, *구성 유형*에서 *사용자 지정*을 선택합니다.</block>
+  <block id="39307e4c24ca44e428c78f95b5a35e37" category="list-text">2번 항목인 *일반 설정*에서 클러스터 이름을 지정하고 나머지 설정은 모두 기본값으로 유지하십시오.</block>
+  <block id="d48effa6d7bc7cb6b935f8ac1a66d347" category="list-text">3번 항목의 모든 기본값을 그대로 사용합니다.</block>
+  <block id="8e4dc3e1de5bade2746c8d4d936c8127" category="list-text">4번 섹션 *노드 풀*에서 노드 풀 옆에 있는 점 세 개(...)를 클릭하고 *편집*을 클릭합니다. 복제본 수를 3으로 늘리고 OS 이미지로 최신 Ubuntu 버전을 선택합니다. *다음*을 클릭한 다음 *검토 및 확인*을 클릭합니다.</block>
+  <block id="0ceeb789dd80ae7efdb858aa809a259b" category="paragraph">클러스터 세부 정보를 검토한 후 *완료*를 클릭하십시오. vSphere Kubernetes 클러스터가 몇 분 안에 생성됩니다.</block>
+  <block id="549649f93cf0e425527e1acbc5cba797" category="image-alt">vCenter의 네임스페이스</block>
+  <block id="4777cd638e6edee671242a5ed34efa63" category="image-alt">클러스터 구성 유형 생성</block>
+  <block id="7b639d4a678c2a18c2af1fc443496d86" category="image-alt">클러스터 생성 일반 설정</block>
+  <block id="37247a7f7b81bdde032172f62340c4cb" category="image-alt">클러스터 제어 평면 생성</block>
+  <block id="6d3b1b8dae20e6ea624dd415a26d33ca" category="image-alt">클러스터 노드 풀 생성</block>
+  <block id="0a1cf89e22be0f45d1fabb7f9edb0ea6" category="image-alt">클러스터 생성 완료</block>
+  <block id="d68c6727eb4e0d3b0644e00082f37f19" category="image-alt">클러스터 생성 완료</block>
+  <block id="0f68d27c35234c5fb8d65594648e3c66" category="example-title">SAN 지원 워커 노드용 사용자 지정 OVA 이미지 생성 지침 표시</block>
+  <block id="71f96e2434faf051b1a85b1b49535e2c" category="paragraph">필요한 유틸리티가 설치된 Docker 이미지를 생성합니다. 다음 예는 iSCSI 및 멀티패싱 유틸리티가 설치된 Ubuntu 24.04 기반 Docker 이미지를 생성하는 방법을 보여줍니다.</block>
+  <block id="b38a57ae6b83a1f1b3b930a2defe920e" category="paragraph">다음을 사용하여 Docker 이미지를 빌드합니다.</block>
+  <block id="10d29495962c82d4577e8b28abe1a77e" category="paragraph">Docker 레지스트리를 사용할 수 없는 경우, 다음 명령을 실행하여 로컬 레지스트리를 시작하고 이미지를 해당 레지스트리에 푸시하십시오.</block>
+  <block id="995513ba1fbffb52339abce90cecf082" category="paragraph">이미지에 태그를 지정하고 푸시합니다.</block>
+  <block id="b435fb69db3f78bb54a3ddfd596d5cf0" category="paragraph">이미지 구성 파일을 생성하고(<block ref="fe652193ee04cd390796f9490b0a488b" prefix=" " category="inline-code"></block>로 저장) 이미지를 참조하십시오.</block>
+  <block id="1a80bfb50a40a56f2da158d99bc513ea" category="admonition">메타데이터 이름은 사전 승인된 목록에 있는 이름이어야 합니다. 그렇지 않으면 OVA 파일을 생성하려고 할 때 아래와 같은 오류가 발생합니다. 사전 승인된 목록은 VCF CLI 도움말의<block ref="4962d36e1b28eb6d09e5e0f0cd46e523" prefix=" " category="inline-code"></block> 명령에서 확인할 수 있습니다.</block>
+  <block id="5ae2f3ee81c375672dcfaa116d48cc6f" category="image-alt">메타데이터 이름이 사전 승인된 목록에 없는 경우 오류가 발생합니다.</block>
+  <block id="e85ac16287a8d228db130f2da2b4f0e2" category="paragraph">VCF CLI를 사용하여 OVA 파일을 생성합니다.</block>
+  <block id="2155a67e1f60ec1ce9b5a6ac5ccdad55" category="paragraph">SCP를 사용하여 OVA 파일을 vSphere 콘텐츠 라이브러리에 업로드할 수 있는 컴퓨터로 전송합니다.</block>
+  <block id="765b4f233802c0a3cfbac35987895e0f" category="list-text">클러스터 설치가 완료되면 vCenter에서 클러스터를 찾아 kubeconfig 파일을 다운로드하십시오.</block>
+  <block id="6888ad979500ef6e254c3ad0eb1eaeca" category="list-text">메인 메뉴에서 *Supervisor Management*를 클릭하고 클러스터가 생성된 네임스페이스를 선택하십시오.</block>
+  <block id="9a34e990f3309fd8594ba18858630d2a" category="list-text">*컴퓨팅* 탭을 선택한 다음 *Kubernetes 클러스터*를 선택합니다. 네임스페이스에 있는 모든 클러스터가 표시됩니다.</block>
+  <block id="ed5f1939e6e4b0f894c6baec8f8213f5" category="list-text">*리소스* 탭으로 이동하여 필요한 Kubernetes 클러스터를 선택하고 해당 kubeconfig 파일을 다운로드하십시오.</block>
+  <block id="85df140442ac712044e170844ec9f491" category="image-alt">vCenter의 Supervisor Management 메뉴</block>
+  <block id="2976da1f56745fc48cd81fa82c385059" category="image-alt">vCenter의 Kubernetes Clusters 목록</block>
+  <block id="88f7ed21b50500b85f974050c40a2345" category="image-alt">리소스 탭</block>
+  <block id="14ba18a0c1dee23f7e3d0c37b42a6d5a" category="image-alt">클러스터용 kubeconfig 다운로드</block>
+  <block id="9ad559cd98301f095c607e96052295ac" category="list-text">배스천 호스트에서 kubeconfig 파일을 사용하여 클러스터에 연결하고 CLI를 통해 클러스터를 관리합니다.</block>
+  <block id="1c49d9ad6281e19280e709dc38f2e301" category="image-alt">kubeconfig를 사용하여 VKS 클러스터에 CLI로 연결</block>
+  <block id="c1f681f02da4b1b37fc01754dbb52eba" category="paragraph">다음 영상은 vSphere Kubernetes 클러스터를 생성하는 방법을 보여줍니다.</block>
+  <block id="7366abbe5ba6570244ca56fd4a3e8628" category="video-title">Supervisor 클러스터에 vSphere Kubernetes 클러스터를 생성합니다.</block>
+  <block id="37e6bc625ff4f9ffcd5ccdec7e054601" category="summary">NetApp Trident를 vSphere Kubernetes Service 클러스터에 설치하여 동적 스토리지 프로비저닝을 활성화합니다.</block>
+  <block id="d2d7f4fa852208916ca48681d906e1ac" category="doc">VKS 클러스터에 NetApp Trident 설치</block>
+  <block id="0264d8f9ac7431d1879e9e1e0256fd82" category="paragraph">NetApp ONTAP 스토리지를 Kubernetes 워크로드와 통합하려면 vSphere Kubernetes Service 클러스터에 NetApp Trident를 동적 스토리지 프로비저너로 설치하십시오.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">시작하기 전에</block>
+  <block id="fa872b457ff87039bd853084fc6fb83d" category="list-text">ONTAP 클러스터가 구성되어 VMware Kubernetes 환경에 연결되었는지 확인하십시오.</block>
+  <block id="d94c0dffcc079567d165593d4de9fefe" category="list-text">워크로드가 스토리지에 iSCSI 또는 NVMe 툴을 사용할 경우 VKS 클러스터에 해당 툴이 설치되어 있는지 확인하십시오.</block>
+  <block id="7c48197f800b2caff903906a05fb5a5d" category="list-text">kubeconfig 파일을 사용하여 VKS 클러스터에 연결할 수 있는 컴퓨터에 <block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block>이(가) 설치되어 있는지 확인하십시오.</block>
+  <block id="dd2fac6074d2aea70a1d4b050e981fd9" category="image-alt">리소스 탭에서 kubeconfig 다운로드</block>
+  <block id="a8ebcd8fd5d2e80027446a4f719f5bbb" category="list-text">Trident 설명서의 지침에 따라 Helm 차트를 사용하여 Trident Operator를 설치하십시오.</block>
+  <block id="5a067f1218e773f44f6d11042fac9de2" category="inline-link-macro"><block ref="5a067f1218e773f44f6d11042fac9de2" category="inline-link-rx"></block></block>
+  <block id="de8c30bad1a59e905b9e9106fb89b13a" category="paragraph"><block ref="de8c30bad1a59e905b9e9106fb89b13a" category="inline-link-macro-rx"></block></block>
+  <block id="6015ee0c3c4dbc37f534783a65239e72" category="example-title">예제 표시</block>
+  <block id="61456867be0b3649aadf34527e6e3ba1" category="paragraph">디버그 로깅을 활성화하려면 다음을 추가하십시오<block ref="1fa36c5f4a2211cb35788611e3f351a9" prefix=" " category="inline-code"></block>:</block>
+  <block id="7c9ecfb8dfa70dea44031127f8e97561" category="inline-link-macro">Trident 오퍼레이터를 수동으로 배포합니다</block>
+  <block id="b8cb0bb6ffb813f94fe2cb0fc4af8f49" category="admonition">Trident Operator를 사용하여 Trident를 수동으로 설치할 수도 있습니다. Trident 설명서에서 절차를 검토하십시오: <block ref="aaad7fc2d82777df183b3e26183088fc" category="inline-link-macro-rx"></block></block>
+  <block id="9d7759b7820f505203830ffef3f6c946" category="list-text">클러스터에서 모든 Trident Pod가 실행 중인지 확인하십시오.</block>
+  <block id="6db69c2c82fe1cf04666445c27535882" category="admonition">이 시점에서 Trident Pod가 생성되지 않을 수 있습니다. ReplicaSet 오브젝트를 설명하면 아래와 같이 PodSecurity 위반에 대한 오류가 표시될 수 있습니다. 이 오류는<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 설치 중에 생성된 네임스페이스가 Kubernetes의 제한적인 Pod 보안 표준(PSS)을 적용하기 때문에 발생합니다. Trident Operator는 호스트 스토리지를 관리하기 위해 높은 시스템 권한이 필요하며, 제한된 프로필의 엄격한 제약 조건 하에서는 실행될 수 없습니다. 이 문제를 해결하려면<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 네임스페이스에 권한 있는 프로필을 부여하여 ReplicaSet 컨트롤러가 Pod를 성공적으로 생성할 수 있도록 하십시오.</block>
+  <block id="267d98dda9fe9b1fa03f4e0a5e9eccdb" category="paragraph">기본 제공 Kubernetes Pod 보안 승인 레이블을 <block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 네임스페이스에 적용하여 제한된 프로필 제약 조건에서 제외합니다.</block>
+  <block id="77d7de0c181e7cde545dd80af7cd55fd" category="section-title">사용 환경에 맞는 스토리지 백엔드 및 StorageClass 구성 파일을 준비합니다</block>
+  <block id="dafd5f06af6dd74148a6a1d1f4a2009f" category="list-text">필요한 연결 세부 정보와 스토리지 매개변수를 정의하여 ONTAP용 Trident 백엔드를 구성합니다.</block>
+  <block id="eda474c8d55e227080e095471db3fed4" category="list-text">Kubernetes에서 NetApp 스토리지 백엔드에 매핑되는 스토리지 클래스를 정의합니다. 이러한 클래스는 성능 특성 및 복제 정책과 같은 매개변수를 지정합니다.</block>
+  <block id="6be16447e9d4304a0449e42fb2f898aa" category="paragraph">워크로드 요구 사항에 따라 다음 프로토콜에 대한 Trident 백엔드 및 스토리지 클래스를 정의하십시오.</block>
+  <block id="53add45918d9a9b054d8bb3be3f1cb9f" category="list-text">NAS(ontap-nas 드라이버)</block>
+  <block id="08f9255a3d69a2c8bf50b6d407dada87" category="list-text">NAS 이코노미(ontap-nas-economy 드라이버)</block>
+  <block id="6fea3af1cb28d1b22151c2e1fa305e02" category="list-text">iSCSI, FC 또는 NVMe 프로토콜용 SAN(ontap-san 드라이버)</block>
+  <block id="cfe60bcbf4d8df06a3e3fea6764ea2c8" category="list-text">iSCSI용 SAN Economy(ontap-san-economy 드라이버)</block>
+  <block id="2c568adc5195a4d85cdf4d59ffce58bb" category="paragraph">TridentBackendConfig 및 StorageClass를 생성하여 ONTAP NAS에 대한 NFS 기반 영구 스토리지 프로비저닝을 활성화합니다. 백엔드 구성에는 Kubernetes Secret에 저장된 자격 증명이 포함되며 ONTAP SVM 및 관리 LIF를 참조합니다.</block>
+  <block id="9f35d8633d127f4a7bb4b3cdda52238e" category="paragraph">사용자 이름과 비밀번호 인증을 사용하는 백엔드 비밀 키 및 백엔드 구성 파일 예시 (다음으로 저장<block ref="9d65a5d97819dedebcef81a9ba5516ec" prefix=" " category="inline-code"></block>):</block>
+  <block id="e67f742a2f68780d389b481d1a5b3a2a" category="paragraph">클라이언트 인증서 인증을 사용하는 백엔드 비밀 키 및 백엔드 구성 파일 예시 (다른 이름으로 저장<block ref="9d65a5d97819dedebcef81a9ba5516ec" prefix=" " category="inline-code"></block>):</block>
+  <block id="e2c8626d7ee949e6b81cdecce03999d8" category="paragraph">StorageClass 정의(다른 이름으로 저장<block ref="4f57c59c0ac5ff4e6699e0838271f085" prefix=" " category="inline-code"></block>):</block>
+  <block id="fbff3d8f1306267296fe5ed408add757" category="paragraph"><block ref="e1d3d66c5926aa7fbc3186da8f9b476b" prefix="" category="inline-code"></block>은 NFS 볼륨에 대한 추가 마운트 옵션을 지정하는 선택적 매개변수입니다. <block ref="bb0fc0de24da5f7976510a315e4b7120" prefix=" " category="inline-code"></block> 옵션을 사용하면 단일 NFS 마운트에 대해 여러 개의 병렬 TCP 연결을 허용하여 처리량이 높은 워크로드의 성능을 향상시킬 수 있습니다. 기본값은 1이지만 ONTAP 시스템에서 허용하는 최대값까지 늘릴 수 있습니다.</block>
+  <block id="12727eb60dcb1de39ccaf9167b26843f" category="paragraph">ONTAP는 nconnect를 지원하는 클라이언트에서 단일 NFS 마운트에 대해 최대 16개의 연결을 지원합니다. Trident는 마운트 옵션을 Kubernetes 워커 노드에 직접 전달하므로 워커 노드 NFS 클라이언트와 ONTAP 모두에서 지원되는 값을 선택하십시오. 다음 예에서는 4개의 연결을 사용합니다.</block>
+  <block id="23f2e3ade0edfc023f7d72081840bebb" category="open-title">NAS Economy</block>
+  <block id="342a9c1d828f353f409ce83393d8052e" category="paragraph">TridentBackendConfig 및 StorageClass를 생성하여 ONTAP NAS Economy 드라이버에서 qtree를 사용한 NFS 기반 영구 스토리지 프로비저닝을 활성화합니다. 백엔드 구성에는 Kubernetes Secret에 저장된 자격 증명이 포함되며 ONTAP SVM 및 관리 LIF를 참조합니다.</block>
+  <block id="c8a17f4e3ca6716789600bccc1d19b5b" category="paragraph">사용자 이름과 비밀번호 인증을 사용하는 백엔드 비밀 키 및 백엔드 구성 파일 예시 (다음으로 저장<block ref="4209e262889dcc16019c5e036387410f" prefix=" " category="inline-code"></block>):</block>
+  <block id="4defe485af738455b5f3576991528802" category="paragraph">StorageClass 정의(다른 이름으로 저장<block ref="c4c356892b47240b6d3b5c9d0145861d" prefix=" " category="inline-code"></block>):</block>
+  <block id="d119ad8305b9187a1b6c282928c6cc79" category="open-title">iSCSI SAN</block>
+  <block id="3e745d89603669a895929d435538aa59" category="paragraph">iSCSI를 사용하는 ONTAP SAN에 대한 TridentBackendConfig 및 StorageClass를 생성하여 iSCSI 기반 블록 스토리지 프로비저닝을 활성화합니다. 백엔드 구성은 ontap-san 드라이버를 사용하며 Kubernetes Secret에 저장된 자격 증명을 포함합니다. 이<block ref="5b08b7c4c720db1d75c8c76a920fd99a" prefix=" " category="inline-code"></block> 매개변수를 생략하면 기본값으로 iSCSI 프로토콜이 사용됩니다.</block>
+  <block id="e85d22aedf555ad1e8a9903812042cfc" category="paragraph">사용자 이름 및 비밀번호 인증을 사용하는 백엔드 비밀 키 및 백엔드 구성 파일(다른 이름으로 저장<block ref="5c59c4795168e3359ec88086b84ae37d" prefix=" " category="inline-code"></block>):</block>
+  <block id="53c9f9a3fb5d5668b1a85ee9cd6d0d74" category="paragraph">클라이언트 인증서 인증을 사용하는 백엔드 비밀 키 및 백엔드 구성 파일(다른 이름으로 저장<block ref="5c59c4795168e3359ec88086b84ae37d" prefix=" " category="inline-code"></block>):</block>
+  <block id="785b719c87759bd8b21cb9fbf35ffc67" category="paragraph">StorageClass 정의(다른 이름으로 저장<block ref="f091cd084faa9dfe2abdf5b6029b9697" prefix=" " category="inline-code"></block>):</block>
+  <block id="8b9437a044e1817a9924eefc80f33db8" category="open-title">NVMe SAN</block>
+  <block id="1f302ac655d04946a0f43c8a8c0feae6" category="paragraph">NVMe를 사용하는 ONTAP SAN에 대한 TridentBackendConfig 및 StorageClass를 생성하여 NVMe 기반 블록 스토리지 프로비저닝을 활성화합니다. 백엔드 구성은 ontap-san 드라이버를 사용하며 Kubernetes Secret에 저장된 자격 증명을 포함합니다. 해당<block ref="5b08b7c4c720db1d75c8c76a920fd99a" prefix=" " category="inline-code"></block> 매개변수는<block ref="eac89e2640666fd1076a776e4b748fae" prefix=" " category="inline-code"></block>로 설정해야 합니다.</block>
+  <block id="4ffae29fcd5736f44f72a0ec6dc65f5d" category="paragraph">사용자 이름 및 비밀번호 인증을 사용하는 백엔드 비밀 키 및 백엔드 구성 파일(다른 이름으로 저장<block ref="4a18f0898bbae244ac9211686c34e11f" prefix=" " category="inline-code"></block>):</block>
+  <block id="2e80feda407fd89d7ac99031d883fe04" category="paragraph">클라이언트 인증서 인증을 사용하는 백엔드 비밀 키 및 백엔드 구성 파일(다른 이름으로 저장<block ref="4a18f0898bbae244ac9211686c34e11f" prefix=" " category="inline-code"></block>):</block>
+  <block id="fece5ab5f4bcac93cf419657de20d688" category="paragraph">StorageClass 정의(다른 이름으로 저장<block ref="d9fdbb97e3fc35a178409db49d8f7a9e" prefix=" " category="inline-code"></block>):</block>
+  <block id="c6f78d550bcee4461fc0d84859a6c365" category="paragraph">Trident 설명서를 참조하시면 YAML 파일의 추가 샘플과 SAN 드라이버 및 NAS 드라이버에서 지원하는 액세스 모드 및 볼륨 모드에 대한 정보를 확인할 수 있습니다.</block>
+  <block id="184098f63ce0e3f177c6546b873b2772" category="inline-link-macro">NAS 드라이버를 사용하는 샘플</block>
+  <block id="e4d375afe36f83d581fe84d6f540c570" category="list-text"><block ref="e4d375afe36f83d581fe84d6f540c570" category="inline-link-macro-rx"></block></block>
+  <block id="496d23ccc6c20d7a95d695265a083673" category="inline-link-macro">SAN 드라이버를 사용하는 샘플</block>
+  <block id="567a9ef31db818df66d1128cd212c4ec" category="list-text"><block ref="567a9ef31db818df66d1128cd212c4ec" category="inline-link-macro-rx"></block></block>
+  <block id="52d6fc98f5f92b9a2cd8ebab63db17ae" category="section-title">VolumeSnapshotClass 구성 파일 생성</block>
+  <block id="1cb1994d041d38c80bec7899dfc989f4" category="paragraph">VolumeSnapshotClass 정의를 생성합니다. 이 구성을 통해 영구 볼륨에 대한 스냅샷 기반 작업을 활성화할 수 있습니다.</block>
+  <block id="495a4549848b0f63fa110edf587aacc6" category="paragraph">VolumeSnapshotClass 정의(다른 이름으로 저장<block ref="3438c97e431dbcae49b7b56154974e02" prefix=" " category="inline-code"></block>):</block>
+  <block id="8a2c0da9ada9ae353c7169abada92e74" category="section-title">클러스터에 구성 파일을 적용합니다</block>
+  <block id="7a5c128bc3318fe7506f0e0531d4c622" category="paragraph">이전 단계에서 생성한 구성 파일을 <block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block>을 사용하여 vSphere Kubernetes Service 클러스터에 적용합니다. 이렇게 하면 클러스터에 필요한 시크릿, 백엔드 구성, 스토리지 클래스 및 스냅샷 클래스가 생성됩니다.</block>
+  <block id="4fc324fbf4cc5f6d18f047c2ad752854" category="list-text">구성한 각 프로토콜에 대해 TridentBackendConfig 및 StorageClass 파일을 적용하십시오.</block>
+  <block id="dc912a84a0350308555bd45e75bd8eff" category="list-text">리소스가 성공적으로 생성되었는지 확인하십시오.</block>
+  <block id="cf9b96a6ec27b184dafaf41c9b4a5561" category="paragraph">TridentBackendConfig 객체를 확인하세요:</block>
+  <block id="cf262d139d6a367df74e2fcf9f31dc75" category="paragraph">StorageClass 객체를 확인하세요:</block>
+  <block id="48c08f151329d895f2478a4e91ff105b" category="paragraph">VolumeSnapshotClass 확인:</block>
+  <block id="136664d3e2d18bb4ab7fb1562163dbc0" category="section-title">기본 Trident 스토리지 및 스냅샷 클래스 설정</block>
+  <block id="cafd6f2453897a7fb94881b8d82698a5" category="paragraph">Trident StorageClass 및 VolumeSnapshotClass를 vSphere Kubernetes Service 클러스터의 기본값으로 설정합니다.</block>
+  <block id="6898d4d38f453903c82b548a70adce2b" category="list-text">기본 Trident StorageClass를 설정합니다.</block>
+  <block id="2b083faa8828eb74d98754d6edbf3fe0" category="paragraph">Trident 기반 StorageClass를 클러스터 기본값으로 설정하여 스토리지 클래스가 지정되지 않은 경우 PersistentVolumeClaims가 자동으로 사용하도록 합니다.</block>
+  <block id="173c53b04820898f94f869dc823c6f40" category="paragraph">StorageClass는 기본값으로 하나만 설정해야 합니다. 다른 StorageClass가 이미 기본값으로 설정되어 있는 경우, 해당 어노테이션을<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>으로 설정하십시오.</block>
+  <block id="f02c73ab3a19cea27c6c461f9e18a5e1" category="paragraph">CLI에서:</block>
+  <block id="f7e80f1783a43b249090b162d24eea2c" category="list-text">기본 Trident VolumeSnapshotClass를 설정합니다.</block>
+  <block id="fc6f2a338d00deaa07bc776f261b664d" category="paragraph">Trident 기반 VolumeSnapshotClass를 클러스터 기본값으로 설정하면 영구 볼륨에 대한 스냅샷 기반 작업이 활성화됩니다. 이렇게 하면 스냅샷 클래스가 지정되지 않은 경우 VolumeSnapshots이 자동으로 Trident CSI 드라이버를 사용하게 됩니다.</block>
+  <block id="c009fcca63b46933ff78678ccb66e832" category="paragraph">VolumeSnapshotClass는 기본값으로 하나만 설정해야 합니다. 다른 VolumeSnapshotClass가 이미 기본값으로 설정되어 있는 경우 해당 어노테이션을<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>로 설정하십시오.</block>
+  <block id="38543dc5b98da4f74313f35ac44dc31b" category="section-title">Kubernetes Persistent Volume Claims를 사용하여 워크로드에 필요한 스토리지를 요청합니다.</block>
+  <block id="fa53d1f0f3245159126a83a00703729d" category="inline-link-macro">영구 스토리지로 워크로드 배포</block>
+  <block id="e0e07874f7c0da48e4f100dc4a9615ea" category="paragraph">Trident는 백엔드 NetApp 스토리지에서 필요한 볼륨을 자동으로 프로비저닝합니다. VKS 클러스터에서 PVC를 사용하여 워크로드를 배포하는 예는 <block ref="7e700779a3f9b29d6f6c28db9c063dbd" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e2c138779b75ba500f800556e33695f5" category="summary">NetApp ONTAP 스토리지를 vSphere Kubernetes Service 워크로드에서 사용할 때 얻을 수 있는 주요 이점에 대해 알아보십시오.</block>
+  <block id="390bf3615abf0c0cd760fb1c62e71216" category="doc">vSphere Kubernetes Service용 NetApp 스토리지에 대해 알아보십시오</block>
+  <block id="16d5213cc3575eda2096700ee82ae022" category="paragraph">NetApp을 vSphere Kubernetes Service(VKS)의 스토리지로 사용하는 것은 NetApp의 강력한 스토리지 솔루션을 활용하여 Kubernetes 워크로드의 성능, 확장성 및 안정성을 향상시키는 강력한 조합입니다. Kubernetes용 오픈 소스 동적 스토리지 프로비저너인 NetApp Trident는 vSphere Kubernetes Service에서 워크로드와 스토리지를 통합하는 데 사용됩니다.</block>
+  <block id="0f781b3510d97c720799566a55310c34" category="section-title">VKS에서 NetApp 스토리지를 사용할 때의 주요 이점</block>
+  <block id="491370904f9054b462ca2755eb8b19d4" category="list-text">*동적 스토리지 프로비저닝:* NetApp Trident는 스토리지 볼륨의 동적 프로비저닝을 지원하여 Kubernetes Pod가 요구 사항에 따라 필요시 즉각적으로 구성 가능한 스토리지를 요청할 수 있도록 합니다.</block>
+  <block id="8bbf9e083e395a38eb56fb7d8fa9e917" category="list-text">*영구 스토리지:* NetApp 솔루션은 영구 스토리지 기능을 제공하여 Pod 재시작 및 장애 발생 시에도 데이터의 내구성과 가용성을 보장합니다.</block>
+  <block id="05dcfe1ec99cf460cf60e9b295181dd9" category="list-text">*고성능:* NetApp의 스토리지 솔루션(예: ONTAP)은 낮은 지연 시간으로 고성능 스토리지를 제공하므로 Kubernetes에서 실행되는 I/O 집약적인 애플리케이션에 이상적입니다.</block>
+  <block id="7ed12196d8928dd22376da6b3bdd7a28" category="list-text">*확장성:* NetApp 스토리지 시스템은 증가하는 Kubernetes 워크로드의 요구 사항을 충족하도록 확장할 수 있으며 대규모 배포를 지원합니다.</block>
+  <block id="6e43931a236c6d4ff3b63b31b6cf4ebc" category="list-text">*데이터 관리:* NetApp은 스냅샷, 클로닝 및 데이터 복제 등 고급 데이터 관리 기능을 제공하며, 이는 백업, 재해 복구 및 개발 워크플로에 유용할 수 있습니다.</block>
+  <block id="fa5e0f9bd9e7974d98a4dd26c82fce54" category="list-text">*멀티 클라우드 및 하이브리드 클라우드 지원:* NetApp의 스토리지 솔루션은 온프레미스, 퍼블릭 클라우드 및 하이브리드 클라우드 환경 전반에 걸쳐 배포할 수 있어 스토리지 관리에 유연성과 일관성을 제공합니다.</block>
+  <block id="5a5efa47bc756e7c919ed48a294e736f" category="section-title">NetApp ONTAP 통합 개요</block>
+  <block id="1b70c75c8be27844a7cad43c2dd31eee" category="paragraph">NetApp ONTAP는 데이터 중복제거, 압축 및 암호화와 같은 기능을 갖춘 엔터프라이즈급 스토리지를 제공합니다. NetApp Trident를 사용하여 NetApp 스토리지를 Kubernetes와 통합할 수 있습니다. NetApp Trident는 온프레미스 ONTAP, AWS의 FSx for NetApp ONTAP, Azure의 Azure NetApp Files, Google Cloud의 Google Cloud NetApp Volumes 등 다양한 NetApp 스토리지 플랫폼을 지원합니다.</block>
+  <block id="cf420a748fbd489c62a7ba0c6f600773" category="paragraph">Trident Protect를 사용하여 Kubernetes 워크로드의 데이터 보호 및 재해 복구를 처리합니다. Trident Protect를 사용하면 스냅샷 생성, 클론 생성, 다양한 스토리지 백엔드 간 데이터 복제를 통해 장애 발생 시 데이터의 안전과 복구를 보장할 수 있습니다.</block>
+  <block id="90bcd3e8149ece0dade1b82c7a819488" category="section-title">Trident의 주요 기능</block>
+  <block id="b9f9ff8c8eb63291d38be2803977197f" category="paragraph">**CSI 규격 준수** 최신 Kubernetes 스토리지 기능 및 표준과의 호환성을 보장합니다. **선언적 구성** 사용자가 YAML 파일에 스토리지 요구 사항을 정의할 수 있으며, 이는 Trident에 의해 자동으로 관리됩니다. **드라이버** Trident는 ONTAP에서 지원하는 NFS, CIFS/SMB, iSCSI, FC 및 NVMe/TCP 프로토콜용 드라이버를 지원합니다. **하이브리드 및 멀티 클라우드 지원** Trident는 온프레미스 ONTAP 스토리지와 하이퍼스케일러의 관리형 스토리지 서비스, 즉 AWS의 FSx for NetApp ONTAP, Azure의 Azure NetApp Files, Google Cloud의 Google Cloud NetApp Volumes용 드라이버를 지원합니다. **고급 데이터 관리** ONTAP의 스냅샷 및 클론 기능을 활용하여 효율적인 데이터 보호와 테스트 및 개발 환경의 신속한 프로비저닝을 지원합니다.</block>
+  <block id="fb3bff43d96a14da745ae5eafff58ed0" category="paragraph">Trident에 대한 자세한 내용은 <block ref="5e2589d48dd0a3251685c365b8cdb35e" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="9b6a034e6854c5f27feb3ac185829f8d" category="section-title">Trident Protect</block>
+  <block id="a36c33156a01492f882621b3d9439e19" category="inline-link-macro">Trident Protect 요구 사항</block>
+  <block id="871edac497c7018c02b946133efb7714" category="paragraph">Trident Protect는 Trident와 별도로 설치됩니다. 배포하기 전에 Kubernetes 플랫폼, 스토리지 백엔드, 스냅샷 구성 요소 및 오브젝트 스토리지가 <block ref="5cb74f4f6056f45da2a6e57ea9f4d4f9" category="inline-link-macro-rx"></block>을 충족하는지 확인하십시오.</block>
+  <block id="22e8d5dffa56b3d788b7cad983632245" category="section-title">Trident Protect의 주요 기능</block>
+  <block id="c361b606336ab8bf433f75c062374974" category="paragraph">**자동 백업** Trident Protect는 Kubernetes 애플리케이션의 자동화된 정책 기반 백업을 지원하여 수동 개입 없이 정기적으로 백업이 이루어지도록 합니다.</block>
+  <block id="a07d4ac9ae9d023ab2666cfd3bbb5eab" category="paragraph">**Snapshot Management** ONTAP의 스냅샷 기능을 활용하여 컨테이너 애플리케이션 및 VM의 특정 시점 복사본을 자주 생성함으로써 안정적인 복구 메커니즘을 제공합니다.</block>
+  <block id="373da377365cd6a589d31c81736be319" category="paragraph">**백업 저장소 암호화** Trident Protect는 Restic 및 Kopia 백업 저장소에 대한 암호 기반 암호화를 지원합니다. 영구 볼륨 및 전송 중 암호화는 스토리지 및 네트워크 계층에서 별도로 구성하십시오.</block>
+  <block id="1772d045ac6084e8616a073ae3aa13a2" category="paragraph">**규정 준수 및 감사** 조직이 규정 준수 요건을 충족하고 데이터 보호 관행에 대한 정기적인 감사를 수행하는 데 도움이 되는 도구와 기능을 제공합니다.</block>
+  <block id="04961098dd1c9db5b3eb5179135f1cf1" category="paragraph">**재해 복구** ONTAP의 복제 기능과 통합되어 강력한 재해 복구 솔루션을 제공함으로써 재앙적인 사태 발생 시에도 비즈니스 연속성을 보장합니다.</block>
+  <block id="61677c38cc797e07566aca59e5d6c4c6" category="paragraph">Trident Protect에 대한 자세한 내용은 <block ref="bd5ea2eeefa13ea433a457bb3bcaeba5" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="5d512a8f7c23a13612ce51c23d96a967" category="section-title">NetApp ONTAP 하드웨어 모델 및 프로토콜 지원</block>
+  <block id="78e3871b51a9a03feeb507b46a55c050" category="paragraph">NetApp ONTAP 소프트웨어는 다양한 하드웨어 모델에서 실행되며, 각 모델은 서로 다른 성능 및 용량 요구 사항을 충족하도록 설계되었습니다. Trident는 강력한 기능을 확장하여 All Flash FAS(AFF), All SAN Array(ASA) 및 ASA R2 시스템을 포함한 다양한 NetApp ONTAP 시스템을 지원합니다. 이러한 지원을 통해 기업은 컨테이너화된 환경에서 고성능 스토리지 솔루션의 잠재력을 최대한 활용할 수 있습니다.</block>
+  <block id="b8935f18ffe32272a10bdd62b7db4777" category="paragraph">**All Flash FAS(AFF) 시스템** AFF 시스템은 탁월한 성능과 낮은 지연 시간을 제공하여 고성능 애플리케이션에 이상적입니다.</block>
+  <block id="4393a8e49a1de4f5361d9bdd0fad982c" category="paragraph">**All SAN Array (ASA) 시스템** ASA 시스템은 전용 SAN 환경을 위해 설계되었으며, 강력한 성능과 안정성을 제공합니다.</block>
+  <block id="6e2dd8dfcfca0792c36dd5ae66a865aa" category="paragraph">**ASA R2 시스템** ASA R2 시스템은 SAN 환경을 위한 향상된 기능과 성능을 제공합니다.</block>
+  <block id="c160a7c3fe76f26a1eb3a7ae8e68161b" category="paragraph">**AFX** NetApp AFX는 기업용 AI 워크로드를 위해 특별히 설계된 분산형 올플래시 스토리지 아키텍처입니다. 고성능 NAS를 제공하여 컴퓨팅 및 용량을 독립적으로 확장할 수 있습니다. NetApp AFX 스토리지 시스템은 스토리지 계층 구현 방식에서 다른 ONTAP 기반 시스템(ASA, AFF, FAS)과 다릅니다. AFX는 고성능과 확장성을 제공하는 분산 파일 시스템을 사용하는 반면, 다른 ONTAP 기반 시스템은 기존 스토리지 아키텍처를 사용합니다.</block>
+  <block id="e7672ad0deaa706df754c867d11571ac" category="list-text">AFF에 지원되는 프로토콜: NFS, CIFS/SMB, iSCSI, FC, NVMe/TCP</block>
+  <block id="edfd90336d93ec40b5ed8bca8679b9aa" category="list-text">ASA에 지원되는 프로토콜: iSCSI, FC, NVMe/TCP</block>
+  <block id="483886e70fa508c09b938eb1394c50f6" category="list-text">ASA R2에서 지원하는 프로토콜: iSCSI, FC, NVMe/TCP</block>
+  <block id="1e22e1f992f7e96e5e55bf2d61e4bf47" category="list-text">AFX에서 지원하는 프로토콜: Trident 25.10부터는 NFS 프로토콜만 지원되며, SMB 프로토콜은 지원되지 않습니다.</block>
+  <block id="0dd6128d6f2eb1e95bb7e4597e1d9e01" category="section-title">ONTAP 스토리지용 Trident 드라이버</block>
+  <block id="996f779dc91eca393404d0f443b65d89" category="paragraph">Trident에는 각각 백엔드 스토리지에 볼륨을 프로비저닝할 수 있는 다음과 같은 CSI 드라이버가 포함되어 있습니다.</block>
+  <block id="985be8f460623f562d2ea84ef63651c6" category="section-title">지원되는 하드웨어 모델의 NAS 프로토콜</block>
+  <block id="0361829b5858fe1a41004ef90e4ec369" category="list-text">ontap-nas: 하나의 PVC는 하나의 PV에 매핑되며, 이는 전용 FlexVol 볼륨입니다.</block>
+  <block id="f3099c87ca1d6a6a242e4a94c4cac399" category="list-text">ontap-nas-economy: 프로비저닝된 각 PV는 qtree이며, FlexVol 볼륨당 구성 가능한 qtree 수를 가집니다(기본값은 200이며 50~300 사이에서 구성 가능).</block>
+  <block id="3b7e016ae2213d38ba6e514c39964aa5" category="paragraph">하나의 PVC는 하나의 PV에 매핑되며, 이는 공유 FlexVol 볼륨의 qtree입니다.</block>
+  <block id="5e37c03ac99431dbc77190a856c73f88" category="admonition">VM의 모든 디스크를 단일 볼륨에 qtree로 구성할 수 있습니다. 그러나 Snapshots, Clones 및 Replication 기능은 Trident에서 지원되지 않습니다. 이러한 기능이 스토리지 관리자에 의해 관리되는 경우, PV 단위로 세부적인 관리가 불가능합니다.</block>
+  <block id="ad10c066f0a61cd907eb4fc280ac4780" category="list-text">ontap-nas-flexgroup: 프로비저닝된 각 PV는 완전한 ONTAP FlexGroup이며, SVM에 할당된 모든 애그리게이트가 사용됩니다.</block>
+  <block id="03d78dff6642af51896e39c5f5f7c5f7" category="section-title">지원되는 하드웨어 모델의 SAN 프로토콜</block>
+  <block id="51e0a90580ca99a1310b84bee0fecc2c" category="list-text">ontap-san: 하나의 PVC는 하나의 PV에 매핑되며, 이는 전용 FlexVol 볼륨의 LUN입니다.</block>
+  <block id="7d3a49a0c6ea1a9bf1c92ff637688d41" category="list-text">ontap-san-economy: 하나의 PVC는 하나의 PV에 매핑되며, 이는 공유 FlexVol 볼륨의 LUN입니다. 공유 FlexVol 볼륨에는 여러 개의 LUN을 저장할 수 있습니다(기본값은 100개이며, FlexVol 볼륨당 50~200개의 LUN/PV로 구성 가능).</block>
+  <block id="72bbb7305fb35928cd5f95d243e27abe" category="admonition">모든 VM 디스크를 단일 볼륨에 LUN으로 배치할 수 있습니다. 하지만 이 드라이버는 스냅샷과 클론은 지원하지만 복제는 지원하지 않습니다. 복제가 스토리지 관리자에 의해 관리되는 경우 PV 단위로 세분화되지 않습니다.</block>
+  <block id="30393868fe2f0c5cd734de325f12f765" category="image-alt">ONTAP 스토리지용 Trident 드라이버</block>
+  <block id="a57628924f909d4edd5cb81ee4f10896" category="inline-link-macro">ONTAP 백엔드 드라이버</block>
+  <block id="5825088df64b4cc2be5348fb85fd6718" category="paragraph">Trident 드라이버를 통해 제공되는 기능과 스토리지 관리자가 적용해야 하는 기능의 전체 목록은 Trident 설명서의 <block ref="08d1d30daced52ce88602b85f7d3ff2e" category="inline-link-macro-rx"></block> 섹션을 참조하십시오.</block>
+  <block id="57da9a46ec632f3fb46d591a640c2c41" category="summary">vSphere Kubernetes Service와 컨테이너화된 워크로드를 위한 NetApp ONTAP과의 통합 방법에 대해 알아보십시오.</block>
+  <block id="1d71ef3ed1e3feae082a2e494bc9406f" category="doc">vSphere Kubernetes Service와 NetApp ONTAP에 대해 알아보십시오</block>
+  <block id="bfd86f1482fc3eb86aa5a3fcfd77a763" category="paragraph">vSphere Kubernetes Service(VKS)는 VMware에서 제공하는 관리형 Kubernetes 솔루션으로, 기업에서 Kubernetes를 사용하여 컨테이너화된 애플리케이션을 배포, 관리 및 확장할 수 있도록 지원합니다. NetApp ONTAP 스토리지와 함께 사용하면 VKS는 클라우드 네이티브 워크로드에 엔터프라이즈급 영구 스토리지, 성능 및 데이터 관리 기능을 제공합니다.</block>
+  <block id="174feb6f3884222ea88d6a75bf2a5f76" category="paragraph">vSphere Kubernetes Service는 일반적으로 VMware Tanzu 등 VMware의 광범위한 에코시스템에 통합되어 있으며, VMware Tanzu는 Kubernetes 관리, 애플리케이션 현대화 및 DevOps 실무를 위한 포괄적인 툴 모음을 제공합니다.</block>
+  <block id="06a6f231196210e712f69d3b272ebc0f" category="section-title">vSphere Kubernetes 서비스의 주요 기능</block>
+  <block id="8b4f9041a8a08b903a8e0120427502ca" category="list-text">*관리형 Kubernetes 클러스터:* vSphere Kubernetes Service는 Kubernetes 클러스터의 배포 및 관리를 간소화합니다. 클러스터 생성, 업그레이드, 확장 및 모니터링과 같은 작업을 자동화합니다.</block>
+  <block id="52593656aada48266dc5769977f0b859" category="list-text">*VMware 인프라와의 통합:* VKS는 VMware vSphere, NSX-T 및 기타 VMware 솔루션과 원활하게 통합되어 조직이 기존 VMware 인프라를 Kubernetes 워크로드에 활용할 수 있도록 지원합니다.</block>
+  <block id="f13abfdaa69398b67c413b50e1d62ccf" category="list-text">*멀티 클라우드 및 하이브리드 클라우드 지원:* vSphere Kubernetes Service는 프라이빗 클라우드, 퍼블릭 클라우드(예: AWS, Azure, Google Cloud) 및 하이브리드 클라우드 환경에 배포를 지원하여 조직이 애플리케이션을 유연하게 관리할 수 있도록 합니다.</block>
+  <block id="008d7108292fe17209a6efcba0c43094" category="list-text">*내장 보안:* VKS에는 역할 기반 액세스 제어(RBAC), 정책 시행, 네트워크 보안을 위한 VMware NSX와의 통합 등 보안 기능이 포함되어 있습니다.</block>
+  <block id="98b675eeeee2a3ecf9c858f3a080e273" category="list-text">*개발자 친화적인 툴:* vSphere Kubernetes Service는 Tanzu Application Platform 등 개발자 툴과 통합되어 컨테이너화된 애플리케이션의 개발 및 배포를 간소화합니다.</block>
+  <block id="78a3a089395f569fdade56f46f5ce8c6" category="list-text">*확장성 및 고가용성:* VKS는 자동 확장 및 내결함성과 같은 기능을 제공하여 애플리케이션의 높은 가용성과 성능을 보장합니다.</block>
+  <block id="1199c2f33267e617b2ce200b205820c2" category="list-text">*관찰 가능성 및 모니터링:* vSphere Kubernetes Service는 VMware Tanzu Observability(이전 Wavefront) 및 기타 모니터링 툴과 통합되어 클러스터 및 애플리케이션 성능에 대한 실시간 인사이트를 제공합니다.</block>
+  <block id="bed1840fde5dc1d7ac62d7454fb019ef" category="list-text">*Kubernetes 생태계 지원:* VKS는 업스트림 Kubernetes와 완벽하게 호환되므로 Kubernetes API를 지원하고 Helm, Istio, Prometheus 등 Kubernetes 네이티브 툴과 함께 작동합니다.</block>
+  <block id="5cb61decad5370ecfc90f2684356314e" category="section-title">vSphere Kubernetes Service의 사용 사례</block>
+  <block id="76384304fed658c0c9d951db342b1096" category="list-text">*애플리케이션 현대화:* 조직은 기존 애플리케이션을 컨테이너화하고 VKS에서 관리하는 Kubernetes 클러스터에 배포함으로써 현대화할 수 있습니다.</block>
+  <block id="39da3482f8f31ec94a409c26cb76b4fa" category="list-text">*DevOps 활성화:* VKS는 자동화, CI/CD 통합 및 개발자 친화적인 툴을 제공하여 DevOps 워크플로우를 지원합니다.</block>
+  <block id="d26dfc4f50fc5c3039f92b4899f2647a" category="list-text">*하이브리드 클라우드 배포:* 기업은 VKS를 사용하여 온프레미스 및 클라우드 환경 전반에 걸쳐 Kubernetes 클러스터를 배포하고 일관된 운영을 구현할 수 있습니다.</block>
+  <block id="3b42607ee29831cc08020ac1cf7978f3" category="list-text">*마이크로서비스 아키텍처:* VKS는 마이크로서비스 기반 애플리케이션 개발을 지원하여 팀이 분산 시스템을 구축하고 확장할 수 있도록 합니다.</block>
+  <block id="f6a34a8ce3a72392261e0a2cf1fed748" category="sidebar">vSphere Kubernetes Service with NetApp 스토리지</block>
+  <block id="87705002e02ac3ef7cc167c9ef3f3aa3" category="sidebar">NetApp 스토리지를 사용하여 vSphere Kubernetes Service 배포</block>
+  <block id="1e2b6e7c19b5f5ea5f1bf9d0119d936a" category="sidebar">vSphere Kubernetes Service 워크로드를 NetApp 스토리지로 배포</block>
+  <block id="e45707f837d78db62a01dac958975b7b" category="sidebar">vSphere Kubernetes Service</block>
+  <block id="c42f3e22cdf25a5c2578e69c7bf282af" category="sidebar">vSphere Kubernetes Service with NetApp 스토리지 개요</block>
+  <block id="d0265d8cc7422d2276bc6344bbe3ab5d" category="sidebar">스토리지 및 vSphere Kubernetes 서비스 시작하기</block>
+  <block id="1d1f7326d745c802b7e22b1457f2fdb9" category="sidebar">vSphere Kubernetes 서비스 배포</block>
+  <block id="b4a44c1b3b107cf4ea8dcf1fa2ad902e" category="sidebar">NetApp 스토리지가 vSphere Kubernetes Service 워크로드에 제공하는 이점</block>
+  <block id="3800f0390c50b78c269894513b3c4822" category="sidebar">NetApp VKS 워크로드를 위한 NetApp 스토리지 프로비저닝</block>
+  <block id="7113197dc1bcc2b68be0d788aa700d1a" category="sidebar">NetApp 스토리지를 사용하여 VKS 워크로드 배포</block>
 </blocks>

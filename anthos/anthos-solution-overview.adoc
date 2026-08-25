@@ -71,7 +71,7 @@ Anthos에 대한 자세한 내용은 Anthos 웹사이트를 참조하세요. htt
 
 NetApp 기업 데이터 센터와 하이브리드 클라우드 구축에 적합한 여러 가지 스토리지 시스템을 보유하고 있습니다.  NetApp 포트폴리오에는 NetApp ONTAP, Cloud Volumes ONTAP, Google Cloud NetApp Volumes, Azure NetApp Files , NetApp ONTAP 스토리지 시스템용 FSx ONTAP 포함되어 있으며, 이 모든 솔루션은 컨테이너화된 애플리케이션에 영구 스토리지를 제공할 수 있습니다.
 
-자세한 내용은 NetApp 웹사이트를 방문하세요. https://www.netapp.com["여기"] .
+자세한 내용은 link:https://www.netapp.com["NetApp 웹사이트"^]을 참조하십시오.
 
 
 
@@ -80,7 +80,7 @@ NetApp 기업 데이터 센터와 하이브리드 클라우드 구축에 적합�
 
 Trident Anthos를 포함한 컨테이너와 Kubernetes 배포판을 위한 오픈 소스이자 완벽하게 지원되는 스토리지 오케스트레이터입니다.
 
-자세한 내용은 Trident 웹사이트를 방문하세요. https://docs.netapp.com/us-en/trident/index.html["여기"] .
+자세한 내용은 link:https://docs.netapp.com/us-en/trident/index.html["Trident 문서"^]을 참조하십시오.
 
 
 
@@ -94,4 +94,4 @@ Trident Anthos를 포함한 컨테이너와 Kubernetes 배포판을 위한 오�
 [[current-support-matrix-for-validated-releases]]
 == 검증된 릴리스에 대한 현재 지원 매트릭스
 
-보다 https://cloud.google.com/anthos/docs/resources/partner-storage#netapp["여기"] 검증된 릴리스에 대한 지원 매트릭스의 경우
+검증된 릴리스는 link:https://cloud.google.com/anthos/docs/resources/partner-storage#netapp["Anthos 스토리지 파트너 지원 매트릭스"^]을 참조하십시오.

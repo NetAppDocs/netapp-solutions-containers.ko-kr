@@ -18,10 +18,10 @@ NetApp Trident Protect에 대해 알아보세요. 이 솔루션은 OpenShift Vir
 
 Trident는 NetApp에서 유지 관리하는 오픈 소스 스토리지 프로비저너 및 오케스트레이터로, 추가 기능인 NetApp Trident Protect와 함께 Red Hat OpenShift와 같은 컨테이너 기반 환경에서 영구 데이터를 오케스트레이션하고 관리하기 위한 강력한 솔루션을 제공합니다.
 
-image:redhat-openshift-108.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+image::redhat-openshift-108.png[입력/출력 대화 상자 또는 서면 내용을 나타내는 그림]
 
 다음 페이지에는 NetApp 솔루션이 포함된 Red Hat OpenShift에서 애플리케이션 및 영구 스토리지 관리를 위해 검증된 NetApp 제품에 대한 추가 정보가 있습니다.
 
-* link:https://docs.netapp.com/us-en/trident/["Trident 문서"]
-* link:https://docs.netapp.com/us-en/trident/trident-protect/learn-about-trident-protect.html["Trident Protect 문서"]
+* link:https://docs.netapp.com/us-en/trident/["Trident 문서"^]
+* link:https://docs.netapp.com/us-en/trident/trident-protect/learn-about-trident-protect.html["Trident Protect 문서"^]
 

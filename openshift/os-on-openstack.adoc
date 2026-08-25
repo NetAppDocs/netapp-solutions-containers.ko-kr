@@ -29,7 +29,7 @@ OSP에 대한 자세한 내용은 다음을 참조하세요.link:https://www.red
 
 OpenStack Platform 서비스는 컨테이너로 배포되므로 서비스를 서로 분리하고 쉽게 업그레이드할 수 있습니다.  OpenStack 플랫폼은 Kolla로 구축되고 관리되는 컨테이너 세트를 사용합니다.  서비스 배포는 Red Hat Custom Portal에서 컨테이너 이미지를 가져와서 수행됩니다.  이러한 서비스 컨테이너는 Podman 명령을 사용하여 관리되며 Red Hat OpenStack Director를 통해 배포, 구성 및 유지 관리됩니다.
 
-image:redhat-openshift-034.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+image::redhat-openshift-034.png[입력/출력 대화 상자 또는 서면 내용을 나타내는 그림]
 
 [cols="15%, 15%, 70%"]
 |===

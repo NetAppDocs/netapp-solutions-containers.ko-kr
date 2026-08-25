@@ -16,7 +16,7 @@ summary: NetApp ONTAP 은 직관적인 GUI, 자동화 통합을 갖춘 REST API,
 [role="lead"]
 NetApp ONTAP 은 직관적인 GUI, 자동화 통합을 갖춘 REST API, AI 기반 예측 분석 및 시정 조치, 중단 없는 하드웨어 업그레이드, 스토리지 간 가져오기 등의 기능을 갖춘 강력한 스토리지 소프트웨어 도구입니다.
 
-NetApp ONTAP 스토리지 시스템에 대한 자세한 내용은 다음을 방문하세요. https://www.netapp.com/data-management/ontap-data-management-software/["NetApp ONTAP 웹사이트"^] .
+NetApp ONTAP 스토리지 시스템에 대한 자세한 내용은 link:https://www.netapp.com/data-management/ontap-data-management-software/["NetApp ONTAP 웹사이트"^]을 방문하십시오.
 
 ONTAP 다음과 같은 기능을 제공합니다.
 
@@ -37,12 +37,12 @@ ONTAP 다음과 같은 기능을 제공합니다.
 
 
 
-ONTAP 에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"^] .
+ONTAP에 대한 자세한 내용은 link:https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"^]을 참조하십시오.
 
 
 NOTE: NetApp ONTAP 온프레미스, 가상화 또는 클라우드에서 사용할 수 있습니다.
 
-image:redhat-openshift-035.png["입력/출력 대화 상자 또는 서면 내용을 나타내는 그림"]
+image::redhat-openshift-035.png[입력/출력 대화 상자 또는 서면 내용을 나타내는 그림]
 
 
 
@@ -58,7 +58,7 @@ NetApp 저지연 성능, 통합 데이터 보호, 다중 프로토콜 지원을 
 
 두 시스템 모두 NetApp ONTAP 데이터 관리 소프트웨어로 구동됩니다. 이 소프트웨어는 업계에서 가장 진보된 데이터 관리 소프트웨어로, 가용성이 높고 클라우드 통합이 가능하며 간소화된 스토리지 관리를 통해 데이터 패브릭에 필요한 엔터프라이즈급 속도, 효율성 및 보안을 제공합니다.
 
-NETAPP AFF/ FAS 플랫폼에 대한 자세한 내용을 보려면 클릭하세요. https://docs.netapp.com/platstor/index.jsp["여기"] .
+NetApp AFF/FAS 플랫폼에 대한 자세한 내용은 link:https://docs.netapp.com/platstor/index.jsp["NetApp 하드웨어 플랫폼 설명서"^]을 참조하십시오.
 
 
 
@@ -67,7 +67,7 @@ NETAPP AFF/ FAS 플랫폼에 대한 자세한 내용을 보려면 클릭하세�
 
 ONTAP Select 사용자 환경의 하이퍼바이저에 배포할 수 있는 NetApp ONTAP 의 소프트웨어 정의 배포입니다.  VMware vSphere 또는 KVM에 설치할 수 있으며 하드웨어 기반 ONTAP 시스템의 모든 기능과 경험을 제공합니다.
 
-ONTAP Select 에 대한 자세한 내용을 보려면 클릭하세요. https://docs.netapp.com/us-en/ontap-select/["여기"] .
+ONTAP Select에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/ontap-select/["ONTAP Select 문서"^]을 참조하십시오.
 
 
 
@@ -76,25 +76,25 @@ ONTAP Select 에 대한 자세한 내용을 보려면 클릭하세요. https://d
 
 NetApp Cloud Volumes ONTAP Amazon AWS, Microsoft Azure, Google Cloud를 포함한 다양한 퍼블릭 클라우드에 배포할 수 있는 NetApp ONTAP 의 클라우드 배포 버전입니다.
 
-Cloud Volumes ONTAP 에 대한 자세한 내용을 보려면 클릭하세요. https://docs.netapp.com/us-en/occm/#discover-whats-new["여기"] .
+Cloud Volumes ONTAP에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/occm/#discover-whats-new["Cloud Volumes ONTAP 설명서"^]을 참조하십시오.
 
 
 
 [[amazon-fsx-ontap]]
 === Amazon FSx ONTAP
 
-Amazon FSx ONTAP ONTAP 의 인기 있는 데이터 액세스 및 관리 기능을 갖춘 AWS 클라우드에서 완전 관리형 공유 스토리지를 제공합니다.  Amazon FSx ONTAP 에 대한 자세한 내용을 보려면 클릭하세요. https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["여기"] .
+Amazon FSx ONTAP는 ONTAP의 널리 사용되는 데이터 액세스 및 관리 기능을 갖춘 AWS 클라우드의 완전 관리형 공유 스토리지를 제공합니다. Amazon FSx for NetApp ONTAP에 대한 자세한 내용은 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSx for NetApp ONTAP 설명서"^]을 참조하십시오.
 
 
 
 [[azure-netapp-files]]
 === Azure NetApp Files
 
-Azure NetApp Files 는 Azure 기반의 자체 개발 엔터프라이즈급 고성능 파일 스토리지 서비스입니다.  NetApp 계정, 용량 풀, 볼륨을 생성할 수 있는 Volumes as a Service를 제공합니다.  서비스 및 성능 수준을 선택하고 데이터 보호를 관리할 수도 있습니다.  온프레미스에서 익숙하고 의존하는 것과 동일한 프로토콜과 도구를 사용하여 고성능, 고가용성, 확장 가능한 파일 공유를 만들고 관리할 수 있습니다.  Azure NetApp Files 에 대한 자세한 내용을 보려면 클릭하세요. https://learn.microsoft.com/en-us/azure/azure-netapp-files/["여기"] .
+Azure NetApp Files는 Azure 네이티브 퍼스트 파티 엔터프라이즈급 고성능 파일 스토리지 서비스입니다. NetApp 계정, 용량 풀, 볼륨을 생성할 수 있는 볼륨 서비스를 제공합니다. 서비스 및 성능 수준을 선택하고 데이터 보호를 관리할 수도 있습니다. 온프레미스 환경에서 익숙하게 사용하고 있는 동일한 프로토콜과 툴을 사용하여 고성능, 고가용성, 확장 가능한 파일 공유를 생성하고 관리할 수 있습니다. Azure NetApp Files에 대한 자세한 내용은 link:https://learn.microsoft.com/en-us/azure/azure-netapp-files/["Azure NetApp Files 설명서"^]을 참조하십시오.
 
 
 
 [[google-cloud-netapp-volumes]]
 === Google Cloud NetApp Volumes
 
-Google Cloud NetApp Volumes 고급 데이터 관리 기능과 확장성이 뛰어난 성능을 제공하는 완전 관리형 클라우드 기반 데이터 스토리지 서비스입니다.  파일 기반 애플리케이션을 Google Cloud로 옮길 수 있습니다.  네트워크 파일 시스템(NFSv3 및 NFSv4.1)과 서버 메시지 블록(SMB) 프로토콜을 기본적으로 지원하므로 애플리케이션을 다시 설계할 필요가 없고 애플리케이션에 대한 영구 저장소를 계속 확보할 수 있습니다.  Google Cloud NetApp VolumesP에 대한 자세한 내용을 보려면 클릭하세요. https://cloud.google.com/netapp/volumes/docs/discover/overview["여기"] .
+Google Cloud NetApp Volumes는 고급 데이터 관리 기능과 뛰어난 확장성을 제공하는 완전 관리형 클라우드 기반 데이터 스토리지 서비스입니다. 이를 통해 파일 기반 애플리케이션을 Google Cloud로 이전할 수 있습니다. 네트워크 파일 시스템(NFSv3 및 NFSv4.1)과 서버 메시지 블록(SMB) 프로토콜을 기본적으로 지원하므로 애플리케이션 아키텍처를 재구성할 필요 없이 애플리케이션에 영구 스토리지를 계속 사용할 수 있습니다. Google Cloud NetApp Volumes에 대한 자세한 내용은 link:https://cloud.google.com/netapp/volumes/docs/discover/overview["Google Cloud NetApp Volumes 설명서"^]을 참조하십시오.
