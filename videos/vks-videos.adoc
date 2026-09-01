@@ -18,15 +18,22 @@ vSphere Kubernetes Service와 NetApp의 통합을 주요 기능을 보여주는 
 
 
 
-[[deploying-a-vsphere-kubernetes-service-cluster-with-netapp-storage]]
-== NetApp 스토리지를 사용하여 vSphere Kubernetes Service 클러스터 배포
+[[create-a-vsphere-kubernetes-cluster-on-a-supervisor-cluster]]
+== 슈퍼바이저 클러스터에 vSphere Kubernetes 클러스터 생성
 
-.NetApp 스토리지를 사용하여 vSphere Kubernetes Service 클러스터 배포
+.슈퍼바이저 클러스터에 vSphere Kubernetes 클러스터 생성
 video::4ef64b3c-7a68-41d5-bacf-b4a8012b49f8[panopto,width=360]
 
 
-[[deploying-workloads-with-ontap-persistent-storage-using-trident]]
-== Trident를 사용하여 ONTAP 영구 스토리지로 워크로드 배포
+[[create-a-vsphere-kubernetes-cluster-with-vcf-automation]]
+== VCF Automation을 사용하여 vSphere Kubernetes 클러스터 생성
 
-.Trident를 사용하여 ONTAP 영구 스토리지로 워크로드 배포
+.VCF Automation을 사용하여 vSphere Kubernetes 클러스터 생성
+video::571ced1a-58e8-4bf4-9c24-b4b10118bc22[panopto,width=360]
+
+
+[[deploying-workloads-on-a-vks-cluster-backed-by-ontap-persistent-storage-using-trident]]
+== Trident를 사용하여 ONTAP 영구 스토리지가 지원되는 VKS 클러스터에 워크로드 배포
+
+.Trident를 사용하여 ONTAP 영구 스토리지가 지원되는 VKS 클러스터에 워크로드 배포
 video::eb8bd0c0-a1fe-4288-a575-b4ac00e004a9[panopto,width=360]

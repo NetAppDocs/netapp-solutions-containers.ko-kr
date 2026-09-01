@@ -319,5 +319,5 @@ SELECT * FROM employees;
 
 다음 비디오는 vSphere Kubernetes 클러스터에 Trident를 설치하고 Trident를 사용하여 영구 스토리지로 PostgreSQL 데이터베이스를 배포하는 방법을 보여 줍니다.
 
-.Trident를 사용하여 ONTAP 영구 스토리지로 워크로드 배포
+.vSphere Kubernetes Service 클러스터에 Trident를 사용하여 ONTAP 영구 스토리지가 지원되는 워크로드 배포
 video::eb8bd0c0-a1fe-4288-a575-b4ac00e004a9[panopto,width=360]

@@ -31,23 +31,35 @@ image::vks-004.png[리소스 탭에서 kubeconfig 다운로드]
 link:https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy-helm.html["https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy-helm.html"^]
 
 +
+Helm 설치를 실행하기 전에  `trident` 네임스페이스를 생성하고 레이블을 지정해야 합니다.  `enforce=privileged` 레이블은 Trident가 권한 있는 워크로드를 실행하기 때문에 필수적입니다. 레이블이 없으면 Kubernetes Pod 보안 승인 컨트롤러가 Trident Pod의 시작을 차단합니다.
+
++
+[source, cli]
+----
+kubectl create namespace trident
+kubectl label namespace trident pod-security.kubernetes.io/enforce=privileged
+----
++
 .예제 표시
 [%collapsible]
 ====
 [source, cli]
 ----
-helm install trident netapp-trident/trident-operator --version 100.2606.0 --create-namespace --namespace trident --kubeconfig=/path/to/your-kubeconfig-file
+helm install trident netapp-trident/trident-operator --version 100.2606.0 --namespace trident
 ----
 디버그 로깅을 활성화하려면 다음을 추가하십시오 `--set tridentDebug=true`:
 
 [source, cli]
 ----
-helm install trident netapp-trident/trident-operator --version 100.2606.0 --create-namespace --namespace trident --set tridentDebug=true --kubeconfig=/path/to/your-kubeconfig-file
+helm install trident netapp-trident/trident-operator --version 100.2606.0 --namespace trident --set tridentDebug=true
 ----
 ====
 +
 
 NOTE: Trident Operator를 사용하여 Trident를 수동으로 설치할 수도 있습니다. Trident 설명서에서 절차를 검토하십시오: link:https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy-operator.html["Trident 오퍼레이터를 수동으로 배포합니다"^]
+
++
+Trident를 수동으로 설치하기 전에  `trident` 네임스페이스에 필요한 Pod 보안 레이블이 지정되어 있는지 확인하십시오.
 
 . 클러스터에서 모든 Trident Pod가 실행 중인지 확인하십시오.
 +
@@ -58,27 +70,15 @@ NOTE: Trident Operator를 사용하여 Trident를 수동으로 설치할 수도 
 ----
 kubectl get pods -n trident
 ----
+image::vks-trident-install-001.png[Trident 설치됨]
 
-NOTE: 이 시점에서 Trident Pod가 생성되지 않을 수 있습니다. ReplicaSet 오브젝트를 설명하면 아래와 같이 PodSecurity 위반에 대한 오류가 표시될 수 있습니다. 이 오류는 `trident` 설치 중에 생성된 네임스페이스가 Kubernetes의 제한적인 Pod 보안 표준(PSS)을 적용하기 때문에 발생합니다. Trident Operator는 호스트 스토리지를 관리하기 위해 높은 시스템 권한이 필요하며, 제한된 프로필의 엄격한 제약 조건 하에서는 실행될 수 없습니다. 이 문제를 해결하려면 `trident` 네임스페이스에 권한 있는 프로필을 부여하여 ReplicaSet 컨트롤러가 Pod를 성공적으로 생성할 수 있도록 하십시오.
 
-[source, text]
-----
-Warning  FailedCreate  25s (x5 over 64s)  replicaset-controller  (combined from similar events): Error creating: pods "trident-operator-5cbf7f857-z7ztd" is forbidden: violates PodSecurity "restricted:latest": allowPrivilegeEscalation != false (container "trident-operator" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "trident-operator" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "trident-operator" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "trident-operator" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
-----
-기본 제공 Kubernetes Pod 보안 승인 레이블을  `trident` 네임스페이스에 적용하여 제한된 프로필 제약 조건에서 제외합니다.
+NOTE: Trident Pod가  `PodSecurity` 승인 오류와 함께 시작되지 않는 경우, 설치 전에  `trident` 네임스페이스에 Pod 보안 레이블이 적용되지 않았을 수 있습니다.  `--overwrite`을 사용하여 레이블을 다시 적용한 다음 Pod가 시작되는지 확인하십시오.
 
 [source, cli]
 ----
 kubectl label namespace trident pod-security.kubernetes.io/enforce=privileged --overwrite
-kubectl label namespace trident pod-security.kubernetes.io/audit=privileged --overwrite
-kubectl label namespace trident pod-security.kubernetes.io/warn=privileged --overwrite
 ----
-[source, cli]
-----
-kubectl get pods -n trident
-----
-image::vks-trident-install-001.png[Trident 설치됨]
-
 ====
 
 

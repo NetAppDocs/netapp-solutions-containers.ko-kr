@@ -210,7 +210,9 @@ image::vks-005.png[kubeconfig를 사용하여 VKS 클러스터에 CLI로 연결]
 [[video-demonstration]]
 == 비디오 데모
 
-다음 영상은 vSphere Kubernetes 클러스터를 생성하는 방법을 보여줍니다.
+다음 비디오는 vSphere Kubernetes 클러스터를 생성하는 두 가지 방법을 보여줍니다.
 
 .Supervisor 클러스터에 vSphere Kubernetes 클러스터를 생성합니다.
 video::4ef64b3c-7a68-41d5-bacf-b4a8012b49f8[panopto,width=360]
+.VCF Automation을 사용하여 vSphere Kubernetes 클러스터 생성
+video::571ced1a-58e8-4bf4-9c24-b4b10118bc22[panopto,width=360]

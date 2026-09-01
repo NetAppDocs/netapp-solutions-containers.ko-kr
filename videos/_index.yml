@@ -2,8 +2,8 @@
 indexpage:
   title: NetApp 사용한 컨테이너에 대한 비디오와 데모를 시청하세요
   summary: NetApp의 다양한 컨테이너 솔루션의 기능을 논의하는 일련의 비디오 및 데모
-  lead: NetApp의 Anthos 및 OpenShift 플랫폼 전반에 걸친 컨테이너 솔루션을 소개하는 종합 비디오 라이브러리를 살펴보세요.
-    각 컬렉션은 특정 사용 사례 및 통합 시나리오에 중점을 둡니다.
+  lead: NetApp의 Anthos, OpenShift 및 vSphere Kubernetes Service 플랫폼 전반에 걸친 컨테이너 솔루션을
+    소개하는 종합 비디오 라이브러리를 살펴보세요. 각 컬렉션은 특정 사용 사례 및 통합 시나리오에 초점을 맞추고 있습니다.
   tiles:
   - title: NetApp 사용한 Anthos
     links:
@@ -25,7 +25,9 @@ indexpage:
       url: openshift-videos.html#cloud-and-hybrid-integrations
   - title: vSphere Kubernetes Service with NetApp 스토리지
     links:
-    - title: NetApp 스토리지를 사용하여 vSphere Kubernetes Service 배포
-      url: vks-videos.html#deploying-a-vsphere-kubernetes-service-cluster-with-netapp-storage
-    - title: vSphere Kubernetes Service 워크로드를 NetApp 스토리지로 배포
-      url: vks-videos.html#deploying-workloads-with-ontap-persistent-storage-using-trident
+    - title: 슈퍼바이저 클러스터에 vSphere Kubernetes 클러스터 생성
+      url: vks-videos.html#create-a-vsphere-kubernetes-cluster-on-a-supervisor-cluster
+    - title: VCF Automation을 사용하여 vSphere Kubernetes 클러스터 생성
+      url: vks-videos.html#create-a-vsphere-kubernetes-cluster-with-vcf-automation
+    - title: Trident를 사용하여 ONTAP 영구 스토리지로 워크로드 배포
+      url: vks-videos.html#deploying-workloads-on-a-vks-cluster-backed-by-ontap-persistent-storage-using-trident

@@ -1489,7 +1489,6 @@
   <block id="70dec797486e96f0b66f5b6f6232e97e" category="inline-link">vSphere 9.0 설명서: DRS 선호도 규칙 사용</block>
   <block id="75aced0054edcf64f0ce28e9417b9ecc" category="paragraph">이러한 경우, 클러스터를 즉시 배포하지 않고 마법사를 실행하여 작업을 지정할 수 있습니다. 대신 마법사는 나중에 클러스터를 배포할 수 있는 구성 파일을 생성합니다. 이는 IPI 기본 설정을 변경해야 하거나 멀티테넌시와 같은 다른 용도로 환경에 여러 개의 동일한 클러스터를 배포하려는 경우에 매우 유용합니다. OpenShift용 사용자 지정 설치 구성을 만드는 방법에 대한 자세한 내용은 다음을 참조하세요. <block ref="d119246d08531f99b62e09f0007159a5" category="inline-link-macro-rx"></block>.</block>
   <block id="7eec9c349f16a2215195b8598e8dea11" category="paragraph">친화성 그룹을 구성하려면 다음을 참조하십시오. <block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block>.</block>
-  <block id="b9aaad555d183234dc95454f14ebcc62" category="sidebar">NetApp의 Anthos 및 OpenShift 플랫폼 전반에 걸친 컨테이너 솔루션을 소개하는 종합 비디오 라이브러리를 살펴보세요. 각 컬렉션은 특정 사용 사례 및 통합 시나리오에 중점을 둡니다.</block>
   <block id="bfe724d354657c9ac5cef22bd231f66f" category="inline-link">vSphere 7.0 설명서: DRS 선호도 규칙 사용</block>
   <block id="cf8e958cf9893349b91e0cb26eb4a70a" category="list-text"><block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block></block>
   <block id="a70e200902c4988462676505e131f70c" category="list-text"><block ref="a70e200902c4988462676505e131f70c" category="inline-link-macro-rx"></block></block>
@@ -1588,8 +1587,6 @@
   <block id="8c684d392aef10a8c99774cb2657f7bb" category="paragraph">+ 멀티패싱을 사용할 때:</block>
   <block id="8e52b4769088302a4f326e22c74511a1" category="doc">vSphere Kubernetes Service with NetApp에 대한 동영상 보기</block>
   <block id="251c1a6e87a770b25350464f2db19c02" category="paragraph">vSphere Kubernetes Service와 NetApp의 통합을 주요 기능을 보여주는 일련의 비디오를 통해 살펴보세요.</block>
-  <block id="6033eea54b83c4616c246ac18a46eaaf" category="section-title">NetApp 스토리지를 사용하여 vSphere Kubernetes Service 클러스터 배포</block>
-  <block id="b80d9389df8e2bb398ad10bc68ff359b" category="section-title">Trident를 사용하여 ONTAP 영구 스토리지로 워크로드 배포</block>
   <block id="6e4176de3fe21b3bc58f9932376014f9" category="summary">NetApp ONTAP 영구 스토리지와 NAS 또는 SAN 프로토콜을 사용하여 VKS 클러스터에 컨테이너화된 애플리케이션을 배포합니다.</block>
   <block id="6036729abb74cd9c50bb08033e8c7f27" category="doc">NetApp 영구 스토리지를 사용하여 컨테이너 애플리케이션 배포</block>
   <block id="2169ef59d3a2c480a4648b241b290603" category="paragraph">vSphere Kubernetes Service 클러스터에서 NetApp ONTAP 영구 스토리지를 사용하여 컨테이너화된 애플리케이션을 배포합니다. 다음 예제는 NAS(ontap-nas) 또는 SAN iSCSI(ontap-san) 스토리지를 사용하여 PostgreSQL 데이터베이스를 배포하는 방법을 보여줍니다.</block>
@@ -1668,8 +1665,6 @@
   <block id="14ba18a0c1dee23f7e3d0c37b42a6d5a" category="image-alt">클러스터용 kubeconfig 다운로드</block>
   <block id="9ad559cd98301f095c607e96052295ac" category="list-text">배스천 호스트에서 kubeconfig 파일을 사용하여 클러스터에 연결하고 CLI를 통해 클러스터를 관리합니다.</block>
   <block id="1c49d9ad6281e19280e709dc38f2e301" category="image-alt">kubeconfig를 사용하여 VKS 클러스터에 CLI로 연결</block>
-  <block id="c1f681f02da4b1b37fc01754dbb52eba" category="paragraph">다음 영상은 vSphere Kubernetes 클러스터를 생성하는 방법을 보여줍니다.</block>
-  <block id="7366abbe5ba6570244ca56fd4a3e8628" category="video-title">Supervisor 클러스터에 vSphere Kubernetes 클러스터를 생성합니다.</block>
   <block id="37e6bc625ff4f9ffcd5ccdec7e054601" category="summary">NetApp Trident를 vSphere Kubernetes Service 클러스터에 설치하여 동적 스토리지 프로비저닝을 활성화합니다.</block>
   <block id="d2d7f4fa852208916ca48681d906e1ac" category="doc">VKS 클러스터에 NetApp Trident 설치</block>
   <block id="0264d8f9ac7431d1879e9e1e0256fd82" category="paragraph">NetApp ONTAP 스토리지를 Kubernetes 워크로드와 통합하려면 vSphere Kubernetes Service 클러스터에 NetApp Trident를 동적 스토리지 프로비저너로 설치하십시오.</block>
@@ -1686,8 +1681,6 @@
   <block id="7c9ecfb8dfa70dea44031127f8e97561" category="inline-link-macro">Trident 오퍼레이터를 수동으로 배포합니다</block>
   <block id="b8cb0bb6ffb813f94fe2cb0fc4af8f49" category="admonition">Trident Operator를 사용하여 Trident를 수동으로 설치할 수도 있습니다. Trident 설명서에서 절차를 검토하십시오: <block ref="aaad7fc2d82777df183b3e26183088fc" category="inline-link-macro-rx"></block></block>
   <block id="9d7759b7820f505203830ffef3f6c946" category="list-text">클러스터에서 모든 Trident Pod가 실행 중인지 확인하십시오.</block>
-  <block id="6db69c2c82fe1cf04666445c27535882" category="admonition">이 시점에서 Trident Pod가 생성되지 않을 수 있습니다. ReplicaSet 오브젝트를 설명하면 아래와 같이 PodSecurity 위반에 대한 오류가 표시될 수 있습니다. 이 오류는<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 설치 중에 생성된 네임스페이스가 Kubernetes의 제한적인 Pod 보안 표준(PSS)을 적용하기 때문에 발생합니다. Trident Operator는 호스트 스토리지를 관리하기 위해 높은 시스템 권한이 필요하며, 제한된 프로필의 엄격한 제약 조건 하에서는 실행될 수 없습니다. 이 문제를 해결하려면<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 네임스페이스에 권한 있는 프로필을 부여하여 ReplicaSet 컨트롤러가 Pod를 성공적으로 생성할 수 있도록 하십시오.</block>
-  <block id="267d98dda9fe9b1fa03f4e0a5e9eccdb" category="paragraph">기본 제공 Kubernetes Pod 보안 승인 레이블을 <block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 네임스페이스에 적용하여 제한된 프로필 제약 조건에서 제외합니다.</block>
   <block id="77d7de0c181e7cde545dd80af7cd55fd" category="section-title">사용 환경에 맞는 스토리지 백엔드 및 StorageClass 구성 파일을 준비합니다</block>
   <block id="dafd5f06af6dd74148a6a1d1f4a2009f" category="list-text">필요한 연결 세부 정보와 스토리지 매개변수를 정의하여 ONTAP용 Trident 백엔드를 구성합니다.</block>
   <block id="eda474c8d55e227080e095471db3fed4" category="list-text">Kubernetes에서 NetApp 스토리지 백엔드에 매핑되는 스토리지 클래스를 정의합니다. 이러한 클래스는 성능 특성 및 복제 정책과 같은 매개변수를 지정합니다.</block>
@@ -1795,26 +1788,18 @@
   <block id="a57628924f909d4edd5cb81ee4f10896" category="inline-link-macro">ONTAP 백엔드 드라이버</block>
   <block id="5825088df64b4cc2be5348fb85fd6718" category="paragraph">Trident 드라이버를 통해 제공되는 기능과 스토리지 관리자가 적용해야 하는 기능의 전체 목록은 Trident 설명서의 <block ref="08d1d30daced52ce88602b85f7d3ff2e" category="inline-link-macro-rx"></block> 섹션을 참조하십시오.</block>
   <block id="57da9a46ec632f3fb46d591a640c2c41" category="summary">vSphere Kubernetes Service와 컨테이너화된 워크로드를 위한 NetApp ONTAP과의 통합 방법에 대해 알아보십시오.</block>
-  <block id="1d71ef3ed1e3feae082a2e494bc9406f" category="doc">vSphere Kubernetes Service와 NetApp ONTAP에 대해 알아보십시오</block>
-  <block id="bfd86f1482fc3eb86aa5a3fcfd77a763" category="paragraph">vSphere Kubernetes Service(VKS)는 VMware에서 제공하는 관리형 Kubernetes 솔루션으로, 기업에서 Kubernetes를 사용하여 컨테이너화된 애플리케이션을 배포, 관리 및 확장할 수 있도록 지원합니다. NetApp ONTAP 스토리지와 함께 사용하면 VKS는 클라우드 네이티브 워크로드에 엔터프라이즈급 영구 스토리지, 성능 및 데이터 관리 기능을 제공합니다.</block>
-  <block id="174feb6f3884222ea88d6a75bf2a5f76" category="paragraph">vSphere Kubernetes Service는 일반적으로 VMware Tanzu 등 VMware의 광범위한 에코시스템에 통합되어 있으며, VMware Tanzu는 Kubernetes 관리, 애플리케이션 현대화 및 DevOps 실무를 위한 포괄적인 툴 모음을 제공합니다.</block>
   <block id="06a6f231196210e712f69d3b272ebc0f" category="section-title">vSphere Kubernetes 서비스의 주요 기능</block>
   <block id="8b4f9041a8a08b903a8e0120427502ca" category="list-text">*관리형 Kubernetes 클러스터:* vSphere Kubernetes Service는 Kubernetes 클러스터의 배포 및 관리를 간소화합니다. 클러스터 생성, 업그레이드, 확장 및 모니터링과 같은 작업을 자동화합니다.</block>
   <block id="52593656aada48266dc5769977f0b859" category="list-text">*VMware 인프라와의 통합:* VKS는 VMware vSphere, NSX-T 및 기타 VMware 솔루션과 원활하게 통합되어 조직이 기존 VMware 인프라를 Kubernetes 워크로드에 활용할 수 있도록 지원합니다.</block>
   <block id="f13abfdaa69398b67c413b50e1d62ccf" category="list-text">*멀티 클라우드 및 하이브리드 클라우드 지원:* vSphere Kubernetes Service는 프라이빗 클라우드, 퍼블릭 클라우드(예: AWS, Azure, Google Cloud) 및 하이브리드 클라우드 환경에 배포를 지원하여 조직이 애플리케이션을 유연하게 관리할 수 있도록 합니다.</block>
   <block id="008d7108292fe17209a6efcba0c43094" category="list-text">*내장 보안:* VKS에는 역할 기반 액세스 제어(RBAC), 정책 시행, 네트워크 보안을 위한 VMware NSX와의 통합 등 보안 기능이 포함되어 있습니다.</block>
-  <block id="98b675eeeee2a3ecf9c858f3a080e273" category="list-text">*개발자 친화적인 툴:* vSphere Kubernetes Service는 Tanzu Application Platform 등 개발자 툴과 통합되어 컨테이너화된 애플리케이션의 개발 및 배포를 간소화합니다.</block>
   <block id="78a3a089395f569fdade56f46f5ce8c6" category="list-text">*확장성 및 고가용성:* VKS는 자동 확장 및 내결함성과 같은 기능을 제공하여 애플리케이션의 높은 가용성과 성능을 보장합니다.</block>
-  <block id="1199c2f33267e617b2ce200b205820c2" category="list-text">*관찰 가능성 및 모니터링:* vSphere Kubernetes Service는 VMware Tanzu Observability(이전 Wavefront) 및 기타 모니터링 툴과 통합되어 클러스터 및 애플리케이션 성능에 대한 실시간 인사이트를 제공합니다.</block>
-  <block id="bed1840fde5dc1d7ac62d7454fb019ef" category="list-text">*Kubernetes 생태계 지원:* VKS는 업스트림 Kubernetes와 완벽하게 호환되므로 Kubernetes API를 지원하고 Helm, Istio, Prometheus 등 Kubernetes 네이티브 툴과 함께 작동합니다.</block>
   <block id="5cb61decad5370ecfc90f2684356314e" category="section-title">vSphere Kubernetes Service의 사용 사례</block>
   <block id="76384304fed658c0c9d951db342b1096" category="list-text">*애플리케이션 현대화:* 조직은 기존 애플리케이션을 컨테이너화하고 VKS에서 관리하는 Kubernetes 클러스터에 배포함으로써 현대화할 수 있습니다.</block>
   <block id="39da3482f8f31ec94a409c26cb76b4fa" category="list-text">*DevOps 활성화:* VKS는 자동화, CI/CD 통합 및 개발자 친화적인 툴을 제공하여 DevOps 워크플로우를 지원합니다.</block>
   <block id="d26dfc4f50fc5c3039f92b4899f2647a" category="list-text">*하이브리드 클라우드 배포:* 기업은 VKS를 사용하여 온프레미스 및 클라우드 환경 전반에 걸쳐 Kubernetes 클러스터를 배포하고 일관된 운영을 구현할 수 있습니다.</block>
   <block id="3b42607ee29831cc08020ac1cf7978f3" category="list-text">*마이크로서비스 아키텍처:* VKS는 마이크로서비스 기반 애플리케이션 개발을 지원하여 팀이 분산 시스템을 구축하고 확장할 수 있도록 합니다.</block>
   <block id="f6a34a8ce3a72392261e0a2cf1fed748" category="sidebar">vSphere Kubernetes Service with NetApp 스토리지</block>
-  <block id="87705002e02ac3ef7cc167c9ef3f3aa3" category="sidebar">NetApp 스토리지를 사용하여 vSphere Kubernetes Service 배포</block>
-  <block id="1e2b6e7c19b5f5ea5f1bf9d0119d936a" category="sidebar">vSphere Kubernetes Service 워크로드를 NetApp 스토리지로 배포</block>
   <block id="e45707f837d78db62a01dac958975b7b" category="sidebar">vSphere Kubernetes Service</block>
   <block id="c42f3e22cdf25a5c2578e69c7bf282af" category="sidebar">vSphere Kubernetes Service with NetApp 스토리지 개요</block>
   <block id="d0265d8cc7422d2276bc6344bbe3ab5d" category="sidebar">스토리지 및 vSphere Kubernetes 서비스 시작하기</block>
@@ -1822,4 +1807,192 @@
   <block id="b4a44c1b3b107cf4ea8dcf1fa2ad902e" category="sidebar">NetApp 스토리지가 vSphere Kubernetes Service 워크로드에 제공하는 이점</block>
   <block id="3800f0390c50b78c269894513b3c4822" category="sidebar">NetApp VKS 워크로드를 위한 NetApp 스토리지 프로비저닝</block>
   <block id="7113197dc1bcc2b68be0d788aa700d1a" category="sidebar">NetApp 스토리지를 사용하여 VKS 워크로드 배포</block>
+  <block id="4863bb56458653f9402b7131b30a9030" category="section-title">슈퍼바이저 클러스터에 vSphere Kubernetes 클러스터 생성</block>
+  <block id="c1a5751ff9e21e0838bce4e08f1f26d5" category="section-title">VCF Automation을 사용하여 vSphere Kubernetes 클러스터 생성</block>
+  <block id="20e6db82522219c070cf96d902fe4884" category="section-title">Trident를 사용하여 ONTAP 영구 스토리지가 지원되는 VKS 클러스터에 워크로드 배포</block>
+  <block id="21a48e811421ae5fb58df2d372cd8998" category="summary">NetApp Console을 통해 NetApp Backup and Recovery Service를 사용하여 VKS 클러스터의 컨테이너 애플리케이션을 백업하고 복원합니다.</block>
+  <block id="34eed44a7b600defcba59a8fdd6e860f" category="doc">NetApp Console을 사용하여 vSphere Kubernetes Service 클러스터의 컨테이너 애플리케이션을 백업 및 복구합니다.</block>
+  <block id="232601422fa5bd76dc6af5b21f82e33f" category="paragraph">NetApp Console을 사용하여 vSphere Kubernetes Service(VKS) 클러스터의 컨테이너 애플리케이션을 백업 및 복구합니다. 이 절차에서는 ONTAP S3 오브젝트 스토리지를 백업 대상으로 사용하여 NetApp Console을 통해 Backup and Recovery Service로 백업 및 복구 작업을 생성하고 관리하는 방법을 다룹니다.</block>
+  <block id="3e4963527730ef6f33d6ebc197fafc0b" category="inline-link-macro">console.netapp.com</block>
+  <block id="454bb1110d6093b9ef29fd01d063b03f" category="inline-link-macro">NetApp Console 설명서</block>
+  <block id="2016c21dd1e5e2a15af83cdc13f75c3d" category="paragraph">NetApp Console은 온프레미스 및 클라우드 환경 전반에 걸쳐 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있도록 지원합니다. 통합 제어, 간편한 운영, 안전한 관리를 제공합니다. 사용자 인터페이스 <block ref="57d9a76eb3ea9a991b2c0d0149aa4e43" category="inline-link-macro-rx"></block>에서 액세스할 수 있는 여러 데이터 서비스 및 관리 기능이 있습니다. NetApp Console에 대한 자세한 내용은 <block ref="bbbdb0a6353fba3ffbca16f93165f81c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="bef219d35a4468480b0ce759221cdceb" category="inline-link-macro">NetApp Backup and Recovery 설명서</block>
+  <block id="a597b0b1aab2f5b9b0aaad5086979bca" category="paragraph">이 섹션에서는 Kubernetes 워크로드, 특히 vSphere Kubernetes Service 클러스터의 컨테이너 애플리케이션을 위한 NetApp Backup and Recovery 데이터 서비스에 대해 중점적으로 다룹니다. NetApp Backup and Recovery 서비스를 사용하면 단일 인터페이스를 통해 Kubernetes 애플리케이션을 검색, 관리, 생성하고 보호 정책을 연결할 수 있습니다. 전체 가이드는 <block ref="2352cdf0425b05cbedea7c5bb22d8b7e" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="2121e1c4047d73ac044da238dfcb8c7c" category="section-title">백업 및 복구 워크플로</block>
+  <block id="6f2651b176b54af6f1faba14fd50d743" category="list-text">*콘솔 에이전트가 있는지 확인하십시오*</block>
+  <block id="fa442739b617c9579e06786426c2a01d" category="inline-link-macro">NetApp Console Setup 설명서</block>
+  <block id="d75cdce083074ff9bfb43752a8635548" category="paragraph">VKS 클러스터가 실행 중인 환경에 Console 에이전트가 배포되어 있는지 확인하십시오. Console 에이전트 설치에 대한 자세한 내용은 <block ref="c29eea9dd2098c2f916189b9f0f0c394" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="a1a3cb4e76ae76dc6b99d33bcb31ad88" category="paragraph">NetApp Console에서 스크린샷에 표시된 것처럼 Deploy Agent를 클릭하고 VKS 클러스터가 실행 중인 환경에 에이전트를 배포합니다.</block>
+  <block id="ae0e84f99bc384e593fbc3f3b721a51e" category="paragraph">이 예에서는 *온프레미스 &gt; OVA 사용*을 선택하고 OVA URL을 복사한 다음 vCenter에서 해당 URL을 사용하여 Console 에이전트를 배포합니다.</block>
+  <block id="c9f604da5ba951fbc0657b27f46decd4" category="inline-link-macro">문서</block>
+  <block id="7a1fb8eab659be867f9aa7eeb45a2d5e" category="paragraph">URL에 에이전트의 IP 주소를 사용하여 등록하십시오. 자세한 지침은 <block ref="e71416951a24fa701af997a8078305e1" category="inline-link-macro-rx"></block>을 참조하십시오. 에이전트가 등록되면 아래 스크린샷과 같이 NetApp Console에서 확인할 수 있습니다.</block>
+  <block id="d307fa19298283159d09f887c0952b89" category="image-alt">콘솔 에이전트 설치</block>
+  <block id="0e5dd3dc1046e3313f97def07538bec5" category="image-alt">에이전트 설치 프로그램 URL 사용</block>
+  <block id="e223bd6f3553c049bd7ac3cdb02abf6c" category="list-text">*ONTAP 클러스터를 NetApp Console에 추가하고 Backup and Recovery를 활성화합니다.*</block>
+  <block id="6099932afd86a07365ad31865d3eb27c" category="inline-link-macro">NetApp Backup and Recovery 설정</block>
+  <block id="71c24c86ee7f9efef3f901f7a6ee9107" category="paragraph">워크로드를 보호하려면 먼저 기본 ONTAP 클러스터를 NetApp Console에 추가하고 해당 클러스터에서 Backup and Recovery 서비스를 활성화해야 합니다. 지침은 <block ref="829ffd32b24c3ad024570837e8b80557" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="da60fae3b061dc4b92da7c6b80ead128" category="list-text">*NetApp Console에서 vSphere Kubernetes 클러스터를 검색합니다*</block>
+  <block id="ce48455e41e8b6ab54471d21bce67c76" category="paragraph">이 단계를 수행하려면 vSphere Kubernetes 클러스터가 실행 중이어야 하며 동일한 환경에 Console 에이전트가 배포되어 있어야 합니다. 다음 단계를 수행하여 NetApp Console에서 vSphere Kubernetes 클러스터를 검색하십시오.</block>
+  <block id="175a1add72b5b3837f416912786faf94" category="list-text">NetApp Console에서 *인벤토리 &gt; Kubernetes*를 선택하고 vSphere Kubernetes 클러스터의 세부 정보를 입력하십시오.</block>
+  <block id="e1c49923268af6f2e2f532c8337efc14" category="list-text">vSphere Kubernetes 클러스터가 위치한 환경과 동일한 환경에 배포된 에이전트를 선택하십시오.</block>
+  <block id="93fe94a05c759d5076ada28408399292" category="list-text">제공된 명령어를 복사하여 Trident Protect를 설치하고 vSphere Kubernetes 클러스터에 연결된 컴퓨터에서 실행하십시오.</block>
+  <block id="7c9622d4f482feedcaae54fd93a00302" category="list-text">Trident Protect가 성공적으로 설치되면 *검색*을 클릭하십시오. NetApp Console은 에이전트를 통해 vSphere Kubernetes 클러스터와 모든 리소스를 검색하고 UI에 표시합니다.</block>
+  <block id="c3d6e4c0e56aab0c8ce971295e84d5be" category="image-alt">vSphere Kubernetes 클러스터 검색</block>
+  <block id="b00b01ec925a5b145c3f9830d49aee3e" category="image-alt">Trident Protect를 설치한 다음 Discover를 클릭하십시오.</block>
+  <block id="3646f4803d1292d3db242e14ccb8758a" category="image-alt">Trident Protect 설치가 완료되었습니다.</block>
+  <block id="47dffbb1a3da5eca52bf5e7fba5eb769" category="image-alt">NetApp Console에서 검색된 vSphere Kubernetes 클러스터</block>
+  <block id="1e9b7bcc2bad27bd136f2622dd69ea44" category="list-text">*ONTAP S3를 백업 대상으로 설정*</block>
+  <block id="d22cb698bc88c8e298eb6b589b94b9d6" category="paragraph">이 예제에서는 ONTAP S3 오브젝트 스토리지를 백업 대상으로 사용합니다. AWS S3, Azure Blob, Google Cloud Storage 또는 StorageGRID를 백업 대상으로 사용할 수도 있습니다.</block>
+  <block id="e65ff2f26bec9a86892ccc267c743916" category="paragraph">자세한 내용은 <block ref="01d5df3496ee1ccad0deaaf29f960871" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="83ded782d791948e2c7cbd896b7b90b0" category="paragraph">NetApp Console에 ONTAP S3를 백업 대상으로 추가하려면 ONTAP 클러스터에서 다음 정보가 필요합니다.</block>
+  <block id="0c869ea43172797ba7dcef0e8bc06c31" category="paragraph">이러한 값을 얻으려면 System Manager를 사용하여 ONTAP 클러스터에서 다음 단계를 수행하십시오.</block>
+  <block id="afe878290734ee3d6d66ca868c147733" category="list-text">ONTAP 클러스터에 S3 지원 SVM을 생성하여 백업 데이터를 저장합니다. 이 SVM의 S3 엔드포인트 URL을 기록해 두십시오.</block>
+  <block id="2499dcb89ba012cb46ac629895c356b3" category="list-text">SVM의 S3 설정에서 사용자를 생성하고 필요한 접근 권한을 할당합니다. 이 사용자의 접근 키와 비밀 키를 기록해 둡니다.</block>
+  <block id="3419daddf1059715ea07b1b3e6abd5cd" category="inline-link-macro">Trident Protect AppVault 문서</block>
+  <block id="b25d75091e5cda2c64e8a5514341e3ca" category="admonition">Trident Protect를 사용하려면 S3 사용자에게 최소한 <block ref="056095ab13056370a45a87bef347987f" prefix=" " category="inline-code"></block>, <block ref="cbb0d44479c329cd4be1bc88506f8910" prefix=" " category="inline-code"></block>, <block ref="5efefdaf7d252b6782e94b6147b8cadc" prefix=" " category="inline-code"></block> 및 <block ref="5dd67d171e3a2d8c0e5a7e24a1240e63" prefix=" " category="inline-code"></block> 권한이 있어야 합니다. 이러한 권한이 없으면 AppVault 백업 및 복원 작업이 액세스 거부 오류와 함께 실패합니다. 자세한 내용은 <block ref="f75884a96ce902306710d40739cf537e" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="773dbb9b078ea51d2b0751bbf2435d64" category="list-text">*S3 사용자를 생성하고 액세스 키와 비밀 키를 다운로드합니다.*</block>
+  <block id="3eea6bd0f64c82add4f71773f9f8b243" category="image-alt">S3 사용자를 생성하고 액세스 키와 비밀 키를 다운로드합니다.</block>
+  <block id="b51ca27cec1eba9590e028602526c95e" category="list-text">S3 지원 SVM에 버킷을 생성하십시오. NetApp Console에서 ONTAP S3 오브젝트 스토리지를 백업 대상으로 추가할 때 사용할 버킷 이름을 기록해 두십시오.</block>
+  <block id="e9f81ee46c507b84e0e3226124adb3fd" category="image-alt">스토리지 계정</block>
+  <block id="1db230a0f2b07c74bbdbf4db9ff2e254" category="paragraph">S3 엔드포인트, 액세스 키, 비밀 키 및 버킷 이름을 사용하여 NetApp Console에서 ONTAP S3 오브젝트 스토리지를 백업 대상으로 추가합니다.</block>
+  <block id="b9292456fbba15fbc2e476f3b5b16588" category="image-alt">NetApp Console에서 ONTAP S3 오브젝트 스토리지를 백업 대상으로 검색합니다</block>
+  <block id="e2788f438cd0e0fdef4eca50bb2382f1" category="image-alt">NetApp Console에서 검색을 위한 ONTAP S3 오브젝트 스토리지 세부 정보</block>
+  <block id="4d60c84ca18439da49fb866a742bd4fb" category="list-text">*NetApp Console에서 컨테이너 워크로드용 애플리케이션을 생성하고 백업을 사용하여 보호합니다.*</block>
+  <block id="2eabef32ad22e8b33df769ad0e37281f" category="admonition">Kubernetes 애플리케이션을 생성하고 보호하려면 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Kubernetes 애플리케이션을 복원하려면 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할이 필요합니다.</block>
+  <block id="44cacf6d110ddc7970160044631b9d83" category="paragraph">이 단계에서는 보호해야 하는 vSphere Kubernetes 클러스터의 컨테이너 애플리케이션을 위해 NetApp Console에서 애플리케이션을 생성합니다. 네임스페이스를 사용하여 vSphere Kubernetes 클러스터의 네임스페이스에 있는 모든 컨테이너 애플리케이션을 보호하는 애플리케이션을 생성할 수 있습니다.</block>
+  <block id="13966409eadc621ce3bfcf2f249e4792" category="paragraph">애플리케이션과 연결할 보호 정책도 필요합니다. 새 보호 정책을 생성하거나 기존 정책을 사용할 수 있습니다.</block>
+  <block id="9cdbc54ba251ff7dba53eb0427d1b206" category="image-alt">컨테이너 애플리케이션용 애플리케이션 생성</block>
+  <block id="ee818cfe9a24b4cdc5f3b0f81d1eb22c" category="paragraph">애플리케이션 세부 정보를 제공하고 애플리케이션에 대한 기준을 정의하십시오. 이 예에서는 vSphere Kubernetes 클러스터의 네임스페이스에 있는 모든 컨테이너 애플리케이션에 대해 애플리케이션을 생성합니다. *검색*을 클릭하여 애플리케이션에 포함된 네임스페이스 범위 리소스 목록을 확인하십시오. *다음*을 클릭하여 진행하십시오.</block>
+  <block id="eb238de8d603b9e2a53ba8df0855161f" category="image-alt">애플리케이션 세부 정보를 제공하고 애플리케이션 기준을 정의하십시오.</block>
+  <block id="35dda748f22007e96a586f8a2f4fc75d" category="paragraph">다음으로 애플리케이션에 대한 보호 설정을 제공해야 합니다. 새 보호 정책을 만들거나 기존 정책을 사용할 수 있습니다. 이 예에서는 애플리케이션에 대한 새 보호 정책을 만들고 연결합니다. *정책*을 확장하고 *새 정책 만들기*를 클릭합니다.</block>
+  <block id="2def453a204ea819952d71512bdc49da" category="image-alt">새 보호 정책 생성</block>
+  <block id="df94a19d797c5fb8ddb560b7327d1651" category="paragraph">정책 이름을 지정하고 백업 아키텍처를 선택합니다. 이 예에서는 디스크- 오브젝트 스토리지를 선택했습니다. 기본 스토리지에서 스냅샷을 생성하는 빈도를 제어하는 로컬 스냅샷 일정을 정의합니다. 그런 다음 오브젝트 스토리지 백업 설정을 별도로 구성합니다. 백업 대상(이 예에서는 ONTAP S3)을 선택하고, 스냅샷 데이터가 오브젝트 스토리지로 복사되는 시점을 제어하는 전송 일정을 설정하고, 보존 복사본 수를 지정합니다. 전송 일정은 스냅샷 일정과 독립적이므로 리소스는 각 스냅샷이 생성될 때 즉시 복사되는 것이 아니라 전송 일정에 따라 오브젝트 스토리지로 복사됩니다. 필요한 경우 최대 재시도 횟수와 재시도 간격을 수정할 수도 있습니다. *생성*을 클릭하여 진행합니다. 애플리케이션이 검색되고 보호 정책이 해당 애플리케이션에 연결됩니다.</block>
+  <block id="e4d5074770e545fff3da2f80c85a9bcd" category="image-alt">보호 정책 이름을 제공하십시오.</block>
+  <block id="282676c292385336c12b44e7d6e22b76" category="image-alt">백업 아키텍처를 선택하십시오</block>
+  <block id="9382b57a7ab97e9a5ace56b1c2cca26b" category="image-alt">로컬 스냅샷 일정</block>
+  <block id="35fe92646099e0c5dde37b278a1be643" category="image-alt">백업을 위한 오브젝트 저장소 설정</block>
+  <block id="84dbba70bee310837a0576d203ef39a1" category="image-alt">애플리케이션이 생성되고 보호가 완료되었습니다.</block>
+  <block id="f33de214b67023b3c3e396f21efec693" category="list-text">*백업에서 애플리케이션을 복원합니다*</block>
+  <block id="3a777fbfaa3f5fd03016ef4e69b26f15" category="admonition">Kubernetes 애플리케이션을 복원하려면 Backup and Recovery 슈퍼 관리자 또는 Backup and Recovery 복원 관리자 역할이 필요합니다.</block>
+  <block id="663bd83060169d09fa60cb1afa500d9b" category="list-text">애플리케이션을 복원하려면 로컬 스냅샷, 오브젝트 스토리지 백업 또는 보조 대상의 백업 등 사용 가능한 복원 지점을 선택할 수 있습니다.</block>
+  <block id="3d6e71d91fec2dd71feb2f817ee2af60" category="list-text">애플리케이션을 원래 네임스페이스 또는 다른 네임스페이스로 복원할 수 있습니다.</block>
+  <block id="bd6e0ac38fc8024f4efa317c0cc62408" category="list-text">복원에 포함할 리소스를 선택할 수 있습니다.</block>
+  <block id="5d4d19247e2cd74f11ae3e13f86e7d50" category="list-text">복원된 애플리케이션 리소스에 사용할 스토리지 클래스를 선택할 수 있습니다.</block>
+  <block id="6d24f227e10bf5d7c363f509e238f393" category="image-alt">백업에서 애플리케이션 복원</block>
+  <block id="05772a2a0e4aadfb89be48bbbc4d2366" category="image-alt">복원 지점을 선택하십시오</block>
+  <block id="2f4c5ec58829e539fec512473cd833d4" category="image-alt">복원 옵션을 선택합니다</block>
+  <block id="1701743fe1609fce51fbd2c193492997" category="image-alt">복원할 리소스를 모두 또는 일부 선택합니다.</block>
+  <block id="d5fe4917b66194f15d37b21aae4e7a78" category="image-alt">복원된 리소스에 사용할 스토리지 클래스를 선택합니다.</block>
+  <block id="6131333929d32098af4ba9df7c81c387" category="paragraph">NetApp Console의 모니터 섹션에서 복원 작업 진행 상황을 확인할 수 있습니다. 복원 작업이 완료되면 vSphere Kubernetes 클러스터에서 복원된 리소스를 볼 수 있습니다.</block>
+  <block id="9ff0764de4ce57386bdd7a3c15fb8cfe" category="image-alt">복원 작업 진행 상황 모니터링</block>
+  <block id="c0010867e3de5ae3367bb4b28f2e8c3e" category="image-alt">복원 작업이 완료되었습니다.</block>
+  <block id="f50021bdc46dd82f9f9361cbc0d97cd6" category="image-alt">복원된 애플리케이션</block>
+  <block id="ae0466ec058c7b41c94b5fa83378b2af" category="summary">ONTAP S3 오브젝트 스토리지를 사용하는 Trident Protect 스냅샷 및 백업을 통해 VKS 클러스터의 컨테이너 애플리케이션을 백업하고 복원합니다.</block>
+  <block id="051ad2976c93f1b8ab64275baa7da784" category="doc">Trident Protect를 사용하여 vSphere Kubernetes Service 클러스터의 컨테이너 애플리케이션을 백업하고 복원합니다</block>
+  <block id="6f120eabf116781e236a8132737fef74" category="paragraph">Trident Protect 스냅샷 및 백업을 사용하여 vSphere Kubernetes Service(VKS) 클러스터의 컨테이너 애플리케이션을 백업하고 복원합니다. 이 절차에는 ONTAP S3 오브젝트 스토리지를 사용하여 AppVault를 생성하고, Kubernetes 리소스 오브젝트 및 영구 볼륨을 포함한 애플리케이션 데이터를 캡처하도록 Trident Protect를 구성하고, 필요할 때 데이터를 복원하는 과정이 포함됩니다.</block>
+  <block id="b43b841ea10667d73c8c7d57ba9ec4ef" category="paragraph">VKS 클러스터에서 실행되는 컨테이너 애플리케이션은 워커 노드 네임스페이스의 Kubernetes 워크로드로 관리됩니다. 애플리케이션 메타데이터와 영구 볼륨을 모두 보호하는 것이 중요합니다. 손실되거나 손상된 경우 복구할 수 있어야 하기 때문입니다.</block>
+  <block id="4f2e2fd0041732a5bfeffd80536904be" category="inline-link-macro">Trident CSI</block>
+  <block id="5135460097dea9f68717b23cb573c272" category="paragraph">VKS 애플리케이션의 영구 볼륨은 <block ref="d66058559be29002c97cec8314567a26" category="inline-link-macro-rx"></block>을 사용하여 VKS 클러스터와 통합된 ONTAP 스토리지를 기반으로 할 수 있습니다. 이 절차는 <block ref="e549df9ba6f12288cca9d79527f10372" category="inline-link-macro-rx"></block>를 사용하여 애플리케이션 스냅샷을 생성하며, 스냅샷의 메타데이터는 ONTAP 오브젝트 스토리지에 저장되고 볼륨 스냅샷 데이터는 스토리지 백엔드에 유지됩니다. 또한 백업의 경우 데이터가 ONTAP 오브젝트 스토리지에 복사됩니다. 필요에 따라 스냅샷 또는 백업에서 복원할 수 있습니다.</block>
+  <block id="5ed3d9061409614d789d1ef3d94cabaa" category="paragraph">Trident Protect는 Kubernetes 클러스터에서 실행되는 애플리케이션의 스냅샷, 백업, 복원 및 재해 복구를 지원합니다. Trident Protect로 보호할 수 있는 데이터에는 애플리케이션과 연결된 Kubernetes 리소스 오브젝트 및 해당 영구 볼륨이 포함됩니다.</block>
+  <block id="f8bf8c539f7a197b29d982d4e3bd1690" category="paragraph">*다음은 이 섹션의 예제에 사용된 다양한 구성 요소의 버전입니다*</block>
+  <block id="5cb74ad707aad3e01b412865d2b40295" category="list-text">vSphere Kubernetes Service가 포함된 VMware Cloud Foundation (VCF) 9.1</block>
+  <block id="334a133ff08c4dadb2af36f2b1c9f1c6" category="inline-link-macro">Trident 26.06</block>
+  <block id="6357906a751a7593b886ac445b9e260a" category="list-text"><block ref="6357906a751a7593b886ac445b9e260a" category="inline-link-macro-rx"></block></block>
+  <block id="dcb951044d957b8a0c7c98212f9d865c" category="inline-link-macro">Trident Protect 26.06</block>
+  <block id="9e109384d0c61daf0036c13685a9c6cc" category="list-text"><block ref="9e109384d0c61daf0036c13685a9c6cc" category="inline-link-macro-rx"></block></block>
+  <block id="8c1ba5eb61420c0029961110f20d7829" category="inline-link-macro">ONTAP 9.16</block>
+  <block id="a13c7db7d74afd839261d6b5eef45b76" category="list-text"><block ref="a13c7db7d74afd839261d6b5eef45b76" category="inline-link-macro-rx"></block></block>
+  <block id="ab19e2a480e6fd178819ae409afe0ab3" category="section-title">vSphere Kubernetes 클러스터에 Trident Protect 설치</block>
+  <block id="9a660681c53f773fd48d7ad58cd48d53" category="example-title">Trident Protect를 설치합니다</block>
+  <block id="d0f322a68d8614a49557f2400228f68c" category="inline-link-macro">Trident Protect CLI 설명서</block>
+  <block id="45d72fc466011c2d9341d9e927244028" category="paragraph">Helm을 사용하여 vSphere Kubernetes Service 클러스터에 Trident Protect를 설치합니다. 이 섹션의 예제에서는 <block ref="d4845d5856667a10aee97f3404a35627" prefix=" " category="inline-code"></block>, Trident Protect CLI를 사용합니다. <block ref="ef3bd9becea6d7855240d1d89fa556bc" category="inline-link-macro-rx"></block>의 지침에 따라 설치하십시오. Trident Protect를 설치하는 추가 방법은 <block ref="3a984bfb64105d2cab0a81dc1af80642" category="inline-link-macro-rx"></block>에 설명되어 있습니다.</block>
+  <block id="00a36fe25fa607c5b3aa92540637fd8c" category="paragraph">먼저 <block ref="9a82c7a4099124e5bfaa83e7c5997bd4" prefix=" " category="inline-code"></block> 네임스페이스를 생성하고 레이블을 지정합니다. <block ref="78a20501c09df6254883cb37faba4efe" prefix=" " category="inline-code"></block> 레이블은 Trident Protect가 권한 있는 워크로드를 실행하기 때문에 필요합니다. 레이블이 없으면 Kubernetes Pod 보안 승인 컨트롤러가 Trident Protect Pod의 시작을 차단합니다.</block>
+  <block id="eb1a45530d58b882c9242fb38681f409" category="paragraph">다음으로 Helm 저장소를 추가하고 Trident Protect를 네임스페이스에 설치합니다.</block>
+  <block id="0ebc3eeae647f24d9110ed5fb65af02e" category="admonition">Trident Protect Pod가 <block ref="233d453c9defa6b6b09a4490018ae129" prefix=" " category="inline-code"></block> 승인 오류와 함께 시작되지 않는 경우, 설치 전에 <block ref="9a82c7a4099124e5bfaa83e7c5997bd4" prefix=" " category="inline-code"></block> 네임스페이스에 Pod 보안 레이블이 적용되지 않았을 수 있습니다. <block ref="cb084d2cf80d770c25726350b6118f22" prefix=" " category="inline-code"></block>을 사용하여 레이블을 다시 적용한 다음 Pod가 시작되는지 확인하십시오.</block>
+  <block id="12ee7c4706e44c364df65e2a6444161c" category="image-alt">Trident Protect 포드 실행 중</block>
+  <block id="9e2fd9553f3b1f1f9aa36beca4f46a7f" category="section-title">오브젝트 스토리지용 앱 볼트 생성</block>
+  <block id="e17a719a6366dd11d450cd1e2c5967de" category="example-title">AppVault 생성</block>
+  <block id="143051a3557b86430e791a69daa9190f" category="paragraph">애플리케이션의 스냅샷 및 백업을 생성하기 전에 Trident Protect에서 오브젝트 스토리지를 구성해야 합니다. 이는 AppVault CR을 생성하여 수행합니다. AppVault CR은 관리자만 생성하고 구성할 수 있습니다.</block>
+  <block id="c916480663caf552957857deb45b61db" category="paragraph">AppVault 오브젝트는 스토리지 버킷을 Kubernetes 사용자 정의 리소스로 표현한 것입니다. AppVault CR에는 백업, 스냅샷, 복원 작업 및 SnapMirror 복제 등 보호 작업에 버킷을 사용하는 데 필요한 구성이 포함되어 있습니다.</block>
+  <block id="43ef2f1dad2b36df26e08411ec6c85e0" category="paragraph">다음 단계에서는 ONTAP S3용으로 구성된 AppVault CR을 생성합니다. . ONTAP 클러스터의 SVM에 S3 오브젝트 스토어 서버를 생성합니다. . 오브젝트 스토어 서버에 버킷을 생성합니다. . SVM에 S3 사용자를 생성합니다. 액세스 키와 비밀 키를 안전한 위치에 보관하십시오.</block>
+  <block id="7e5e022f4990acb12e9222273538040f" category="paragraph">+ 참고: Trident Protect를 사용하려면 S3 사용자에게 최소한 <block ref="056095ab13056370a45a87bef347987f" prefix=" " category="inline-code"></block>, <block ref="cbb0d44479c329cd4be1bc88506f8910" prefix=" " category="inline-code"></block>, <block ref="5efefdaf7d252b6782e94b6147b8cadc" prefix=" " category="inline-code"></block> 및 <block ref="5dd67d171e3a2d8c0e5a7e24a1240e63" prefix=" " category="inline-code"></block> 권한이 있어야 합니다. 이러한 권한이 없으면 AppVault 백업 및 복원 작업이 액세스 거부 오류와 함께 실패합니다. 자세한 내용은 <block ref="f75884a96ce902306710d40739cf537e" category="inline-link-macro-rx"></block>을 참조하십시오. . VKS 클러스터에서 ONTAP S3 자격 증명을 저장할 시크릿을 생성합니다. . ONTAP S3용 AppVault 오브젝트를 생성합니다.</block>
+  <block id="b257a34cb8d6b5ae256e22fd53de3f64" category="paragraph">*ONTAP S3용 Trident Protect AppVault 구성*</block>
+  <block id="579bdcf92668af842a1c8b05946023ad" category="admonition">아래 매니페스트는 프로덕션 환경에 필요한 인증서 유효성 검사가 활성화된 HTTPS를 사용합니다. ONTAP S3 엔드포인트가 클러스터에서 이미 신뢰하는 공용 CA에서 서명한 인증서를 사용하는 경우 추가 인증서 구성이 필요하지 않습니다. 자체 서명 인증서 또는 내부 CA 인증서를 사용하는 경우 매니페스트에 표시된 대로<block ref="f2579016cb23696b84d467b135d4f9ca" prefix=" " category="inline-code"></block> 필드를 사용하여 사용자 지정 루트 CA 인증서를 제공하십시오. 격리된 비프로덕션 테스트를 위한 HTTP 구성이 필요한 경우 이 섹션 끝에 있는 랩 전용 버전을 참조하십시오.</block>
+  <block id="eefec0918fd646a311958a75daab0ef7" category="paragraph">*랩 전용 변형(HTTP, 인증서 검증 없음)*</block>
+  <block id="f385b582ed82743db22b38b647b1996c" category="paragraph">다음 <block ref="c0828e0381730befd1f7a025057c74fb" prefix=" " category="inline-code"></block> 설정은 민감한 데이터가 없는 격리된 실험실 환경에서만 사용하십시오. 실제 운영 환경에서는 이러한 설정을 사용하지 마십시오.</block>
+  <block id="46139a993c98bb820b525a6d47a29a6b" category="image-alt">ONTAP S3 AppVault 생성되었습니다.</block>
+  <block id="199c88a2fb7b49ac4dc0658a6dba3255" category="section-title">Trident Protect 애플리케이션 생성</block>
+  <block id="d563b396f103548a57bd7fe28a9e412d" category="paragraph">이 예제는 postgres 네임스페이스에 설치된 샘플 postgres 애플리케이션의 데이터 보호에 대해 설명합니다. 설치에 대한 자세한 내용은 <block ref="6748c0d67e456bdb43c5ccf6b5f73620" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="6aa5938c3da40d15847b9b66edb244f6" category="admonition">샘플 PostgreSQL PVC는 RWO 액세스 모드를 요청합니다. 액세스 모드는 PVC 매니페스트에 명시적으로 지정해야 합니다. Trident는 스토리지 프로토콜을 기반으로 액세스 모드를 자동으로 선택하지 않습니다. NAS 기반 PVC의 경우 RWX가 지원되며, SAN 기반 PVC는 추가 구성을 통해 RWX를 지원할 수 있습니다. 자세한 내용은 <block ref="3a984bfb64105d2cab0a81dc1af80642" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="f16eaddd3ea29694e59e93166ca7db9c" category="paragraph">이 예시에서 postgres 네임스페이스에는 하나의 애플리케이션이 있으며, Trident Protect 애플리케이션을 생성할 때 해당 네임스페이스의 모든 리소스가 포함됩니다.</block>
+  <block id="8d809e39ec5fbafb1ea1db781e917c1e" category="image-alt">Trident Protect 애플리케이션이 생성되었습니다.</block>
+  <block id="eb24a14eb30ab2003b56933052e232da" category="section-title">백업을 생성하여 앱을 보호합니다</block>
+  <block id="8647698e13d9f41e74fe02e836957aff" category="example-title">백업 생성</block>
+  <block id="b038d69a4652b940296030de65c1fad8" category="paragraph">*필요에 따라 백업 생성*</block>
+  <block id="47155a5f9d76a76deff851ae12804ee8" category="paragraph">이전에 생성한 postgres-app의 백업을 생성합니다. 이 백업에는 postgres 네임스페이스의 모든 리소스가 포함됩니다. 백업이 저장될 appvault 이름을 입력하십시오.</block>
+  <block id="2658d93d047c0970d29e40c3a0067c9d" category="image-alt">온디맨드 백업이 생성되었습니다.</block>
+  <block id="964d80285b1ebb044f8c2cdfc07c2c13" category="image-alt">애플리케이션 보호 상태가 부분적입니다.</block>
+  <block id="3c7d9aabb09940150dcdbc2156c2ba6b" category="paragraph">*예약된 시간에 백업 생성*</block>
+  <block id="cf06e7d2e1d86fa081b7fdb4be05412d" category="paragraph">백업 일정을 생성하고, 백업의 세분성 및 보존할 백업 개수를 지정하십시오.</block>
+  <block id="3735ee194ea620a4ac7c62401c616adc" category="image-alt">백업 일정이 생성되었습니다.</block>
+  <block id="6cffbd716866d6f73e9ce7962119e4f4" category="image-alt">백업 일정</block>
+  <block id="bb3ada07ffc1e55222a2bc4f1f73b9ce" category="section-title">백업에서 복원</block>
+  <block id="99cfd4c65592001192bff6f757a72e23" category="example-title">백업에서 복원</block>
+  <block id="6a22c2b2d76ce101ea52c0535d69f0d8" category="paragraph">*애플리케이션을 동일한 네임스페이스로 복원합니다*</block>
+  <block id="5768aeb7376533984e2e86691d6a0818" category="paragraph">이 예시에서 postgres-backup-on-demand 백업에는 postgres-app의 백업이 포함되어 있습니다.</block>
+  <block id="93ab73773342ed6bbe59849d04430a00" category="paragraph">애플리케이션을 삭제하기 전에 복원하려는 백업이 <block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block> 상태인지 확인하십시오. 진행 중이거나 실패한 백업은 애플리케이션을 복원하는 데 사용할 수 없습니다.</block>
+  <block id="5f470503b2ac5cb0571f91413075543b" category="paragraph">백업 상태가 <block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block>인지 확인한 후 postgres 애플리케이션을 삭제하고 "postgres" 네임스페이스에서 PVC 및 Pod 오브젝트가 삭제되었는지 확인하십시오.</block>
+  <block id="71fcd5bb6954e7bb4881609b73b5885f" category="image-alt">Postgres-app 오브젝트</block>
+  <block id="17071c78467fbc503329ee38de019cc0" category="image-alt">Postgres-app 오브젝트가 삭제되었습니다.</block>
+  <block id="bc73f6a63dcedda6fc251b2af9a42fad" category="paragraph">이제 제자리 백업 복원 오브젝트를 생성합니다.</block>
+  <block id="401193a3c85240f97e0a56f2abdc470a" category="image-alt">제자리 복원 백업이 생성되었습니다.</block>
+  <block id="96d1ea2bbcf32e79fb97db8532dfc512" category="paragraph">postgres 애플리케이션 배포, 서비스, Pod 및 PVC가 복원되었는지 확인하십시오.</block>
+  <block id="4a9f357305cc69f09a95c8f0b46d3576" category="image-alt">애플리케이션이 복원되었습니다.</block>
+  <block id="bea5e91371f23a1bcd64fcc44673639e" category="paragraph">*애플리케이션을 다른 네임스페이스로 복원합니다*</block>
+  <block id="11772301d0aaf9f38d5c47cd50b0ad9a" category="paragraph">먼저, 앱을 복원할 새 네임스페이스(이 예에서는 postgres2)를 생성합니다. 예약에 의해 생성된 시간별 백업을 이제 postgres-app에 사용할 수 있습니다. 이 백업을 사용하여 애플리케이션을 새 네임스페이스인 postgres2로 복원합니다.</block>
+  <block id="89e2c518728991ec63ab64162fdbcd15" category="image-alt">시간 단위 백업 가능</block>
+  <block id="b696e1a6fff47f2011d6aca8f9ebed6c" category="admonition">백업 경로를 얻으려면 명령어<block ref="5b7526f620b35a0e1e9c1f0d8c2a65fc" prefix=" " category="inline-code"></block>를 사용하십시오.</block>
+  <block id="3b4762f1055eedff28ff31949b848956" category="image-alt">시간별 백업 경로</block>
+  <block id="d0699088462af01b864fa99603472db6" category="image-alt">백업 복원이 생성되었습니다</block>
+  <block id="ceeb0e0b33fb3a7eecfa0889854817b3" category="paragraph">postgres 애플리케이션 오브젝트와 PVC가 새 네임스페이스 postgres2에 생성되었는지 확인하십시오.</block>
+  <block id="04ebe70d6abbb260d997df687cca701d" category="image-alt">Postgres 애플리케이션이 새 네임스페이스에 복원되었습니다.</block>
+  <block id="97f0842e41c3ba38b3e214d6626030e0" category="section-title">스냅샷을 사용하여 앱 보호</block>
+  <block id="147675010df47ead5c59950b19d345c2" category="example-title">스냅샷 생성</block>
+  <block id="66a7b9c088c581d685c7db99329ed890" category="paragraph">*필요에 따라 스냅샷 생성* 앱의 스냅샷을 생성하고 스냅샷 메타데이터가 저장될 AppVault를 지정합니다. 볼륨 스냅샷 데이터 자체는 오브젝트 스토리지로 복사되지 않고 스토리지 백엔드에 유지됩니다.</block>
+  <block id="9a07e23a4594ebf2f36aa8fda59ac284" category="image-alt">온디맨드 스냅샷</block>
+  <block id="d54f5186962379a7c55510ee1ab545f7" category="paragraph">*스냅샷 일정 생성* 스냅샷 일정을 생성합니다. 보존할 스냅샷의 세분성 및 개수를 지정합니다.</block>
+  <block id="e86ee6d4e5b0328800b5805950a77de3" category="image-alt">일정 및 스냅샷이 일정에 따라 생성됨</block>
+  <block id="6ad692970258ebf7f307557fd97d2632" category="section-title">스냅샷에서 복원</block>
+  <block id="af2119ce67e757837897479937051b7b" category="paragraph">*스냅샷에서 애플리케이션을 동일한 네임스페이스로 복원합니다*</block>
+  <block id="d1924585340e28fd585ca595409a9039" category="paragraph">애플리케이션을 삭제하기 전에 복원하려는 스냅샷이<block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block> 상태인지 확인하십시오. 진행 중이거나 실패한 스냅샷으로는 애플리케이션을 복원할 수 없습니다.</block>
+  <block id="211f8f934021d273efcd75e9844823b3" category="paragraph">스냅샷 상태가 <block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block>인지 확인한 후 postgres 네임스페이스에서 postgres용 애플리케이션 오브젝트와 PVC를 삭제합니다.</block>
+  <block id="38362d4d177cf390f102931a4760401f" category="image-alt">애플리케이션 오브젝트가 삭제되었습니다.</block>
+  <block id="cbaf95afb437065389bf3dce9e3f1efc" category="paragraph">스냅샷에서 스냅샷 제자리 복원 오브젝트를 생성합니다.</block>
+  <block id="c98f0d6793689cd59bdb98425d6343a6" category="paragraph">애플리케이션의 오브젝트와 PVC가 postgres 네임스페이스에 생성되었는지 확인하십시오.</block>
+  <block id="04ce63c6dd3ec1216b51ffad1beff441" category="image-alt">스냅샷에서 복원된 Postgres 앱</block>
+  <block id="45bfd189d8efd0216d0bb1449feacc15" category="paragraph">*스냅샷에서 애플리케이션을 다른 네임스페이스로 복원합니다*</block>
+  <block id="e90d250253124ffccd4e2b583d7cfa32" category="paragraph">이전에 백업에서 복원한 postgres2 네임스페이스의 애플리케이션을 삭제하십시오.</block>
+  <block id="e8693884f66911cd4c972fde74183528" category="image-alt">애플리케이션 오브젝트 및 PVC 삭제</block>
+  <block id="b6b1932fea3de2b10921d7e7aacadfde" category="paragraph">스냅샷에서 스냅샷 복원 오브젝트를 생성하고 네임스페이스 매핑을 제공합니다.</block>
+  <block id="ab5e677a955564d1a124f663f638388e" category="image-alt">스냅샷 복원이 생성되었습니다</block>
+  <block id="e0db28bbe23ed3d772d679e570f0ef48" category="paragraph">애플리케이션의 오브젝트와 PVC가 postgres2 네임스페이스에 복원되었는지 확인하십시오.</block>
+  <block id="d0d8fedde8b21fc0ba93ef7aaba3a319" category="image-alt">다른 네임스페이스에 애플리케이션이 복원되었습니다.</block>
+  <block id="20e5bd86db3dd7fbf1181537e8c779d8" category="video-title">vSphere Kubernetes Service 클러스터에 Trident를 사용하여 ONTAP 영구 스토리지가 지원되는 워크로드 배포</block>
+  <block id="97ae127add2a94bab96f06fac9860fdb" category="paragraph">다음 비디오는 vSphere Kubernetes 클러스터를 생성하는 두 가지 방법을 보여줍니다.</block>
+  <block id="bc9e4428422fe5b84cc27a0fa136fb60" category="video-title">Supervisor 클러스터에 vSphere Kubernetes 클러스터를 생성합니다.</block>
+  <block id="ced2b6aa5a4bf2dab6a8ce1737b31b3d" category="video-title">VCF Automation을 사용하여 vSphere Kubernetes 클러스터 생성</block>
+  <block id="2dd1f97feb041be44e1f3d5fabec4b39" category="paragraph">Helm 설치를 실행하기 전에 <block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 네임스페이스를 생성하고 레이블을 지정해야 합니다. <block ref="78a20501c09df6254883cb37faba4efe" prefix=" " category="inline-code"></block> 레이블은 Trident가 권한 있는 워크로드를 실행하기 때문에 필수적입니다. 레이블이 없으면 Kubernetes Pod 보안 승인 컨트롤러가 Trident Pod의 시작을 차단합니다.</block>
+  <block id="f9649373c12bd808a23df78a40aa7471" category="paragraph">Trident를 수동으로 설치하기 전에 <block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 네임스페이스에 필요한 Pod 보안 레이블이 지정되어 있는지 확인하십시오.</block>
+  <block id="35c0800d2cd6d949b287d303c1c1c74d" category="admonition">Trident Pod가 <block ref="233d453c9defa6b6b09a4490018ae129" prefix=" " category="inline-code"></block> 승인 오류와 함께 시작되지 않는 경우, 설치 전에 <block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 네임스페이스에 Pod 보안 레이블이 적용되지 않았을 수 있습니다. <block ref="cb084d2cf80d770c25726350b6118f22" prefix=" " category="inline-code"></block>을 사용하여 레이블을 다시 적용한 다음 Pod가 시작되는지 확인하십시오.</block>
+  <block id="1d68b70d225e40a24e2e9aa6f71bec78" category="doc">VMware vSphere Kubernetes Service와 NetApp ONTAP에 대해 알아보십시오</block>
+  <block id="ae6db182fbeef947934c84a097f2e037" category="paragraph">VMware vSphere Kubernetes Service(VKS)는 VMware에서 제공하는 관리형 Kubernetes 솔루션으로, 기업에서 Kubernetes를 사용하여 컨테이너화된 애플리케이션을 배포, 관리 및 확장할 수 있도록 지원합니다. NetApp ONTAP 스토리지와 함께 사용하면 VKS는 클라우드 네이티브 워크로드에 엔터프라이즈급 영구 스토리지, 성능 및 데이터 관리 기능을 제공합니다.</block>
+  <block id="7756266a2392dc651aee93576b0a2a9d" category="paragraph">VKS는 VMware Cloud Foundation(VCF)에 내장되어 있으며 업스트림 CNCF Kubernetes를 준수하여 더 넓은 Kubernetes 생태계 및 툴과의 호환성을 보장합니다.</block>
+  <block id="01f67c18ad451dc74e3fa7dff3b1734d" category="list-text">*Kubernetes 생태계 지원:* VKS는 완전한 업스트림 Kubernetes API를 지원하여 환경 간 이식성을 보장하고, 서비스 메시용 Istio, 모니터링용 Prometheus 및 기타 CNCF 인증 툴 등 광범위한 Kubernetes 생태계와의 호환성을 제공합니다. 조직은 표준 Kubernetes 기술 및 통합 기능을 VKS 클러스터에 직접 적용할 수 있습니다.</block>
+  <block id="aa2e85f6afdc912a76e56a97f382112b" category="list-text">*개발자 친화적인 툴:* VKS는 CI/CD 파이프라인, GitOps 모범 사례, kubectl 및 Helm과 같은 툴을 포함한 표준 Kubernetes 개발자 워크플로를 지원하므로 개발 팀은 독자적인 인터페이스를 학습하지 않고도 컨테이너화된 애플리케이션을 구축하고 배포할 수 있습니다.</block>
+  <block id="a9b9871513389acff14994099df07bb2" category="list-text">*관찰 가능성 및 모니터링:* VKS는 표준 Kubernetes 호환 모니터링 툴과 통합하여 클러스터 및 애플리케이션 성능에 대한 실시간 인사이트를 제공합니다.</block>
+  <block id="7bb52d31e9186f327f9249cadd1f56e1" category="sidebar">NetApp의 Anthos, OpenShift 및 vSphere Kubernetes Service 플랫폼 전반에 걸친 컨테이너 솔루션을 소개하는 종합 비디오 라이브러리를 살펴보세요. 각 컬렉션은 특정 사용 사례 및 통합 시나리오에 초점을 맞추고 있습니다.</block>
+  <block id="76897528dc593d66db3384c1c473c893" category="sidebar">Trident를 사용하여 ONTAP 영구 스토리지로 워크로드 배포</block>
+  <block id="21a1e68164f738b8be1dae11d5a694b3" category="sidebar">데이터 보호</block>
+  <block id="397fa1b379b09fcba8b17f74350634c0" category="sidebar">NetApp 콘솔을 사용한 백업 및 복원</block>
+  <block id="f68d199847b51cd8a36b6dc46fdf0aac" category="sidebar">Trident Protect를 사용한 백업 및 복원</block>
 </blocks>
