@@ -36,4 +36,18 @@ video::571ced1a-58e8-4bf4-9c24-b4b10118bc22[panopto,width=360]
 == Trident를 사용하여 ONTAP 영구 스토리지가 지원되는 VKS 클러스터에 워크로드 배포
 
 .Trident를 사용하여 ONTAP 영구 스토리지가 지원되는 VKS 클러스터에 워크로드 배포
-video::eb8bd0c0-a1fe-4288-a575-b4ac00e004a9[panopto,width=360]
+video::ea2cd302-d556-4450-bd68-b4c0012a9b49[panopto,width=360]
+
+
+[[backup-workloads-on-a-vks-cluster-to-object-store-and-restore-using-netapp-console]]
+== VKS 클러스터의 워크로드를 오브젝트 스토어에 백업하고 NetApp Console을 사용하여 복원합니다
+
+.VKS 클러스터의 워크로드를 오브젝트 스토어에 백업하고 NetApp Console을 사용하여 복원합니다
+video::02f61f3c-ae52-4f0b-9fe7-b4c0012ac7d8[panopto,width=360]
+
+
+[[netapp-console-local-overview]]
+== NetApp Console 로컬 개요
+
+.NetApp Console 로컬 개요
+video::5a0bdd54-7d38-494a-a224-b4b60011547f[panopto,width=360]

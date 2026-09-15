@@ -14,11 +14,23 @@ summary: NetApp Console을 통해 NetApp Backup and Recovery Service를 사용�
 
 
 [role="lead"]
-NetApp Console을 사용하여 vSphere Kubernetes Service(VKS) 클러스터의 컨테이너 애플리케이션을 백업 및 복구합니다. 이 절차에서는 ONTAP S3 오브젝트 스토리지를 백업 대상으로 사용하여 NetApp Console을 통해 Backup and Recovery Service로 백업 및 복구 작업을 생성하고 관리하는 방법을 다룹니다.
+NetApp Console을 사용하여 vSphere Kubernetes Service(VKS) 클러스터에서 컨테이너 애플리케이션을 백업하고 복구합니다. 이 절차에서는 NetApp Console의 NetApp Backup and Recovery 서비스를 통해 백업 및 복구 작업을 생성하고 관리하는 방법을 다룹니다.
 
-NetApp Console은 온프레미스 및 클라우드 환경 전반에 걸쳐 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있도록 지원합니다. 통합 제어, 간편한 운영, 안전한 관리를 제공합니다. 사용자 인터페이스 link:https://console.netapp.com["console.netapp.com"^]에서 액세스할 수 있는 여러 데이터 서비스 및 관리 기능이 있습니다. NetApp Console에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/console-family/["NetApp Console 설명서"]을 참조하십시오.
+이 예시들은 다음 두 가지 백업 및 복원 시나리오를 다룹니다.
 
-이 섹션에서는 Kubernetes 워크로드, 특히 vSphere Kubernetes Service 클러스터의 컨테이너 애플리케이션을 위한 NetApp Backup and Recovery 데이터 서비스에 대해 중점적으로 다룹니다. NetApp Backup and Recovery 서비스를 사용하면 단일 인터페이스를 통해 Kubernetes 애플리케이션을 검색, 관리, 생성하고 보호 정책을 연결할 수 있습니다. 전체 가이드는 link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["NetApp Backup and Recovery 설명서"]을 참조하십시오.
+. ONTAP S3 오브젝트 스토리지를 백업 대상으로 사용하여 백업 및 복원(디스크-to-오브젝트 워크플로)을 수행합니다.
+. ONTAP를 백업 대상으로 사용하여 백업 및 복원(디스크 간 워크플로)을 수행합니다.
+
+
+
+NOTE: VKS 워크로드에서는 현재 3-2-1 팬아웃 정책(디스크 간 및 디스크-오브젝트 워크플로우)을 사용한 백업 및 복원이 지원되지 않습니다.
+
+NetApp Console은 온프레미스 및 클라우드 환경 전반에 걸쳐 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있도록 지원합니다. 통합 제어, 간편한 운영, 안전한 관리를 제공합니다. 여러 데이터 서비스 및 관리 기능은 link:https://console.netapp.com["console.netapp.com"^]의 사용자 인터페이스에서 액세스할 수 있습니다. NetApp Console에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/console-family/["NetApp Console 설명서"]을 참조하십시오.
+
+이 섹션에서는 Kubernetes 워크로드, 특히 vSphere Kubernetes Service 클러스터의 컨테이너 애플리케이션을 위한 NetApp Backup and Recovery 데이터 서비스에 초점을 맞춥니다. NetApp Backup and Recovery 서비스를 사용하면 단일 인터페이스를 통해 Kubernetes 애플리케이션을 검색, 관리, 생성하고 보호 정책을 연결할 수 있습니다. 전체 가이드는 link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["NetApp Backup and Recovery 설명서"]을 참조하십시오.
+
+
+NOTE: 이 절차는 VKS 클러스터가 실행 중인 환경에 콘솔 에이전트가 이미 배포되었다고 가정합니다. 백업 및 복원 작업을 진행하기 전에 에이전트가 NetApp Console에 제대로 등록되어 표시되는지 확인하십시오.
 
 
 
@@ -33,7 +45,7 @@ VKS 클러스터가 실행 중인 환경에 Console 에이전트가 배포되어
 .예제 표시
 [%collapsible]
 ====
-NetApp Console에서 스크린샷에 표시된 것처럼 Deploy Agent를 클릭하고 VKS 클러스터가 실행 중인 환경에 에이전트를 배포합니다.
+NetApp Console에서 스크린샷에 표시된 대로 *Deploy Agent*를 클릭하고 VKS 클러스터가 실행 중인 환경에 에이전트를 배포합니다.
 
 이 예에서는 *온프레미스 > OVA 사용*을 선택하고 OVA URL을 복사한 다음 vCenter에서 해당 URL을 사용하여 Console 에이전트를 배포합니다.
 
@@ -53,12 +65,14 @@ image::vks-console-br-002.png[에이전트 설치 프로그램 URL 사용]
 .예제 표시
 [%collapsible]
 ====
-이 단계를 수행하려면 vSphere Kubernetes 클러스터가 실행 중이어야 하며 동일한 환경에 Console 에이전트가 배포되어 있어야 합니다. 다음 단계를 수행하여 NetApp Console에서 vSphere Kubernetes 클러스터를 검색하십시오.
+이 단계를 수행하려면 vSphere Kubernetes 클러스터가 실행 중이어야 하며 동일한 환경에 Console 에이전트가 배포되어 있어야 합니다.
+
+다음 단계를 수행하여 NetApp Console에서 vSphere Kubernetes 클러스터를 검색하십시오.
 
 .. NetApp Console에서 *인벤토리 > Kubernetes*를 선택하고 vSphere Kubernetes 클러스터의 세부 정보를 입력하십시오.
 .. vSphere Kubernetes 클러스터가 위치한 환경과 동일한 환경에 배포된 에이전트를 선택하십시오.
 .. 제공된 명령어를 복사하여 Trident Protect를 설치하고 vSphere Kubernetes 클러스터에 연결된 컴퓨터에서 실행하십시오.
-.. Trident Protect가 성공적으로 설치되면 *검색*을 클릭하십시오. NetApp Console은 에이전트를 통해 vSphere Kubernetes 클러스터와 모든 리소스를 검색하고 UI에 표시합니다.
+.. Trident Protect가 성공적으로 설치되면 *검색*을 클릭하십시오. NetApp Console은 에이전트를 통해 vSphere Kubernetes 클러스터와 모든 리소스를 검색하고 사용자 인터페이스에 표시합니다.
 
 
 image::vks-console-br-007.png[vSphere Kubernetes 클러스터 검색]
@@ -78,7 +92,7 @@ image::vks-console-br-010.png[NetApp Console에서 검색된 vSphere Kubernetes 
 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-setup.html#prepare-the-backup-destination["NetApp Console 설명서"]을 참조하십시오.
 
 +
-NetApp Console에 ONTAP S3를 백업 대상으로 추가하려면 ONTAP 클러스터에서 다음 정보가 필요합니다.
+ONTAP S3를 NetApp Console에서 백업 대상으로 추가하려면 ONTAP 클러스터에서 다음 정보가 필요합니다.
 
 +
 [listing]
@@ -129,12 +143,10 @@ image::vks-console-br-006.png[NetApp Console에서 검색을 위한 ONTAP S3 오
 NOTE: Kubernetes 애플리케이션을 생성하고 보호하려면 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Kubernetes 애플리케이션을 복원하려면 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할이 필요합니다.
 
 +
-.예제 표시
+.예시 보기: 컨테이너 워크로드용 애플리케이션 생성
 [%collapsible]
 ====
 이 단계에서는 보호해야 하는 vSphere Kubernetes 클러스터의 컨테이너 애플리케이션을 위해 NetApp Console에서 애플리케이션을 생성합니다. 네임스페이스를 사용하여 vSphere Kubernetes 클러스터의 네임스페이스에 있는 모든 컨테이너 애플리케이션을 보호하는 애플리케이션을 생성할 수 있습니다.
-
-애플리케이션과 연결할 보호 정책도 필요합니다. 새 보호 정책을 생성하거나 기존 정책을 사용할 수 있습니다.
 
 image::vks-console-br-011.png[컨테이너 애플리케이션용 애플리케이션 생성]
 
@@ -146,7 +158,14 @@ image::vks-console-br-012.png[애플리케이션 세부 정보를 제공하고 �
 
 image::vks-console-br-013.png[새 보호 정책 생성]
 
-정책 이름을 지정하고 백업 아키텍처를 선택합니다. 이 예에서는 디스크- 오브젝트 스토리지를 선택했습니다. 기본 스토리지에서 스냅샷을 생성하는 빈도를 제어하는 로컬 스냅샷 일정을 정의합니다. 그런 다음 오브젝트 스토리지 백업 설정을 별도로 구성합니다. 백업 대상(이 예에서는 ONTAP S3)을 선택하고, 스냅샷 데이터가 오브젝트 스토리지로 복사되는 시점을 제어하는 전송 일정을 설정하고, 보존 복사본 수를 지정합니다. 전송 일정은 스냅샷 일정과 독립적이므로 리소스는 각 스냅샷이 생성될 때 즉시 복사되는 것이 아니라 전송 일정에 따라 오브젝트 스토리지로 복사됩니다. 필요한 경우 최대 재시도 횟수와 재시도 간격을 수정할 수도 있습니다. *생성*을 클릭하여 진행합니다. 애플리케이션이 검색되고 보호 정책이 해당 애플리케이션에 연결됩니다.
+====
++
+.예시 보기: 디스크-오브젝트 스토리지 아키텍처를 사용하여 보호 정책 생성
+[%collapsible]
+====
+정책 이름을 지정하고 백업 아키텍처를 선택합니다. 이 예에서는 디스크-오브젝트 스토리지를 선택했습니다. 기본 스토리지에서 스냅샷을 생성하는 빈도를 제어하는 로컬 스냅샷 일정을 정의합니다. 그런 다음 스냅샷에 사용되는 Kubernetes 애플리케이션 메타데이터의 오브젝트 스토리지 대상을 선택합니다.
+
+다음으로, 오브젝트 스토리지 백업 설정을 별도로 구성합니다. 백업 대상(이 예에서는 ONTAP S3)을 선택하고, 스냅샷 데이터가 오브젝트 스토리지로 복사되는 시점을 제어하는 전송 일정을 설정하고, 보존 복사본 수를 지정합니다. 전송 일정은 스냅샷 일정과 별개이므로 리소스는 각 스냅샷이 생성될 때 즉시 복사되는 것이 아니라 전송 일정에 따라 오브젝트 스토리지로 복사됩니다. 필요한 경우 최대 재시도 횟수와 재시도 간격을 수정할 수도 있습니다. *생성*을 클릭하여 진행합니다. 애플리케이션이 검색되고 보호 정책이 연결됩니다.
 
 image::vks-console-br-014.png[보호 정책 이름을 제공하십시오.]
 
@@ -159,21 +178,40 @@ image::vks-console-br-017.png[백업을 위한 오브젝트 저장소 설정]
 image::vks-console-br-018.png[애플리케이션이 생성되고 보호가 완료되었습니다.]
 
 ====
++
+.예시 보기: 디스크 대 디스크 아키텍처를 사용하여 보호 정책 생성
+[%collapsible]
+====
+
+NOTE: 디스크 대 디스크 아키텍처를 선택하려면 2차 스토리지 대상이 클러스터 피어링 및 SVM 피어링으로 구성되어 있고 필요한 자격 증명과 권한이 있는지 확인하십시오.
+
+정책 이름을 지정하고 백업 아키텍처를 선택합니다. 이 예에서는 디스크 대 디스크 백업이 선택되었습니다. 기본 스토리지에서 스냅샷을 생성하는 빈도를 제어하는 로컬 스냅샷 일정을 정의합니다. 그런 다음 스냅샷의 Kubernetes 애플리케이션 메타데이터에 사용할 오브젝트 스토리지 위치를 선택합니다.
+
+2차 스토리지 백업 설정을 별도로 구성합니다. 드롭다운 목록에서 백업 대상, 백업용으로 구성된 ONTAP 클러스터 및 SVM, 백업 볼륨이 생성될 애그리게이트를 선택합니다. 스냅샷 데이터가 2차 스토리지에 복사되는 시기를 제어하는 전송 일정을 설정하고 보존 복사본 수를 지정합니다. 전송 일정은 스냅샷 일정과 독립적이므로 리소스는 각 스냅샷이 생성될 때 즉시 복사되는 것이 아니라 전송 일정에 따라 보조 대상으로 복사됩니다. 또한 SnapMirror 복사본의 애플리케이션 메타데이터가 저장될 오브젝트 스토리지 대상을 구성합니다.
+
+필요에 따라 최대 재시도 횟수와 재시도 간격을 수정할 수도 있습니다. *생성*을 클릭하여 진행합니다. 애플리케이션이 검색되고 해당 애플리케이션에 보호 정책이 연결됩니다.
+
+image::vks-console-br-027.png[보호 정책 이름을 제공하고 백업 아키텍처를 선택하십시오.]
+
+image::vks-console-br-028.png[로컬 스냅샷 설정]
+
+image::vks-console-br-029.png[디스크 간 디스크 백업을 위한 2차 스토리지 설정]
+
+====
 . *백업에서 애플리케이션을 복원합니다*
 +
 
 NOTE: Kubernetes 애플리케이션을 복원하려면 Backup and Recovery 슈퍼 관리자 또는 Backup and Recovery 복원 관리자 역할이 필요합니다.
 
 +
-.예제 표시
-[%collapsible]
-====
-** 애플리케이션을 복원하려면 로컬 스냅샷, 오브젝트 스토리지 백업 또는 보조 대상의 백업 등 사용 가능한 복원 지점을 선택할 수 있습니다.
+** 애플리케이션을 복원하려면 로컬 스냅샷, 오브젝트 스토리지 백업 또는 2차 대상의 백업과 같은 사용 가능한 복원 지점을 선택할 수 있습니다.
 ** 애플리케이션을 원래 네임스페이스 또는 다른 네임스페이스로 복원할 수 있습니다.
 ** 복원에 포함할 리소스를 선택할 수 있습니다.
 ** 복원된 애플리케이션 리소스에 사용할 스토리지 클래스를 선택할 수 있습니다.
-
-
++
+.예시 보기: 오브젝트 스토리지에서 다른 네임스페이스로 복원
+[%collapsible]
+====
 image::vks-console-br-019.png[백업에서 애플리케이션 복원]
 
 image::vks-console-br-020.png[복원 지점을 선택하십시오]
@@ -184,13 +222,50 @@ image::vks-console-br-022.png[복원할 리소스를 모두 또는 일부 선택
 
 image::vks-console-br-023.png[복원된 리소스에 사용할 스토리지 클래스를 선택합니다.]
 
+====
++
+.예시 보기: 디스크 스토리지에서 동일한 네임스페이스로 복원
+[%collapsible]
+====
+image::vks-console-br-030.png[복원 지점을 선택하십시오]
+
+image::vks-console-br-031.png[보조 디스크 백업 및 클러스터/네임스페이스 대상을 선택하십시오.]
+
+image::vks-console-br-032.png[복원할 리소스를 모두 또는 일부 선택합니다.]
+
+image::vks-console-br-033.png[복원된 리소스에 사용할 스토리지 클래스를 선택합니다.]
+
+====
++
 NetApp Console의 모니터 섹션에서 복원 작업 진행 상황을 확인할 수 있습니다. 복원 작업이 완료되면 vSphere Kubernetes 클러스터에서 복원된 리소스를 볼 수 있습니다.
 
++
+.예시 보기: 동일하거나 다른 네임스페이스로 복원된 애플리케이션
+[%collapsible]
+====
 image::vks-console-br-024.png[복원 작업 진행 상황 모니터링]
 
 image::vks-console-br-025.png[복원 작업이 완료되었습니다.]
 
-image::vks-console-br-026.png[복원된 애플리케이션]
+image::vks-console-br-026.png[애플리케이션을 다른 네임스페이스로 복원했습니다.]
+
+image::vks-console-br-034.png[동일한 네임스페이스로 애플리케이션을 복원했습니다.]
 
 ====
 
+
+
+
+
+
+[[video-demonstration]]
+== 비디오 데모
+
+다음 비디오는 NetApp Console을 사용하여 VKS 클러스터의 워크로드를 ONTAP S3 오브젝트 스토리지에 백업하고 vSphere Kubernetes 클러스터로 복원하는 방법을 보여줍니다.
+
+.VKS 클러스터의 워크로드를 오브젝트 스토어에 백업하고 NetApp Console을 사용하여 복원합니다
+video::02f61f3c-ae52-4f0b-9fe7-b4c0012ac7d8[panopto,width=360]
+다음 비디오는 NetApp Console Local 기능의 개요를 보여줍니다.
+
+.NetApp Console 로컬 개요
+video::5a0bdd54-7d38-494a-a224-b4b60011547f[panopto,width=360]
