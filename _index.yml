@@ -16,18 +16,14 @@ indexpage:
       url: "/blogs.html"
     - title: 비디오 및 데모
       url: "/videos/index.html"
-  - title: NetApp 사용한 Anthos
+  - title: vSphere Kubernetes Service(NetApp 지원)
     links:
     - title: 솔루션 개요
-      url: "/anthos/anthos-solution-overview.html"
-    - title: VMware의 Anthos 클러스터
-      url: "/anthos/anthos-vmw.html"
-    - title: 베어메탈의 Anthos
-      url: "/anthos/anthos-bm.html"
+      url: "/vsphere-kubernetes-service/vks-overview.html"
     - title: NetApp 스토리지 통합
-      url: "/anthos/anthos-storint-overview.html"
-    - title: 사용 사례
-      url: "/anthos/anthos-deploy-app-cloud-console.html"
+      url: "/vsphere-kubernetes-service/netapp-storage-vks.html"
+    - title: 데이터 보호
+      url: "/vsphere-kubernetes-service/backup-restore-console.html"
   - title: NetApp 사용한 Red Hat OpenShift
     links:
     - title: 솔루션 개요
@@ -40,12 +36,26 @@ indexpage:
       url: "/openshift/os-storint-overview.html"
     - title: 사용 사례
       url: "/openshift/os-use-cases.html"
+  - title: NetApp 사용한 Anthos
+    links:
+    - title: 솔루션 개요
+      url: "/anthos/anthos-solution-overview.html"
+    - title: VMware의 Anthos 클러스터
+      url: "/anthos/anthos-vmw.html"
+    - title: 베어메탈의 Anthos
+      url: "/anthos/anthos-bm.html"
+    - title: NetApp 스토리지 통합
+      url: "/anthos/anthos-storint-overview.html"
+    - title: 사용 사례
+      url: "/anthos/anthos-deploy-app-cloud-console.html"
   - title: 파트너 솔루션
     links:
-    - title: Anthos 웹사이트
-      url: https://cloud.google.com/anthos
+    - title: vSphere Kubernetes 서비스 웹사이트
+      url: https://www.vmware.com/products/cloud-infrastructure/vsphere-kubernetes-service
     - title: Red Hat OpenShift 웹사이트
       url: https://www.redhat.com/en/technologies/cloud-computing/openshift
+    - title: Anthos 웹사이트
+      url: https://cloud.google.com/anthos
   - title: 솔루션 요청 및 피드백
     links:
     - title: 요청 자동화
