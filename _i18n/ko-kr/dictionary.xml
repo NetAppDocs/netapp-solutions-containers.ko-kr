@@ -2024,4 +2024,6 @@
   <block id="2a7082b3041267482d987446d5d04d6a" category="sidebar">vSphere Kubernetes Service(NetApp 지원)</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="sidebar">데이터 보호</block>
   <block id="07c4740cbbae657ab5643e7f4cd45995" category="sidebar">vSphere Kubernetes 서비스 웹사이트</block>
+  <block id="afafad34831fd7bf5a2da8e40c7a486a" category="paragraph">이 표에 나열된 릴리스는 이 문서가 발행될 당시 솔루션 검증에 사용된 릴리스입니다.</block>
+  <block id="c36ad65c3abcd6fccd80322445b32436" category="paragraph">추가 기능은 ONTAP, NetApp Trident 및 Trident에서 지원하는 Red Hat OpenShift의 최신 버전으로 지속적으로 테스트됩니다. Trident에서 지원하는 최신 OpenShift 버전을 확인하려면 <block ref="c63c485b5af8afb2964e185bd11227c5" category="inline-link-macro-rx"></block>을 방문하십시오.</block>
 </blocks>

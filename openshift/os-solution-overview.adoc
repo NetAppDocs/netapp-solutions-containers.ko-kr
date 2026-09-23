@@ -94,6 +94,8 @@ Trident Red Hat OpenShift를 포함한 컨테이너와 Kubernetes 배포판을 �
 [[current-support-matrix-for-validated-releases]]
 == 검증된 릴리스에 대한 현재 지원 매트릭스
 
+이 표에 나열된 릴리스는 이 문서가 발행될 당시 솔루션 검증에 사용된 릴리스입니다.
+
 |===
 
 
@@ -114,3 +116,4 @@ Trident Red Hat OpenShift를 포함한 컨테이너와 Kubernetes 배포판을 �
 
 | VMware vSphere | 데이터 센터 가상화 | 7.0, 8.0.2 
 |===
+추가 기능은 ONTAP, NetApp Trident 및 Trident에서 지원하는 Red Hat OpenShift의 최신 버전으로 지속적으로 테스트됩니다. Trident에서 지원하는 최신 OpenShift 버전을 확인하려면 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["Trident 문서"^]을 방문하십시오.

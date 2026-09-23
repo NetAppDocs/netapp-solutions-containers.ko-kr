@@ -19,10 +19,10 @@ sidebar:
     url: "/index.html"
   - title: 새로운 소식
     url: "/whats-new.html"
-  - section: anthos
+  - section: vsphere-kubernetes-service
   - section: openshift
   - section: openshift-aws
-  - section: vsphere-kubernetes-service
+  - section: anthos
   - title: 비디오
     url: "/videos/index.html"
     entries:
